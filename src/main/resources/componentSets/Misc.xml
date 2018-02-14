@@ -1,0 +1,8 @@
+<components>
+  <application-components>
+    <component>
+      <interface-class>com.gome.maven.openapi.projectRoots.JavaSdk</interface-class>
+      <implementation-class>com.gome.maven.openapi.projectRoots.impl.JavaSdkImpl</implementation-class>
+    </component>
+  </application-components>
+</components>

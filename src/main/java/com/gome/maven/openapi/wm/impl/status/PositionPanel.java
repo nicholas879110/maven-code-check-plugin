@@ -1,0 +1,169 @@
+/*
+ * Copyright 2000-2014 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.gome.maven.openapi.wm.impl.status;
+
+import com.gome.maven.ide.util.GotoLineNumberDialog;
+import com.gome.maven.openapi.command.CommandProcessor;
+import com.gome.maven.openapi.editor.*;
+import com.gome.maven.openapi.editor.event.*;
+import com.gome.maven.openapi.fileEditor.FileEditorManagerEvent;
+import com.gome.maven.openapi.fileEditor.ex.IdeDocumentHistory;
+import com.gome.maven.openapi.project.Project;
+import com.gome.maven.openapi.wm.StatusBar;
+import com.gome.maven.openapi.wm.StatusBarWidget;
+import com.gome.maven.ui.UIBundle;
+import com.gome.maven.util.Consumer;
+
+import java.awt.*;
+import java.awt.event.MouseEvent;
+
+public class PositionPanel extends EditorBasedWidget implements StatusBarWidget.Multiframe, StatusBarWidget.TextPresentation, CaretListener, SelectionListener {
+    private String myText;
+
+    public PositionPanel( final Project project) {
+        super(project);
+    }
+
+    @Override
+    public void selectionChanged( FileEditorManagerEvent event) {
+        updatePosition(getEditor());
+    }
+
+    
+    public String ID() {
+        return "Position";
+    }
+
+    @Override
+    public StatusBarWidget copy() {
+        return new PositionPanel(getProject());
+    }
+
+    public WidgetPresentation getPresentation( final PlatformType type) {
+        return this;
+    }
+
+    
+    public String getText() {
+        return myText == null ? "" : myText;
+    }
+
+    
+    public String getMaxPossibleText() {
+        return "0000000000000";
+    }
+
+    @Override
+    public float getAlignment() {
+        return Component.CENTER_ALIGNMENT;
+    }
+
+    public String getTooltipText() {
+        return UIBundle.message("go.to.line.command.double.click");
+    }
+
+    public Consumer<MouseEvent> getClickConsumer() {
+        return new Consumer<MouseEvent>() {
+            public void consume(MouseEvent mouseEvent) {
+                final Project project = getProject();
+                if (project == null) return;
+                final Editor editor = getEditor();
+                if (editor == null) return;
+                final CommandProcessor processor = CommandProcessor.getInstance();
+                processor.executeCommand(
+                        project, new Runnable() {
+                            public void run() {
+                                final GotoLineNumberDialog dialog = new GotoLineNumberDialog(project, editor);
+                                dialog.show();
+                                IdeDocumentHistory.getInstance(project).includeCurrentCommandAsNavigation();
+                            }
+                        },
+                        UIBundle.message("go.to.line.command.name"),
+                        null
+                );
+            }
+        };
+    }
+
+    public void install( StatusBar statusBar) {
+        super.install(statusBar);
+        final EditorEventMulticaster multicaster = EditorFactory.getInstance().getEventMulticaster();
+        multicaster.addCaretListener(this, this);
+        multicaster.addSelectionListener(this, this);
+    }
+
+    private static void appendLogicalPosition(LogicalPosition caret, StringBuilder message) {
+        message.append(caret.line + 1);
+        message.append(":");
+        message.append(caret.column + 1);
+    }
+
+    @Override
+    public void selectionChanged(final SelectionEvent e) {
+        updatePosition(e.getEditor());
+    }
+
+    public void caretPositionChanged(final CaretEvent e) {
+        updatePosition(e.getEditor());
+    }
+
+    @Override
+    public void caretAdded(CaretEvent e) {
+        updatePosition(e.getEditor());
+    }
+
+    @Override
+    public void caretRemoved(CaretEvent e) {
+        updatePosition(e.getEditor());
+    }
+
+    private void updatePosition(final Editor editor) {
+        if (editor == null) {
+            myText = "";
+        }
+        else {
+            if (!isOurEditor(editor)) return;
+            myText = getPositionText(editor);
+        }
+        myStatusBar.updateWidget(ID());
+    }
+
+    private String getPositionText(Editor editor) {
+        if (!editor.isDisposed() && myStatusBar != null) {
+            StringBuilder message = new StringBuilder();
+
+            SelectionModel selectionModel = editor.getSelectionModel();
+            int caretCount = editor.getCaretModel().getCaretCount();
+            if (caretCount > 1) {
+                message.append(caretCount).append(" carets");
+            }
+            else {
+                LogicalPosition caret = editor.getCaretModel().getLogicalPosition();
+
+                appendLogicalPosition(caret, message);
+                if (selectionModel.hasSelection()) {
+                    int len = Math.abs(selectionModel.getSelectionStart() - selectionModel.getSelectionEnd());
+                    if (len != 0) message.append("/").append(len);
+                }
+            }
+
+            return message.toString();
+        }
+        else {
+            return "";
+        }
+    }
+}

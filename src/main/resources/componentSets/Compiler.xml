@@ -1,0 +1,30 @@
+<components>
+  <application-components>
+    <component>
+      <implementation-class>com.gome.maven.compiler.impl.TranslatingCompilerFilesMonitor</implementation-class>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.compiler.server.BuildManager</implementation-class>
+    </component>
+  </application-components>
+  
+  <project-components>
+    <component>
+      <interface-class>com.gome.maven.packaging.artifacts.ArtifactManager</interface-class>
+      <implementation-class>com.gome.maven.packaging.impl.artifacts.ArtifactManagerImpl</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.compiler.CompilerConfiguration</interface-class>
+      <implementation-class>com.gome.maven.compiler.CompilerConfigurationImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.compiler.impl.CompilerCacheManager</implementation-class>
+    </component>
+  </project-components>
+
+  <extensions defaultExtensionNs="com.gome.maven">
+    <projectService serviceInterface="com.gome.maven.compiler.ProblemsView" serviceImplementation="com.gome.maven.compiler.impl.ProblemsViewImpl"/>
+  </extensions>
+
+</components>

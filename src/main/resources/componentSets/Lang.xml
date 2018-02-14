@@ -1,0 +1,247 @@
+<components>
+  <application-components>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.fileEditor.impl.text.TextEditorProvider</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.text.PsiAwareTextEditorProvider</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.formatting.FormatterEx</interface-class>
+      <implementation-class>com.gome.maven.formatting.FormatterImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.util.indexing.FileBasedIndex</interface-class>
+      <implementation-class>com.gome.maven.util.indexing.FileBasedIndexImpl</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.psi.stubs.StubIndex</interface-class>
+      <implementation-class>com.gome.maven.psi.stubs.StubIndexImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.tools.ToolManager</interface-class>
+      <implementation-class>com.gome.maven.tools.ToolManager</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.psi.stubs.SerializationManager</interface-class>
+      <implementation-class>com.gome.maven.psi.stubs.SerializationManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.roots.impl.libraries.LibraryKindLoader</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.preview.ImageOrColorPreviewManager</implementation-class>
+    </component>
+
+  </application-components>
+
+  <project-components>
+    <component>
+      <interface-class>com.gome.maven.codeInsight.highlighting.HighlightManager</interface-class>
+      <implementation-class>com.gome.maven.codeInsight.highlighting.HighlightManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.roots.ProjectRootManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.roots.impl.ProjectRootManagerComponent</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.openapi.roots.impl.DirectoryIndex</interface-class>
+      <implementation-class>com.gome.maven.openapi.roots.impl.DirectoryIndexImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.psi.PsiManager</interface-class>
+      <implementation-class>com.gome.maven.psi.impl.PsiManagerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.psi.impl.file.impl.PsiVFSListener</interface-class>
+      <implementation-class>com.gome.maven.psi.impl.file.impl.PsiVFSListener</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.psi.PsiDocumentManager</interface-class>
+      <implementation-class>com.gome.maven.psi.impl.PsiDocumentManagerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.module.ModuleManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.module.impl.ModuleManagerComponent</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.codeInsight.folding.CodeFoldingManager</interface-class>
+      <implementation-class>com.gome.maven.codeInsight.folding.impl.CodeFoldingManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.fileEditor.FileEditorManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.PsiAwareFileEditorManagerImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.openapi.fileEditor.impl.TestEditorManagerImpl</headless-implementation-class>
+      <option name="workspace" value="true"/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.problems.WolfTheProblemSolver</interface-class>
+      <implementation-class>com.gome.maven.codeInsight.problems.WolfTheProblemSolverImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.codeInsight.problems.MockWolfTheProblemSolver</headless-implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.pom.tree.TreeAspect</interface-class>
+      <implementation-class>com.gome.maven.pom.tree.TreeAspect</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.psi.impl.source.PostprocessReformattingAspect</implementation-class>
+      <loadForDefaultProject/>
+      <!-- <skipForDefaultProject/> -->
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.codeInsight.daemon.DaemonCodeAnalyzer</interface-class>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.DaemonListeners</implementation-class>
+      <option name="workspace" value="true"/>
+      <!--<loadForDefaultProject/>-->
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.EditorTracker</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.GeneralHighlightingPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.InjectedGeneralHighlightingPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.LineMarkersPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.VisibleLineMarkersPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.ShowIntentionsPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.IdentifierHighlighterPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.refactoring.changeSignature.ChangeSignaturePassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.CodeFoldingPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.IndentsPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.InjectedCodeFoldingPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.LocalInspectionsPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.WholeFileLocalInspectionsPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.ExternalToolPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.WolfPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.ShowAutoImportPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.codeInsight.daemon.impl.SlowLineMarkersPassFactory</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.util.indexing.FileBasedIndexProjectHandler</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.codeInsight.navigation.CtrlMouseHandler</interface-class>
+      <implementation-class>com.gome.maven.codeInsight.navigation.CtrlMouseHandler</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.pom.wrappers.PsiEventWrapperAspect</interface-class>
+      <implementation-class>com.gome.maven.pom.wrappers.PsiEventWrapperAspect</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.roots.impl.PushedFilePropertiesUpdater</interface-class>
+      <implementation-class>com.gome.maven.openapi.roots.impl.PushedFilePropertiesUpdaterImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.refactoring.changeSignature.ChangeSignatureGestureDetector</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.facet.pointers.FacetPointersManager</interface-class>
+      <implementation-class>com.gome.maven.facet.impl.pointers.FacetPointersManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.facet.impl.ui.FacetDependentToolWindowManager</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ide.GeneratedSourceFileChangeTracker</interface-class>
+      <implementation-class>com.gome.maven.ide.GeneratedSourceFileChangeTrackerImpl</implementation-class>
+    </component>
+
+  </project-components>
+
+  <module-components>
+    <component>
+      <interface-class>com.gome.maven.openapi.roots.ModuleRootManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.roots.impl.ModuleRootManagerComponent</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.components.impl.ModuleServiceManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.facet.FacetManager</interface-class>
+      <implementation-class>com.gome.maven.facet.FacetManagerImpl</implementation-class>
+    </component>
+  </module-components>
+</components>

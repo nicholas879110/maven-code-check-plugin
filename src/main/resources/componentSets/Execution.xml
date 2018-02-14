@@ -1,0 +1,19 @@
+<components>
+  <application-components>
+    <component>
+      <interface-class>com.gome.maven.execution.ExecutorRegistry</interface-class>
+      <implementation-class>com.gome.maven.execution.ExecutorRegistryImpl</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <component>
+      <interface-class>com.gome.maven.execution.RunManager</interface-class>
+      <implementation-class>com.gome.maven.execution.impl.RunManagerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.execution.impl.ProjectRunConfigurationManager</implementation-class>
+    </component>
+  </project-components>
+</components>

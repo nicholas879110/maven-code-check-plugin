@@ -1,0 +1,188 @@
+<components>
+  <application-components>
+    <component>
+      <interface-class>com.gome.maven.openapi.project.ProjectManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.project.impl.ProjectManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.fileTypes.FileTypeManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileTypes.impl.FileTypeManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.VirtualFileManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.PlatformVirtualFileManager</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.pointers.VirtualFilePointerManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.impl.VirtualFilePointerManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.newvfs.ManagingFS</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.newvfs.persistent.PersistentFSImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.LocalFileSystem</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.impl.local.LocalFileSystemImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.JarFileSystem</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.impl.jar.JarFileSystemImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.vfs.ex.temp.TempFileSystem</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.fileEditor.FileDocumentManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.FileDocumentManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.editor.EditorFactory</interface-class>
+      <implementation-class>com.gome.maven.openapi.editor.impl.EditorFactoryImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.history.LocalHistory</interface-class>
+      <implementation-class>com.gome.maven.history.integration.LocalHistoryImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.command.undo.UndoManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.command.impl.UndoManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.command.undo.DocumentReferenceManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.command.impl.DocumentReferenceManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ide.ui.LafManager</interface-class>
+      <implementation-class>com.gome.maven.ide.ui.laf.LafManagerImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.ide.ui.laf.HeadlessLafManagerImpl</headless-implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ide.UiActivityMonitor</interface-class>
+      <implementation-class>com.gome.maven.ide.UiActivityMonitorImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.diagnostic.PerformanceWatcher</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.notification.NotificationsConfiguration</interface-class>
+      <implementation-class>com.gome.maven.notification.impl.NotificationsConfigurationImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.notification.NotificationsManager</interface-class>
+      <implementation-class>com.gome.maven.notification.impl.NotificationsManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.internal.statistic.persistence.UsageStatisticsPersistenceComponent</interface-class>
+      <implementation-class>com.gome.maven.internal.statistic.persistence.UsageStatisticsPersistenceComponent</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.internal.statistic.persistence.ApplicationStatisticsPersistenceComponent</interface-class>
+      <implementation-class>com.gome.maven.internal.statistic.persistence.ApplicationStatisticsPersistenceComponent</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ide.ClipboardSynchronizer</interface-class>
+      <implementation-class>com.gome.maven.ide.ClipboardSynchronizer</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.util.FoundationLoader</implementation-class>
+      <headless-implementation-class/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.notification.EventLog</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.notification.impl.MacEventReader</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.util.net.HttpConfigurable</implementation-class>
+    </component>
+    
+    <component>
+      <implementation-class>com.gome.maven.util.net.ssl.CertificateManager</implementation-class>
+    </component>
+    
+    <component>
+      <implementation-class>com.gome.maven.ide.SystemHealthMonitor</implementation-class>
+      <headless-implementation-class/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.diagnostic.DebugLogManager</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.editor.EditorLastActionTracker</interface-class>
+      <implementation-class>com.gome.maven.openapi.editor.impl.EditorLastActionTrackerImpl</implementation-class>
+    </component>
+
+    <!--<component>自己修改的
+      <interface-class>org.jetbrains.ide.BuiltInServerManager</interface-class>
+      <implementation-class>org.jetbrains.ide.BuiltInServerManagerImpl</implementation-class>
+    </component>-->
+  </application-components>
+
+  <project-components>
+    <component>
+      <implementation-class>com.gome.maven.notification.EventLog$ProjectTracker</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.notification.impl.MacEventReader$ProjectTracker</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.command.undo.UndoManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.command.impl.UndoManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vcs.FileStatusManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.vcs.impl.FileStatusManagerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ui.EditorNotifications</interface-class>
+      <implementation-class>com.gome.maven.ui.EditorNotificationsImpl</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.openapi.vfs.encoding.EncodingProjectManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.vfs.encoding.EncodingProjectManagerImpl</implementation-class>
+      <loadForDefaultProject/>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.notification.impl.NotificationsManagerImpl$ProjectNotificationsComponent</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+  </project-components>
+</components>

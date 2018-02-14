@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<ruleset name="AlibabaJavaComments" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+
+    <rule name="AliMissingOverrideAnnotationRule"
+          message="com.alibaba.p3c.idea.inspection.standalone.AliMissingOverrideAnnotationInspection.message"
+          class="com.siyeh.ig.inheritance.AliMissingOverrideAnnotationRule">
+        <description>com.alibaba.p3c.idea.inspection.standalone.AliMissingOverrideAnnotationInspection.desc</description>
+        <priority>3</priority>
+
+        <example>
+            <![CDATA[
+    /**
+     *
+     * XXX class function description.
+     *
+     */
+    public class XxClass implements Serializable {
+        private static final long serialVersionUID = 113323427779853001L;
+
+        @Override
+        public Result<Xxxx> funcA(Long ruleId, Integer page) {
+            return null;
+        }
+    }
+]]>
+        </example>
+    </rule>
+</ruleset>

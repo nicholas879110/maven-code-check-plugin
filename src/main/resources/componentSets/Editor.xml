@@ -1,0 +1,30 @@
+<components>
+  <application-components>
+    <component>
+      <implementation-class>com.gome.maven.ide.actionMacro.ActionMacroManager</implementation-class>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.openapi.actionSystem.ex.QuickListsManager</implementation-class>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.openapi.editor.impl.VisibleEditorsTracker</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <!--<component>-->
+      <!--<implementation-class>com.gome.maven.jsp.impl.browserprofile.BrowserProfileProvider</implementation-class>-->
+    <!--</component>-->
+    <component>
+      <implementation-class>com.gome.maven.openapi.editor.impl.DocumentMarkupModelManager</implementation-class>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.EditorHistoryManager</implementation-class>
+      <option name="workspace" value="true"/>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.openapi.fileEditor.ex.IdeDocumentHistory</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.IdeDocumentHistoryImpl</implementation-class>
+    </component>
+  </project-components>
+</components>

@@ -1,0 +1,46 @@
+/*
+ * Copyright 2000-2009 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * User: anna
+ * Date: 17-Jun-2009
+ */
+package com.gome.maven.codeInsight.daemon.impl;
+
+import com.gome.maven.lang.annotation.HighlightSeverity;
+import com.gome.maven.openapi.editor.markup.TextAttributes;
+import com.gome.maven.openapi.extensions.ExtensionPointName;
+
+import java.awt.*;
+import java.util.List;
+
+public abstract class SeveritiesProvider {
+    public static final ExtensionPointName<SeveritiesProvider> EP_NAME = ExtensionPointName.create("com.intellij.severitiesProvider");
+
+    /**
+     * @see com.gome.maven.openapi.editor.colors.TextAttributesKey#createTextAttributesKey(String, com.gome.maven.openapi.editor.markup.TextAttributes)
+     */
+    
+    public abstract List<HighlightInfoType> getSeveritiesHighlightInfoTypes();
+
+    public boolean isGotoBySeverityEnabled(HighlightSeverity minSeverity) {
+        return minSeverity != HighlightSeverity.INFORMATION;
+    }
+
+    public Color getTrafficRendererColor( TextAttributes textAttributes) {
+        return textAttributes.getErrorStripeColor();
+    }
+}

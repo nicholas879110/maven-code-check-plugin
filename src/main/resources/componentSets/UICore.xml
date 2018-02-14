@@ -1,0 +1,66 @@
+<components>
+  <application-components>
+    <component>
+      <implementation-class>com.gome.maven.ide.SwingCleanuper</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.openapi.wm.IdeFocusManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.wm.impl.FocusManagerImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.openapi.wm.impl.IdeFocusManagerHeadless</headless-implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.ide.DataManager</interface-class>
+      <implementation-class>com.gome.maven.ide.impl.DataManagerImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.idea.CommandLineApplication$MyDataManagerImpl</headless-implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.openapi.actionSystem.ActionManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.actionSystem.impl.ActionManagerImpl</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.openapi.keymap.KeymapManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.keymap.impl.KeymapManagerImpl</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.ide.IdeTooltipManager</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.actionSystem.impl.MouseGestureManager</implementation-class>
+    </component>
+
+    <component>
+      <interface-class>com.gome.maven.ide.SaveAndSyncHandler</interface-class>
+      <implementation-class>com.gome.maven.ide.SaveAndSyncHandlerImpl</implementation-class>
+    </component>
+    <component>
+      <interface-class>com.gome.maven.ide.FrameStateManager</interface-class>
+      <implementation-class>com.gome.maven.ide.FrameStateManagerImpl</implementation-class>
+    </component>
+    <!--<component>自己修改的
+      <implementation-class>com.gome.maven.ide.MacOSApplicationProvider</implementation-class>
+    </component>-->
+    <component>
+      <implementation-class>com.gome.maven.ui.switcher.QuickAccessSettings</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>com.gome.maven.openapi.updateSettings.impl.UpdateCheckerComponent</implementation-class>
+      <headless-implementation-class/>
+    </component>
+  </application-components>
+
+  <project-components>
+    <component>
+      <implementation-class>com.gome.maven.ui.switcher.SwitchManager</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.ui.switcher.QuickActionManager</implementation-class>
+    </component>
+    <component>
+      <implementation-class>com.gome.maven.ide.bookmarks.BookmarkManager</implementation-class>
+    </component>
+  </project-components>
+</components>

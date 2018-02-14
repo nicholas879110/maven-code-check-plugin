@@ -1,0 +1,44 @@
+/*
+ * Copyright 2000-2013 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.gome.maven.lang.parameterInfo;
+
+import com.gome.maven.codeInsight.lookup.LookupElement;
+
+public interface ParameterInfoHandler <ParameterOwner, ParameterType> {
+    boolean couldShowInLookup();
+     Object[] getParametersForLookup(LookupElement item, ParameterInfoContext context);
+     Object[] getParametersForDocumentation(ParameterType p, ParameterInfoContext context);
+
+    // Find element for parameter info should also set ItemsToShow in context and may set highlighted element
+    
+    ParameterOwner findElementForParameterInfo( CreateParameterInfoContext context);
+    // Usually context.showHint
+    void showParameterInfo( final ParameterOwner element,  CreateParameterInfoContext context);
+
+    // Null returns leads to removing hint
+    
+    ParameterOwner findElementForUpdatingParameterInfo( UpdateParameterInfoContext context);
+    void updateParameterInfo( final ParameterOwner parameterOwner,  UpdateParameterInfoContext context);
+
+    // Can be null if parameter info does not track parameter index
+    
+    String getParameterCloseChars();
+    boolean tracksParameterIndex();
+
+    // context.setEnabled / context.setupUIComponentPresentation
+    void updateUI(ParameterType p,  ParameterInfoUIContext context);
+}
