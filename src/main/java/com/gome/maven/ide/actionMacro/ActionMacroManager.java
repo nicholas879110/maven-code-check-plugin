@@ -68,7 +68,7 @@ import java.util.Set;
  * @author max
  */
 public class ActionMacroManager implements ExportableApplicationComponent, NamedJDOMExternalizable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.actionMacro.ActionMacroManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.actionMacro.ActionMacroManager");
 
     private static final String TYPING_SAMPLE = "WWWWWWWWWWWWWWWWWWWW";
     private static final String RECORDED = "Recorded: ";

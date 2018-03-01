@@ -37,7 +37,7 @@ import com.gome.maven.util.Producer;
 import org.jdom.Element;
 
 public class PsiAwareTextEditorProvider extends TextEditorProvider implements AsyncFileEditorProvider {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.fileEditor.impl.text.PsiAwareTextEditorProvider");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.fileEditor.impl.text.PsiAwareTextEditorProvider");
     
     private static final String FOLDING_ELEMENT = "folding";
 

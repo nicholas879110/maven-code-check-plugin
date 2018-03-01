@@ -26,7 +26,7 @@ import com.gome.maven.openapi.options.colors.ColorSettingsPage;
  */
 public interface ColorAndFontPanelFactory {
 
-    ExtensionPointName<ColorAndFontPanelFactory> EP_NAME = ExtensionPointName.create("com.intellij.colorAndFontPanelFactory");
+    ExtensionPointName<ColorAndFontPanelFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.colorAndFontPanelFactory");
 
     
     NewColorAndFontPanel createPanel( ColorAndFontOptions options);

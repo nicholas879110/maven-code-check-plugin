@@ -32,7 +32,7 @@ import com.gome.maven.util.xmlb.XmlSerializerUtil;
                 )}
 )
 public class CompilerWorkspaceConfiguration implements PersistentStateComponent<CompilerWorkspaceConfiguration> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.CompilerWorkspaceConfiguration");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.CompilerWorkspaceConfiguration");
 
     public static final int DEFAULT_COMPILE_PROCESS_HEAP_SIZE = 700;
     public static final String DEFAULT_COMPILE_PROCESS_VM_OPTIONS = "";

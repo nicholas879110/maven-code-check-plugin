@@ -248,7 +248,7 @@ public abstract class CompletionContributor {
         public static final MyExtensionPointManager INSTANCE = new MyExtensionPointManager();
 
         MyExtensionPointManager() {
-            super("com.intellij.completion.contributor");
+            super("com.gome.maven.completion.contributor");
         }
 
         

@@ -46,7 +46,7 @@ import java.util.*;
 
 public class MoveFilesOrDirectoriesProcessor extends BaseRefactoringProcessor {
     private static final Logger LOG = Logger.getInstance(
-            "#com.intellij.refactoring.move.moveFilesOrDirectories.MoveFilesOrDirectoriesProcessor");
+            "#com.gome.maven.refactoring.move.moveFilesOrDirectories.MoveFilesOrDirectoriesProcessor");
 
     protected final PsiElement[] myElementsToMove;
     private final boolean mySearchForReferences;

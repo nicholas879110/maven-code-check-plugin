@@ -40,7 +40,7 @@ public class Descriptor {
     private boolean myEnabled = false;
     
     private final NamedScope myScope;
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.Descriptor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.Descriptor");
     private final ScopeToolState myState;
     private final InspectionProfileImpl myInspectionProfile;
     private final String myScopeName;

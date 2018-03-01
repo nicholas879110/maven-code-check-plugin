@@ -23,7 +23,7 @@ import com.gome.maven.psi.SmartPointerManager;
 import com.gome.maven.psi.SmartPsiElementPointer;
 
 public abstract class LocalQuickFixOnPsiElement implements LocalQuickFix {
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.LocalQuickFixAndIntentionAction");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.LocalQuickFixAndIntentionAction");
     protected final SmartPsiElementPointer<PsiElement> myStartElement;
     protected final SmartPsiElementPointer<PsiElement> myEndElement;
 

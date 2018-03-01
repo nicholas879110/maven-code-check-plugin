@@ -30,14 +30,14 @@ import javax.swing.*;
 /**
  * Override this class to provide custom type of facets. The implementation should be registered in your {@code plugin.xml}:
  * <pre>
- * &lt;extensions defaultExtensionNs="com.intellij"&gt;
+ * &lt;extensions defaultExtensionNs="com.gome.maven"&gt;
  * &nbsp;&nbsp;&lt;facetType implementation="qualified-class-name"/&gt;
  * &lt;/extensions&gt;
  * </pre>
  * @author nik
  */
 public abstract class FacetType<F extends Facet, C extends FacetConfiguration> {
-    public static final ExtensionPointName<FacetType> EP_NAME = ExtensionPointName.create("com.intellij.facetType");
+    public static final ExtensionPointName<FacetType> EP_NAME = ExtensionPointName.create("com.gome.maven.facetType");
 
     private final  FacetTypeId<F> myId;
     private final  String myStringId;
@@ -104,7 +104,7 @@ public abstract class FacetType<F extends Facet, C extends FacetConfiguration> {
     }
 
     /**
-     * @deprecated this method is not called by IDEA core anymore. Use {@link com.intellij.framework.detection.FrameworkDetector} extension
+     * @deprecated this method is not called by IDEA core anymore. Use {@link com.gome.maven.framework.detection.FrameworkDetector} extension
      * to provide automatic detection for facets
      */
     public void registerDetectors(FacetDetectorRegistry<C> registry) {

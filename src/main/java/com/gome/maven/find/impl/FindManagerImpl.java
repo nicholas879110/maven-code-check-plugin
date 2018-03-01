@@ -78,7 +78,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 public class FindManagerImpl extends FindManager {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.find.impl.FindManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.find.impl.FindManagerImpl");
 
     private final FindUsagesManager myFindUsagesManager;
     private boolean isFindWasPerformed = false;
@@ -92,7 +92,7 @@ public class FindManagerImpl extends FindManager {
     private static final FindResultImpl NOT_FOUND_RESULT = new FindResultImpl();
     private final Project myProject;
     private final MessageBus myBus;
-    private static final Key<Boolean> HIGHLIGHTER_WAS_NOT_FOUND_KEY = Key.create("com.intellij.find.impl.FindManagerImpl.HighlighterNotFoundKey");
+    private static final Key<Boolean> HIGHLIGHTER_WAS_NOT_FOUND_KEY = Key.create("com.gome.maven.find.impl.FindManagerImpl.HighlighterNotFoundKey");
 
     private FindDialog myFindDialog;
 

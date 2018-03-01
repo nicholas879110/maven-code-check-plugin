@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiErrorElement;
  * @author spleaner
  */
 public abstract class HighlightErrorFilter {
-    public static final ExtensionPointName<HighlightErrorFilter> EP_NAME = ExtensionPointName.create("com.intellij.highlightErrorFilter");
+    public static final ExtensionPointName<HighlightErrorFilter> EP_NAME = ExtensionPointName.create("com.gome.maven.highlightErrorFilter");
 
     public abstract boolean shouldHighlightErrorElement( final PsiErrorElement element);
 

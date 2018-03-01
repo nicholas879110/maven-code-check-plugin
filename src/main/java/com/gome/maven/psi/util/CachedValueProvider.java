@@ -37,7 +37,7 @@ public interface CachedValueProvider<T> {
      * @param <T> the type of the cached value
      */
     class Result<T> {
-        private static final Logger LOG = Logger.getInstance("#com.intellij.psi.util.CachedValueProvider.Result");
+        private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.util.CachedValueProvider.Result");
         private final T myValue;
         private final Object[] myDependencyItems;
 

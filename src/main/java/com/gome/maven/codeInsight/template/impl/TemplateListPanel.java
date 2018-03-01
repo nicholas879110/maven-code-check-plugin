@@ -79,7 +79,7 @@ public class TemplateListPanel extends JPanel implements Disposable {
     private final Alarm myAlarm = new Alarm();
     private boolean myUpdateNeeded = false;
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.template.impl.TemplateListPanel");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.template.impl.TemplateListPanel");
 
     private final Map<Integer, Map<TemplateOptionalProcessor, Boolean>> myTemplateOptions = new LinkedHashMap<Integer, Map<TemplateOptionalProcessor, Boolean>>();
     private final Map<Integer, TemplateContext> myTemplateContext = ContainerUtil.newLinkedHashMap();

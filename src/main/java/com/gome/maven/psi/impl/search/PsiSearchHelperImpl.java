@@ -63,7 +63,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class PsiSearchHelperImpl implements PsiSearchHelper {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.search.PsiSearchHelperImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.search.PsiSearchHelperImpl");
     private final PsiManagerEx myManager;
 
     public enum Options {

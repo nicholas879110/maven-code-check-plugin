@@ -28,7 +28,7 @@ import com.gome.maven.psi.PsiFile;
  */
 public interface PsiStructureViewFactory {
 
-    String EP_NAME = "com.intellij.lang.psiStructureViewFactory";
+    String EP_NAME = "com.gome.maven.lang.psiStructureViewFactory";
 
     StructureViewBuilder getStructureViewBuilder(PsiFile psiFile);
 }

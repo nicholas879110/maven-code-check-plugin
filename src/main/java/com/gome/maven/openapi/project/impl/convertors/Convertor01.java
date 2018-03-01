@@ -25,9 +25,9 @@ import java.util.Iterator;
 
 @SuppressWarnings({"HardCodedStringLiteral"})
 public class Convertor01 {
-    private static final String VIRTUAL_FILE_MANAGER_CLASS = "com.intellij.vfs.VirtualFileManager";
-    private static final String JAR_FILE_SYSTEM_CLASS = "com.intellij.vfs.jar.JarFileSystem";
-    private static final String PROJECT_ROOT_CONTAINER_CLASS = "com.intellij.project.ProjectRootContainer";
+    private static final String VIRTUAL_FILE_MANAGER_CLASS = "com.gome.maven.vfs.VirtualFileManager";
+    private static final String JAR_FILE_SYSTEM_CLASS = "com.gome.maven.vfs.jar.JarFileSystem";
+    private static final String PROJECT_ROOT_CONTAINER_CLASS = "com.gome.maven.project.ProjectRootContainer";
 
     private static final String SOURCE_PATH_ENTRY_ATTRIBUTE = "sourcePathEntry";
     private static final String CLASS_PATH_ENTRY_ATTRIBUTE = "classPathEntry";

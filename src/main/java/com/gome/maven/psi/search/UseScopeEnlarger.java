@@ -22,7 +22,7 @@ import com.gome.maven.psi.PsiElement;
  * @author nik
  */
 public abstract class UseScopeEnlarger {
-    public static final ExtensionPointName<UseScopeEnlarger> EP_NAME = ExtensionPointName.create("com.intellij.useScopeEnlarger");
+    public static final ExtensionPointName<UseScopeEnlarger> EP_NAME = ExtensionPointName.create("com.gome.maven.useScopeEnlarger");
 
     
     public abstract SearchScope getAdditionalUseScope( PsiElement element);

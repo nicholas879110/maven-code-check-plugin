@@ -80,7 +80,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-archiver:2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-io:2.0.4" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.trove4j:trove4j:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: jdom:jdom:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.picocontainer:picocontainer:1.2" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:3.4.0" level="project" />
@@ -100,7 +99,7 @@
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.3" level="project" />
     <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.10.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.0.Beta4" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.gome:asm-all:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.gome:oromatcher:1.0" level="project" />
@@ -108,5 +107,11 @@
     <orderEntry type="library" name="Maven: com.gome:jgoodies-forms:1.0" level="project" />
     <orderEntry type="library" name="Maven: be.cyberelf.nanoxml:nanoxml:2.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.gome:microba:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.gome:xerces:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="library" name="Maven: com.gome:trove4j:1.0" level="project" />
   </component>
 </module>

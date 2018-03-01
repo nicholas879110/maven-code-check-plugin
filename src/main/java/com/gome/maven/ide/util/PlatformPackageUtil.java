@@ -47,7 +47,7 @@ import java.util.List;
 // TODO this should eventually replace PackageUtil from java-impl
 public class PlatformPackageUtil {
 
-    private static final Logger LOG = Logger.getInstance("com.intellij.ide.util.PlatformPackageUtil");
+    private static final Logger LOG = Logger.getInstance("com.gome.maven.ide.util.PlatformPackageUtil");
 
     
     private static String findLongestExistingPackage(Project project, String packageName, GlobalSearchScope scope) {

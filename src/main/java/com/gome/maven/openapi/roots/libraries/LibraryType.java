@@ -31,14 +31,14 @@ import java.util.List;
 /**
  * Override this class to provide custom library type. The implementation should be registered in plugin.xml:
  * <p>
- * &lt;extensions defaultExtensionNs="com.intellij"&gt;<br>
+ * &lt;extensions defaultExtensionNs="com.gome.maven"&gt;<br>
  * &nbsp;&nbsp;&lt;library.type implementation="qualified-class-name"/&gt;<br>
  * &lt;/extensions&gt;
  *
  * @author nik
  */
 public abstract class LibraryType<P extends LibraryProperties> extends LibraryPresentationProvider<P> {
-    public static final ExtensionPointName<LibraryType<?>> EP_NAME = ExtensionPointName.create("com.intellij.library.type");
+    public static final ExtensionPointName<LibraryType<?>> EP_NAME = ExtensionPointName.create("com.gome.maven.library.type");
 
     public final static OrderRootType[] DEFAULT_EXTERNAL_ROOT_TYPES = {OrderRootType.CLASSES};
 

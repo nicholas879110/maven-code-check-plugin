@@ -123,7 +123,7 @@ public class FileTypeChooser extends DialogWrapper {
 
     @Override
     protected String getDimensionServiceKey(){
-        return "#com.intellij.fileTypes.FileTypeChooser";
+        return "#com.gome.maven.fileTypes.FileTypeChooser";
     }
 
     public FileType getSelectedType() {

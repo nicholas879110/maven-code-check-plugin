@@ -38,7 +38,7 @@ import java.io.IOException;
  */
 public abstract class RootType {
 
-    public static final ExtensionPointName<RootType> ROOT_EP = ExtensionPointName.create("com.intellij.scratch.rootType");
+    public static final ExtensionPointName<RootType> ROOT_EP = ExtensionPointName.create("com.gome.maven.scratch.rootType");
 
     
     public static RootType[] getAllRootIds() {

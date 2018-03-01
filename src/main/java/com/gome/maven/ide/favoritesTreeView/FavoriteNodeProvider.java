@@ -29,12 +29,12 @@ import java.util.Collection;
 /**
  * Returns the nodes which should be added to the Favorites for the given data context.
  * Implementations of this class must be registered as extensions for
- * <code>com.intellij.favoriteNodeProvider</code> extension point.
+ * <code>com.gome.maven.favoriteNodeProvider</code> extension point.
  *
  * @author yole
  */
 public abstract class FavoriteNodeProvider {
-    public static final ExtensionPointName<FavoriteNodeProvider> EP_NAME = new ExtensionPointName<FavoriteNodeProvider>("com.intellij.favoriteNodeProvider");
+    public static final ExtensionPointName<FavoriteNodeProvider> EP_NAME = new ExtensionPointName<FavoriteNodeProvider>("com.gome.maven.favoriteNodeProvider");
 
     
     public abstract Collection<AbstractTreeNode> getFavoriteNodes(DataContext context, final ViewSettings viewSettings);

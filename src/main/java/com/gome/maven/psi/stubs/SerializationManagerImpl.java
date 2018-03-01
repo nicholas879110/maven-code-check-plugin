@@ -33,7 +33,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author max
  */
 public class SerializationManagerImpl extends SerializationManagerEx implements ApplicationComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.SerializationManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.SerializationManagerImpl");
 
     private final AtomicBoolean myNameStorageCrashed = new AtomicBoolean(false);
     private final File myFile = new File(PathManager.getIndexRoot(), "rep.names");

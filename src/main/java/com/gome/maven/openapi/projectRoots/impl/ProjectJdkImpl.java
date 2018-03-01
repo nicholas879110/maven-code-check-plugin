@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProjectJdkImpl extends UserDataHolderBase implements JDOMExternalizable, Sdk, SdkModificator {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.ProjectJdkImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.ProjectJdkImpl");
     private final ProjectRootContainerImpl myRootContainer;
     private String myName;
     private String myVersionString;

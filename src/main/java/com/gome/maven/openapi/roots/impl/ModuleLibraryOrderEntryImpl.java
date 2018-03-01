@@ -38,7 +38,7 @@ import org.jetbrains.jps.model.serialization.module.JpsModuleRootModelSerializer
  *  @author dsl
  */
 public class ModuleLibraryOrderEntryImpl extends LibraryOrderEntryBaseImpl implements LibraryOrderEntry, ClonableOrderEntry, WritableOrderEntry {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.LibraryOrderEntryImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.LibraryOrderEntryImpl");
     private final Library myLibrary;
      public static final String ENTRY_TYPE = JpsModuleRootModelSerializer.MODULE_LIBRARY_TYPE;
     private boolean myExported;

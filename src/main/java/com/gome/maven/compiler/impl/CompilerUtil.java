@@ -37,7 +37,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class CompilerUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.CompilerUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.CompilerUtil");
 
     public static String quotePath(String path) {
         if(path != null && path.indexOf(' ') != -1) {
@@ -107,7 +107,7 @@ public class CompilerUtil {
         }
     }
 
-    public static void addSourceCommandLineSwitch(final Sdk jdk, LanguageLevel chunkLanguageLevel, @NonNls final List<String> commandLine) {
+    public static void addSourceCommandLineSwitch(final Sdk jdk, LanguageLevel chunkLanguageLevel,  final List<String> commandLine) {
         final String versionString = jdk.getVersionString();
         if (StringUtil.isEmpty(versionString)) {
             throw new IllegalArgumentException(CompilerBundle.message("javac.error.unknown.jdk.version", jdk.getName()));

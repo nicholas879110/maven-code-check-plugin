@@ -22,7 +22,7 @@ import com.gome.maven.openapi.options.Configurable;
 import java.util.Set;
 
 public interface BackendCompiler {
-    ExtensionPointName<BackendCompiler> EP_NAME = ExtensionPointName.create("com.intellij.java.compiler");
+    ExtensionPointName<BackendCompiler> EP_NAME = ExtensionPointName.create("com.gome.maven.java.compiler");
 
     
     String getId(); // used for externalization

@@ -28,7 +28,7 @@ public class LocalHistoryBundle {
         return CommonBundle.message(getBundle(), key, params);
     }
 
-    private static final String PATH_TO_BUNDLE = "com.intellij.history.integration.LocalHistoryBundle";
+    private static final String PATH_TO_BUNDLE = "com.gome.maven.history.integration.LocalHistoryBundle";
     private static Reference<ResourceBundle> ourBundle;
 
     private static ResourceBundle getBundle() {

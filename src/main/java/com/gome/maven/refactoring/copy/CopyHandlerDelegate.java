@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiElement;
  * @author yole
  */
 public interface CopyHandlerDelegate {
-    ExtensionPointName<CopyHandlerDelegate> EP_NAME = ExtensionPointName.create("com.intellij.refactoring.copyHandler");
+    ExtensionPointName<CopyHandlerDelegate> EP_NAME = ExtensionPointName.create("com.gome.maven.refactoring.copyHandler");
 
     boolean canCopy(PsiElement[] elements);
     void doCopy(PsiElement[] elements, PsiDirectory defaultTargetDirectory);

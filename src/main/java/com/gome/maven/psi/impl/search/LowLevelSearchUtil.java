@@ -38,7 +38,7 @@ import gnu.trove.TIntProcedure;
 import java.util.List;
 
 public class LowLevelSearchUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.search.LowLevelSearchUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.search.LowLevelSearchUtil");
 
     // TRUE/FALSE -> injected psi has been discovered and processor returned true/false;
     // null -> there were nothing injected found

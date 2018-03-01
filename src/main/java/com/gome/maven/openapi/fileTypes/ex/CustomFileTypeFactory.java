@@ -20,7 +20,7 @@ import com.gome.maven.openapi.fileTypes.UserFileType;
 import org.jdom.Element;
 
 public interface CustomFileTypeFactory {
-    ExtensionPointName<CustomFileTypeFactory> EP_NAME = ExtensionPointName.create("com.intellij.customFileTypeFactory");
+    ExtensionPointName<CustomFileTypeFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.customFileTypeFactory");
 
     UserFileType createFileType(Element element);
 }

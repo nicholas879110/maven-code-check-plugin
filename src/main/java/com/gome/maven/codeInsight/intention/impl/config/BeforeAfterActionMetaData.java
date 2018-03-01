@@ -34,7 +34,7 @@ import java.util.List;
 
 
 public abstract class BeforeAfterActionMetaData {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.config.BeforeAfterActionMetaData");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.config.BeforeAfterActionMetaData");
 
     protected static final TextDescriptor[] EMPTY_EXAMPLE = new TextDescriptor[0];
     protected static final TextDescriptor EMPTY_DESCRIPTION = new PlainTextDescriptor("", "");

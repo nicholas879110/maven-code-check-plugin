@@ -1,6 +1,6 @@
 <idea-plugin version="2">
 
-  <extensions defaultExtensionNs="com.intellij">
+  <extensions defaultExtensionNs="com.gome.maven">
 
     <!--group.names.abstraction.issues-->
     <localInspection groupPath="Java" language="JAVA" shortName="BooleanParameter" bundle="com.siyeh.InspectionGadgetsBundle" key="boolean.parameter.display.name"
@@ -796,7 +796,7 @@
     <globalInspection groupPath="Java" language="JAVA" shortName="BooleanMethodIsAlwaysInverted" bundle="messages.InspectionsBundle"
                       key="boolean.method.is.always.inverted.display.name" groupBundle="messages.InspectionsBundle"
                       groupKey="group.names.data.flow.issues" enabledByDefault="true" level="WARNING"
-                      implementationClass="com.intellij.codeInspection.booleanIsAlwaysInverted.BooleanMethodIsAlwaysInvertedInspection"/>
+                      implementationClass="com.gome.maven.codeInspection.booleanIsAlwaysInverted.BooleanMethodIsAlwaysInvertedInspection"/>
 
     <!--group.names.dependency.issues-->
     <globalInspection groupPath="Java" language="JAVA" shortName="ClassWithTooManyDependencies" bundle="com.siyeh.InspectionGadgetsBundle"

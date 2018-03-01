@@ -25,7 +25,7 @@ import java.util.List;
  * @author peter
  */
 public class CompletionConfidenceEP extends LanguageExtensionPoint<CompletionContributor> {
-    private static final LanguageExtension<CompletionConfidence> INSTANCE = new LanguageExtension<CompletionConfidence>("com.intellij.completion.confidence");
+    private static final LanguageExtension<CompletionConfidence> INSTANCE = new LanguageExtension<CompletionConfidence>("com.gome.maven.completion.confidence");
 
     public static List<CompletionConfidence> forLanguage( Language language) {
         return INSTANCE.forKey(language);

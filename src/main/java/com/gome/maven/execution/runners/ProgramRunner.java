@@ -30,7 +30,7 @@ import com.gome.maven.openapi.options.SettingsEditor;
  *
  * A newly created program runner should be registered in a corresponding plugin.xml:
  *
- * &lt;extensions defaultExtensionNs="com.intellij"&gt;
+ * &lt;extensions defaultExtensionNs="com.gome.maven"&gt;
  *   &lt;programRunner implementation="RunnerClassFQN"/&gt;
  * &lt;/extensions&gt;
  *
@@ -38,7 +38,7 @@ import com.gome.maven.openapi.options.SettingsEditor;
  * @see GenericProgramRunner
  */
 public interface ProgramRunner<Settings extends RunnerSettings> {
-    ExtensionPointName<ProgramRunner> PROGRAM_RUNNER_EP = ExtensionPointName.create("com.intellij.programRunner");
+    ExtensionPointName<ProgramRunner> PROGRAM_RUNNER_EP = ExtensionPointName.create("com.gome.maven.programRunner");
 
     interface Callback {
         void processStarted(RunContentDescriptor descriptor);

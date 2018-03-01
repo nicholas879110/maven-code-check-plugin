@@ -46,7 +46,7 @@ import java.util.*;
  *         Date: 4/18/12
  */
 public abstract class DefaultMessageHandler implements BuilderMessageHandler {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.server.DefaultMessageHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.server.DefaultMessageHandler");
     public static final long CONSTANT_SEARCH_TIME_LIMIT = 60 * 1000L; // one minute
     private final Project myProject;
     private final SequentialTaskExecutor myTaskExecutor = new SequentialTaskExecutor(PooledThreadExecutor.INSTANCE);

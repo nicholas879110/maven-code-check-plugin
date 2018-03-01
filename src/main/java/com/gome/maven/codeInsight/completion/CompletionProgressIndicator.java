@@ -85,7 +85,7 @@ import java.util.concurrent.ConcurrentMap;
  * @author peter
  */
 public class CompletionProgressIndicator extends ProgressIndicatorBase implements CompletionProcess, Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.CompletionProgressIndicator");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.CompletionProgressIndicator");
     private final Editor myEditor;
     
     private final Caret myCaret;

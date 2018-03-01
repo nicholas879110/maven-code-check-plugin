@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiFile;
 import com.gome.maven.psi.search.GlobalSearchScope;
 import com.gome.maven.psi.search.UsageSearchContext;
 import com.gome.maven.util.Processor;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 public interface CacheManager {
     class SERVICE {

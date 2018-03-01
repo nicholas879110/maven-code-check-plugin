@@ -25,7 +25,7 @@ import com.gome.maven.openapi.projectRoots.Sdk;
 import com.gome.maven.openapi.util.JDOMExternalizable;
 
 public abstract class ProjectExtension implements JDOMExternalizable{
-    public static final ExtensionPointName<ProjectExtension> EP_NAME = ExtensionPointName.create("com.intellij.projectExtension");
+    public static final ExtensionPointName<ProjectExtension> EP_NAME = ExtensionPointName.create("com.gome.maven.projectExtension");
 
     public void projectSdkChanged( Sdk sdk) {}
 }

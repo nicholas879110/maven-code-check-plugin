@@ -28,7 +28,7 @@ import java.util.*;
  * @author dsl
  */
 public class NameSuggester {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.naming.NameSuggester");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.naming.NameSuggester");
     private final String[] myOldClassName;
     private final String[] myNewClassName;
     private final List<OriginalToNewChange> myChanges; // sorted from right to left

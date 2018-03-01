@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiFile;
  */
 public interface ExternalAnnotatorsFilter {
 
-    ExtensionPointName<ExternalAnnotatorsFilter> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.daemon.externalAnnotatorsFilter");
+    ExtensionPointName<ExternalAnnotatorsFilter> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.daemon.externalAnnotatorsFilter");
 
     boolean isProhibited(ExternalAnnotator annotator, PsiFile file);
 }

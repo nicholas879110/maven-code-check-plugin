@@ -23,7 +23,7 @@ import com.gome.maven.lang.annotation.Annotator;
 
 public class LanguageAnnotators extends LanguageExtension<Annotator> {
     public static final LanguageAnnotators INSTANCE = new LanguageAnnotators();
-     public static final String EP_NAME = "com.intellij.annotator";
+     public static final String EP_NAME = "com.gome.maven.annotator";
 
     private LanguageAnnotators() {
         super(EP_NAME);

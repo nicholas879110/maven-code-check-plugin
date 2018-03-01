@@ -1,5 +1,5 @@
 <extensions>
-  <undoProvider implementation="com.intellij.openapi.command.impl.FileUndoProvider"/>
-  <projectUndoProvider implementation="com.intellij.openapi.command.impl.FileUndoProvider"/>
+  <undoProvider implementation="com.gome.maven.openapi.command.impl.FileUndoProvider"/>
+  <projectUndoProvider implementation="com.gome.maven.openapi.command.impl.FileUndoProvider"/>
 </extensions>
     

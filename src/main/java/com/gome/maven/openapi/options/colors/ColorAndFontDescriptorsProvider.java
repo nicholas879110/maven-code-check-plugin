@@ -26,7 +26,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  */
 public interface ColorAndFontDescriptorsProvider {
 
-    ExtensionPointName<ColorAndFontDescriptorsProvider> EP_NAME = ExtensionPointName.create("com.intellij.colorAndFontDescriptorProvider");
+    ExtensionPointName<ColorAndFontDescriptorsProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.colorAndFontDescriptorProvider");
 
     /**
      * Returns the list of descriptors specifying the {@link TextAttributesKey} instances

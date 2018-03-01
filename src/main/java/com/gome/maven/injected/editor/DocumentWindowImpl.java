@@ -44,7 +44,7 @@ import java.util.List;
  * @author Alexey
  */
 public class DocumentWindowImpl extends UserDataHolderBase implements Disposable, DocumentWindow, DocumentEx {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.injected.editor.DocumentWindowImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.injected.editor.DocumentWindowImpl");
     private final DocumentEx myDelegate;
     private final boolean myOneLine;
     private Place myShreds; // guarded by myLock

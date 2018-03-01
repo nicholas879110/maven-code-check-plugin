@@ -30,7 +30,7 @@ import java.io.*;
 import java.util.Collection;
 
 public class FileProcessingCompilerStateCache {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.FileProcessingCompilerStateCache");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.FileProcessingCompilerStateCache");
     private final StateCache<MyState> myCache;
 
     public FileProcessingCompilerStateCache(File storeDirectory, final ValidityStateFactory stateFactory) throws IOException {

@@ -25,7 +25,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @see com.gome.maven.lang.injection.MultiHostInjector
  */
 public interface LanguageInjector {
-    ExtensionPointName<LanguageInjector> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.languageInjector");
+    ExtensionPointName<LanguageInjector> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.languageInjector");
 
     /**
      * @param host PSI element inside which your language will be injected.

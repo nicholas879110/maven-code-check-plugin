@@ -66,7 +66,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CodeCompletionHandlerBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.CodeCompletionHandlerBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.CodeCompletionHandlerBase");
     private static final Key<Boolean> CARET_PROCESSED = Key.create("CodeCompletionHandlerBase.caretProcessed");
 
      private final CompletionType myCompletionType;

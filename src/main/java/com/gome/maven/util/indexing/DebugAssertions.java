@@ -25,12 +25,12 @@ public class DebugAssertions {
     private static final Logger LOG = Logger.getInstance(DebugAssertions.class);
 
     public static final boolean DEBUG = SystemProperties.getBooleanProperty(
-            "intellij.idea.indices.debug",
+            "gome.maven.idea.indices.debug",
             ApplicationManager.getApplication().isInternal() || ApplicationManager.getApplication().isEAP()
     );
 
     public static final boolean EXTRA_SANITY_CHECKS = SystemProperties.getBooleanProperty(
-            "intellij.idea.indices.debug.extra.sanity",
+            "gome.maven.idea.indices.debug.extra.sanity",
             false //DEBUG // todo https://youtrack.jetbrains.com/issue/IDEA-134916
     );
 

@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OneProjectItemCompileScope extends ExportableUserDataHolderBase implements CompileScope{
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.OneProjectItemCompileScope");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.OneProjectItemCompileScope");
     private final Project myProject;
     private final VirtualFile myFile;
     private final String myUrl;

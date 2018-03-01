@@ -26,6 +26,6 @@ public class LanguageImplementationTextSelectioner extends LanguageExtension<Imp
     public static final LanguageImplementationTextSelectioner INSTANCE = new LanguageImplementationTextSelectioner();
 
     public LanguageImplementationTextSelectioner() {
-        super("com.intellij.lang.implementationTextSelectioner", new DefaultImplementationTextSelectioner());
+        super("com.gome.maven.lang.implementationTextSelectioner", new DefaultImplementationTextSelectioner());
     }
 }

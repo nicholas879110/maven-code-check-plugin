@@ -36,7 +36,7 @@ import java.util.ArrayList;
 
 public class LivePreviewController implements LivePreview.Delegate, FindUtil.ReplaceDelegate {
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.find.impl.livePreview.LivePreviewController");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.find.impl.livePreview.LivePreviewController");
 
     public static final int USER_ACTIVITY_TRIGGERING_DELAY = 30;
     public static final int MATCHES_LIMIT = 10000;

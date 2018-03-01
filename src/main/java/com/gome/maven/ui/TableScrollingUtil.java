@@ -20,7 +20,7 @@ import com.gome.maven.openapi.actionSystem.AnAction;
 import com.gome.maven.openapi.actionSystem.AnActionEvent;
 import com.gome.maven.openapi.actionSystem.CustomShortcutSet;
 import com.gome.maven.openapi.util.Couple;
-//import org.intellij.lang.annotations.JdkConstants;
+//import org.gome.maven.lang.annotations.JdkConstants;
 
 import javax.swing.*;
 import java.awt.*;

@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiFile;
  * @author yole
  */
 public interface ReferenceImporter {
-    ExtensionPointName<ReferenceImporter> EP_NAME = ExtensionPointName.create("com.intellij.referenceImporter");
+    ExtensionPointName<ReferenceImporter> EP_NAME = ExtensionPointName.create("com.gome.maven.referenceImporter");
 
     boolean autoImportReferenceAtCursor( Editor editor,  PsiFile file);
     boolean autoImportReferenceAt( Editor editor,  PsiFile file, int offset);

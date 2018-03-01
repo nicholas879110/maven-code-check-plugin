@@ -24,7 +24,7 @@ import java.util.List;
  * @author traff
  */
 public abstract class ToolsProvider {
-    public static final ExtensionPointName<ToolsProvider> EP_NAME = ExtensionPointName.create("com.intellij.toolsProvider");
+    public static final ExtensionPointName<ToolsProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.toolsProvider");
 
     public abstract List<Tool> getTools();
 

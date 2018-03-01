@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiElement;
  * @author yole
  */
 public interface GotoDeclarationHandler {
-    ExtensionPointName<GotoDeclarationHandler> EP_NAME = ExtensionPointName.create("com.intellij.gotoDeclarationHandler");
+    ExtensionPointName<GotoDeclarationHandler> EP_NAME = ExtensionPointName.create("com.gome.maven.gotoDeclarationHandler");
 
     /**
      * Provides an array of target declarations for given {@code sourceElement}.

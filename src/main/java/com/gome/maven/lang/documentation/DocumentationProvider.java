@@ -32,7 +32,7 @@ public interface DocumentationProvider {
     /**
      * Please use {@link com.gome.maven.lang.LanguageDocumentation} instead of this for language-specific documentation
      */
-    ExtensionPointName<DocumentationProvider> EP_NAME = ExtensionPointName.create("com.intellij.documentationProvider");
+    ExtensionPointName<DocumentationProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.documentationProvider");
 
     /**
      * Returns the text to show in the Ctrl-hover popup for the specified element.

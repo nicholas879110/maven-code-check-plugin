@@ -23,7 +23,7 @@ import com.gome.maven.openapi.components.ServiceManager;
 import com.gome.maven.openapi.project.Project;
 import com.gome.maven.psi.*;
 import com.gome.maven.util.IncorrectOperationException;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import java.util.Collection;
 

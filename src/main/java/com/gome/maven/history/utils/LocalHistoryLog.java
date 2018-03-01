@@ -19,5 +19,5 @@ package com.gome.maven.history.utils;
 import com.gome.maven.openapi.diagnostic.Logger;
 
 public class LocalHistoryLog {
-    public static final Logger LOG = Logger.getInstance("#com.intellij.history.utils.LocalHistoryLog");
+    public static final Logger LOG = Logger.getInstance("#com.gome.maven.history.utils.LocalHistoryLog");
 }

@@ -43,7 +43,7 @@ public class InspectionProfileConvertor {
      public static final String OLD_HIGHTLIGHTING_SETTINGS_PROFILE = "EditorHighlightingSettings";
      public static final String OLD_DEFAUL_PROFILE = "OldDefaultProfile";
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.DaemonCodeAnalyzerSettingsConvertor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.DaemonCodeAnalyzerSettingsConvertor");
 
      private static final String INSPECTIONS_TAG = "inspections";
      private static final String NAME_ATT = "name";

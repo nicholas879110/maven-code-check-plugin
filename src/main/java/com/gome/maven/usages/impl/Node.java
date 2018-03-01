@@ -18,7 +18,7 @@ package com.gome.maven.usages.impl;
 import com.gome.maven.openapi.util.Comparing;
 import com.gome.maven.usages.UsageView;
 import com.gome.maven.util.BitUtil;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;

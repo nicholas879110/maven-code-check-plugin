@@ -44,7 +44,7 @@ import java.util.List;
  * @author peter
  */
 class CompletionAssertions {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.CompletionAssertions");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.CompletionAssertions");
 
     static void assertCommitSuccessful(Editor editor, PsiFile psiFile) {
         Document document = editor.getDocument();

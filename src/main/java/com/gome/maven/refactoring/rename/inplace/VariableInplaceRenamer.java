@@ -59,7 +59,7 @@ import java.util.List;
  */
 public class VariableInplaceRenamer extends InplaceRefactoring {
     public static final LanguageExtension<ResolveSnapshotProvider> INSTANCE = new LanguageExtension<ResolveSnapshotProvider>(
-            "com.intellij.rename.inplace.resolveSnapshotProvider"
+            "com.gome.maven.rename.inplace.resolveSnapshotProvider"
     );
     private ResolveSnapshotProvider.ResolveSnapshot mySnapshot;
     private TextRange mySelectedRange;

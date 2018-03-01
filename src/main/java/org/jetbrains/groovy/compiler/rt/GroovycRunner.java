@@ -15,8 +15,7 @@
 
 package org.jetbrains.groovy.compiler.rt;
 
-import com.intellij.util.lang.UrlClassLoader;
-import org.jetbrains.annotations.Nullable;
+import com.gome.maven.util.lang.UrlClassLoader;
 import sun.misc.URLClassPath;
 
 import java.io.BufferedReader;
@@ -141,7 +140,7 @@ public class GroovycRunner {
     return 0;
   }
 
-  @Nullable
+
   private static ClassLoader buildMainLoader(String argsPath) {
     Set<URL> bootstrapUrls = new HashSet<URL>();
     try {

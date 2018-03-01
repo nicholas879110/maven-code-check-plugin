@@ -25,7 +25,7 @@ import com.gome.maven.util.ProcessingContext;
  * @author Gregory.Shrago
  */
 public interface RenameInputValidator {
-    ExtensionPointName<RenameInputValidator> EP_NAME = ExtensionPointName.create("com.intellij.renameInputValidator");
+    ExtensionPointName<RenameInputValidator> EP_NAME = ExtensionPointName.create("com.gome.maven.renameInputValidator");
 
     ElementPattern<? extends PsiElement> getPattern();
     boolean isInputValid(final String newName, final PsiElement element, final ProcessingContext context);

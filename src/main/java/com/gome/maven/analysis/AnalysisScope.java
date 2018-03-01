@@ -59,7 +59,7 @@ import java.util.*;
  * @author max
  */
 public class AnalysisScope {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.analysis.AnalysisScope");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.analysis.AnalysisScope");
 
     public static final int PROJECT = 1;
     public static final int DIRECTORY = 2;

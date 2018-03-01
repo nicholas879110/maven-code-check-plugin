@@ -21,7 +21,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author yole
  */
 public interface CompilerFactory {
-    ExtensionPointName<CompilerFactory> EP_NAME = ExtensionPointName.create("com.intellij.compilerFactory");
+    ExtensionPointName<CompilerFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.compilerFactory");
 
     Compiler[] createCompilers( CompilerManager compilerManager);
 }

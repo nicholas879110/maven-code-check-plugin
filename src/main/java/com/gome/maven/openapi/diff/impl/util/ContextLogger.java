@@ -20,7 +20,7 @@ import com.gome.maven.openapi.application.ApplicationManager;
 import com.gome.maven.openapi.diagnostic.Logger;
 
 public class ContextLogger {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.util.ContextLogger");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.util.ContextLogger");
     private final Logger myLogger;
     private final Context myInfo;
     private boolean myFirstError = true;

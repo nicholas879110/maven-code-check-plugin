@@ -60,7 +60,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class GeneralHighlightingPass extends ProgressableTextEditorHighlightingPass implements DumbAware {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.GeneralHighlightingPass");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.GeneralHighlightingPass");
     private static final String PRESENTABLE_NAME = DaemonBundle.message("pass.syntax");
     private static final Key<Boolean> HAS_ERROR_ELEMENT = Key.create("HAS_ERROR_ELEMENT");
     protected static final Condition<PsiFile> SHOULD_HIGHIGHT_FILTER = new Condition<PsiFile>() {

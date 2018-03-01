@@ -27,7 +27,7 @@ import com.gome.maven.ui.ColoredTreeCellRenderer;
  * @see com.gome.maven.ide.projectView.TreeStructureProvider
  */
 public interface ProjectViewNodeDecorator {
-    ExtensionPointName<ProjectViewNodeDecorator> EP_NAME = ExtensionPointName.create("com.intellij.projectViewNodeDecorator");
+    ExtensionPointName<ProjectViewNodeDecorator> EP_NAME = ExtensionPointName.create("com.gome.maven.projectViewNodeDecorator");
 
     /**
      * Modifies the presentation of a project view node.

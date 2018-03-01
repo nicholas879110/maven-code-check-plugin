@@ -42,10 +42,10 @@ import java.util.*;
  * @author max, dsl
  */
 public class Convertor34 {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.project.impl.convertors.Convertor34");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.project.impl.convertors.Convertor34");
 
      public static final String PROJECT_ROOT_MANAGER = "ProjectRootManager";
-     public static final String PROJECT_ROOT_MANAGER_CLASS = "com.intellij.openapi.projectRoots.ProjectRootManager";
+     public static final String PROJECT_ROOT_MANAGER_CLASS = "com.gome.maven.openapi.projectRoots.ProjectRootManager";
 
     private static final String SOURCE_ROOTS_NOT_UNDER_PROJECT_ROOTS = ProjectBundle.message("project.convert.source.roots.not.under.project.roots.error");
     private static final String JAVA_DOC_ROOTS_CANNOT_BE_CONVERTED = ProjectBundle.message("project.convert.javadoc.paths.error");

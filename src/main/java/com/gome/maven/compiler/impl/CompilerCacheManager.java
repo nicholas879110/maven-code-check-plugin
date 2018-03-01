@@ -37,7 +37,7 @@ import java.util.Map;
  *         Date: May 4, 2008
  */
 public class CompilerCacheManager implements ProjectComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.CompilerCacheManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.CompilerCacheManager");
     private final Map<Compiler, Object> myCompilerToCacheMap = new HashMap<Compiler, Object>();
     private final Map<GenericCompiler<?,?,?>, GenericCompilerCache<?,?,?>> myGenericCachesMap = new HashMap<GenericCompiler<?,?,?>, GenericCompilerCache<?,?,?>>();
     private final List<Disposable> myCacheDisposables = new ArrayList<Disposable>();

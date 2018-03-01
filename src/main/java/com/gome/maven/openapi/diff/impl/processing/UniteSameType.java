@@ -23,7 +23,7 @@ import com.gome.maven.openapi.diff.impl.highlighting.Util;
 import com.gome.maven.util.diff.FilesTooBigForDiffException;
 
 class UniteSameType implements DiffCorrection {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.processing.UniteSameType");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.processing.UniteSameType");
     public static final DiffCorrection INSTANCE = new UniteSameType();
     @Override
     public DiffFragment[] correct(DiffFragment[] fragments) {

@@ -83,7 +83,7 @@ import java.util.List;
 
 public class FileDocumentManagerImpl extends FileDocumentManager implements VirtualFileListener,
         ProjectManagerListener, SafeWriteRequestor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.fileEditor.impl.FileDocumentManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.fileEditor.impl.FileDocumentManagerImpl");
 
     private static final Key<String> LINE_SEPARATOR_KEY = Key.create("LINE_SEPARATOR_KEY");
     public static final Key<Document> HARD_REF_TO_DOCUMENT_KEY = Key.create("HARD_REF_TO_DOCUMENT_KEY");

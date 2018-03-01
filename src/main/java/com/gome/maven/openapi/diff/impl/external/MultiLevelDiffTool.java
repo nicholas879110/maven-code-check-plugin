@@ -45,7 +45,7 @@ import java.util.List;
  */
 public class MultiLevelDiffTool implements DiffTool, DiscloseMultiRequest {
     public final static String ourDefaultTab = "Contents";
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.external.MultiLevelDiffTool");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.external.MultiLevelDiffTool");
     private final List<DiffTool> myTools;
 
     public MultiLevelDiffTool(final List<DiffTool> tools) {

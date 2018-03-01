@@ -29,7 +29,7 @@ import java.io.IOException;
  * @author Gregory.Shrago
  */
 public interface FilePropertyPusher<T> {
-    ExtensionPointName<FilePropertyPusher> EP_NAME = ExtensionPointName.create("com.intellij.filePropertyPusher");
+    ExtensionPointName<FilePropertyPusher> EP_NAME = ExtensionPointName.create("com.gome.maven.filePropertyPusher");
 
     void initExtra( Project project,  MessageBus bus,  Engine languageLevelUpdater);
     

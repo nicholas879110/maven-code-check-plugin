@@ -22,7 +22,7 @@ import com.gome.maven.openapi.diff.impl.string.DiffString;
 import com.gome.maven.openapi.util.text.StringUtil;
 
 class PreferWholeLines implements DiffCorrection {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.processing.PreferWholeLines");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.processing.PreferWholeLines");
     public static final DiffCorrection INSTANCE = new PreferWholeLines();
 
     public DiffFragment[] correct(DiffFragment[] fragments) {

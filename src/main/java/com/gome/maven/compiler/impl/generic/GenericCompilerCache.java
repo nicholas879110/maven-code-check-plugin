@@ -33,7 +33,7 @@ import java.io.IOException;
  * @author nik
  */
 public class GenericCompilerCache<Key, SourceState, OutputState> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.generic.GenericCompilerCache");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.generic.GenericCompilerCache");
     private PersistentHashMap<KeyAndTargetData<Key>, PersistentStateData<SourceState, OutputState>> myPersistentMap;
     private File myCacheFile;
     private final GenericCompiler<Key, SourceState, OutputState> myCompiler;

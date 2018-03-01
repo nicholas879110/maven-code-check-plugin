@@ -37,7 +37,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @ChannelHandler.Sharable
 class BuildMessageDispatcher extends SimpleChannelInboundHandlerAdapter<CmdlineRemoteProto.Message> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.server.BuildMessageDispatcher");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.server.BuildMessageDispatcher");
 
     private static final AttributeKey<SessionData> SESSION_DATA = AttributeKey.valueOf("BuildMessageDispatcher.sessionData");
 

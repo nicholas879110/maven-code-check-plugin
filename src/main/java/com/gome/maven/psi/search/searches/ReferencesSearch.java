@@ -30,7 +30,7 @@ import com.gome.maven.util.containers.ContainerUtil;
  * @author max
  */
 public class ReferencesSearch extends ExtensibleQueryFactory<PsiReference, ReferencesSearch.SearchParameters> {
-    public static final ExtensionPointName<QueryExecutor> EP_NAME = ExtensionPointName.create("com.intellij.referencesSearch");
+    public static final ExtensionPointName<QueryExecutor> EP_NAME = ExtensionPointName.create("com.gome.maven.referencesSearch");
     private static final ReferencesSearch INSTANCE = new ReferencesSearch();
 
     private ReferencesSearch() {

@@ -43,7 +43,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentMap;
 
 public class VirtualFilePointerManagerImpl extends VirtualFilePointerManager implements ApplicationComponent, ModificationTracker, BulkFileListener {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.impl.VirtualFilePointerManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.impl.VirtualFilePointerManagerImpl");
     private final TempFileSystem TEMP_FILE_SYSTEM;
     private final LocalFileSystem LOCAL_FILE_SYSTEM;
     private final JarFileSystem JAR_FILE_SYSTEM;

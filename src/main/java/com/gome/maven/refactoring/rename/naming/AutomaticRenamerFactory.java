@@ -27,7 +27,7 @@ import java.util.Collection;
  * @author yole
  */
 public interface AutomaticRenamerFactory {
-    ExtensionPointName<AutomaticRenamerFactory> EP_NAME = ExtensionPointName.create("com.intellij.automaticRenamerFactory");
+    ExtensionPointName<AutomaticRenamerFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.automaticRenamerFactory");
 
     boolean isApplicable(PsiElement element);
 

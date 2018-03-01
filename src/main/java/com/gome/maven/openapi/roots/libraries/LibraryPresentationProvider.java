@@ -25,7 +25,7 @@ import java.util.List;
  * @author nik
  */
 public abstract class LibraryPresentationProvider<P extends LibraryProperties> {
-    public static final ExtensionPointName<LibraryPresentationProvider> EP_NAME = ExtensionPointName.create("com.intellij.library.presentationProvider");
+    public static final ExtensionPointName<LibraryPresentationProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.library.presentationProvider");
     private final LibraryKind myKind;
 
     protected LibraryPresentationProvider( LibraryKind kind) {

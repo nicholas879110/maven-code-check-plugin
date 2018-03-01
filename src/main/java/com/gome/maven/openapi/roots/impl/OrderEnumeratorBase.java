@@ -34,7 +34,7 @@ import java.util.*;
  * @author nik
  */
 abstract class OrderEnumeratorBase extends OrderEnumerator implements OrderEnumeratorSettings {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.OrderEnumeratorBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.OrderEnumeratorBase");
     private boolean myProductionOnly;
     private boolean myCompileOnly;
     private boolean myRuntimeOnly;

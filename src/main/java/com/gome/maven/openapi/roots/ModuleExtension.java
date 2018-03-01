@@ -25,7 +25,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import com.gome.maven.openapi.util.JDOMExternalizable;
 
 public abstract class ModuleExtension<T extends ModuleExtension> implements JDOMExternalizable, Disposable, Comparable<ModuleExtension> {
-    public static final ExtensionPointName<ModuleExtension> EP_NAME = ExtensionPointName.create("com.intellij.moduleExtension");
+    public static final ExtensionPointName<ModuleExtension> EP_NAME = ExtensionPointName.create("com.gome.maven.moduleExtension");
 
     /**
      * <b>Note:</b> don't call this method directly from client code. Use approach below instead:

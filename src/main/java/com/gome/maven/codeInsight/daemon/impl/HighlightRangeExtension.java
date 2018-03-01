@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiFile;
  * @author yole
  */
 public interface HighlightRangeExtension {
-    ExtensionPointName<HighlightRangeExtension> EP_NAME = ExtensionPointName.create("com.intellij.highlightRangeExtension");
+    ExtensionPointName<HighlightRangeExtension> EP_NAME = ExtensionPointName.create("com.gome.maven.highlightRangeExtension");
 
     boolean isForceHighlightParents( PsiFile file);
 }

@@ -2,25 +2,25 @@
   <actions>
     <group id="LookupActions">
       <!-- these must be declared before standard EnterAction and TabAction -->
-      <action id="EditorChooseLookupItem" class="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$FocusedOnly"/>
-      <action id="EditorChooseLookupItemReplace" class="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$Replacing"/>
-      <action id="EditorChooseLookupItemCompleteStatement" class="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$CompletingStatement"/>
-      <action id="EditorChooseLookupItemDot" class="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$ChooseWithDot"/>
+      <action id="EditorChooseLookupItem" class="com.gome.maven.codeInsight.lookup.impl.actions.ChooseItemAction$FocusedOnly"/>
+      <action id="EditorChooseLookupItemReplace" class="com.gome.maven.codeInsight.lookup.impl.actions.ChooseItemAction$Replacing"/>
+      <action id="EditorChooseLookupItemCompleteStatement" class="com.gome.maven.codeInsight.lookup.impl.actions.ChooseItemAction$CompletingStatement"/>
+      <action id="EditorChooseLookupItemDot" class="com.gome.maven.codeInsight.lookup.impl.actions.ChooseItemAction$ChooseWithDot"/>
 
-      <action id="ExpandLiveTemplateByTab" class="com.intellij.codeInsight.template.impl.editorActions.ExpandLiveTemplateByTabAction"/>
-      <action id="ExpandLiveTemplateCustom" class="com.intellij.codeInsight.template.impl.editorActions.ExpandLiveTemplateCustomAction"/>
+      <action id="ExpandLiveTemplateByTab" class="com.gome.maven.codeInsight.template.impl.editorActions.ExpandLiveTemplateByTabAction"/>
+      <action id="ExpandLiveTemplateCustom" class="com.gome.maven.codeInsight.template.impl.editorActions.ExpandLiveTemplateCustomAction"/>
 
-      <action id="NextTemplateVariable" class="com.intellij.codeInsight.template.impl.actions.NextVariableAction"/>
-      <action id="PreviousTemplateVariable" class="com.intellij.codeInsight.template.impl.actions.PreviousVariableAction"/>
+      <action id="NextTemplateVariable" class="com.gome.maven.codeInsight.template.impl.actions.NextVariableAction"/>
+      <action id="PreviousTemplateVariable" class="com.gome.maven.codeInsight.template.impl.actions.PreviousVariableAction"/>
 
-      <action id="NextParameter" class="com.intellij.codeInsight.hint.actions.NextParameterAction"/>
-      <action id="PrevParameter" class="com.intellij.codeInsight.hint.actions.PrevParameterAction"/>
+      <action id="NextParameter" class="com.gome.maven.codeInsight.hint.actions.NextParameterAction"/>
+      <action id="PrevParameter" class="com.gome.maven.codeInsight.hint.actions.PrevParameterAction"/>
     </group>
 
-    <action id="EditorIndentSelection" class="com.intellij.openapi.editor.actions.LangIndentSelectionAction"/>
+    <action id="EditorIndentSelection" class="com.gome.maven.openapi.editor.actions.LangIndentSelectionAction"/>
 
-    <action id="EditorLookupUp" class="com.intellij.codeInsight.lookup.impl.LookupActionHandler$UpAction"/>
-    <action id="EditorLookupDown" class="com.intellij.codeInsight.lookup.impl.LookupActionHandler$DownAction"/>
+    <action id="EditorLookupUp" class="com.gome.maven.codeInsight.lookup.impl.LookupActionHandler$UpAction"/>
+    <action id="EditorLookupDown" class="com.gome.maven.codeInsight.lookup.impl.LookupActionHandler$DownAction"/>
 
   </actions>
 
@@ -35,18 +35,18 @@
 
     <group id="AnalyzePlatformMenu">
       <separator/>
-      <action id="Unscramble" class="com.intellij.unscramble.AnalyzeStacktraceAction"/>
+      <action id="Unscramble" class="com.gome.maven.unscramble.AnalyzeStacktraceAction"/>
 
       <add-to-group group-id="ToolsMenu" anchor="last"/>
     </group>
 
     <group id="InspectCodeGroup">
       <separator/>
-      <action id="InspectCode" class="com.intellij.codeInspection.actions.CodeInspectionAction"/>
-      <action id="CodeCleanup" class="com.intellij.codeInspection.actions.CodeCleanupAction"/>
-      <action id="RunInspection" class="com.intellij.codeInspection.actions.RunInspectionAction" />
-      <action id="PopupHector" class="com.intellij.codeInsight.daemon.impl.PopupHectorAction"/>
-      <action id="ViewOfflineInspection" class="com.intellij.codeInspection.actions.ViewOfflineResultsAction"/>
+      <action id="InspectCode" class="com.gome.maven.codeInspection.actions.CodeInspectionAction"/>
+      <action id="CodeCleanup" class="com.gome.maven.codeInspection.actions.CodeCleanupAction"/>
+      <action id="RunInspection" class="com.gome.maven.codeInspection.actions.RunInspectionAction" />
+      <action id="PopupHector" class="com.gome.maven.codeInsight.daemon.impl.PopupHectorAction"/>
+      <action id="ViewOfflineInspection" class="com.gome.maven.codeInspection.actions.ViewOfflineResultsAction"/>
 
       <add-to-group group-id="CodeMenu" anchor="last"/>
     </group>

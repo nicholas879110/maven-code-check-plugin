@@ -43,7 +43,7 @@ import java.util.*;
 import java.util.List;
 
 public class PsiUtilBase extends PsiUtilCore implements PsiEditorUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.util.PsiUtilBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.util.PsiUtilBase");
     public static final Comparator<Language> LANGUAGE_COMPARATOR = new Comparator<Language>() {
         @Override
         public int compare( Language o1,  Language o2) {

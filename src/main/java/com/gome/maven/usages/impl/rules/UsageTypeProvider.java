@@ -26,7 +26,7 @@ import com.gome.maven.psi.PsiElement;
 import com.gome.maven.openapi.extensions.ExtensionPointName;
 
 public interface UsageTypeProvider {
-    ExtensionPointName<UsageTypeProvider> EP_NAME = new ExtensionPointName<UsageTypeProvider>("com.intellij.usageTypeProvider");
+    ExtensionPointName<UsageTypeProvider> EP_NAME = new ExtensionPointName<UsageTypeProvider>("com.gome.maven.usageTypeProvider");
 
      UsageType getUsageType(PsiElement element);
 }

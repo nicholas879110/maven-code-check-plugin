@@ -31,7 +31,7 @@ public interface ExternalDocumentationProvider {
 
     /**
      * Quick check for existence of external documentation for specified element. Called from action update, so must be fast.
-     * If not implemented, update check is performed by calling {@link DocumentationProvider#getUrlFor(com.gome.maven.psi.PsiElement, com.intellij.psi.PsiElement)}.
+     * If not implemented, update check is performed by calling {@link DocumentationProvider#getUrlFor(com.gome.maven.psi.PsiElement, com.gome.maven.psi.PsiElement)}.
      *
      * @param element the element to check for existence of documentation
      * @param originalElement the element at caret (on which the action was invoked)

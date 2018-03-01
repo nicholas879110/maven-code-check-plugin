@@ -58,7 +58,7 @@ import java.util.*;
  * @author dsl
  */
 public class SafeDeleteProcessor extends BaseRefactoringProcessor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.safeDelete.SafeDeleteProcessor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.safeDelete.SafeDeleteProcessor");
     private final PsiElement[] myElements;
     private boolean mySearchInCommentsAndStrings;
     private boolean mySearchNonJava;

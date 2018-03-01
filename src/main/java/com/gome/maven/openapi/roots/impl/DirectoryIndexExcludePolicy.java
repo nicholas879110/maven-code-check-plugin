@@ -25,7 +25,7 @@ import com.gome.maven.openapi.vfs.pointers.VirtualFilePointer;
  * @author yole
  */
 public interface DirectoryIndexExcludePolicy {
-    ExtensionPointName<DirectoryIndexExcludePolicy> EP_NAME = ExtensionPointName.create("com.intellij.directoryIndexExcludePolicy");
+    ExtensionPointName<DirectoryIndexExcludePolicy> EP_NAME = ExtensionPointName.create("com.gome.maven.directoryIndexExcludePolicy");
 
     
     VirtualFile[] getExcludeRootsForProject();

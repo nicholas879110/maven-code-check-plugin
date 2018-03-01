@@ -34,7 +34,7 @@ public interface UsageContextPanel extends Disposable {
     JComponent createComponent();
 
     interface Provider {
-        ExtensionPointName<Provider> EP_NAME = ExtensionPointName.create("com.intellij.usageContextPanelProvider");
+        ExtensionPointName<Provider> EP_NAME = ExtensionPointName.create("com.gome.maven.usageContextPanelProvider");
 
         
         UsageContextPanel create( UsageView usageView);

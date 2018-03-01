@@ -20,7 +20,7 @@ import com.gome.maven.openapi.diff.impl.string.DiffString;
 import com.gome.maven.openapi.util.TextRange;
 
 public class Word {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.processing.Word");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.processing.Word");
      private final DiffString myBaseText;
      private final TextRange myRange;
      private final DiffString myText;

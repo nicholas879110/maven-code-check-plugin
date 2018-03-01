@@ -24,7 +24,7 @@ import com.gome.maven.util.IncorrectOperationException;
  * @author dsl
  */
 public class SafeDeleteReferenceSimpleDeleteUsageInfo extends SafeDeleteReferenceUsageInfo {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.safeDelete.usageInfo.SafeDeleteReferenceSimpleDeleteUsageInfo");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.safeDelete.usageInfo.SafeDeleteReferenceSimpleDeleteUsageInfo");
     public SafeDeleteReferenceSimpleDeleteUsageInfo(PsiElement element, PsiElement referencedElement, boolean isSafeDelete) {
         super(element, referencedElement, isSafeDelete);
     }

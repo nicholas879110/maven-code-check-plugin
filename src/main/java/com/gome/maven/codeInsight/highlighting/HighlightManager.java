@@ -21,7 +21,7 @@ import com.gome.maven.openapi.editor.markup.TextAttributes;
 import com.gome.maven.openapi.project.Project;
 import com.gome.maven.psi.PsiElement;
 import com.gome.maven.psi.PsiReference;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import java.awt.*;
 import java.util.Collection;
@@ -159,7 +159,7 @@ public abstract class HighlightManager {
                                                  Color scrollmarkColor);
 
     /**
-     * @deprecated Use {@link #addOccurrenceHighlights(com.intellij.openapi.editor.Editor, com.intellij.psi.PsiElement[], com.intellij.openapi.editor.markup.TextAttributes, boolean, java.util.Collection)} instead (it does the same thing).
+     * @deprecated Use {@link #addOccurrenceHighlights(com.gome.maven.openapi.editor.Editor, com.gome.maven.psi.PsiElement[], com.gome.maven.openapi.editor.markup.TextAttributes, boolean, java.util.Collection)} instead (it does the same thing).
      */
     public abstract void addElementsOccurrenceHighlights( Editor editor,
                                                           PsiElement[] elements,

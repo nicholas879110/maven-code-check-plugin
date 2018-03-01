@@ -60,7 +60,7 @@ import java.util.*;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class RefManagerImpl extends RefManager {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.reference.RefManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.reference.RefManager");
 
     private long myLastUsedMask = 256 * 256 * 256 * 8;
 

@@ -51,7 +51,7 @@ import java.util.regex.Pattern;
  * @since Sep 17, 2004
  */
 public class JavaSdkImpl extends JavaSdk {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.JavaSdkImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.JavaSdkImpl");
 
     public static final DataKey<Boolean> KEY = DataKey.create("JavaSdk");
 

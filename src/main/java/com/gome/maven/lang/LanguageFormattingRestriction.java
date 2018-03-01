@@ -20,7 +20,7 @@ import com.gome.maven.psi.PsiElement;
 
 public interface LanguageFormattingRestriction {
     ExtensionPointName<LanguageFormattingRestriction> EXTENSION = ExtensionPointName.create(
-            "com.intellij.lang.formatter.restriction");
+            "com.gome.maven.lang.formatter.restriction");
 
     boolean isFormatterAllowed( PsiElement context);
 }

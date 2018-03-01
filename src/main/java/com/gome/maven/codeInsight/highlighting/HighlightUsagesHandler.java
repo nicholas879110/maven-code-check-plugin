@@ -58,7 +58,7 @@ import javax.swing.*;
 import java.util.*;
 
 public class HighlightUsagesHandler extends HighlightHandlerBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.highlighting.HighlightUsagesHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.highlighting.HighlightUsagesHandler");
 
     public static void invoke( final Project project,  final Editor editor, final PsiFile file) {
         PsiDocumentManager.getInstance(project).commitAllDocuments();

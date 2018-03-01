@@ -27,7 +27,7 @@ import com.gome.maven.openapi.fileTypes.StdFileTypes;
  * Implement this interface to enable custom diff preview in Colors & Fonts Settings page
  */
 public abstract class DiffPreviewProvider {
-    public static final ExtensionPointName<DiffPreviewProvider> EP_NAME = ExtensionPointName.create("com.intellij.diffPreviewProvider");
+    public static final ExtensionPointName<DiffPreviewProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.diffPreviewProvider");
 
     public abstract DiffContent[] createContents();
 

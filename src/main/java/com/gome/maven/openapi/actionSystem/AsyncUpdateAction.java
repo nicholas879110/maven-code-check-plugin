@@ -28,7 +28,7 @@ import java.util.concurrent.ExecutorService;
  * @author max
  */
 public abstract class AsyncUpdateAction<T> extends AnAction {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.actionSystem.AsyncUpdateAction");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.actionSystem.AsyncUpdateAction");
 
     private static final ExecutorService ourUpdaterService = ConcurrencyUtil.newSingleThreadExecutor("Action Updater");
 

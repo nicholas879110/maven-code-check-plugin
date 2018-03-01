@@ -26,7 +26,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  */
 @Deprecated
 public interface ElementLookupRenderer<T> {
-    ExtensionPointName<ElementLookupRenderer> EP_NAME = ExtensionPointName.create("com.intellij.elementLookupRenderer");
+    ExtensionPointName<ElementLookupRenderer> EP_NAME = ExtensionPointName.create("com.gome.maven.elementLookupRenderer");
 
     boolean handlesItem(Object element);
     void renderElement(final LookupItem item, T element, LookupElementPresentation presentation);

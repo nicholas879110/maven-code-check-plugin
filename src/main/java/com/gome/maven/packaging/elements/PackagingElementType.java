@@ -29,7 +29,7 @@ import java.util.List;
  * @author nik
  */
 public abstract class PackagingElementType<E extends PackagingElement<?>> {
-    public static final ExtensionPointName<PackagingElementType> EP_NAME = ExtensionPointName.create("com.intellij.packaging.elementType");
+    public static final ExtensionPointName<PackagingElementType> EP_NAME = ExtensionPointName.create("com.gome.maven.packaging.elementType");
     private final String myId;
     private final String myPresentableName;
 

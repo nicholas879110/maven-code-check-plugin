@@ -77,7 +77,7 @@ public class TrafficLightRenderer implements ErrorStripeRenderer, Disposable {
     /**
      * array filled with number of highlighters with a given severity.
      * errorCount[idx] == number of highlighters of severity with index idx in this markup model.
-     * severity index can be obtained via com.intellij.codeInsight.daemon.impl.SeverityRegistrar#getSeverityIdx(com.intellij.lang.annotation.HighlightSeverity)
+     * severity index can be obtained via com.gome.maven.codeInsight.daemon.impl.SeverityRegistrar#getSeverityIdx(com.gome.maven.lang.annotation.HighlightSeverity)
      */
     private int[] errorCount;
 
@@ -358,7 +358,7 @@ public class TrafficLightRenderer implements ErrorStripeRenderer, Disposable {
         }
 
         int currentSeverityErrors = 0;
-//        @org.intellij.lang.annotations.Language("HTML")
+//        @org.gome.maven.lang.annotations.Language("HTML")
         String text = "";
         for (int i = status.errorCount.length - 1; i >= 0; i--) {
             if (status.errorCount[i] > 0) {

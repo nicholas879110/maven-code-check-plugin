@@ -4,43 +4,43 @@
     <extensionPoint name="projectService" beanClass="com.gome.maven.openapi.components.ServiceDescriptor"/>
 
     <extensionPoint name="appStarter"
-                    interface="com.intellij.openapi.application.ApplicationStarter"/>
+                    interface="com.gome.maven.openapi.application.ApplicationStarter"/>
 
     <extensionPoint name="postStartupActivity"
-                    interface="com.intellij.openapi.startup.StartupActivity"/>
+                    interface="com.gome.maven.openapi.startup.StartupActivity"/>
 
     <extensionPoint name="defaultProjectTypeProvider"
-                    beanClass="com.intellij.openapi.project.DefaultProjectTypeEP"/>
+                    beanClass="com.gome.maven.openapi.project.DefaultProjectTypeEP"/>
 
     <extensionPoint name="errorHandler"
-                    interface="com.intellij.openapi.diagnostic.ErrorReportSubmitter"/>
+                    interface="com.gome.maven.openapi.diagnostic.ErrorReportSubmitter"/>
 
     <extensionPoint name="jps.plugin"
-                    beanClass="com.intellij.jps.impl.JpsPluginBean"/>
+                    beanClass="com.gome.maven.jps.impl.JpsPluginBean"/>
 
     <extensionPoint name="codeInsight.containerProvider"
-                    interface="com.intellij.codeInsight.ContainerProvider"/>
+                    interface="com.gome.maven.codeInsight.ContainerProvider"/>
 
     <extensionPoint name="projectConfigurable"
-                    beanClass="com.intellij.openapi.options.ConfigurableEP"
+                    beanClass="com.gome.maven.openapi.options.ConfigurableEP"
                     area="IDEA_PROJECT">
-      <with attribute="instanceClass" implements="com.intellij.openapi.options.Configurable"/>
+      <with attribute="instanceClass" implements="com.gome.maven.openapi.options.Configurable"/>
     </extensionPoint>
 
     <extensionPoint name="applicationConfigurable"
-                    beanClass="com.intellij.openapi.options.ConfigurableEP">
-      <with attribute="instanceClass" implements="com.intellij.openapi.options.Configurable"/>
+                    beanClass="com.gome.maven.openapi.options.ConfigurableEP">
+      <with attribute="instanceClass" implements="com.gome.maven.openapi.options.Configurable"/>
     </extensionPoint>
 
     <extensionPoint name="selectInTarget"
-                    interface="com.intellij.ide.SelectInTarget"
+                    interface="com.gome.maven.ide.SelectInTarget"
                     area="IDEA_PROJECT"/>
 
     <extensionPoint name="fileEditorProvider"
-                    interface="com.intellij.openapi.fileEditor.FileEditorProvider"/>
+                    interface="com.gome.maven.openapi.fileEditor.FileEditorProvider"/>
 
     <extensionPoint name="fileTypeFactory"
-                    interface="com.intellij.openapi.fileTypes.FileTypeFactory"/>
+                    interface="com.gome.maven.openapi.fileTypes.FileTypeFactory"/>
 
     <extensionPoint name="virtualFileSystem"
                     beanClass="com.gome.maven.util.KeyedLazyInstanceEP">
@@ -48,201 +48,201 @@
     </extensionPoint>
 
     <extensionPoint name="keymapExtension"
-                    interface="com.intellij.openapi.keymap.KeymapExtension"/>
+                    interface="com.gome.maven.openapi.keymap.KeymapExtension"/>
 
     <extensionPoint name="getDataRule"
-                    beanClass="com.intellij.util.KeyedLazyInstanceEP">
-      <with attribute="implementationClass" implements="com.intellij.ide.impl.dataRules.GetDataRule"/>
+                    beanClass="com.gome.maven.util.KeyedLazyInstanceEP">
+      <with attribute="implementationClass" implements="com.gome.maven.ide.impl.dataRules.GetDataRule"/>
     </extensionPoint>
 
     <extensionPoint name="dataValidator"
-                    beanClass="com.intellij.util.KeyedLazyInstanceEP">
-      <with attribute="implementationClass" implements="com.intellij.ide.impl.DataValidator"/>
+                    beanClass="com.gome.maven.util.KeyedLazyInstanceEP">
+      <with attribute="implementationClass" implements="com.gome.maven.ide.impl.DataValidator"/>
     </extensionPoint>
 
     <extensionPoint name="cutElementMarker"
-                    interface="com.intellij.openapi.ide.CutElementMarker"/>
+                    interface="com.gome.maven.openapi.ide.CutElementMarker"/>
 
-    <extensionPoint name="exportable" beanClass="com.intellij.openapi.components.ServiceBean"/>
+    <extensionPoint name="exportable" beanClass="com.gome.maven.openapi.components.ServiceBean"/>
 
-    <extensionPoint name="ideRootPaneNorth" interface="com.intellij.openapi.wm.IdeRootPaneNorthExtension" area="IDEA_PROJECT"/>
+    <extensionPoint name="ideRootPaneNorth" interface="com.gome.maven.openapi.wm.IdeRootPaneNorthExtension" area="IDEA_PROJECT"/>
 
-    <extensionPoint name="handleTypeFactory" interface="com.intellij.openapi.vcs.readOnlyHandler.HandleTypeFactory"
+    <extensionPoint name="handleTypeFactory" interface="com.gome.maven.openapi.vcs.readOnlyHandler.HandleTypeFactory"
                     area="IDEA_PROJECT"/>
-    <extensionPoint name="customFileTypeFactory" interface="com.intellij.openapi.fileTypes.ex.CustomFileTypeFactory"/>
-    <extensionPoint name="fileTypeRegistrator" interface="com.intellij.ide.highlighter.FileTypeRegistrator"/>
+    <extensionPoint name="customFileTypeFactory" interface="com.gome.maven.openapi.fileTypes.ex.CustomFileTypeFactory"/>
+    <extensionPoint name="fileTypeRegistrator" interface="com.gome.maven.ide.highlighter.FileTypeRegistrator"/>
 
-    <extensionPoint name="undoProvider" interface="com.intellij.openapi.command.impl.UndoProvider"/>
-    <extensionPoint name="projectUndoProvider" interface="com.intellij.openapi.command.impl.UndoProvider"
+    <extensionPoint name="undoProvider" interface="com.gome.maven.openapi.command.impl.UndoProvider"/>
+    <extensionPoint name="projectUndoProvider" interface="com.gome.maven.openapi.command.impl.UndoProvider"
                     area="IDEA_PROJECT"/>
 
-    <extensionPoint name="cachedValuesFactory" interface="com.intellij.util.CachedValuesFactory" area="IDEA_PROJECT"/>
+    <extensionPoint name="cachedValuesFactory" interface="com.gome.maven.util.CachedValuesFactory" area="IDEA_PROJECT"/>
 
     <extensionPoint name="syntaxHighlighter"
-                    beanClass="com.intellij.openapi.extensions.KeyedFactoryEPBean">
-      <with attribute="implementationClass" implements="com.intellij.openapi.fileTypes.SyntaxHighlighter"/>
+                    beanClass="com.gome.maven.openapi.extensions.KeyedFactoryEPBean">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.fileTypes.SyntaxHighlighter"/>
     </extensionPoint>
 
     <extensionPoint name="lang.syntaxHighlighterFactory"
-                    beanClass="com.intellij.util.KeyedLazyInstanceEP">
-      <with attribute="implementationClass" implements="com.intellij.openapi.fileTypes.SyntaxHighlighterFactory"/>
+                    beanClass="com.gome.maven.util.KeyedLazyInstanceEP">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.fileTypes.SyntaxHighlighterFactory"/>
     </extensionPoint>
 
     <extensionPoint name="projectOpenProcessor"
-                    interface="com.intellij.projectImport.ProjectOpenProcessor"/>
+                    interface="com.gome.maven.projectImport.ProjectOpenProcessor"/>
     <extensionPoint name="projectSetProcessor"
-                    interface="com.intellij.projectImport.ProjectSetProcessor"/>
+                    interface="com.gome.maven.projectImport.ProjectSetProcessor"/>
 
     <extensionPoint name="codeInsight.linkHandler"
-                    beanClass="com.intellij.codeInsight.hint.TooltipLinkHandlerEP">
-      <with attribute="handlerClass" implements="com.intellij.codeInsight.highlighting.TooltipLinkHandler"/>
+                    beanClass="com.gome.maven.codeInsight.hint.TooltipLinkHandlerEP">
+      <with attribute="handlerClass" implements="com.gome.maven.codeInsight.highlighting.TooltipLinkHandler"/>
     </extensionPoint>
 
     <extensionPoint name="directoryProjectConfigurator"
-                    interface="com.intellij.platform.DirectoryProjectConfigurator"/>
+                    interface="com.gome.maven.platform.DirectoryProjectConfigurator"/>
     <extensionPoint name="directoryProjectGenerator"
-                    interface="com.intellij.platform.DirectoryProjectGenerator"/>
+                    interface="com.gome.maven.platform.DirectoryProjectGenerator"/>
 
     <extensionPoint name="projectTemplatesFactory"
-                    interface="com.intellij.platform.ProjectTemplatesFactory"/>
+                    interface="com.gome.maven.platform.ProjectTemplatesFactory"/>
     <extensionPoint name="projectTemplate"
-                    beanClass="com.intellij.platform.ProjectTemplateEP"/>
+                    beanClass="com.gome.maven.platform.ProjectTemplateEP"/>
 
     <extensionPoint name="ApplicationLoadListener" interface="com.gome.maven.ide.ApplicationLoadListener"/>
 
-    <extensionPoint name="editorTabTitleProvider" interface="com.intellij.openapi.fileEditor.impl.EditorTabTitleProvider"/>
-    <extensionPoint name="editorTabColorProvider" interface="com.intellij.openapi.fileEditor.impl.EditorTabColorProvider"/>
-    <extensionPoint name="editorFileSwapper" interface="com.intellij.openapi.fileEditor.impl.EditorFileSwapper"/>
-    <extensionPoint name="editorFileAssociateFinder" interface="com.intellij.openapi.fileEditor.impl.FileEditorAssociateFinder"/>
+    <extensionPoint name="editorTabTitleProvider" interface="com.gome.maven.openapi.fileEditor.impl.EditorTabTitleProvider"/>
+    <extensionPoint name="editorTabColorProvider" interface="com.gome.maven.openapi.fileEditor.impl.EditorTabColorProvider"/>
+    <extensionPoint name="editorFileSwapper" interface="com.gome.maven.openapi.fileEditor.impl.EditorFileSwapper"/>
+    <extensionPoint name="editorFileAssociateFinder" interface="com.gome.maven.openapi.fileEditor.impl.FileEditorAssociateFinder"/>
 
-    <extensionPoint name="http.localFileFinder" interface="com.intellij.openapi.fileEditor.impl.http.LocalFileFinder"/>
-    <extensionPoint name="http.fileEditorActionProvider" interface="com.intellij.openapi.fileEditor.impl.http.RemoteFileEditorActionProvider"/>
+    <extensionPoint name="http.localFileFinder" interface="com.gome.maven.openapi.fileEditor.impl.http.LocalFileFinder"/>
+    <extensionPoint name="http.fileEditorActionProvider" interface="com.gome.maven.openapi.fileEditor.impl.http.RemoteFileEditorActionProvider"/>
 
-    <extensionPoint name="componentConfigurationMerger" interface="com.intellij.openapi.components.XmlConfigurationMerger"/>
-    <extensionPoint name="filetype.decompiler" beanClass="com.intellij.openapi.fileTypes.FileTypeExtensionPoint">
-      <with attribute="implementationClass" implements="com.intellij.openapi.fileTypes.BinaryFileDecompiler"/>
+    <extensionPoint name="componentConfigurationMerger" interface="com.gome.maven.openapi.components.XmlConfigurationMerger"/>
+    <extensionPoint name="filetype.decompiler" beanClass="com.gome.maven.openapi.fileTypes.FileTypeExtensionPoint">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.fileTypes.BinaryFileDecompiler"/>
     </extensionPoint>
 
-    <extensionPoint name="editorActionHandler" beanClass="com.intellij.openapi.editor.actionSystem.EditorActionHandlerBean">
-      <with attribute="implementationClass" implements="com.intellij.openapi.editor.actionSystem.EditorActionHandler"/>
+    <extensionPoint name="editorActionHandler" beanClass="com.gome.maven.openapi.editor.actionSystem.EditorActionHandlerBean">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.editor.actionSystem.EditorActionHandler"/>
     </extensionPoint>
 
-    <extensionPoint name="actionPromoter" interface="com.intellij.openapi.actionSystem.ActionPromoter"/>
+    <extensionPoint name="actionPromoter" interface="com.gome.maven.openapi.actionSystem.ActionPromoter"/>
 
-    <extensionPoint name="editorTypedHandler" beanClass="com.intellij.openapi.editor.actionSystem.EditorTypedHandlerBean">
-      <with attribute="implementationClass" implements="com.intellij.openapi.editor.actionSystem.TypedActionHandler"/>
+    <extensionPoint name="editorTypedHandler" beanClass="com.gome.maven.openapi.editor.actionSystem.EditorTypedHandlerBean">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.editor.actionSystem.TypedActionHandler"/>
     </extensionPoint>
-    <extensionPoint name="contentBasedClassFileProcessor" interface="com.intellij.openapi.fileTypes.ContentBasedClassFileProcessor"/>
+    <extensionPoint name="contentBasedClassFileProcessor" interface="com.gome.maven.openapi.fileTypes.ContentBasedClassFileProcessor"/>
 
-    <extensionPoint name="additionalTextAttributes" beanClass="com.intellij.openapi.editor.colors.impl.AdditionalTextAttributesEP" />
-    <extensionPoint name="bundledColorScheme" beanClass="com.intellij.openapi.editor.colors.impl.BundledColorSchemeEP"/>
-    <extensionPoint name="bundledQuickListsProvider" interface="com.intellij.openapi.actionSystem.impl.BundledQuickListsProvider"/>
-    <extensionPoint name="bundledKeymapProvider" interface="com.intellij.openapi.keymap.impl.BundledKeymapProvider"/>
+    <extensionPoint name="additionalTextAttributes" beanClass="com.gome.maven.openapi.editor.colors.impl.AdditionalTextAttributesEP" />
+    <extensionPoint name="bundledColorScheme" beanClass="com.gome.maven.openapi.editor.colors.impl.BundledColorSchemeEP"/>
+    <extensionPoint name="bundledQuickListsProvider" interface="com.gome.maven.openapi.actionSystem.impl.BundledQuickListsProvider"/>
+    <extensionPoint name="bundledKeymapProvider" interface="com.gome.maven.openapi.keymap.impl.BundledKeymapProvider"/>
 
-    <extensionPoint name="toolWindow" beanClass="com.intellij.openapi.wm.ToolWindowEP">
-      <with attribute="factoryClass" implements="com.intellij.openapi.wm.ToolWindowFactory"/>
-      <with attribute="conditionClass" implements="com.intellij.openapi.util.Condition"/>
-    </extensionPoint>
-
-    <extensionPoint name="library.toolWindow"  beanClass="com.intellij.openapi.wm.ext.LibraryDependentToolWindow">
-      <with attribute="librarySearchClass" implements="com.intellij.openapi.wm.ext.LibrarySearchHelper"/>
-      <with attribute="factoryClass" implements="com.intellij.openapi.wm.ToolWindowFactory"/>
-      <with attribute="conditionClass" implements="com.intellij.openapi.util.Condition"/>
+    <extensionPoint name="toolWindow" beanClass="com.gome.maven.openapi.wm.ToolWindowEP">
+      <with attribute="factoryClass" implements="com.gome.maven.openapi.wm.ToolWindowFactory"/>
+      <with attribute="conditionClass" implements="com.gome.maven.openapi.util.Condition"/>
     </extensionPoint>
 
-    <extensionPoint name="welcomeScreen" interface="com.intellij.openapi.wm.WelcomeScreenProvider"/>
-    <extensionPoint name="welcomeFrameProvider" interface="com.intellij.openapi.wm.WelcomeFrameProvider"/>
-    <extensionPoint name="frameEditorComponentProvider" interface="com.intellij.openapi.wm.ex.FrameEditorComponentProvider"/>
-
-    <extensionPoint name="statisticsService" beanClass="com.intellij.internal.statistic.connect.StatisticsServiceEP">
-      <with attribute="implementationClass" implements="com.intellij.internal.statistic.connect.StatisticsService"/>
+    <extensionPoint name="library.toolWindow"  beanClass="com.gome.maven.openapi.wm.ext.LibraryDependentToolWindow">
+      <with attribute="librarySearchClass" implements="com.gome.maven.openapi.wm.ext.LibrarySearchHelper"/>
+      <with attribute="factoryClass" implements="com.gome.maven.openapi.wm.ToolWindowFactory"/>
+      <with attribute="conditionClass" implements="com.gome.maven.openapi.util.Condition"/>
     </extensionPoint>
 
-    <extensionPoint name="productivityFeaturesProvider" interface="com.intellij.featureStatistics.ProductivityFeaturesProvider"/>
+    <extensionPoint name="welcomeScreen" interface="com.gome.maven.openapi.wm.WelcomeScreenProvider"/>
+    <extensionPoint name="welcomeFrameProvider" interface="com.gome.maven.openapi.wm.WelcomeFrameProvider"/>
+    <extensionPoint name="frameEditorComponentProvider" interface="com.gome.maven.openapi.wm.ex.FrameEditorComponentProvider"/>
 
-    <extensionPoint name="fileIconProvider" interface="com.intellij.ide.FileIconProvider"/>
-    <extensionPoint name="fileIconPatcher" interface="com.intellij.ide.FileIconPatcher"/>
-    <extensionPoint name="iconLayerProvider" interface="com.intellij.ide.IconLayerProvider"/>
-
-    <extensionPoint name="customizableActionGroupProvider" interface="com.intellij.ide.ui.customization.CustomizableActionGroupProvider"/>
-
-    <extensionPoint name="generalOptionsProvider" beanClass="com.intellij.ide.GeneralSettingsConfigurableEP">
-      <with attribute="instance" implements="com.intellij.openapi.options.SearchableConfigurable"/>
+    <extensionPoint name="statisticsService" beanClass="com.gome.maven.internal.statistic.connect.StatisticsServiceEP">
+      <with attribute="implementationClass" implements="com.gome.maven.internal.statistic.connect.StatisticsService"/>
     </extensionPoint>
 
-    <extensionPoint name="statusBarComponent" interface="com.intellij.openapi.wm.StatusBarCustomComponentFactory"/>
+    <extensionPoint name="productivityFeaturesProvider" interface="com.gome.maven.featureStatistics.ProductivityFeaturesProvider"/>
 
-    <extensionPoint name="checkinHandlerFactory" interface="com.intellij.openapi.vcs.checkin.CheckinHandlerFactory"/>
+    <extensionPoint name="fileIconProvider" interface="com.gome.maven.ide.FileIconProvider"/>
+    <extensionPoint name="fileIconPatcher" interface="com.gome.maven.ide.FileIconPatcher"/>
+    <extensionPoint name="iconLayerProvider" interface="com.gome.maven.ide.IconLayerProvider"/>
 
-    <extensionPoint name="eventLogCategory" interface="com.intellij.notification.EventLogCategory"/>
+    <extensionPoint name="customizableActionGroupProvider" interface="com.gome.maven.ide.ui.customization.CustomizableActionGroupProvider"/>
 
-    <extensionPoint name="writingAccessProvider" area="IDEA_PROJECT" interface="com.intellij.openapi.vfs.WritingAccessProvider"/>
-    <extensionPoint name="nonProjectFileWritingAccessExtension" area="IDEA_PROJECT" interface="com.intellij.openapi.fileEditor.impl.NonProjectFileWritingAccessExtension"/>
-    <extensionPoint name="editorNotificationProvider" area="IDEA_PROJECT" interface="com.intellij.ui.EditorNotifications$Provider"/>
-    <extensionPoint name="featureStatBundle" interface="com.intellij.featureStatistics.FeatureStatisticsBundleProvider"/>
-    <extensionPoint name="featureStatisticsBundle" beanClass="com.intellij.featureStatistics.FeatureStatisticsBundleEP"/>
+    <extensionPoint name="generalOptionsProvider" beanClass="com.gome.maven.ide.GeneralSettingsConfigurableEP">
+      <with attribute="instance" implements="com.gome.maven.openapi.options.SearchableConfigurable"/>
+    </extensionPoint>
 
-    <extensionPoint name="editorCustomization" area="IDEA_PROJECT" interface="com.intellij.ui.EditorCustomization"/>
-    <extensionPoint name="editorNavigation" interface="com.intellij.openapi.editor.EditorNavigationDelegate"/>
+    <extensionPoint name="statusBarComponent" interface="com.gome.maven.openapi.wm.StatusBarCustomComponentFactory"/>
 
-    <extensionPoint name="statistics.usagesCollector" interface="com.intellij.internal.statistic.UsagesCollector"/>
+    <extensionPoint name="checkinHandlerFactory" interface="com.gome.maven.openapi.vcs.checkin.CheckinHandlerFactory"/>
+
+    <extensionPoint name="eventLogCategory" interface="com.gome.maven.notification.EventLogCategory"/>
+
+    <extensionPoint name="writingAccessProvider" area="IDEA_PROJECT" interface="com.gome.maven.openapi.vfs.WritingAccessProvider"/>
+    <extensionPoint name="nonProjectFileWritingAccessExtension" area="IDEA_PROJECT" interface="com.gome.maven.openapi.fileEditor.impl.NonProjectFileWritingAccessExtension"/>
+    <extensionPoint name="editorNotificationProvider" area="IDEA_PROJECT" interface="com.gome.maven.ui.EditorNotifications$Provider"/>
+    <extensionPoint name="featureStatBundle" interface="com.gome.maven.featureStatistics.FeatureStatisticsBundleProvider"/>
+    <extensionPoint name="featureStatisticsBundle" beanClass="com.gome.maven.featureStatistics.FeatureStatisticsBundleEP"/>
+
+    <extensionPoint name="editorCustomization" area="IDEA_PROJECT" interface="com.gome.maven.ui.EditorCustomization"/>
+    <extensionPoint name="editorNavigation" interface="com.gome.maven.openapi.editor.EditorNavigationDelegate"/>
+
+    <extensionPoint name="statistics.usagesCollector" interface="com.gome.maven.internal.statistic.UsagesCollector"/>
 
     <!--suppress ExtensionPointBeanClass -->
-    <extensionPoint name="xmlRpcHandler" beanClass="com.intellij.ide.XmlRpcHandlerBean"/>
+    <extensionPoint name="xmlRpcHandler" beanClass="com.gome.maven.ide.XmlRpcHandlerBean"/>
 
-    <extensionPoint name="editorHighlighterProvider" beanClass="com.intellij.openapi.fileTypes.FileTypeExtensionPoint">
-      <with attribute="implementationClass" implements="com.intellij.openapi.fileTypes.EditorHighlighterProvider"/>
+    <extensionPoint name="editorHighlighterProvider" beanClass="com.gome.maven.openapi.fileTypes.FileTypeExtensionPoint">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.fileTypes.EditorHighlighterProvider"/>
     </extensionPoint>
-    <extensionPoint name="fileDocumentManagerListener" interface="com.intellij.openapi.fileEditor.FileDocumentManagerListener"/>
-    <extensionPoint name="exceptionFilter" interface="com.intellij.execution.filters.ExceptionFilterFactory"/>
-    <extensionPoint name="fileDocumentSynchronizationVetoer" interface="com.intellij.openapi.fileEditor.FileDocumentSynchronizationVetoer"/>
+    <extensionPoint name="fileDocumentManagerListener" interface="com.gome.maven.openapi.fileEditor.FileDocumentManagerListener"/>
+    <extensionPoint name="exceptionFilter" interface="com.gome.maven.execution.filters.ExceptionFilterFactory"/>
+    <extensionPoint name="fileDocumentSynchronizationVetoer" interface="com.gome.maven.openapi.fileEditor.FileDocumentSynchronizationVetoer"/>
 
-    <extensionPoint name="itemPresentationProvider" beanClass="com.intellij.openapi.util.ClassExtensionPoint">
-      <with attribute="implementationClass" implements="com.intellij.navigation.ItemPresentationProvider"/>
+    <extensionPoint name="itemPresentationProvider" beanClass="com.gome.maven.openapi.util.ClassExtensionPoint">
+      <with attribute="implementationClass" implements="com.gome.maven.navigation.ItemPresentationProvider"/>
     </extensionPoint>
 
-    <extensionPoint name="classpathStorageProvider" interface="com.intellij.openapi.roots.impl.storage.ClasspathStorageProvider"/>
-    <extensionPoint name="fileTypeDetector" interface="com.intellij.openapi.fileTypes.FileTypeRegistry$FileTypeDetector"/>
+    <extensionPoint name="classpathStorageProvider" interface="com.gome.maven.openapi.roots.impl.storage.ClasspathStorageProvider"/>
+    <extensionPoint name="fileTypeDetector" interface="com.gome.maven.openapi.fileTypes.FileTypeRegistry$FileTypeDetector"/>
 
-    <extensionPoint name="projectAttachProcessor" interface="com.intellij.projectImport.ProjectAttachProcessor"/>
+    <extensionPoint name="projectAttachProcessor" interface="com.gome.maven.projectImport.ProjectAttachProcessor"/>
 
     <extensionPoint name="pathMacroFilter" interface="com.gome.maven.openapi.application.PathMacroFilter"/>
-    <extensionPoint name="pathMacroExpandableProtocol" beanClass="com.intellij.application.options.PathMacroExpandableProtocolBean"/>
+    <extensionPoint name="pathMacroExpandableProtocol" beanClass="com.gome.maven.application.options.PathMacroExpandableProtocolBean"/>
 
-    <extensionPoint name="colorPickerListenerFactory" interface="com.intellij.ui.ColorPickerListenerFactory"/>
+    <extensionPoint name="colorPickerListenerFactory" interface="com.gome.maven.ui.ColorPickerListenerFactory"/>
 
-    <extensionPoint name="search.topHitProvider" interface="com.intellij.ide.SearchTopHitProvider"/>
+    <extensionPoint name="search.topHitProvider" interface="com.gome.maven.ide.SearchTopHitProvider"/>
     
-    <extensionPoint name="search.optionContributor" interface="com.intellij.ide.ui.search.SearchableOptionContributor"/>
+    <extensionPoint name="search.optionContributor" interface="com.gome.maven.ide.ui.search.SearchableOptionContributor"/>
 
-    <extensionPoint name="ui.suitableFontProvider" interface="com.intellij.ui.SuitableFontProvider"/>
+    <extensionPoint name="ui.suitableFontProvider" interface="com.gome.maven.ui.SuitableFontProvider"/>
     
-    <extensionPoint name="schemeImporter" beanClass="com.intellij.openapi.options.SchemeImporterEP">
-      <with attribute="schemeClass" implements="com.intellij.openapi.options.Scheme"/>
-      <with attribute="implementationClass" implements="com.intellij.openapi.options.SchemeImporter"/>
+    <extensionPoint name="schemeImporter" beanClass="com.gome.maven.openapi.options.SchemeImporterEP">
+      <with attribute="schemeClass" implements="com.gome.maven.openapi.options.Scheme"/>
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.options.SchemeImporter"/>
     </extensionPoint>
 
-    <extensionPoint qualifiedName="org.jetbrains.urlOpener" interface="com.intellij.ide.browsers.UrlOpener"/>
-    <extensionPoint name="tipAndTrick" beanClass="com.intellij.ide.util.TipAndTrickBean"/>
+    <extensionPoint qualifiedName="org.jetbrains.urlOpener" interface="com.gome.maven.ide.browsers.UrlOpener"/>
+    <extensionPoint name="tipAndTrick" beanClass="com.gome.maven.ide.util.TipAndTrickBean"/>
 
-    <extensionPoint qualifiedName="com.intellij.remote.pathMappingProvider" interface="com.intellij.remote.PathMappingProvider"/>
+    <extensionPoint qualifiedName="com.gome.maven.remote.pathMappingProvider" interface="com.gome.maven.remote.PathMappingProvider"/>
 
-    <extensionPoint name="colorAndFontOptionsImportHandler" interface="com.intellij.application.options.colors.ImportHandler"/>
+    <extensionPoint name="colorAndFontOptionsImportHandler" interface="com.gome.maven.application.options.colors.ImportHandler"/>
 
     <extensionPoint name="codeInsight.template.postfixTemplateProvider"
-                    beanClass="com.intellij.lang.LanguageExtensionPoint">
-      <with attribute="implementationClass" implements="com.intellij.codeInsight.template.postfix.templates.PostfixTemplateProvider"/>
+                    beanClass="com.gome.maven.lang.LanguageExtensionPoint">
+      <with attribute="implementationClass" implements="com.gome.maven.codeInsight.template.postfix.templates.PostfixTemplateProvider"/>
     </extensionPoint>
 
-    <extensionPoint name="editor.linePainter" interface="com.intellij.openapi.editor.EditorLinePainter"/>
+    <extensionPoint name="editor.linePainter" interface="com.gome.maven.openapi.editor.EditorLinePainter"/>
 
-    <extensionPoint name="actionFromOptionDescriptorProvider" interface="com.intellij.ide.ui.search.ActionFromOptionDescriptorProvider"/>
+    <extensionPoint name="actionFromOptionDescriptorProvider" interface="com.gome.maven.ide.ui.search.ActionFromOptionDescriptorProvider"/>
 
-    <extensionPoint name="cachesInvalidator" interface="com.intellij.ide.caches.CachesInvalidator"/>
+    <extensionPoint name="cachesInvalidator" interface="com.gome.maven.ide.caches.CachesInvalidator"/>
 
-    <extensionPoint qualifiedName="com.intellij.diff.DiffTool" interface="com.intellij.diff.DiffTool"/>
-    <extensionPoint name="testStatusListener" interface="com.intellij.execution.testframework.TestStatusListener"/>
+    <extensionPoint qualifiedName="com.gome.maven.diff.DiffTool" interface="com.gome.maven.diff.DiffTool"/>
+    <extensionPoint name="testStatusListener" interface="com.gome.maven.execution.testframework.TestStatusListener"/>
 
-    <extensionPoint name="runConfigurationBeforeRunProviderDelegate" interface="com.intellij.execution.impl.RunConfigurationBeforeRunProviderDelegate"/>
+    <extensionPoint name="runConfigurationBeforeRunProviderDelegate" interface="com.gome.maven.execution.impl.RunConfigurationBeforeRunProviderDelegate"/>
   </extensionPoints>
 </idea-plugin>

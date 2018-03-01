@@ -26,7 +26,7 @@ import com.gome.maven.psi.meta.PsiMetaOwner;
  * @author yole
  */
 public class DefaultNonCodeSearchElementDescriptionProvider implements ElementDescriptionProvider {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.util.DefaultNonCodeSearchElementDescriptionProvider");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.util.DefaultNonCodeSearchElementDescriptionProvider");
 
     public static final DefaultNonCodeSearchElementDescriptionProvider INSTANCE = new DefaultNonCodeSearchElementDescriptionProvider();
 

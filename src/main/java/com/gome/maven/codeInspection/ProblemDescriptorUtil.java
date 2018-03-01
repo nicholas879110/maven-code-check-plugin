@@ -24,7 +24,7 @@ import com.gome.maven.openapi.util.Couple;
 import com.gome.maven.openapi.util.TextRange;
 import com.gome.maven.openapi.util.text.StringUtil;
 import com.gome.maven.psi.PsiElement;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import java.util.ArrayList;
 import java.util.List;

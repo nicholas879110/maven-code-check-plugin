@@ -52,9 +52,9 @@ import java.util.Arrays;
  * @author Jeka, dsl
  */
 public class PsiElementRenameHandler implements RenameHandler {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.PsiElementRenameHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.PsiElementRenameHandler");
 
-    public static final ExtensionPointName<Condition<PsiElement>> VETO_RENAME_CONDITION_EP = ExtensionPointName.create("com.intellij.vetoRenameCondition");
+    public static final ExtensionPointName<Condition<PsiElement>> VETO_RENAME_CONDITION_EP = ExtensionPointName.create("com.gome.maven.vetoRenameCondition");
     public static DataKey<String> DEFAULT_NAME = DataKey.create("DEFAULT_NAME");
 
     @Override

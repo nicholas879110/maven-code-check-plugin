@@ -23,7 +23,7 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author Konstantin Bulenkov
  */
 public class NonProjectScopeDisablerEP extends AbstractExtensionPointBean {
-    public static final ExtensionPointName<NonProjectScopeDisablerEP> EP_NAME = ExtensionPointName.create("com.intellij.goto.nonProjectScopeDisabler");
+    public static final ExtensionPointName<NonProjectScopeDisablerEP> EP_NAME = ExtensionPointName.create("com.gome.maven.goto.nonProjectScopeDisabler");
 
     @Attribute("disable")
     public boolean disable = true;

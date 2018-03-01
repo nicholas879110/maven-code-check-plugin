@@ -23,7 +23,7 @@ import com.gome.maven.psi.meta.PsiMetaData;
 import com.gome.maven.psi.meta.PsiMetaOwner;
 
 public class DescriptiveNameUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.lang.findUsages.DescriptiveNameUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.lang.findUsages.DescriptiveNameUtil");
 
     public static String getMetaDataName(final PsiMetaData metaData) {
         final String name = metaData.getName();

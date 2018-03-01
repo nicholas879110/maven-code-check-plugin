@@ -35,13 +35,13 @@
 
   <application-components>
     <component>
-      <implementation-class>com.intellij.platform.PlatformProjectStarter</implementation-class>
+      <implementation-class>com.gome.maven.platform.PlatformProjectStarter</implementation-class>
     </component>
   </application-components>
 
   <project-components>
     <component>
-      <implementation-class>com.intellij.platform.PlatformVcsDetector</implementation-class>
+      <implementation-class>com.gome.maven.platform.PlatformVcsDetector</implementation-class>
     </component>
 
   </project-components>

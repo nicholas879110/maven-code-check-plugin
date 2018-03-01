@@ -53,7 +53,7 @@ import java.util.*;
  * @author cdr
  */
 class IntentionListStep implements ListPopupStep<IntentionActionWithTextCaching>, SpeedSearchFilter<IntentionActionWithTextCaching> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.IntentionListStep");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.IntentionListStep");
 
     private final Set<IntentionActionWithTextCaching> myCachedIntentions =
             ContainerUtil.newConcurrentSet(ACTION_TEXT_AND_CLASS_EQUALS);

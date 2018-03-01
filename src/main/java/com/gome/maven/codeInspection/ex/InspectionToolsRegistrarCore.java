@@ -20,7 +20,7 @@ import com.gome.maven.util.ArrayUtil;
 import com.gome.maven.util.ReflectionUtil;
 
 public class InspectionToolsRegistrarCore {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.InspectionToolsRegistrarCore");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.InspectionToolsRegistrarCore");
     static Object instantiateTool( Class<?> toolClass) {
         try {
             return ReflectionUtil.newInstance(toolClass, ArrayUtil.EMPTY_CLASS_ARRAY);

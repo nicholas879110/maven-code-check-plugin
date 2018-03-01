@@ -24,7 +24,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import com.gome.maven.openapi.vfs.VirtualFile;
 
 public abstract class FileDocumentSynchronizationVetoer {
-    public static final ExtensionPointName<FileDocumentSynchronizationVetoer> EP_NAME = ExtensionPointName.create("com.intellij.fileDocumentSynchronizationVetoer");
+    public static final ExtensionPointName<FileDocumentSynchronizationVetoer> EP_NAME = ExtensionPointName.create("com.gome.maven.fileDocumentSynchronizationVetoer");
 
     public boolean maySaveDocument( Document document, boolean isSaveExplicit) {
         return true;

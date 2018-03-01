@@ -44,7 +44,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class FileStatusMap implements Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.FileStatusMap");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.FileStatusMap");
     private final Project myProject;
     private final Map<Document,FileStatus> myDocumentToStatusMap = new WeakHashMap<Document, FileStatus>(); // all dirty if absent
     private volatile boolean myAllowDirt = true;

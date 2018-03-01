@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiElement;
 import com.gome.maven.psi.PsiFile;
 import com.gome.maven.psi.PsiReference;
 import com.gome.maven.util.Processor;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 /**
  * Provides low-level search and find usages services for a project, like finding references
@@ -100,7 +100,7 @@ public interface PsiSearchHelper {
     /**
      * Returns the scope in which references to the specified element are searched. This scope includes the result of
      * {@link com.gome.maven.psi.PsiElement#getUseScope()} and also the results returned from the registered
-     * com.intellij.psi.search.UseScopeEnlarger instances.
+     * com.gome.maven.psi.search.UseScopeEnlarger instances.
      *
      * @param element the element to return the use scope form.
      * @return the search scope instance.

@@ -51,7 +51,7 @@ import java.util.Set;
  * @author Konstantin Bulenkov
  */
 public class LookupCellRenderer implements ListCellRenderer {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.lookup.impl.LookupCellRenderer");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.lookup.impl.LookupCellRenderer");
     //TODO[kb]: move all these awesome constants to Editor's Fonts & Colors settings
     private static final int AFTER_TAIL = 10;
     private static final int AFTER_TYPE = 6;

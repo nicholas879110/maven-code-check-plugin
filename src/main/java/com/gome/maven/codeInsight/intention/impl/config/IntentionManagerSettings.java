@@ -50,7 +50,7 @@ import java.util.regex.Pattern;
                 )}
 )
 public class IntentionManagerSettings implements PersistentStateComponent<Element> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.config.IntentionManagerSettings");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.config.IntentionManagerSettings");
     private static final Alarm ourRegisterMetaDataAlarm = new Alarm(Alarm.ThreadToUse.SHARED_THREAD);
 
     private static class MetaDataKey extends Pair<String, String> {

@@ -75,7 +75,7 @@ import java.util.*;
         }
 )
 public class CompilerConfigurationImpl extends CompilerConfiguration implements PersistentStateComponent<Element>, ProjectComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.CompilerConfiguration");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.CompilerConfiguration");
      public static final String TESTS_EXTERNAL_COMPILER_HOME_PROPERTY_NAME = "tests.external.compiler.home";
 
     private BackendCompiler myDefaultJavaCompiler;

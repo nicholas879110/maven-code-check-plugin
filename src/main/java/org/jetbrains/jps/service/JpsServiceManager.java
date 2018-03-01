@@ -36,4 +36,11 @@ public abstract class JpsServiceManager {
       INSTANCE = ServiceLoader.load(JpsServiceManager.class, JpsServiceManager.class.getClassLoader()).iterator().next();
     }
   }
+
+  public static void main(String[] args) {
+    ServiceLoader<JpsServiceManager> testLoads=ServiceLoader.load(JpsServiceManager.class,JpsServiceManager.class.getClassLoader());
+    for(JpsServiceManager t:testLoads){
+      System.out.println(t);
+    }
+  }
 }

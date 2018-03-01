@@ -24,7 +24,7 @@ import java.util.Map;
 
 public interface StatisticsService {
 
-    ExtensionPointName<StatisticsServiceEP> EP_NAME = ExtensionPointName.create("com.intellij.statisticsService");
+    ExtensionPointName<StatisticsServiceEP> EP_NAME = ExtensionPointName.create("com.gome.maven.statisticsService");
 
      String TITLE = "title";
      String DETAILS = "details";

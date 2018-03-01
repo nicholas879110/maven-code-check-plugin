@@ -53,7 +53,7 @@ public interface MergeVersion {
     void restoreOriginalContent(Project project);
 
     class MergeDocumentVersion implements MergeVersion {
-        private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.mergeTool.MergeVersion.MergeDocumentVersion");
+        private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.mergeTool.MergeVersion.MergeDocumentVersion");
         protected final Document myDocument;
         private final String myOriginalText;
         private String myTextBeforeMerge;

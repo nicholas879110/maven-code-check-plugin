@@ -47,7 +47,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @author peter
  */
 public class EditorNotificationsImpl extends EditorNotifications {
-    private static final ExtensionPointName<Provider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.editorNotificationProvider");
+    private static final ExtensionPointName<Provider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.editorNotificationProvider");
     private static final Key<WeakReference<ProgressIndicator>> CURRENT_UPDATES = Key.create("CURRENT_UPDATES");
     private final ThreadPoolExecutor myExecutor = ConcurrencyUtil.newSingleThreadExecutor("EditorNotifications executor");
     private final MergingUpdateQueue myUpdateMerger;

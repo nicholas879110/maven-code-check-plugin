@@ -40,7 +40,7 @@ public class StringComboboxEditor extends EditorComboBoxEditor {
     public static final Key<JComboBox> COMBO_BOX_KEY = Key.create("COMBO_BOX_KEY");
     public static final Key<Boolean> USE_PLAIN_PREFIX_MATCHER = Key.create("USE_PLAIN_PREFIX_MATCHER");
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ui.StringComboboxEditor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ui.StringComboboxEditor");
     private final Project myProject;
 
     public StringComboboxEditor(final Project project, final FileType fileType, ComboBox comboBox) {

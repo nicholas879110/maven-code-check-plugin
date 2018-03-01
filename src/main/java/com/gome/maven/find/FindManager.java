@@ -24,7 +24,7 @@ import com.gome.maven.openapi.vfs.VirtualFile;
 import com.gome.maven.psi.PsiElement;
 import com.gome.maven.psi.search.SearchScope;
 import com.gome.maven.util.messages.Topic;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 /**
  * Allows to invoke and control Find, Replace and Find Usages operations.

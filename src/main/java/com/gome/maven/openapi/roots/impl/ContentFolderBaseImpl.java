@@ -32,7 +32,7 @@ import org.jetbrains.jps.model.serialization.module.JpsModuleRootModelSerializer
 public abstract class ContentFolderBaseImpl extends RootModelComponentBase implements ContentFolder, Comparable<ContentFolderBaseImpl> {
      public static final String URL_ATTRIBUTE = JpsModuleRootModelSerializer.URL_ATTRIBUTE;
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.SimpleContentFolderBaseImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.SimpleContentFolderBaseImpl");
 
     private final VirtualFilePointer myFilePointer;
     protected final ContentEntryImpl myContentEntry;

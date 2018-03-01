@@ -25,7 +25,7 @@ import com.gome.maven.openapi.options.SearchableConfigurable;
 /**
  * Register implementation of this interface in the plugin.xml to provide sub-section of Editor section in the Settings dialog:
  * <p/>
- * &lt;extensions defaultExtensionNs="com.intellij"&gt;<br>
+ * &lt;extensions defaultExtensionNs="com.gome.maven"&gt;<br>
  * &nbsp;&nbsp;&lt;editorOptionsProvider instance="class-name"/&gt;<br>
  * &lt;/extensions&gt;
  * <p>

@@ -19,7 +19,7 @@ import com.gome.maven.openapi.fileTypes.FileType;
 import com.gome.maven.openapi.extensions.ExtensionPointName;
 
 public interface FileTypeRegistrator {
-    ExtensionPointName<FileTypeRegistrator> EP_NAME = ExtensionPointName.create("com.intellij.fileTypeRegistrator");
+    ExtensionPointName<FileTypeRegistrator> EP_NAME = ExtensionPointName.create("com.gome.maven.fileTypeRegistrator");
 
     void initFileType(FileType fileType);
 }

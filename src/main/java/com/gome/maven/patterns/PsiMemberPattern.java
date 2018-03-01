@@ -1,0 +1,58 @@
+/*
+ * Copyright 2000-2009 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.gome.maven.patterns;
+
+import com.gome.maven.psi.PsiClass;
+import com.gome.maven.psi.PsiMember;
+import com.gome.maven.util.PairProcessor;
+import com.gome.maven.util.ProcessingContext;
+
+/**
+ * @author peter
+ */
+public class PsiMemberPattern<T extends PsiMember, Self extends PsiMemberPattern<T,Self>> extends PsiModifierListOwnerPattern<T,Self> {
+    public PsiMemberPattern( final InitialPatternCondition<T> condition) {
+        super(condition);
+    }
+
+    protected PsiMemberPattern(final Class<T> aClass) {
+        super(aClass);
+    }
+
+    public Self inClass(final  String qname) {
+        return inClass(PsiJavaPatterns.psiClass().withQualifiedName(qname));
+    }
+
+    public Self inClass(final ElementPattern pattern) {
+        return with(new PatternConditionPlus<T, PsiClass>("inClass", pattern) {
+            @Override
+            public boolean processValues(T t, ProcessingContext context, PairProcessor<PsiClass, ProcessingContext> processor) {
+                return processor.process(t.getContainingClass(), context);
+            }
+        });
+    }
+
+    public static class Capture extends PsiMemberPattern<PsiMember, Capture> {
+
+        protected Capture() {
+            super(new InitialPatternCondition<PsiMember>(PsiMember.class) {
+                public boolean accepts( final Object o, final ProcessingContext context) {
+                    return o instanceof PsiMember;
+                }
+            });
+        }
+    }
+}

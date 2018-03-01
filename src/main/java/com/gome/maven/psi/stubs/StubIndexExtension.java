@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiElement;
 import com.gome.maven.util.io.KeyDescriptor;
 
 public interface StubIndexExtension<Key, Psi extends PsiElement> {
-    ExtensionPointName<StubIndexExtension> EP_NAME = ExtensionPointName.create("com.intellij.stubIndex");
+    ExtensionPointName<StubIndexExtension> EP_NAME = ExtensionPointName.create("com.gome.maven.stubIndex");
 
     
     StubIndexKey<Key, Psi> getKey();

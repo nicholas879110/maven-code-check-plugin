@@ -66,7 +66,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ShowIntentionsPass extends TextEditorHighlightingPass {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.ShowIntentionsPass");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.ShowIntentionsPass");
     private final Editor myEditor;
 
     private final PsiFile myFile;

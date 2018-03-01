@@ -35,7 +35,7 @@ import java.util.Set;
  * @author max
  */
 public class InspectionToolRegistrar {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.InspectionToolRegistrar");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.InspectionToolRegistrar");
 
     private final List<Factory<InspectionToolWrapper>> myInspectionToolFactories = ContainerUtil.createLockFreeCopyOnWriteList();
 

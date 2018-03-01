@@ -37,7 +37,7 @@ import java.util.Map;
  * @author peter
  */
 public abstract class InspectionValidator {
-    public static final ExtensionPointName<InspectionValidator> EP_NAME = ExtensionPointName.create("com.intellij.compiler.inspectionValidator");
+    public static final ExtensionPointName<InspectionValidator> EP_NAME = ExtensionPointName.create("com.gome.maven.compiler.inspectionValidator");
     private final String myDescription;
     private final String myProgressIndicatorText;
     private final Class<? extends LocalInspectionTool>[] myInspectionToolClasses;

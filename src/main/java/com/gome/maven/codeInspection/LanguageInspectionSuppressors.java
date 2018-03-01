@@ -6,7 +6,7 @@ public class LanguageInspectionSuppressors extends LanguageExtension<InspectionS
     public static final LanguageInspectionSuppressors INSTANCE = new LanguageInspectionSuppressors();
 
     private LanguageInspectionSuppressors() {
-        super("com.intellij.lang.inspectionSuppressor");
+        super("com.gome.maven.lang.inspectionSuppressor");
     }
 
 }

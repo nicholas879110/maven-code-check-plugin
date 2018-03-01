@@ -32,7 +32,7 @@ import com.gome.maven.util.containers.ContainerUtil;
  */
 public abstract class ReferenceInjector extends Injectable {
 
-    public static final ExtensionPointName<ReferenceInjector> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.referenceInjector");
+    public static final ExtensionPointName<ReferenceInjector> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.referenceInjector");
 
     @Override
     public final Language getLanguage() {

@@ -25,7 +25,7 @@ import com.gome.maven.psi.PsiFile;
  * and return true otherwise.
  */
 public abstract class ProblemHighlightFilter {
-    public static final ExtensionPointName<ProblemHighlightFilter> EP_NAME = ExtensionPointName.create("com.intellij.problemHighlightFilter");
+    public static final ExtensionPointName<ProblemHighlightFilter> EP_NAME = ExtensionPointName.create("com.gome.maven.problemHighlightFilter");
 
     /**
      * @param psiFile file to decide about

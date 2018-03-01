@@ -89,7 +89,7 @@ import java.util.List;
  * Date: 1/11/12
  */
 public abstract class InplaceRefactoring {
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.inplace.VariableInplaceRenamer");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.inplace.VariableInplaceRenamer");
      protected static final String PRIMARY_VARIABLE_NAME = "PrimaryVariable";
      protected static final String OTHER_VARIABLE_NAME = "OtherVariable";
     protected static final Stack<InplaceRefactoring> ourRenamersStack = new Stack<InplaceRefactoring>();

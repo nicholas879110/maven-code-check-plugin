@@ -38,7 +38,7 @@ import java.nio.charset.Charset;
  * @see #setReadOnly(boolean)
  */
 public class SimpleContent extends DiffContent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.SimpleContent");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.SimpleContent");
 
     private final byte[] myOriginalBytes;
     private final String myOriginalText;

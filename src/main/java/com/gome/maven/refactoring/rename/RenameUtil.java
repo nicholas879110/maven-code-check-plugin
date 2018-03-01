@@ -50,7 +50,7 @@ import com.gome.maven.util.containers.MultiMap;
 import java.util.*;
 
 public class RenameUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.RenameUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.RenameUtil");
 
     private RenameUtil() {
     }

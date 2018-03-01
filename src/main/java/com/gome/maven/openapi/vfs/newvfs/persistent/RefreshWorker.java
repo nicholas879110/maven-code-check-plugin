@@ -49,7 +49,7 @@ import static com.gome.maven.util.containers.ContainerUtil.newTroveSet;
  * @author max
  */
 public class RefreshWorker {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.newvfs.persistent.RefreshWorker");
 
     private final boolean myIsRecursive;
     private final Queue<Pair<NewVirtualFile, FileAttributes>> myRefreshQueue = new Queue<Pair<NewVirtualFile, FileAttributes>>(100);

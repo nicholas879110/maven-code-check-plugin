@@ -30,7 +30,7 @@ import org.jetbrains.jps.model.serialization.module.JpsModuleRootModelSerializer
  */
 public class ExcludeFolderImpl extends ContentFolderBaseImpl implements ClonableContentFolder,
         UserDefinedExcludeFolder {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.SimpleExcludeFolderImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.SimpleExcludeFolderImpl");
      public static final String ELEMENT_NAME = JpsModuleRootModelSerializer.EXCLUDE_FOLDER_TAG;
 
     ExcludeFolderImpl( VirtualFile file,  ContentEntryImpl contentEntry) {

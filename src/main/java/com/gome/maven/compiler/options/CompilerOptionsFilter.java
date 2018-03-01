@@ -30,7 +30,7 @@ import com.gome.maven.openapi.project.Project;
  */
 public interface CompilerOptionsFilter {
 
-    ExtensionPointName<CompilerOptionsFilter> EP_NAME = ExtensionPointName.create("com.intellij.compiler.optionsManager");
+    ExtensionPointName<CompilerOptionsFilter> EP_NAME = ExtensionPointName.create("com.gome.maven.compiler.optionsManager");
 
     enum Setting {
         RESOURCE_PATTERNS, CLEAR_OUTPUT_DIR_ON_REBUILD, ADD_NOT_NULL_ASSERTIONS, AUTO_SHOW_FIRST_ERROR_IN_EDITOR,

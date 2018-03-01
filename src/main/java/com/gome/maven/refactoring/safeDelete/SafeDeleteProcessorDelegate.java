@@ -29,7 +29,7 @@ import java.util.List;
  * @author yole
  */
 public interface SafeDeleteProcessorDelegate {
-    ExtensionPointName<SafeDeleteProcessorDelegate> EP_NAME = ExtensionPointName.create("com.intellij.refactoring.safeDeleteProcessor");
+    ExtensionPointName<SafeDeleteProcessorDelegate> EP_NAME = ExtensionPointName.create("com.gome.maven.refactoring.safeDeleteProcessor");
 
     boolean handlesElement(PsiElement element);
     

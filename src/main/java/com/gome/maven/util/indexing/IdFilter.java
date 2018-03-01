@@ -29,7 +29,7 @@ import java.util.BitSet;
  * Created by Maxim.Mossienko on 8/14/13.
  */
 public abstract class IdFilter {
-    public static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.gotoByName.DefaultFileNavigationContributor");
+    public static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.gotoByName.DefaultFileNavigationContributor");
 
     public static IdFilter getProjectIdFilter(Project project, boolean includeNonProjectItems) {
         long started = System.currentTimeMillis();

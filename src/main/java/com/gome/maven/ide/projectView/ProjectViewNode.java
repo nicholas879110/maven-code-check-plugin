@@ -39,12 +39,12 @@ import java.util.List;
 /**
  * A node in the project view tree.
  *
- * @see TreeStructureProvider#modify(com.gome.maven.ide.util.treeView.AbstractTreeNode, java.util.Collection, com.intellij.ide.projectView.ViewSettings)
+ * @see TreeStructureProvider#modify(com.gome.maven.ide.util.treeView.AbstractTreeNode, java.util.Collection, com.gome.maven.ide.projectView.ViewSettings)
  */
 
 public abstract class ProjectViewNode <Value> extends AbstractTreeNode<Value> implements RootsProvider, SettingsProvider {
 
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.ide.projectView.ProjectViewNode");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.projectView.ProjectViewNode");
 
     private final ViewSettings mySettings;
     private boolean myValidating;

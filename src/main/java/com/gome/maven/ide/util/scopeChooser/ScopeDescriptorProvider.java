@@ -25,7 +25,7 @@ import com.gome.maven.openapi.project.Project;
 
 public interface ScopeDescriptorProvider {
     ScopeDescriptor[] EMPTY = new ScopeDescriptor[0];
-    ExtensionPointName<ScopeDescriptorProvider> EP_NAME = ExtensionPointName.create("com.intellij.scopeDescriptorProvider");
+    ExtensionPointName<ScopeDescriptorProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.scopeDescriptorProvider");
 
 
     ScopeDescriptor[] getScopeDescriptors(Project project);

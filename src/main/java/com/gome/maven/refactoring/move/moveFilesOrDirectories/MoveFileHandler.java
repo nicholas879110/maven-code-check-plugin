@@ -33,7 +33,7 @@ import java.util.Map;
  * @author Maxim.Mossienko
  */
 public abstract class MoveFileHandler {
-    private static final ExtensionPointName<MoveFileHandler> EP_NAME = ExtensionPointName.create("com.intellij.moveFileHandler");
+    private static final ExtensionPointName<MoveFileHandler> EP_NAME = ExtensionPointName.create("com.gome.maven.moveFileHandler");
 
     /**
      * Checks whether a file can be handled by this move handler.

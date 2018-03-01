@@ -589,7 +589,7 @@ public class LiveTemplateSettingsEditor extends JPanel {
 
     public void focusKey() {
         myKeyField.selectAll();
-        //todo[peter,kirillk] without these invokeLaters this requestFocus conflicts with com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.MyDialog.MyWindowListener.windowOpened()
+        //todo[peter,kirillk] without these invokeLaters this requestFocus conflicts with com.gome.maven.openapi.ui.impl.DialogWrapperPeerImpl.MyDialog.MyWindowListener.windowOpened()
         IdeFocusManager.findInstanceByComponent(myKeyField).requestFocus(myKeyField, true);
         final ModalityState modalityState = ModalityState.stateForComponent(myKeyField);
         ApplicationManager.getApplication().invokeLater(new Runnable() {

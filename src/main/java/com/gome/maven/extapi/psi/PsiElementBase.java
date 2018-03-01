@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PsiElementBase extends ElementBase implements NavigatablePsiElement {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.extapi.psi.PsiElementBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.extapi.psi.PsiElementBase");
 
     @Override
     public PsiElement copy() {

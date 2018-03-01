@@ -56,7 +56,7 @@ import java.util.List;
  * @since 29-May-2006
  */
 public abstract class MasterDetailsComponent implements Configurable, DetailsComponent.Facade, MasterDetails {
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.openapi.ui.MasterDetailsComponent");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.ui.MasterDetailsComponent");
 
     protected static final Icon COPY_ICON = PlatformIcons.COPY_ICON;
 
@@ -143,7 +143,7 @@ public abstract class MasterDetailsComponent implements Configurable, DetailsCom
         }
         try {
             // assume that only project structure dialog uses the following base class for details:
-            String name = "com.intellij.openapi.roots.ui.configuration.projectRoot.BaseStructureConfigurable";
+            String name = "com.gome.maven.openapi.roots.ui.configuration.projectRoot.BaseStructureConfigurable";
             return Class.forName(name).isAssignableFrom(getClass());
         }
         catch (ClassNotFoundException ignored) {

@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiElement;
  * @author dsl
  */
 public interface RefactoringElementListenerProvider {
-    ExtensionPointName<RefactoringElementListenerProvider> EP_NAME = ExtensionPointName.create("com.intellij.refactoring.elementListenerProvider");
+    ExtensionPointName<RefactoringElementListenerProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.refactoring.elementListenerProvider");
 
     /**
      *

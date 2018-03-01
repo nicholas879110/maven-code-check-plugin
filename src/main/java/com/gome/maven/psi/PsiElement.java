@@ -534,7 +534,7 @@ public interface PsiElement extends UserDataHolder, Iconable {
      * Returns the scope in which references to this element are searched.
      *
      * @return the search scope instance.
-     * @see {@link com.intellij.psi.search.PsiSearchHelper#getUseScope(PsiElement)}
+     * @see {@link com.gome.maven.psi.search.PsiSearchHelper#getUseScope(PsiElement)}
      */
     
     

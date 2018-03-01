@@ -26,7 +26,7 @@ import java.util.List;
  * @author peter
  */
 public class WeighingService {
-    private static final KeyedExtensionCollector<Weigher,Key> COLLECTOR = new KeyedExtensionCollector<Weigher, Key>("com.intellij.weigher") {
+    private static final KeyedExtensionCollector<Weigher,Key> COLLECTOR = new KeyedExtensionCollector<Weigher, Key>("com.gome.maven.weigher") {
         
         @Override
         protected String keyToString( final Key key) {

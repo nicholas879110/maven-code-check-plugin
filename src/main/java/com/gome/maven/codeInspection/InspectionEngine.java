@@ -46,7 +46,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class InspectionEngine {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.InspectionEngine");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.InspectionEngine");
 
     
     public static PsiElementVisitor createVisitorAndAcceptElements( LocalInspectionTool tool,

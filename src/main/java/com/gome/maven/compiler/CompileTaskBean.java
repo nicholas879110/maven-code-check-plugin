@@ -26,7 +26,7 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author nik
  */
 public class CompileTaskBean extends AbstractExtensionPointBean {
-    public static final ExtensionPointName<CompileTaskBean> EP_NAME = ExtensionPointName.create("com.intellij.compiler.task");
+    public static final ExtensionPointName<CompileTaskBean> EP_NAME = ExtensionPointName.create("com.gome.maven.compiler.task");
     public enum CompileTaskExecutionPhase { BEFORE, AFTER }
 
     private final Project myProject;

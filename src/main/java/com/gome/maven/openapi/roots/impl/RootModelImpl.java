@@ -43,7 +43,7 @@ import java.util.*;
  * @author dsl
  */
 public class RootModelImpl extends RootModelBase implements ModifiableRootModel {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.RootModelImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.RootModelImpl");
 
     private final Set<ContentEntry> myContent = new TreeSet<ContentEntry>(ContentComparator.INSTANCE);
 

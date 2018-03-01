@@ -91,7 +91,7 @@ public abstract class ModuleType<T extends ModuleBuilder> {
     }
 
     static {
-        EMPTY = instantiate("com.intellij.openapi.module.EmptyModuleType");
+        EMPTY = instantiate("com.gome.maven.openapi.module.EmptyModuleType");
     }
 
     

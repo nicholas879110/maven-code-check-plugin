@@ -38,7 +38,7 @@ import com.gome.maven.psi.impl.source.tree.injected.InjectedLanguageUtil;
  * @author peter
  */
 public class CompletionAutoPopupHandler extends TypedHandlerDelegate {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.editorActions.CompletionAutoPopupHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.editorActions.CompletionAutoPopupHandler");
     public static volatile boolean ourTestingAutopopup = false;
 
     @Override

@@ -44,7 +44,7 @@ import javax.swing.*;
  *         Date: Mar 30, 2005
  */
 public class ToolRunProfile implements ModuleRunProfile{
-    private static final Logger LOG = Logger.getInstance("#com.intellij.tools.ToolRunProfile");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.tools.ToolRunProfile");
     private final Tool myTool;
     private final DataContext myContext;
     private final GeneralCommandLine myCommandLine;

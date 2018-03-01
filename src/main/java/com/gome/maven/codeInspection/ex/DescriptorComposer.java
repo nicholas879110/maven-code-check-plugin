@@ -37,7 +37,7 @@ import java.util.List;
  * @author max
  */
 public class DescriptorComposer extends HTMLComposerImpl {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.DescriptorComposer");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.DescriptorComposer");
     private final InspectionToolPresentation myTool;
 
     public DescriptorComposer( InspectionToolPresentation tool) {

@@ -26,7 +26,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 public class PatternUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.util.PatternUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.util.PatternUtil");
 
     public static final Pattern NOTHING = Pattern.compile("(a\\A)");
 

@@ -31,7 +31,7 @@ import java.util.concurrent.Executors;
 
 class MacEventReader {
     private static final int MAX_MESSAGE_LENGTH = 100;
-    private static final Logger LOG = Logger.getInstance("#com.intellij.notification.impl.MacEventReader");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.notification.impl.MacEventReader");
     private static final NotificationsAdapter ourNotificationAdapter = new NotificationsAdapter() {
         @Override
         public void notify( Notification notification) {

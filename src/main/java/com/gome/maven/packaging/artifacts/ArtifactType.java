@@ -32,7 +32,7 @@ import java.util.List;
  * @author nik
  */
 public abstract class ArtifactType {
-    public static final ExtensionPointName<ArtifactType> EP_NAME = ExtensionPointName.create("com.intellij.packaging.artifactType");
+    public static final ExtensionPointName<ArtifactType> EP_NAME = ExtensionPointName.create("com.gome.maven.packaging.artifactType");
     private final String myId;
     private final String myTitle;
 

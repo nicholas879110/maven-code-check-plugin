@@ -1,5 +1,5 @@
 <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <id>com.intellij</id>
+  <id>com.gome.maven</id>
   <name>IDEA CORE</name>
 
   <xi:include href="/componentSets/PlatformComponents.xml" xpointer="xpointer(/components/*)"/>
@@ -20,39 +20,39 @@
     <xi:include href="ExternalSystemExtensionPoints.xml" xpointer="xpointer(/idea-plugin/extensionPoints/*)"/>
   </extensionPoints>
 
-  <extensions defaultExtensionNs="com.intellij">
+  <extensions defaultExtensionNs="com.gome.maven">
     <xi:include href="PlatformExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
     <xi:include href="VcsExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
 
     <applicationService serviceInterface="com.gome.maven.ide.RecentProjectsManager"
                         serviceImplementation="com.gome.maven.ide.RecentDirectoryProjectsManager"/>
 
-    <applicationService serviceInterface="com.intellij.codeStyle.CodeStyleFacade"
-                        serviceImplementation="com.intellij.codeStyle.DefaultCodeStyleFacade"/>
+    <applicationService serviceInterface="com.gome.maven.codeStyle.CodeStyleFacade"
+                        serviceImplementation="com.gome.maven.codeStyle.DefaultCodeStyleFacade"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.project.ProjectLocator"
-                        serviceImplementation="com.intellij.openapi.project.impl.DefaultProjectLocator"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.project.ProjectLocator"
+                        serviceImplementation="com.gome.maven.openapi.project.impl.DefaultProjectLocator"/>
     
-    <applicationService serviceInterface="com.intellij.ui.IconDeferrer"
-                        serviceImplementation="com.intellij.ui.DefaultIconDeferrer"/>
+    <applicationService serviceInterface="com.gome.maven.ui.IconDeferrer"
+                        serviceImplementation="com.gome.maven.ui.DefaultIconDeferrer"/>
 
-    <applicationService serviceInterface="com.intellij.ui.mac.MacMessages"
-                        serviceImplementation="com.intellij.ui.mac.MacMessagesImpl"/>
+    <applicationService serviceInterface="com.gome.maven.ui.mac.MacMessages"
+                        serviceImplementation="com.gome.maven.ui.mac.MacMessagesImpl"/>
 
-    <applicationService serviceInterface="com.intellij.ui.mac.MacMessagesEmulation"
-                        serviceImplementation="com.intellij.ui.messages.JBMacMessages"/>
+    <applicationService serviceInterface="com.gome.maven.ui.mac.MacMessagesEmulation"
+                        serviceImplementation="com.gome.maven.ui.messages.JBMacMessages"/>
     
-    <projectService serviceInterface="com.intellij.openapi.roots.FileIndexFacade"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.DefaultFileIndexFacade"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.impl.DefaultVcsRootPolicy"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.BasicDefaultVcsRootPolicy"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.FileIndexFacade"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.DefaultFileIndexFacade"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.impl.DefaultVcsRootPolicy"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.BasicDefaultVcsRootPolicy"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.wm.impl.FrameTitleBuilder"
-                        serviceImplementation="com.intellij.openapi.wm.impl.PlatformFrameTitleBuilder"/>
-    <projectService serviceInterface="com.intellij.platform.ProjectBaseDirectory"
-                        serviceImplementation="com.intellij.platform.ProjectBaseDirectory"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.wm.impl.FrameTitleBuilder"
+                        serviceImplementation="com.gome.maven.openapi.wm.impl.PlatformFrameTitleBuilder"/>
+    <projectService serviceInterface="com.gome.maven.platform.ProjectBaseDirectory"
+                        serviceImplementation="com.gome.maven.platform.ProjectBaseDirectory"/>
 
-    <projectOpenProcessor implementation="com.intellij.platform.PlatformProjectOpenProcessor"/>
+    <projectOpenProcessor implementation="com.gome.maven.platform.PlatformProjectOpenProcessor"/>
   </extensions>
 
 </idea-plugin>

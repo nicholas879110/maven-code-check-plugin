@@ -28,7 +28,7 @@ import java.awt.*;
 import java.util.List;
 
 public abstract class SeveritiesProvider {
-    public static final ExtensionPointName<SeveritiesProvider> EP_NAME = ExtensionPointName.create("com.intellij.severitiesProvider");
+    public static final ExtensionPointName<SeveritiesProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.severitiesProvider");
 
     /**
      * @see com.gome.maven.openapi.editor.colors.TextAttributesKey#createTextAttributesKey(String, com.gome.maven.openapi.editor.markup.TextAttributes)

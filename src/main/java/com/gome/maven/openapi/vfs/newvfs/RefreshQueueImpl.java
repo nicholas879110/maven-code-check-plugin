@@ -37,7 +37,7 @@ import java.util.concurrent.ExecutorService;
  * @author max
  */
 public class RefreshQueueImpl extends RefreshQueue {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.newvfs.RefreshQueueImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.newvfs.RefreshQueueImpl");
 
     private final ExecutorService myQueue = ConcurrencyUtil.newSingleThreadExecutor("FS Synchronizer");
     private final ProgressIndicator myRefreshIndicator = RefreshProgress.create(VfsBundle.message("file.synchronize.progress"));

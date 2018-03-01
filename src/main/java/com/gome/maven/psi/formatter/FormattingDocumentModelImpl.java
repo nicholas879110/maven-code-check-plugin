@@ -40,7 +40,7 @@ public class FormattingDocumentModelImpl implements FormattingDocumentModel {
      private final Document myDocument;
     private final PsiFile myFile;
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.formatter.FormattingDocumentModelImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.formatter.FormattingDocumentModelImpl");
     private final CodeStyleSettings mySettings;
 
     public FormattingDocumentModelImpl( final Document document, PsiFile file) {

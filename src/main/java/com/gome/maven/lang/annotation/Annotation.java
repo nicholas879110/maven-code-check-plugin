@@ -141,7 +141,7 @@ public final class Annotation implements Segment {
 
     /**
      * Registers a quickfix which would be available during batch mode only,
-     * in particular during com.intellij.codeInspection.DefaultHighlightVisitorBasedInspection run
+     * in particular during com.gome.maven.codeInspection.DefaultHighlightVisitorBasedInspection run
      */
     public <T extends IntentionAction & LocalQuickFix> void registerBatchFix( T fix,  TextRange range,  final HighlightDisplayKey key) {
         if (range == null) {

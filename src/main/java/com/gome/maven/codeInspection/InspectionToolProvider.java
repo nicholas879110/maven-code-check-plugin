@@ -21,7 +21,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * Plugin's ApplicationComponent or extension that implements this interface will be automatically queried for inspection tool classes.
  */
 public interface InspectionToolProvider {
-    ExtensionPointName<InspectionToolProvider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.inspectionToolProvider");
+    ExtensionPointName<InspectionToolProvider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.inspectionToolProvider");
 
     /**
      * Query method for inspection tools provided by a plugin.

@@ -31,24 +31,24 @@
 
   <application-components>
     <component>
-      <interface-class>com.intellij.openapi.fileEditor.impl.text.TextEditorProvider</interface-class>
-      <implementation-class>com.intellij.openapi.fileEditor.impl.text.TextEditorProvider</implementation-class>
+      <interface-class>com.gome.maven.openapi.fileEditor.impl.text.TextEditorProvider</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.text.TextEditorProvider</implementation-class>
     </component>
     <component>
-      <implementation-class>com.intellij.platform.PlatformProjectStarter</implementation-class>
+      <implementation-class>com.gome.maven.platform.PlatformProjectStarter</implementation-class>
     </component>
   </application-components>
 
   <project-components>
     <component>
-      <interface-class>com.intellij.openapi.fileEditor.FileEditorManager</interface-class>
-      <implementation-class>com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl</implementation-class>
-      <headless-implementation-class>com.intellij.openapi.fileEditor.impl.TestEditorManagerImpl</headless-implementation-class>
+      <interface-class>com.gome.maven.openapi.fileEditor.FileEditorManager</interface-class>
+      <implementation-class>com.gome.maven.openapi.fileEditor.impl.FileEditorManagerImpl</implementation-class>
+      <headless-implementation-class>com.gome.maven.openapi.fileEditor.impl.TestEditorManagerImpl</headless-implementation-class>
       <option name="workspace" value="true"/>
     </component>
 
     <component>
-      <implementation-class>com.intellij.platform.PlatformVcsDetector</implementation-class>
+      <implementation-class>com.gome.maven.platform.PlatformVcsDetector</implementation-class>
       <headless-implementation-class/>
     </component>
 

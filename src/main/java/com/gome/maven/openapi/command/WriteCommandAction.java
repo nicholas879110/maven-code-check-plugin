@@ -30,7 +30,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 public abstract class WriteCommandAction<T> extends BaseActionRunnable<T> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.command.WriteCommandAction");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.command.WriteCommandAction");
     private final String myCommandName;
     private final String myGroupID;
     private final Project myProject;

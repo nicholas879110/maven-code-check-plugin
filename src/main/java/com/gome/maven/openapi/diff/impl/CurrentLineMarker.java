@@ -25,7 +25,7 @@ import com.gome.maven.openapi.editor.markup.HighlighterLayer;
 import com.gome.maven.openapi.editor.markup.RangeHighlighter;
 
 public class CurrentLineMarker implements CaretListener {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.CurrentLineMarker");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.CurrentLineMarker");
     private Editor myEditor;
     private RangeHighlighter myHighlighter = null;
     public static final int LAYER = HighlighterLayer.CARET_ROW + 1;

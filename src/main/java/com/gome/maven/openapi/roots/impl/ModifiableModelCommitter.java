@@ -30,7 +30,7 @@ import com.gome.maven.util.graph.GraphGenerator;
 import java.util.*;
 
 public class ModifiableModelCommitter {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.module.impl.ModifiableModelCommitter");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.module.impl.ModifiableModelCommitter");
 
     public static void multiCommit( ModifiableRootModel[] rootModels,  ModifiableModuleModel moduleModel) {
         multiCommit(Arrays.asList(rootModels), moduleModel);

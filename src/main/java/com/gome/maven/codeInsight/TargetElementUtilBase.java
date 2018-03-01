@@ -367,7 +367,7 @@ public class TargetElementUtilBase {
         return elementEvaluator == null || elementEvaluator.includeSelfInGotoImplementation(element);
     }
 
-    protected final LanguageExtension<TargetElementEvaluator> targetElementEvaluator = new LanguageExtension<TargetElementEvaluator>("com.intellij.targetElementEvaluator");
+    protected final LanguageExtension<TargetElementEvaluator> targetElementEvaluator = new LanguageExtension<TargetElementEvaluator>("com.gome.maven.targetElementEvaluator");
 
     private Iterable<TargetElementEvaluatorEx> getElementEvaluatorsEx( Language language) {
         //noinspection unchecked

@@ -28,7 +28,7 @@ import com.gome.maven.openapi.vfs.pointers.VirtualFilePointerManager;
 import com.gome.maven.util.PathUtil;
 
 class VirtualFilePointerImpl extends TraceableDisposable implements VirtualFilePointer {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.impl.VirtualFilePointerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.impl.VirtualFilePointerImpl");
 
     private final VirtualFilePointerListener myListener;
     private static final boolean TRACE_CREATION = LOG.isDebugEnabled() || ApplicationManager.getApplication().isUnitTestMode();

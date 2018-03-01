@@ -1,68 +1,68 @@
 <idea-plugin>
-  <extensions defaultExtensionNs="com.intellij">
-    <applicationService serviceInterface="com.intellij.openapi.vcs.actions.VcsContextFactory"
-                        serviceImplementation="com.intellij.peer.impl.VcsContextFactoryImpl"/>
+  <extensions defaultExtensionNs="com.gome.maven">
+    <applicationService serviceInterface="com.gome.maven.openapi.vcs.actions.VcsContextFactory"
+                        serviceImplementation="com.gome.maven.peer.impl.VcsContextFactoryImpl"/>
 
-    <projectService serviceInterface="com.intellij.openapi.vcs.AbstractVcsHelper"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.AbstractVcsHelperImpl"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.IssueNavigationConfiguration"
-                    serviceImplementation="com.intellij.openapi.vcs.IssueNavigationConfiguration"/>
-    <projectService serviceInterface="com.intellij.openapi.diff.DirDiffManager"
-                    serviceImplementation="com.intellij.openapi.diff.impl.dir.DirDiffManagerImpl"/>
-    <projectService serviceImplementation="com.intellij.openapi.vcs.VcsConfiguration"/>
-    <projectService serviceImplementation="com.intellij.openapi.vcs.contentAnnotation.VcsContentAnnotationSettings"/>
-    <projectService serviceImplementation="com.intellij.openapi.diff.impl.settings.MergeToolSettings"/>
-    <projectService serviceImplementation="com.intellij.openapi.diff.impl.settings.DiffToolSettings"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.roots.VcsRootDetector"
-                    serviceImplementation="com.intellij.openapi.vcs.roots.VcsRootDetectorImpl"/>
-    <projectService serviceImplementation="com.intellij.openapi.vcs.VcsNotifier"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.changes.patch.PatchBaseDirectoryDetector"
-                    serviceImplementation="com.intellij.openapi.vcs.changes.patch.PsiPatchBaseDirectoryDetector"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.changes.ui.ChangesFileNameDecorator"
-                    serviceImplementation="com.intellij.openapi.vcs.changes.ui.WolfChangesFileNameDecorator"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.CodeSmellDetector"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.AbstractVcsHelper"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.AbstractVcsHelperImpl"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.IssueNavigationConfiguration"
+                    serviceImplementation="com.gome.maven.openapi.vcs.IssueNavigationConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.openapi.diff.DirDiffManager"
+                    serviceImplementation="com.gome.maven.openapi.diff.impl.dir.DirDiffManagerImpl"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.vcs.VcsConfiguration"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.vcs.contentAnnotation.VcsContentAnnotationSettings"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.diff.impl.settings.MergeToolSettings"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.diff.impl.settings.DiffToolSettings"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.roots.VcsRootDetector"
+                    serviceImplementation="com.gome.maven.openapi.vcs.roots.VcsRootDetectorImpl"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.vcs.VcsNotifier"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.changes.patch.PatchBaseDirectoryDetector"
+                    serviceImplementation="com.gome.maven.openapi.vcs.changes.patch.PsiPatchBaseDirectoryDetector"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.changes.ui.ChangesFileNameDecorator"
+                    serviceImplementation="com.gome.maven.openapi.vcs.changes.ui.WolfChangesFileNameDecorator"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.CodeSmellDetector"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.CodeSmellDetectorImpl"/>
 
-    <selectInTarget implementation="com.intellij.openapi.vcs.changes.SelectInChangesViewTarget"/>
+    <selectInTarget implementation="com.gome.maven.openapi.vcs.changes.SelectInChangesViewTarget"/>
 
-    <search.topHitProvider implementation="com.intellij.openapi.vcs.configurable.VcsOptionsTopHitProvider"/>
+    <search.topHitProvider implementation="com.gome.maven.openapi.vcs.configurable.VcsOptionsTopHitProvider"/>
     <projectConfigurable groupId="root" groupWeight="45" dynamic="true" key="version.control.main.configurable.name" bundle="messages.VcsBundle"
-                         provider="com.intellij.openapi.vcs.configurable.VcsManagerConfigurableProvider" id="project.propVCSSupport.Mappings"/>
+                         provider="com.gome.maven.openapi.vcs.configurable.VcsManagerConfigurableProvider" id="project.propVCSSupport.Mappings"/>
 
-    <changesViewContent tabName="Repository" className="com.intellij.openapi.vcs.changes.committed.CommittedChangesViewManager"
-                        predicateClassName="com.intellij.openapi.vcs.changes.committed.CommittedChangesVisibilityPredicate"/>
-    <changesViewContent tabName="Incoming" className="com.intellij.openapi.vcs.changes.committed.IncomingChangesViewProvider"
-                        predicateClassName="com.intellij.openapi.vcs.changes.committed.IncomingChangesVisibilityPredicate"/>
+    <changesViewContent tabName="Repository" className="com.gome.maven.openapi.vcs.changes.committed.CommittedChangesViewManager"
+                        predicateClassName="com.gome.maven.openapi.vcs.changes.committed.CommittedChangesVisibilityPredicate"/>
+    <changesViewContent tabName="Incoming" className="com.gome.maven.openapi.vcs.changes.committed.IncomingChangesViewProvider"
+                        predicateClassName="com.gome.maven.openapi.vcs.changes.committed.IncomingChangesVisibilityPredicate"/>
 
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.ReformatCheckinHandlerFactory"/>
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.RearrangeCheckinHandlerFactory"/>
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.OptimizeOptionsCheckinHandlerFactory"/>
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.CodeAnalysisCheckinHandlerFactory"/>
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.TodoCheckinHandlerFactory"/>
-    <checkinHandlerFactory implementation="com.intellij.openapi.vcs.checkin.CodeCleanupCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.ReformatCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.RearrangeCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.OptimizeOptionsCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.CodeAnalysisCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.TodoCheckinHandlerFactory"/>
+    <checkinHandlerFactory implementation="com.gome.maven.openapi.vcs.checkin.CodeCleanupCheckinHandlerFactory"/>
 
-    <completion.contributor language="TEXT" implementationClass="com.intellij.openapi.vcs.CommitCompletionContributor" id="commitCompletion"
+    <completion.contributor language="TEXT" implementationClass="com.gome.maven.openapi.vcs.CommitCompletionContributor" id="commitCompletion"
                             order="first, before liveTemplates"/>
 
-    <vcs.fileStatusProvider implementation="com.intellij.openapi.vcs.changes.conflicts.ChangelistConflictFileStatusProvider"/>
-    <writingAccessProvider implementation="com.intellij.openapi.vcs.changes.conflicts.ChangelistConflictAccessProvider"/>
-    <editorNotificationProvider implementation="com.intellij.openapi.vcs.changes.conflicts.ChangelistConflictNotificationProvider"/>
+    <vcs.fileStatusProvider implementation="com.gome.maven.openapi.vcs.changes.conflicts.ChangelistConflictFileStatusProvider"/>
+    <writingAccessProvider implementation="com.gome.maven.openapi.vcs.changes.conflicts.ChangelistConflictAccessProvider"/>
+    <editorNotificationProvider implementation="com.gome.maven.openapi.vcs.changes.conflicts.ChangelistConflictNotificationProvider"/>
 
-    <handleTypeFactory implementation="com.intellij.openapi.vcs.readOnlyHandler.VcsHandleTypeFactory"/>
+    <handleTypeFactory implementation="com.gome.maven.openapi.vcs.readOnlyHandler.VcsHandleTypeFactory"/>
 
-    <keymapExtension implementation="com.intellij.openapi.vcs.impl.VcsKeymapExtension"/>
-    <fileTypeFactory implementation="com.intellij.openapi.vcs.impl.VcsFileTypeFactory"/>
-    <virtualFileSystem key="vcs" implementationClass="com.intellij.openapi.vcs.vfs.VcsFileSystem"/>
-    <fileDocumentSynchronizationVetoer implementation="com.intellij.openapi.vcs.changes.SaveCommittingDocumentsVetoer"/>
+    <keymapExtension implementation="com.gome.maven.openapi.vcs.impl.VcsKeymapExtension"/>
+    <fileTypeFactory implementation="com.gome.maven.openapi.vcs.impl.VcsFileTypeFactory"/>
+    <virtualFileSystem key="vcs" implementationClass="com.gome.maven.openapi.vcs.vfs.VcsFileSystem"/>
+    <fileDocumentSynchronizationVetoer implementation="com.gome.maven.openapi.vcs.changes.SaveCommittingDocumentsVetoer"/>
 
-    <applicationService serviceImplementation="com.intellij.openapi.vcs.VcsApplicationSettings"/>
-    <applicationService serviceInterface="com.intellij.openapi.vcs.impl.CheckinHandlersManager"
-                        serviceImplementation="com.intellij.openapi.vcs.impl.CheckinHandlersManagerImpl"/>
-    <!--<pathMacroFilter implementation="com.intellij.openapi.vcs.VcsPathMacroFilter"/>-->
-    <search.topHitProvider implementation="com.intellij.openapi.vcs.actions.VcsTopHitProvider"/>
-    <actionPromoter implementation="com.intellij.openapi.vcs.actions.VcsActionPromoter"/>
-    <projectSetProcessor implementation="com.intellij.openapi.vcs.VcsProjectSetProcessor"/>
-    <projectSetProcessor implementation="com.intellij.openapi.vcs.OpenProjectSetProcessor"/>
+    <applicationService serviceImplementation="com.gome.maven.openapi.vcs.VcsApplicationSettings"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.vcs.impl.CheckinHandlersManager"
+                        serviceImplementation="com.gome.maven.openapi.vcs.impl.CheckinHandlersManagerImpl"/>
+    <!--<pathMacroFilter implementation="com.gome.maven.openapi.vcs.VcsPathMacroFilter"/>-->
+    <search.topHitProvider implementation="com.gome.maven.openapi.vcs.actions.VcsTopHitProvider"/>
+    <actionPromoter implementation="com.gome.maven.openapi.vcs.actions.VcsActionPromoter"/>
+    <projectSetProcessor implementation="com.gome.maven.openapi.vcs.VcsProjectSetProcessor"/>
+    <projectSetProcessor implementation="com.gome.maven.openapi.vcs.OpenProjectSetProcessor"/>
   </extensions>
 </idea-plugin>
 

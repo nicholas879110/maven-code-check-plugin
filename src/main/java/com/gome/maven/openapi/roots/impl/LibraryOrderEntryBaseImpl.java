@@ -29,7 +29,7 @@ import com.gome.maven.util.ArrayUtil;
  *  @author dsl
  */
 abstract class LibraryOrderEntryBaseImpl extends OrderEntryBaseImpl implements LibraryOrSdkOrderEntry {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.LibraryOrderEntryBaseImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.LibraryOrderEntryBaseImpl");
     protected final ProjectRootManagerImpl myProjectRootManagerImpl;
      protected DependencyScope myScope = DependencyScope.COMPILE;
      private RootProvider myCurrentlySubscribedRootProvider = null;

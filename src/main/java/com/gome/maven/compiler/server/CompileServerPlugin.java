@@ -24,7 +24,7 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author nik
  */
 public class CompileServerPlugin implements PluginAware {
-    public static final ExtensionPointName<CompileServerPlugin> EP_NAME = ExtensionPointName.create("com.intellij.compileServer.plugin");
+    public static final ExtensionPointName<CompileServerPlugin> EP_NAME = ExtensionPointName.create("com.gome.maven.compileServer.plugin");
 
     private PluginDescriptor myPluginDescriptor;
     private String myClasspath;

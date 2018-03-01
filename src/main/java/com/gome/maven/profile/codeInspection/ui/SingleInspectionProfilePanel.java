@@ -97,7 +97,7 @@ import java.util.List;
  * Date: 31-May-2006
  */
 public class SingleInspectionProfilePanel extends JPanel {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.InspectionToolsPanel");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.InspectionToolsPanel");
      private static final String INSPECTION_FILTER_HISTORY = "INSPECTION_FILTER_HISTORY";
     private static final String UNDER_CONSTRUCTION = InspectionsBundle.message("inspection.tool.description.under.construction.text");
      private static final String EMPTY_HTML = "<html><body></body></html>";

@@ -35,7 +35,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public abstract class StubIndex {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.StubIndex");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.StubIndex");
 
     private static class StubIndexHolder {
         private static final StubIndex ourInstance = ApplicationManager.getApplication().getComponent(StubIndex.class);
@@ -114,7 +114,7 @@ public abstract class StubIndex {
     }
 
     /**
-     * @deprecated use {@link #getElements(StubIndexKey, Object, com.intellij.openapi.project.Project, com.intellij.psi.search.GlobalSearchScope, Class)}
+     * @deprecated use {@link #getElements(StubIndexKey, Object, com.gome.maven.openapi.project.Project, com.gome.maven.psi.search.GlobalSearchScope, Class)}
      */
     public <Key, Psi extends PsiElement> Collection<Psi> safeGet( StubIndexKey<Key, Psi> indexKey,
                                                                   Key key,

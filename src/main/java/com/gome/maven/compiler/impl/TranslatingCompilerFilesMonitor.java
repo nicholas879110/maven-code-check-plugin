@@ -51,7 +51,7 @@ import java.util.Set;
  * 2. corresponding source file has been deleted
  */
 public class TranslatingCompilerFilesMonitor implements ApplicationComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.TranslatingCompilerFilesMonitor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.TranslatingCompilerFilesMonitor");
     public static boolean ourDebugMode = false;
 
     public TranslatingCompilerFilesMonitor(VirtualFileManager vfsManager, Application application) {

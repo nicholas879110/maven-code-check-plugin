@@ -18,7 +18,7 @@ package com.gome.maven.openapi.ide;
 import com.gome.maven.openapi.extensions.ExtensionPointName;
 
 public interface CutElementMarker {
-    ExtensionPointName<CutElementMarker> EP_NAME = ExtensionPointName.create("com.intellij.cutElementMarker");
+    ExtensionPointName<CutElementMarker> EP_NAME = ExtensionPointName.create("com.gome.maven.cutElementMarker");
 
     boolean isCutElement(Object element);
 }

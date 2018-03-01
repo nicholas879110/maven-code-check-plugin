@@ -22,7 +22,7 @@ import com.gome.maven.openapi.util.Condition;
 import com.gome.maven.openapi.util.TextRange;
 
 public class InlineFragment implements Fragment {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.fragments.InlineFragment");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.fragments.InlineFragment");
     private final TextRange myRange1;
     private final TextRange myRange2;
     private final TextDiffTypeEnum myType;

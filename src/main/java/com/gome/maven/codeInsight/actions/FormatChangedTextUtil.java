@@ -53,7 +53,7 @@ import java.util.*;
 
 public class FormatChangedTextUtil {
     public static final Key<CharSequence> TEST_REVISION_CONTENT = Key.create("test.revision.content");
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.actions.FormatChangedTextUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.actions.FormatChangedTextUtil");
 
 
     private FormatChangedTextUtil() {

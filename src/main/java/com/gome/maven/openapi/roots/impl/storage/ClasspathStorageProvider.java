@@ -30,7 +30,7 @@ import java.util.List;
  */
 public interface ClasspathStorageProvider {
      ExtensionPointName<ClasspathStorageProvider> EXTENSION_POINT_NAME =
-            new ExtensionPointName<ClasspathStorageProvider>("com.intellij.classpathStorageProvider");
+            new ExtensionPointName<ClasspathStorageProvider>("com.gome.maven.classpathStorageProvider");
 
     
     String getID();

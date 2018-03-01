@@ -29,7 +29,7 @@ import java.util.Set;
  * @author yole
  */
 public abstract class MoveHandlerDelegate {
-    public static final ExtensionPointName<MoveHandlerDelegate> EP_NAME = ExtensionPointName.create("com.intellij.refactoring.moveHandler");
+    public static final ExtensionPointName<MoveHandlerDelegate> EP_NAME = ExtensionPointName.create("com.gome.maven.refactoring.moveHandler");
 
     public boolean canMove(PsiElement[] elements,  final PsiElement targetContainer) {
         return targetContainer == null || isValidTarget(targetContainer, elements);

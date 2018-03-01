@@ -68,7 +68,7 @@ import java.util.*;
  * @author max
  */
 public abstract class ModuleManagerImpl extends ModuleManager implements ProjectComponent, PersistentStateComponent<Element> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.module.impl.ModuleManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.module.impl.ModuleManagerImpl");
     public static final Key<String> DISPOSED_MODULE_NAME = Key.create("DisposedNeverAddedModuleName");
     private static final String IML_EXTENSION = ".iml";
     protected final Project myProject;

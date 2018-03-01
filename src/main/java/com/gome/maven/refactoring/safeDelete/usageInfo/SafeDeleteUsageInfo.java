@@ -25,7 +25,7 @@ import com.gome.maven.usageView.UsageInfo;
  */
 public class SafeDeleteUsageInfo extends UsageInfo {
     private static final Logger LOG = Logger.getInstance(
-            "#com.intellij.refactoring.safeDelete.usageInfo.SafeDeleteUsageInfo");
+            "#com.gome.maven.refactoring.safeDelete.usageInfo.SafeDeleteUsageInfo");
     private final PsiElement myReferencedElement;
 
     public SafeDeleteUsageInfo( PsiElement element, PsiElement referencedElement) {

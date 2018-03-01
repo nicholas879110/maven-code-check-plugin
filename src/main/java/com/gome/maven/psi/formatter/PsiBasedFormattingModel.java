@@ -33,7 +33,7 @@ import com.gome.maven.psi.impl.source.tree.injected.InjectedLanguageUtil;
 
 public class PsiBasedFormattingModel implements FormattingModelEx {
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.formatter.PsiBasedFormattingModel");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.formatter.PsiBasedFormattingModel");
 
     private final Project myProject;
     private final ASTNode myASTNode;

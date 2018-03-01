@@ -25,7 +25,7 @@ import com.gome.maven.util.IncorrectOperationException;
  */
 public abstract class PsiReferenceBase<T extends PsiElement> implements PsiReference {
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.PsiReferenceBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.PsiReferenceBase");
 
     protected final T myElement;
     private TextRange myRangeInElement;
@@ -203,7 +203,7 @@ public abstract class PsiReferenceBase<T extends PsiElement> implements PsiRefer
             myResolveTo = resolveTo;
         }
 
-        //do nothing. the element will be renamed via PsiMetaData (com.intellij.refactoring.rename.RenameUtil.doRenameGenericNamedElement())
+        //do nothing. the element will be renamed via PsiMetaData (com.gome.maven.refactoring.rename.RenameUtil.doRenameGenericNamedElement())
         @Override
         public PsiElement handleElementRename(final String newElementName) throws IncorrectOperationException {
             return getElement();

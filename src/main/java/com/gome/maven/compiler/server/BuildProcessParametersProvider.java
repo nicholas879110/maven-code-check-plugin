@@ -24,7 +24,7 @@ import java.util.List;
  * Project-level extension point to dynamically vary build process parameters like classpath, bootclasspath and JVM arguments.
  */
 public abstract class BuildProcessParametersProvider {
-    public static final ExtensionPointName<BuildProcessParametersProvider> EP_NAME = ExtensionPointName.create("com.intellij.buildProcess.parametersProvider");
+    public static final ExtensionPointName<BuildProcessParametersProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.buildProcess.parametersProvider");
 
     /**
      * Override this method to include additional jars to the build process classpath

@@ -53,7 +53,7 @@ import java.util.concurrent.ConcurrentMap;
  * Contributor-based goto model
  */
 public abstract class ContributorsBasedGotoByModel implements ChooseByNameModelEx {
-    public static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.gotoByName.ContributorsBasedGotoByModel");
+    public static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.gotoByName.ContributorsBasedGotoByModel");
 
     protected final Project myProject;
     private final ChooseByNameContributor[] myContributors;

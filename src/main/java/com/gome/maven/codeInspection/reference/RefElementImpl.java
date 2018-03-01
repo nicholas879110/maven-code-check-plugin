@@ -44,7 +44,7 @@ import java.util.Collection;
 import java.util.List;
 
 public abstract class RefElementImpl extends RefEntityImpl implements RefElement {
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.reference.RefElement");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.reference.RefElement");
 
     private static final int IS_ENTRY_MASK = 0x80;
     private static final int IS_PERMANENT_ENTRY_MASK = 0x100;

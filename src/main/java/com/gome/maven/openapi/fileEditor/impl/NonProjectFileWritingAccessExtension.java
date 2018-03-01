@@ -21,7 +21,7 @@ import com.gome.maven.openapi.vfs.VirtualFile;
 
 public interface NonProjectFileWritingAccessExtension {
     ExtensionPointName<NonProjectFileWritingAccessExtension> EP_NAME =
-            ExtensionPointName.create("com.intellij.nonProjectFileWritingAccessExtension");
+            ExtensionPointName.create("com.gome.maven.nonProjectFileWritingAccessExtension");
 
     boolean isWritable( VirtualFile file);
 }

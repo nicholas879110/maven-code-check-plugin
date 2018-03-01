@@ -25,7 +25,7 @@ import javax.swing.*;
  * @see ConfigurationTypeBase
  */
 public interface ConfigurationType {
-    ExtensionPointName<ConfigurationType> CONFIGURATION_TYPE_EP = ExtensionPointName.create("com.intellij.configurationType");
+    ExtensionPointName<ConfigurationType> CONFIGURATION_TYPE_EP = ExtensionPointName.create("com.gome.maven.configurationType");
 
     /**
      * Returns the display name of the configuration type. This is used, for example, to represent the configuration type in the run

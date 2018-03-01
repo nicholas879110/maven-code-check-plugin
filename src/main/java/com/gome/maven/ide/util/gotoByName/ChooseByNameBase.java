@@ -102,7 +102,7 @@ import java.util.*;
 import java.util.List;
 
 public abstract class ChooseByNameBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.gotoByName.ChooseByNameBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.gotoByName.ChooseByNameBase");
     protected final Project myProject;
     protected final ChooseByNameModel myModel;
     protected ChooseByNameItemProvider myProvider;

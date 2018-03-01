@@ -51,7 +51,7 @@ import com.gome.maven.util.containers.HashMap;
 import java.util.*;
 
 public class CompileContextImpl extends UserDataHolderBase implements CompileContextEx {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.CompileContextImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.CompileContextImpl");
     private final Project myProject;
     private final CompilerTask myBuildSession;
     private final Map<CompilerMessageCategory, Collection<CompilerMessage>> myMessages = new EnumMap<CompilerMessageCategory, Collection<CompilerMessage>>(CompilerMessageCategory.class);

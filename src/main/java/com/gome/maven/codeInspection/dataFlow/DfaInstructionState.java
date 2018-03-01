@@ -1,0 +1,131 @@
+/*
+ * Copyright 2000-2009 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Created by IntelliJ IDEA.
+ * User: max
+ * Date: Jan 28, 2002
+ * Time: 9:40:01 PM
+ * To change template for new class use 
+ * Code Style | Class Templates options (Tools | IDE Options).
+ */
+package com.gome.maven.codeInspection.dataFlow;
+
+import com.gome.maven.codeInspection.dataFlow.instructions.Instruction;
+import com.gome.maven.openapi.util.Pair;
+import com.gome.maven.util.Function;
+import com.gome.maven.util.containers.ContainerUtil;
+import com.gome.maven.util.containers.MultiMap;
+
+import java.util.*;
+
+public class DfaInstructionState implements Comparable<DfaInstructionState> {
+    public static final DfaInstructionState[] EMPTY_ARRAY = new DfaInstructionState[0];
+    private final DfaMemoryState myBeforeMemoryState;
+    private final Instruction myInstruction;
+
+    public DfaInstructionState( Instruction myInstruction,  DfaMemoryState myBeforeMemoryState) {
+        this.myBeforeMemoryState = myBeforeMemoryState;
+        this.myInstruction = myInstruction;
+    }
+
+    
+    public Instruction getInstruction() {
+        return myInstruction;
+    }
+
+    
+    public DfaMemoryState getMemoryState() {
+        return myBeforeMemoryState;
+    }
+
+    public String toString() {
+        return getInstruction().getIndex() + " " + getInstruction() + ":   " + getMemoryState().toString();
+    }
+
+    @Override
+    public int compareTo( DfaInstructionState o) {
+        return myInstruction.getIndex() - o.myInstruction.getIndex();
+    }
+}
+
+class StateQueue {
+    private final PriorityQueue<DfaInstructionState> myQueue = new PriorityQueue<DfaInstructionState>();
+    private final Set<Pair<Instruction, DfaMemoryState>> mySet = ContainerUtil.newHashSet();
+
+    void offer(DfaInstructionState state) {
+        if (mySet.add(Pair.create(state.getInstruction(), state.getMemoryState()))) {
+            myQueue.offer(state);
+        }
+    }
+
+    boolean isEmpty() {
+        return myQueue.isEmpty();
+    }
+
+    List<DfaInstructionState> getNextInstructionStates(Set<Instruction> joinInstructions) {
+        DfaInstructionState state = myQueue.poll();
+        final Instruction instruction = state.getInstruction();
+        mySet.remove(Pair.create(instruction, state.getMemoryState()));
+
+        DfaInstructionState next = myQueue.peek();
+        if (next == null || next.compareTo(state) != 0) return Collections.singletonList(state);
+
+        List<DfaMemoryStateImpl> memoryStates = ContainerUtil.newArrayList();
+        memoryStates.add((DfaMemoryStateImpl)state.getMemoryState());
+        while (!myQueue.isEmpty() && myQueue.peek().compareTo(state) == 0) {
+            DfaMemoryState anotherState = myQueue.poll().getMemoryState();
+            mySet.remove(Pair.create(instruction, anotherState));
+            memoryStates.add((DfaMemoryStateImpl)anotherState);
+        }
+
+        if (memoryStates.size() > 1 && joinInstructions.contains(instruction)) {
+            MultiMap<Object, DfaMemoryStateImpl> groups = MultiMap.create();
+            for (DfaMemoryStateImpl memoryState : memoryStates) {
+                groups.putValue(memoryState.getSuperficialKey(), memoryState);
+            }
+
+            memoryStates = ContainerUtil.newArrayList();
+            for (Map.Entry<Object, Collection<DfaMemoryStateImpl>> entry : groups.entrySet()) {
+                memoryStates.addAll(mergeGroup((List<DfaMemoryStateImpl>)entry.getValue()));
+            }
+
+        }
+
+        return ContainerUtil.map(memoryStates, new Function<DfaMemoryStateImpl, DfaInstructionState>() {
+            @Override
+            public DfaInstructionState fun(DfaMemoryStateImpl state) {
+                return new DfaInstructionState(instruction, state);
+            }
+        });
+    }
+
+    private static List<DfaMemoryStateImpl> mergeGroup(List<DfaMemoryStateImpl> group) {
+        if (group.size() < 2) {
+            return group;
+        }
+
+        StateMerger merger = new StateMerger();
+        while (true) {
+            List<DfaMemoryStateImpl> nextStates = merger.mergeByFacts(group);
+            if (nextStates == null) nextStates = merger.mergeByNullability(group);
+            if (nextStates == null) nextStates = merger.mergeByUnknowns(group);
+            if (nextStates == null) break;
+            group = nextStates;
+        }
+        return group;
+    }
+}

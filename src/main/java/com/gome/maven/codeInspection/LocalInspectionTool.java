@@ -17,8 +17,8 @@ package com.gome.maven.codeInspection;
 
 import com.gome.maven.openapi.diagnostic.Logger;
 import com.gome.maven.psi.*;
-//import org.intellij.lang.annotations.Language;
-//import org.intellij.lang.annotations.Pattern;
+//import org.gome.maven.lang.annotations.Language;
+//import org.gome.maven.lang.annotations.Pattern;
 
 import java.util.List;
 

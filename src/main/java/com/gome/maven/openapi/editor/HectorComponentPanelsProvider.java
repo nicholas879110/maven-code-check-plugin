@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiFile;
  * @author nik
  */
 public interface HectorComponentPanelsProvider {
-    ExtensionPointName<HectorComponentPanelsProvider> EP_NAME = ExtensionPointName.create("com.intellij.hectorComponentProvider");
+    ExtensionPointName<HectorComponentPanelsProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.hectorComponentProvider");
 
      HectorComponentPanel createConfigurable( PsiFile file);
 }

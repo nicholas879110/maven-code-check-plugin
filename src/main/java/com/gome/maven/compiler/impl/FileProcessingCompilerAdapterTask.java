@@ -37,7 +37,7 @@ import java.util.List;
  *         Date: 9/5/12
  */
 public class FileProcessingCompilerAdapterTask implements CompileTask {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.FileProcessingCompilerAdapterTask");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.FileProcessingCompilerAdapterTask");
 
     private final FileProcessingCompiler myCompiler;
 

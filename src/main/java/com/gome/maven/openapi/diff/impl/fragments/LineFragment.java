@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class LineFragment extends LineBlock implements Fragment {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.fragments.LineFragment");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.fragments.LineFragment");
     private final TextRange myRange1;
     private final TextRange myRange2;
     private FragmentList myChildren;

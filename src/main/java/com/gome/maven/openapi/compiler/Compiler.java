@@ -24,7 +24,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @see CompilerManager#removeCompiler(Compiler)
  */
 public interface Compiler {
-    ExtensionPointName<Compiler> EP_NAME = ExtensionPointName.create("com.intellij.compiler");
+    ExtensionPointName<Compiler> EP_NAME = ExtensionPointName.create("com.gome.maven.compiler");
 
     /**
      * Returns the description of the compiler. All registered compilers should have unique description.

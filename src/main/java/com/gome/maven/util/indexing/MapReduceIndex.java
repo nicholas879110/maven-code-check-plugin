@@ -43,7 +43,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  *         Date: Dec 10, 2007
  */
 public class MapReduceIndex<Key, Value, Input> implements UpdatableIndex<Key,Value, Input> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.util.indexing.MapReduceIndex");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.util.indexing.MapReduceIndex");
     private static final int NULL_MAPPING = 0;
      private final ID<Key, Value> myIndexId;
     private final DataIndexer<Key, Value, Input> myIndexer;

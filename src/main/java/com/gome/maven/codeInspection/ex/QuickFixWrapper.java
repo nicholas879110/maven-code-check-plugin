@@ -33,7 +33,7 @@ import com.gome.maven.util.IncorrectOperationException;
  * @author max
  */
 public class QuickFixWrapper implements IntentionAction {
-    private static final Logger LOG = Logger.getInstance("com.intellij.codeInspection.ex.QuickFixWrapper");
+    private static final Logger LOG = Logger.getInstance("com.gome.maven.codeInspection.ex.QuickFixWrapper");
 
     private final ProblemDescriptor myDescriptor;
     private final int myFixNumber;

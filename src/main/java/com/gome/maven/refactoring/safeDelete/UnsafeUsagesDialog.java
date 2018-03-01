@@ -76,7 +76,7 @@ public class UnsafeUsagesDialog extends DialogWrapper {
 
     @Override
     protected String getDimensionServiceKey() {
-        return "#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog";
+        return "#com.gome.maven.refactoring.safeDelete.UnsafeUsagesDialog";
     }
 
 /*

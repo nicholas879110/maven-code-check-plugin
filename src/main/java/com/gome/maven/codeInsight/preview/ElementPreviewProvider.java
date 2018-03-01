@@ -23,7 +23,7 @@ import com.gome.maven.psi.PsiFile;
 import java.awt.*;
 
 public interface ElementPreviewProvider {
-    ExtensionPointName<ElementPreviewProvider> EP_NAME = ExtensionPointName.create("com.intellij.elementPreviewProvider");
+    ExtensionPointName<ElementPreviewProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.elementPreviewProvider");
 
     boolean isSupportedFile( PsiFile psiFile);
 

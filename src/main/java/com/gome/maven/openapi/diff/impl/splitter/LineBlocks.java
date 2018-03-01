@@ -29,7 +29,7 @@ import java.util.*;
 
 public class LineBlocks {
     public static final LineBlocks EMPTY = new LineBlocks(Collections.<Diff>emptyList());
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.splitter.LineBlocks");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.splitter.LineBlocks");
     private final List<Diff> myDiffs;
 
     private LineBlocks(List<Diff> diffs) {

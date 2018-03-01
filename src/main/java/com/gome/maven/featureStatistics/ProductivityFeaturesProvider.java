@@ -22,7 +22,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * Date: Jan 30, 2005
  */
 public abstract class ProductivityFeaturesProvider {
-    public static ExtensionPointName<ProductivityFeaturesProvider> EP_NAME = ExtensionPointName.create("com.intellij.productivityFeaturesProvider");
+    public static ExtensionPointName<ProductivityFeaturesProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.productivityFeaturesProvider");
 
     public abstract FeatureDescriptor[] getFeatureDescriptors();
 

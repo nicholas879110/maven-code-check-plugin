@@ -27,7 +27,7 @@ import com.gome.maven.psi.tree.IElementType;
 
 @VisibleForTesting
 public class MacroParser {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.template.impl.MacroParser");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.template.impl.MacroParser");
 
     
     public static Expression parse( String expression) {

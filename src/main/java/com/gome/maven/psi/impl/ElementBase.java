@@ -48,7 +48,7 @@ import javax.swing.*;
 import java.util.List;
 
 public abstract class ElementBase extends UserDataHolderBase implements Iconable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.ElementBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.ElementBase");
 
     public static final int FLAGS_LOCKED = 0x800;
     private static final NullableFunction<ElementIconRequest,Icon> ICON_COMPUTE = new NullableFunction<ElementIconRequest, Icon>() {

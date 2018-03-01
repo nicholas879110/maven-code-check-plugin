@@ -19,6 +19,7 @@ package com.gome.maven.ide.fileTemplates;
 import com.gome.maven.openapi.fileTypes.FileType;
 import com.gome.maven.openapi.project.Project;
 import com.gome.maven.openapi.vfs.CharsetToolkit;
+import org.apache.velocity.runtime.parser.ParseException;
 
 import java.io.IOException;
 import java.util.Map;
@@ -81,5 +82,5 @@ public interface FileTemplate extends Cloneable {
 
     FileTemplate clone();
 
-     String[] getUnsetAttributes( Properties properties, Project project) throws Exception;
+     String[] getUnsetAttributes( Properties properties, Project project) throws ParseException;
 }

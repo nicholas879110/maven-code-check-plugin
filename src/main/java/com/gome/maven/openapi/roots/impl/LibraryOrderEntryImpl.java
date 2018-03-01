@@ -34,7 +34,7 @@ import org.jetbrains.jps.model.serialization.java.JpsJavaModelSerializerExtensio
  *  @author dsl
  */
 class LibraryOrderEntryImpl extends LibraryOrderEntryBaseImpl implements LibraryOrderEntry, ClonableOrderEntry, WritableOrderEntry {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.LibraryOrderEntryImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.LibraryOrderEntryImpl");
     private Library myLibrary;
      private String myLibraryName; // is non-null if myLibrary == null
      private String myLibraryLevel; // is non-null if myLibraryLevel == null

@@ -22,7 +22,7 @@ import com.gome.maven.psi.PsiElement;
 import com.gome.maven.psi.PsiFile;
 
 public interface HighlightVisitor {
-    ExtensionPointName<HighlightVisitor> EP_HIGHLIGHT_VISITOR = new ExtensionPointName<HighlightVisitor>("com.intellij.highlightVisitor");
+    ExtensionPointName<HighlightVisitor> EP_HIGHLIGHT_VISITOR = new ExtensionPointName<HighlightVisitor>("com.gome.maven.highlightVisitor");
 
     boolean suitableForFile( PsiFile file);
     void visit( PsiElement element);

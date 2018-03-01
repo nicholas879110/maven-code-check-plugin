@@ -30,7 +30,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class IntentionActionBean extends CustomLoadingExtensionPointBean {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.IntentionActionBean");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.IntentionActionBean");
     @Tag("className")
     public String className;
     @Tag("category")

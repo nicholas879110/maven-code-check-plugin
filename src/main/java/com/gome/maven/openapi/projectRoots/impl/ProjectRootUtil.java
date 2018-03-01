@@ -37,7 +37,7 @@ import java.util.ArrayList;
  * @author mike
  */
 public class ProjectRootUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.ProjectRootUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.ProjectRootUtil");
 
      public static final String SIMPLE_ROOT = "simple";
      public static final String COMPOSITE_ROOT = "composite";

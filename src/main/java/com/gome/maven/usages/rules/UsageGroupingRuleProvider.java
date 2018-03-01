@@ -24,7 +24,7 @@ import com.gome.maven.usages.UsageView;
  * @author max
  */
 public interface UsageGroupingRuleProvider {
-    ExtensionPointName<UsageGroupingRuleProvider> EP_NAME = ExtensionPointName.create("com.intellij.usageGroupingRuleProvider");
+    ExtensionPointName<UsageGroupingRuleProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.usageGroupingRuleProvider");
 
      UsageGroupingRule[] getActiveRules(Project project);
 

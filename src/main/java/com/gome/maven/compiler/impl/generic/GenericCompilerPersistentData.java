@@ -29,7 +29,7 @@ import java.util.Set;
  * @author nik
  */
 public class GenericCompilerPersistentData {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.generic.GenericCompilerPersistentData");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.generic.GenericCompilerPersistentData");
     private static final int VERSION = 1;
     private File myFile;
     private Map<String, Integer> myTarget2Id = new HashMap<String, Integer>();

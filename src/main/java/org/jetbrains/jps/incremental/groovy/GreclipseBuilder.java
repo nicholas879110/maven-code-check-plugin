@@ -81,8 +81,8 @@ public class GreclipseBuilder extends ModuleLevelBuilder {
 
     try {
       URL[] urls = {
-        new File(jar).toURI().toURL(),
-        new File(ObjectUtils.assertNotNull(PathManager.getJarPathForClass(GreclipseMain.class))).toURI().toURL()
+        new File(jar).toURI().toURL()//自己修改的,
+        //new File(ObjectUtils.assertNotNull(PathManager.getJarPathForClass(GreclipseMain.class))).toURI().toURL()
       };
       ClassLoader loader = new URLClassLoader(urls, null);
       Class.forName("org.eclipse.jdt.internal.compiler.batch.Main", false, loader);
@@ -216,7 +216,7 @@ public class GreclipseBuilder extends ModuleLevelBuilder {
 
   private boolean performCompilation(List<String> args, StringWriter out, StringWriter err, Map<String, List<String>> outputs, CompileContext context, ModuleChunk chunk) {
     try {
-      Class<?> mainClass = Class.forName(GreclipseMain.class.getName(), true, myGreclipseLoader);
+      Class<?> mainClass = Class.forName(/*GreclipseMain.class.getName()自己修改的*/"", true, myGreclipseLoader);
       Constructor<?> constructor = mainClass.getConstructor(PrintWriter.class, PrintWriter.class, Map.class, Map.class);
       Method compileMethod = mainClass.getMethod("compile", String[].class);
 

@@ -37,7 +37,7 @@ import java.util.*;
  * @author peter
  */
 public class StatisticsWeigher extends CompletionWeigher {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.StatisticsWeigher.LookupStatisticsWeigher");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.StatisticsWeigher.LookupStatisticsWeigher");
     private static final Key<StatisticsInfo> BASE_STATISTICS_INFO = Key.create("Base statistics info");
 
     @Override

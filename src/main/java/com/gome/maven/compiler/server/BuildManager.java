@@ -126,7 +126,7 @@ public class BuildManager implements ApplicationComponent{
     private static final Key<String> FORCE_MODEL_LOADING_PARAMETER = Key.create(BuildParametersKeys.FORCE_MODEL_LOADING);
     private static final Key<CharSequence> STDERR_OUTPUT = Key.create("_process_launch_errors_");
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.server.BuildManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.server.BuildManager");
     private static final String COMPILER_PROCESS_JDK_PROPERTY = "compiler.process.jdk";
     public static final String SYSTEM_ROOT = "compile-server";
     public static final String TEMP_DIR_NAME = "_temp_";
@@ -855,7 +855,7 @@ public class BuildManager implements ApplicationComponent{
    
     @Override
     public String getComponentName() {
-        return "com.intellij.compiler.server.BuildManager";
+        return "com.gome.maven.compiler.server.BuildManager";
     }
 
     private Future<Pair<RequestFuture<PreloadedProcessMessageHandler>, OSProcessHandler>> launchPreloadedBuildProcess(final Project project, SequentialTaskExecutor projectTaskQueue) throws Exception {

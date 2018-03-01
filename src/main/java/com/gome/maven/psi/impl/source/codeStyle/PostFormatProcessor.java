@@ -22,7 +22,7 @@ import com.gome.maven.psi.PsiFile;
 import com.gome.maven.psi.codeStyle.CodeStyleSettings;
 
 public interface PostFormatProcessor {
-    ExtensionPointName<PostFormatProcessor> EP_NAME = ExtensionPointName.create("com.intellij.postFormatProcessor");
+    ExtensionPointName<PostFormatProcessor> EP_NAME = ExtensionPointName.create("com.gome.maven.postFormatProcessor");
 
     PsiElement processElement( PsiElement source,  CodeStyleSettings settings);
     TextRange processText( PsiFile source,  TextRange rangeToReformat,  CodeStyleSettings settings);

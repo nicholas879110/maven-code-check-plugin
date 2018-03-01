@@ -103,7 +103,7 @@ import java.util.List;
  * Date: 25-Jan-2006
  */
 public class ScopeTreeViewPanel extends JPanel implements Disposable {
-    private static final Logger LOG = Logger.getInstance("com.intellij.ide.scopeView.ScopeTreeViewPanel");
+    private static final Logger LOG = Logger.getInstance("com.gome.maven.ide.scopeView.ScopeTreeViewPanel");
     private final IdeView myIdeView = new MyIdeView();
     private final MyPsiTreeChangeAdapter myPsiTreeChangeAdapter = new MyPsiTreeChangeAdapter();
 

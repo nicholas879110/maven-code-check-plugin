@@ -85,7 +85,7 @@ import java.util.*;
         storages = @Storage(file = StoragePathMacros.WORKSPACE_FILE)
 )
 public class DaemonCodeAnalyzerImpl extends DaemonCodeAnalyzerEx implements PersistentStateComponent<Element>, Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl");
 
     private static final Key<List<LineMarkerInfo>> MARKERS_IN_EDITOR_DOCUMENT_KEY = Key.create("MARKERS_IN_EDITOR_DOCUMENT");
     private static final Key<List<HighlightInfo>> FILE_LEVEL_HIGHLIGHTS = Key.create("FILE_LEVEL_HIGHLIGHTS");
@@ -766,7 +766,7 @@ public class DaemonCodeAnalyzerImpl extends DaemonCodeAnalyzerEx implements Pers
                     passes.put(fileEditor, highlightingPasses);
                 }
             }
-            // cancel all after calling createPasses() since there are perverts {@link com.intellij.util.xml.ui.DomUIFactoryImpl} who are changing PSI there
+            // cancel all after calling createPasses() since there are perverts {@link com.gome.maven.util.xml.ui.DomUIFactoryImpl} who are changing PSI there
             cancelUpdateProgress(true, "Cancel by alarm");
             myAlarm.cancelAllRequests();
             DaemonProgressIndicator progress = createUpdateProgress();

@@ -58,7 +58,7 @@ import java.util.*;
  */
 @SuppressWarnings({"UseOfSystemOutOrSystemErr"})
 public class InspectionApplication {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.InspectionApplication");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.InspectionApplication");
 
     public InspectionToolCmdlineOptionHelpProvider myHelpProvider = null;
     public String myProjectPath = null;

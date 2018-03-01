@@ -53,7 +53,7 @@ import static com.gome.maven.openapi.vfs.VirtualFileVisitor.SKIP_ROOT;
  * @author dsl
  */
 public class LibraryImpl extends TraceableDisposable implements LibraryEx.ModifiableModelEx, LibraryEx {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.impl.LibraryImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.impl.LibraryImpl");
      public static final String LIBRARY_NAME_ATTR = "name";
      public static final String LIBRARY_TYPE_ATTR = "type";
      public static final String ROOT_PATH_ELEMENT = "root";

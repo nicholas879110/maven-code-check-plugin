@@ -23,7 +23,7 @@ import gnu.trove.THashMap;
 import java.util.Map;
 
 public class HighlightDisplayKey {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.HighlightDisplayKey");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.HighlightDisplayKey");
 
     private static final Map<String,HighlightDisplayKey> ourNameToKeyMap = new THashMap<String, HighlightDisplayKey>();
     private static final Map<String,HighlightDisplayKey> ourIdToKeyMap = new THashMap<String, HighlightDisplayKey>();

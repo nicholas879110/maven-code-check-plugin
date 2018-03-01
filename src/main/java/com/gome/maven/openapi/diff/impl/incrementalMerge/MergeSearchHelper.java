@@ -27,7 +27,7 @@ import com.gome.maven.openapi.util.Key;
 import java.util.Iterator;
 
 public class MergeSearchHelper {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.incrementalMerge.MergeSearchHelper");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.incrementalMerge.MergeSearchHelper");
     private static final Key[] ourMergeListKeys = new Key[]{Key.create("leftMergeSearchHelper"),
             Key.create("centerMergeSearchHelper"),
             Key.create("rightMergeSearchHelper")};

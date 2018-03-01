@@ -46,7 +46,7 @@ import static com.gome.maven.patterns.StandardPatterns.not;
  * @deprecated see {@link com.gome.maven.codeInsight.completion.CompletionContributor}
  */
 public class CompletionData {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.CompletionData");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.CompletionData");
     public static final ObjectPattern.Capture<Character> NOT_JAVA_ID = not(character().javaIdentifierPart());
     private final Set<Class> myFinalScopes = new HashSet<Class>();
     private final List<CompletionVariant> myCompletionVariants = new ArrayList<CompletionVariant>();

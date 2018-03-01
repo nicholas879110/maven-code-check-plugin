@@ -22,7 +22,7 @@ import com.gome.maven.util.Consumer;
 import java.awt.*;
 
 public interface ImportHandler {
-    ExtensionPointName<ImportHandler> EP_NAME = ExtensionPointName.create("com.intellij.colorAndFontOptionsImportHandler");
+    ExtensionPointName<ImportHandler> EP_NAME = ExtensionPointName.create("com.gome.maven.colorAndFontOptionsImportHandler");
 
     
     String getTitle();

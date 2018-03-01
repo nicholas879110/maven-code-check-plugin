@@ -28,7 +28,7 @@
   <keymap win="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf"
           mac="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf"/>
   <third-party url="http://www.jetbrains.org/"/>
-  <jetbrains-tv url="https://www.youtube.com/user/intellijideavideo"/>
+  <jetbrains-tv url="https://www.youtube.com/user/gome.mavenideavideo"/>
 
   <plugins-page category="VCS Integration" title="Select VCS Integration Plugins"/>
   <plugins-page title="Select Other Plugins"/>

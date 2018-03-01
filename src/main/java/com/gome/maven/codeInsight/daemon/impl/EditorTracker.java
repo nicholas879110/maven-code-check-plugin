@@ -44,7 +44,7 @@ import java.util.*;
 import java.util.List;
 
 public class EditorTracker extends AbstractProjectComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.EditorTracker");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.EditorTracker");
 
     private final WindowManager myWindowManager;
     private final EditorFactory myEditorFactory;

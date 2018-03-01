@@ -25,7 +25,7 @@ import com.gome.maven.psi.PsiElement;
  * @author yole
  */
 public interface QualifiedNameProvider {
-    ExtensionPointName<QualifiedNameProvider> EP_NAME = ExtensionPointName.create("com.intellij.qualifiedNameProvider");
+    ExtensionPointName<QualifiedNameProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.qualifiedNameProvider");
 
     
     PsiElement adjustElementToCopy(PsiElement element);

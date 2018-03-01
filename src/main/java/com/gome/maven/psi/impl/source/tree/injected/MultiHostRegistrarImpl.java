@@ -407,7 +407,7 @@ public class MultiHostRegistrarImpl implements MultiHostRegistrar, ModificationT
         TreeUtil.clearCaches((TreeElement)parsedNode);
     }
 
-    // under com.intellij.psi.PsiLock.LOCK
+    // under com.gome.maven.psi.PsiLock.LOCK
     private static PsiFile registerDocument(final DocumentWindowImpl documentWindow,
                                             final PsiFile injectedPsi,
                                             final Place shreds,

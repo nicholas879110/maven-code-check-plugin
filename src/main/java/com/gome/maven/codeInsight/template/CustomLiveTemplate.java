@@ -22,7 +22,7 @@ import com.gome.maven.psi.PsiFile;
  * @author Eugene.Kudelevsky
  */
 public interface CustomLiveTemplate {
-    ExtensionPointName<CustomLiveTemplate> EP_NAME = ExtensionPointName.create("com.intellij.customLiveTemplate");
+    ExtensionPointName<CustomLiveTemplate> EP_NAME = ExtensionPointName.create("com.gome.maven.customLiveTemplate");
 
     
     String computeTemplateKey( CustomTemplateCallback callback);

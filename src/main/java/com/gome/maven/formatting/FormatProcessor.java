@@ -54,7 +54,7 @@ class FormatProcessor {
      */
     private static final int BULK_REPLACE_OPTIMIZATION_CRITERIA = 3000;
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.formatting.FormatProcessor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.formatting.FormatProcessor");
 
     private LeafBlockWrapper myCurrentBlock;
 

@@ -21,7 +21,7 @@ import com.gome.maven.openapi.project.Project;
 import com.gome.maven.usages.rules.UsageGroupingRule;
 
 public interface FileStructureGroupRuleProvider {
-    ExtensionPointName<FileStructureGroupRuleProvider> EP_NAME = new ExtensionPointName<FileStructureGroupRuleProvider>("com.intellij.fileStructureGroupRuleProvider");
+    ExtensionPointName<FileStructureGroupRuleProvider> EP_NAME = new ExtensionPointName<FileStructureGroupRuleProvider>("com.gome.maven.fileStructureGroupRuleProvider");
 
 
     UsageGroupingRule getUsageGroupingRule(final Project project);

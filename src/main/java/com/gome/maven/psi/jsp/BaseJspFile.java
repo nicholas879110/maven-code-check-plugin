@@ -36,7 +36,7 @@ public interface BaseJspFile extends XmlFile {
 
     /**
      * Method with a bad name. Returns file corresponding to getTemplateDataLanguage() method of ViewProvider
-     * @see com.intellij.psi.templateLanguages.TemplateLanguageFileViewProvider#getTemplateDataLanguage()
+     * @see com.gome.maven.psi.templateLanguages.TemplateLanguageFileViewProvider#getTemplateDataLanguage()
      */
     PsiFile getBaseLanguageRoot();
     /**
@@ -45,9 +45,9 @@ public interface BaseJspFile extends XmlFile {
      */
     PsiFile getErrorPage();
 
-    @NotNull
+    
     JspxFileViewProvider getViewProvider();
 
-    @NotNull
+    
     XmlTag getRootTag();
 }

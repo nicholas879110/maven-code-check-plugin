@@ -42,7 +42,7 @@ import java.util.List;
  * @since Jan 29, 2008
  */
 public class UnindexedFilesUpdater extends DumbModeTask {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.util.indexing.UnindexedFilesUpdater");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.util.indexing.UnindexedFilesUpdater");
 
     private final FileBasedIndexImpl myIndex = (FileBasedIndexImpl)FileBasedIndex.getInstance();
     private final Project myProject;

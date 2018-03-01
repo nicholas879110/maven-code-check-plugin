@@ -26,7 +26,7 @@ import com.gome.maven.openapi.project.Project;
  */
 @Deprecated
 public interface CompilerSettingsFactory {
-    ExtensionPointName<CompilerSettingsFactory> EP_NAME = ExtensionPointName.create("com.intellij.compilerSettingsFactory");
+    ExtensionPointName<CompilerSettingsFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.compilerSettingsFactory");
 
     Configurable create(Project project);
 }

@@ -25,7 +25,7 @@ import com.gome.maven.openapi.vfs.VirtualFile;
 import java.io.File;
 
 public abstract class Macro {
-    public static final ExtensionPointName<Macro> EP_NAME = ExtensionPointName.create("com.intellij.macro");
+    public static final ExtensionPointName<Macro> EP_NAME = ExtensionPointName.create("com.gome.maven.macro");
 
     public static final class ExecutionCancelledException extends Exception {
     }

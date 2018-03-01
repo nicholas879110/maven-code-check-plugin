@@ -50,7 +50,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @author max
  */
 public class PersistentFSImpl extends PersistentFS implements ApplicationComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.newvfs.persistent.PersistentFS");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.newvfs.persistent.PersistentFS");
 
     private final MessageBus myEventBus;
 

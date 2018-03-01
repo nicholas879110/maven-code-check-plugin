@@ -89,7 +89,7 @@ import java.util.List;
  * @author cdr
  */
 public class DaemonListeners implements Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.DaemonListeners");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.DaemonListeners");
 
     private final Project myProject;
     private final DaemonCodeAnalyzerImpl myDaemonCodeAnalyzer;

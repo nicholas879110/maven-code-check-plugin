@@ -23,7 +23,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author peter
  */
 public abstract class PomDeclarationSearcher {
-    public static final ExtensionPointName<PomDeclarationSearcher> EP_NAME = ExtensionPointName.create("com.intellij.pom.declarationSearcher");
+    public static final ExtensionPointName<PomDeclarationSearcher> EP_NAME = ExtensionPointName.create("com.gome.maven.pom.declarationSearcher");
 
     public abstract void findDeclarationsAt( PsiElement element, int offsetInElement, Consumer<PomTarget> consumer);
 

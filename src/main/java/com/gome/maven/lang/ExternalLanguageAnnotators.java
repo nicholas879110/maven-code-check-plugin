@@ -31,7 +31,7 @@ public class ExternalLanguageAnnotators extends LanguageExtension<ExternalAnnota
     public static final ExternalLanguageAnnotators INSTANCE = new ExternalLanguageAnnotators();
 
     private ExternalLanguageAnnotators() {
-        super("com.intellij.externalAnnotator");
+        super("com.gome.maven.externalAnnotator");
     }
 
     

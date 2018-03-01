@@ -54,7 +54,7 @@ import java.util.Map;
  * @author peter
  */
 public class ChunkExtractor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.usages.ChunkExtractor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.usages.ChunkExtractor");
     public static final int MAX_LINE_LENGTH_TO_SHOW = 200;
     public static final int OFFSET_BEFORE_TO_SHOW_WHEN_LONG_LINE = 1;
     public static final int OFFSET_AFTER_TO_SHOW_WHEN_LONG_LINE = 1;

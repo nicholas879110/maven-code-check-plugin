@@ -13,14 +13,14 @@
     </extensionPoint>
   </extensionPoints>
 
-  <extensions defaultExtensionNs="com.intellij">
+  <extensions defaultExtensionNs="com.gome.maven">
     <applicationService serviceImplementation="org.jetbrains.builtInWebServer.BuiltInServerOptions"/>
     <xdebugger.configurableProvider implementation="org.jetbrains.builtInWebServer.BuiltInServerOptions$BuiltInServerDebuggerConfigurableProvider"/>
     <webBrowserUrlProvider implementation="org.jetbrains.builtInWebServer.BuiltInWebBrowserUrlProvider" order="last"/>
 
     <projectService serviceImplementation="org.jetbrains.builtInWebServer.WebServerPathToFileManager"/>
 
-    <applicationService serviceInterface="com.intellij.ide.XmlRpcServer" serviceImplementation="org.jetbrains.ide.XmlRpcServerImpl"/>
+    <applicationService serviceInterface="com.gome.maven.ide.XmlRpcServer" serviceImplementation="org.jetbrains.ide.XmlRpcServerImpl"/>
 
     <!--<xmlRpcHandler name="fileOpener" implementation="org.jetbrains.ide.OpenFileXmlRpcHandler"/>-->
 

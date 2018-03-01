@@ -42,7 +42,7 @@ import java.util.Map;
         storages = {@Storage(file = StoragePathMacros.APP_CONFIG + "/jdk.table.xml", roamingType = RoamingType.DISABLED)}
 )
 public class ProjectJdkTableImpl extends ProjectJdkTable implements ExportableComponent, PersistentStateComponent<Element> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.ProjectJdkTableImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.ProjectJdkTableImpl");
 
     private final List<Sdk> mySdks = new ArrayList<Sdk>();
 

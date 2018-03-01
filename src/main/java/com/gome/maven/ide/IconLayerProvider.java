@@ -24,7 +24,7 @@ import javax.swing.*;
  * @author yole
  */
 public interface IconLayerProvider {
-    ExtensionPointName<IconLayerProvider> EP_NAME = ExtensionPointName.create("com.intellij.iconLayerProvider");
+    ExtensionPointName<IconLayerProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.iconLayerProvider");
 
     
     Icon getLayerIcon( Iconable element, boolean isLocked);

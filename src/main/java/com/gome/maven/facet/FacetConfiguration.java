@@ -28,7 +28,7 @@ import org.jdom.Element;
  * Implementations of this interface contain settings of a specific facet.
  *
  * <p>
- * Implement {@link com.gome.maven.openapi.components.PersistentStateComponent} instead of {@link com.intellij.openapi.util.JDOMExternalizable}
+ * Implement {@link com.gome.maven.openapi.components.PersistentStateComponent} instead of {@link com.gome.maven.openapi.util.JDOMExternalizable}
  * in your implementation of {@link com.gome.maven.facet.FacetConfiguration}
  *
  * @author nik

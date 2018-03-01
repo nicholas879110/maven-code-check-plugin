@@ -27,7 +27,7 @@ import com.gome.maven.openapi.roots.libraries.LibraryKind;
  */
 public abstract class LibrarySettingsProvider {
     public static final ExtensionPointName<LibrarySettingsProvider> EP_NAME =
-            ExtensionPointName.create("com.intellij.librarySettingsProvider");
+            ExtensionPointName.create("com.gome.maven.librarySettingsProvider");
 
     
     public abstract LibraryKind getLibraryKind();

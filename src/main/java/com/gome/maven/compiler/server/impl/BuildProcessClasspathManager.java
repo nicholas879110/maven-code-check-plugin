@@ -35,7 +35,7 @@ import java.util.List;
  * @author nik
  */
 public class BuildProcessClasspathManager {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.server.impl.BuildProcessClasspathManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.server.impl.BuildProcessClasspathManager");
 
     private List<String> myCompileServerPluginsClasspath;
 

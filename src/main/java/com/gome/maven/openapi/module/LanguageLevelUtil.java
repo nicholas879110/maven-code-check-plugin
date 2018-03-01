@@ -23,7 +23,7 @@ import com.gome.maven.pom.java.LanguageLevel;
  */
 public class LanguageLevelUtil extends EffectiveLanguageLevelUtil {
     /**
-     * @deprecated use JavaPsiImplementationHelper#getEffectiveLanguageLevel(com.intellij.openapi.vfs.VirtualFile)
+     * @deprecated use JavaPsiImplementationHelper#getEffectiveLanguageLevel(com.gome.maven.openapi.vfs.VirtualFile)
      * todo remove in IDEA 15
      */
     @SuppressWarnings({"deprecation", "UnusedDeclaration"})

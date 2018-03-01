@@ -21,7 +21,7 @@ import com.gome.maven.openapi.diff.impl.highlighting.FragmentSide;
 import com.gome.maven.openapi.util.TextRange;
 
 class SimpleChange extends Change implements DiffRangeMarker.RangeInvalidListener{
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.incrementalMerge.Change");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.incrementalMerge.Change");
     private ChangeType myType;
     private final SimpleChangeSide[] mySides;
     private final ChangeList myChangeList;

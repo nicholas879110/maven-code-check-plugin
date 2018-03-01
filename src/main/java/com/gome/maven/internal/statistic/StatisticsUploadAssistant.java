@@ -115,7 +115,7 @@ public class StatisticsUploadAssistant {
     private static final KeyedExtensionCollector<StatisticsService, String> COLLECTOR;
 
     static {
-        COLLECTOR = new KeyedExtensionCollector<StatisticsService, String>("com.intellij.statisticsService");
+        COLLECTOR = new KeyedExtensionCollector<StatisticsService, String>("com.gome.maven.statisticsService");
     }
 
     public static StatisticsService getStatisticsService() {

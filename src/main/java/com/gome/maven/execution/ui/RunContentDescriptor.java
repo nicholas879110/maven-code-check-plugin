@@ -180,7 +180,7 @@ public class RunContentDescriptor implements Disposable {
     
     @Deprecated
     /**
-     * @deprecated Use {@link com.intellij.execution.runners.ExecutionUtil#restart(RunContentDescriptor)} instead
+     * @deprecated Use {@link com.gome.maven.execution.runners.ExecutionUtil#restart(RunContentDescriptor)} instead
      * to remove in IDEA 15
      */
     public Runnable getRestarter() {

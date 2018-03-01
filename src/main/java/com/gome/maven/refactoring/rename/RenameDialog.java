@@ -50,7 +50,7 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 
 public class RenameDialog extends RefactoringDialog {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.RenameDialog");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.RenameDialog");
     private SuggestedNameInfo mySuggestedNameInfo;
 
     private JLabel myNameLabel;

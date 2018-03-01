@@ -107,7 +107,7 @@ public class InstanceofCheckerGenerator {
         public void generateClass(ClassVisitor classVisitor) throws Exception {
             ClassEmitter cv = new ClassEmitter(classVisitor);
 
-            cv.visit(Constants.V1_2, Modifier.PUBLIC, "com/intellij/util/InstanceofChecker$$$$$" + myCheckedClass.getName().replace('.', '$'), null, toInternalName(Object.class), new String[]{toInternalName(Condition.class)});
+            cv.visit(Constants.V1_2, Modifier.PUBLIC, "com/gome.maven/util/InstanceofChecker$$$$$" + myCheckedClass.getName().replace('.', '$'), null, toInternalName(Object.class), new String[]{toInternalName(Condition.class)});
             cv.visitSource(Constants.SOURCE_FILE, null);
             final Signature signature = new Signature("<init>", "()V");
             final CodeEmitter cons = cv.begin_method(Modifier.PUBLIC, signature, new Type[0]);

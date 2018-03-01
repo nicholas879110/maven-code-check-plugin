@@ -36,7 +36,7 @@ public class ExtensibleQueryFactory<Result, Parameters> extends QueryFactory<Res
     private final NotNullLazyValue<SimpleSmartExtensionPoint<QueryExecutor<Result,Parameters>>> myPoint;
 
     protected ExtensibleQueryFactory() {
-        this("com.intellij");
+        this("com.gome.maven");
     }
 
     protected ExtensibleQueryFactory( final String epNamespace) {

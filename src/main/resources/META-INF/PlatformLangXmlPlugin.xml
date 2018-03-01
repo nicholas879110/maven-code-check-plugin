@@ -12,5 +12,5 @@
     <xi:fallback/>
   </xi:include>
 
-  <module value="com.intellij.modules.xml"/>
+  <module value="com.gome.maven.modules.xml"/>
 </idea-plugin>

@@ -28,7 +28,7 @@ public class LanguageDocumentation extends LanguageExtension<DocumentationProvid
     public static final LanguageDocumentation INSTANCE = new LanguageDocumentation();
 
     private LanguageDocumentation() {
-        super("com.intellij.lang.documentationProvider");
+        super("com.gome.maven.lang.documentationProvider");
     }
 
     @Override

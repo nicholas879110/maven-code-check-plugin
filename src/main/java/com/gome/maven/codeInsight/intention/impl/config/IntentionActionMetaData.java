@@ -30,7 +30,7 @@ import java.net.URL;
 
 
 public final class IntentionActionMetaData extends BeforeAfterActionMetaData {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.config.IntentionActionMetaData");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.config.IntentionActionMetaData");
      private final IntentionAction myAction;
      public final String[] myCategory;
     private URL myDirURL = null;

@@ -23,7 +23,7 @@ import com.gome.maven.openapi.vfs.VirtualFile;
  * @author nik
  */
 public abstract class GeneratedSourcesFilter {
-    public static final ExtensionPointName<GeneratedSourcesFilter> EP_NAME = ExtensionPointName.create("com.intellij.generatedSourcesFilter");
+    public static final ExtensionPointName<GeneratedSourcesFilter> EP_NAME = ExtensionPointName.create("com.gome.maven.generatedSourcesFilter");
 
     public abstract boolean isGeneratedSource( VirtualFile file,  Project project);
 

@@ -72,7 +72,7 @@ class SyncCompletion implements CompletionThreading {
 }
 
 class AsyncCompletion implements CompletionThreading {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.AsyncCompletion");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.AsyncCompletion");
 
     @Override
     public Future<?> startThread(final ProgressIndicator progressIndicator, final Runnable runnable) {

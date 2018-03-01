@@ -19,7 +19,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import com.gome.maven.openapi.projectRoots.Sdk;
 
 public abstract class SdkFinder {
-    public static final ExtensionPointName<SdkFinder> EP_NAME = ExtensionPointName.create("com.intellij.sdkFinder");
+    public static final ExtensionPointName<SdkFinder> EP_NAME = ExtensionPointName.create("com.gome.maven.sdkFinder");
 
     public Sdk findSdk(String name, String sdkType) {
         return null;

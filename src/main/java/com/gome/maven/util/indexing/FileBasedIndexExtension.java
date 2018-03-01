@@ -30,7 +30,7 @@ import java.util.Collections;
  * V class MUST have equals / hashcode properly defined!!!
  */
 public abstract class FileBasedIndexExtension<K, V> {
-    public static final ExtensionPointName<FileBasedIndexExtension> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.fileBasedIndex");
+    public static final ExtensionPointName<FileBasedIndexExtension> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.fileBasedIndex");
     public static final int DEFAULT_CACHE_SIZE = 1024;
 
     

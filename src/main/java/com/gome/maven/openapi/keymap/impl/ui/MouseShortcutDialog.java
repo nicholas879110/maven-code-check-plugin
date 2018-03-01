@@ -28,7 +28,7 @@ import com.gome.maven.ui.JBColor;
 import com.gome.maven.ui.ScrollPaneFactory;
 import com.gome.maven.util.ui.JBUI;
 import com.gome.maven.util.ui.UIUtil;
-//import org.intellij.lang.annotations.JdkConstants;
+//import org.gome.maven.lang.annotations.JdkConstants;
 
 import javax.swing.*;
 import java.awt.*;

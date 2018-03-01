@@ -16,9 +16,10 @@
 package org.jetbrains.groovy.compiler.rt;
 
 import groovy.lang.GroovyResourceLoader;
-import org.codehaus.griffon.cli.CommandLineConstants;
-import org.codehaus.griffon.compiler.DefaultImportCompilerCustomizer;
-import org.codehaus.griffon.compiler.GriffonCompilerContext;
+//自己修改的
+//import org.codehaus.griffon.cli.CommandLineConstants;
+//import org.codehaus.griffon.compiler.DefaultImportCompilerCustomizer;
+//import org.codehaus.griffon.compiler.GriffonCompilerContext;
 import org.codehaus.groovy.control.CompilationUnit;
 
 import java.io.File;
@@ -35,14 +36,14 @@ public class GriffonInjector extends CompilationUnitPatcher {
       return;
     }
 
-    GriffonCompilerContext.basedir = baseDir.getPath();
-    GriffonCompilerContext.projectName = "IntelliJIDEARulezzzzz";
-    GriffonCompilerContext.setup();
-    if (!GriffonCompilerContext.getConfigOption(CommandLineConstants.KEY_DISABLE_AUTO_IMPORTS)) {
-      DefaultImportCompilerCustomizer customizer = new DefaultImportCompilerCustomizer();
-      customizer.collectDefaultImportsPerArtifact();
-      compilationUnit.addPhaseOperation(customizer, customizer.getPhase().getPhaseNumber());
-    }
+//    GriffonCompilerContext.basedir = baseDir.getPath();
+//    GriffonCompilerContext.projectName = "IntelliJIDEARulezzzzz";
+//    GriffonCompilerContext.setup();
+//    if (!GriffonCompilerContext.getConfigOption(CommandLineConstants.KEY_DISABLE_AUTO_IMPORTS)) {
+//      DefaultImportCompilerCustomizer customizer = new DefaultImportCompilerCustomizer();
+//      customizer.collectDefaultImportsPerArtifact();
+//      compilationUnit.addPhaseOperation(customizer, customizer.getPhase().getPhaseNumber());
+//    }
   }
 
   private static File guessBaseDir(File srcFile) {

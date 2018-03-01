@@ -25,7 +25,7 @@ import com.gome.maven.openapi.roots.ModifiableRootModel;
  */
 public abstract class ProjectTemplateParameterFactory {
 
-    public static final ExtensionPointName<ProjectTemplateParameterFactory> EP_NAME = ExtensionPointName.create("com.intellij.projectTemplateParameterFactory");
+    public static final ExtensionPointName<ProjectTemplateParameterFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.projectTemplateParameterFactory");
 
     // standard ids
     public static final String IJ_BASE_PACKAGE = "IJ_BASE_PACKAGE";

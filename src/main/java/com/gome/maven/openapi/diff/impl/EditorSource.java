@@ -48,7 +48,7 @@ public interface EditorSource {
         }
 
         public void addDisposable( Disposable disposable) {
-            Logger.getInstance("#com.intellij.openapi.diff.impl.EditorSource").assertTrue(false);
+            Logger.getInstance("#com.gome.maven.openapi.diff.impl.EditorSource").assertTrue(false);
         }
 
         

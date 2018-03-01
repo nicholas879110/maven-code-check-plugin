@@ -22,7 +22,7 @@ import com.gome.maven.usages.UsageView;
 import com.gome.maven.util.messages.Topic;
 
 public interface UsageFilteringRuleProvider {
-    ExtensionPointName<UsageFilteringRuleProvider> EP_NAME = ExtensionPointName.create("com.intellij.usageFilteringRuleProvider");
+    ExtensionPointName<UsageFilteringRuleProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.usageFilteringRuleProvider");
 
     
     UsageFilteringRule[] getActiveRules( Project project);

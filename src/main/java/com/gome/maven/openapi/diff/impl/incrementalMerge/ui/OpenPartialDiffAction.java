@@ -29,7 +29,7 @@ import com.gome.maven.openapi.project.Project;
 import javax.swing.*;
 
 class OpenPartialDiffAction extends AnAction implements DumbAware {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.incrementalMerge.ui.OpenPartialDiffAction");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.incrementalMerge.ui.OpenPartialDiffAction");
     private final int myLeftIndex;
     private final int myRightIndex;
 

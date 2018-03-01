@@ -63,7 +63,7 @@ import com.gome.maven.util.containers.HashMap;
 import java.util.Map;
 
 public class LineStatusTrackerManager implements ProjectComponent, LineStatusTrackerManagerI {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vcs.impl.LineStatusTrackerManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vcs.impl.LineStatusTrackerManager");
 
      protected static final String IGNORE_CHANGEMARKERS_KEY = "idea.ignore.changemarkers";
 

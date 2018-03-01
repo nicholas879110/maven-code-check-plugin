@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiReference;
  * @author maxim
  */
 public interface TargetElementEvaluator {
-    ExtensionPointName<TargetElementEvaluator> EP_NAME = ExtensionPointName.create("com.intellij.targetElementEvaluator");
+    ExtensionPointName<TargetElementEvaluator> EP_NAME = ExtensionPointName.create("com.gome.maven.targetElementEvaluator");
 
     boolean includeSelfInGotoImplementation( PsiElement element);
 

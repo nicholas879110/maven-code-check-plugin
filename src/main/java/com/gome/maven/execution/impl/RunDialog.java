@@ -68,7 +68,7 @@ public class RunDialog extends DialogWrapper implements RunConfigurable.RunDialo
 
     @Override
     protected String getDimensionServiceKey(){
-        return "#com.intellij.execution.impl.RunDialog";
+        return "#com.gome.maven.execution.impl.RunDialog";
     }
 
     @Override

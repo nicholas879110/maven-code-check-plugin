@@ -27,7 +27,7 @@ import com.gome.maven.psi.PsiFile;
  * @author yole
  */
 public abstract class TemplateContextType {
-    public static final ExtensionPointName<TemplateContextType> EP_NAME = ExtensionPointName.create("com.intellij.liveTemplateContext");
+    public static final ExtensionPointName<TemplateContextType> EP_NAME = ExtensionPointName.create("com.gome.maven.liveTemplateContext");
 
     private final String myContextId;
     private final String myPresentableName;

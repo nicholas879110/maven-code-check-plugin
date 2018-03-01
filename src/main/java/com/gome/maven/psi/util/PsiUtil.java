@@ -41,14 +41,14 @@ import com.gome.maven.util.containers.ContainerUtil;
 import com.gome.maven.util.containers.EmptyIterable;
 import com.gome.maven.util.containers.HashMap;
 import gnu.trove.THashSet;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import java.util.*;
 
 import static com.gome.maven.psi.CommonClassNames.JAVA_LANG_STRING;
 
 public final class PsiUtil extends PsiUtilCore {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.util.PsiUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.util.PsiUtil");
 
     public static final int ACCESS_LEVEL_PUBLIC = 4;
     public static final int ACCESS_LEVEL_PROTECTED = 3;

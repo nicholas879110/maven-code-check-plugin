@@ -28,7 +28,7 @@ public class LanguageFormatting extends LanguageExtension<FormattingModelBuilder
     public static final LanguageFormatting INSTANCE = new LanguageFormatting();
 
     private LanguageFormatting() {
-        super("com.intellij.lang.formatter");
+        super("com.gome.maven.lang.formatter");
     }
 
     

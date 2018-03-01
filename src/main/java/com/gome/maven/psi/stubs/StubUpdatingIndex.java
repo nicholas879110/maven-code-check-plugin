@@ -42,7 +42,7 @@ import java.util.*;
  * @author max
  */
 public class StubUpdatingIndex extends CustomImplementationFileBasedIndexExtension<Integer, SerializedStubTree, FileContent> implements PsiDependentIndex {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.StubUpdatingIndex");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.StubUpdatingIndex");
 
     // todo remove once we don't need this for stub-ast mismatch debug info
     private static final FileAttribute INDEXED_STAMP = new FileAttribute("stubIndexStamp", 2, true);

@@ -56,7 +56,7 @@ public class ModuleUtil extends ModuleUtilCore {
     private ModuleUtil() {}
 
     /**
-     * @deprecated use ModuleManager#getModuleDependentModules(com.intellij.openapi.module.Module) instead
+     * @deprecated use ModuleManager#getModuleDependentModules(com.gome.maven.openapi.module.Module) instead
      */
     
     public static Module getParentModuleOfType(ModuleType expectedModuleType, Module module) {
@@ -67,7 +67,7 @@ public class ModuleUtil extends ModuleUtilCore {
     }
 
     /**
-     * @deprecated use ModuleManager#getModuleDependentModules(com.intellij.openapi.module.Module) instead
+     * @deprecated use ModuleManager#getModuleDependentModules(com.gome.maven.openapi.module.Module) instead
      */
     
     public static List<Module> getParentModulesOfType(ModuleType expectedModuleType, Module module) {

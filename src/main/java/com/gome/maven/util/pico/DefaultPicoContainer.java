@@ -79,9 +79,12 @@ public class DefaultPicoContainer implements AreaPicoContainer, Serializable {
     
     private ComponentAdapter getFromCache(final Object componentKey) {
         Set<Map.Entry<Object, ComponentAdapter>> entries= componentKeyToAdapterCache.entrySet();
-        for (Map.Entry<Object, ComponentAdapter> entry:entries){
-            System.out.println("key="+entry.getKey()+",val="+entry.getValue());
-        }
+//        if (componentKey.equals("FeatureUsageTracker")){
+//            System.out.println(componentKey);
+//        }
+//        for (Map.Entry<Object, ComponentAdapter> entry:entries){
+//            System.out.println("key="+entry.getKey()+",val="+entry.getValue());
+//        }
 
         ComponentAdapter adapter = componentKeyToAdapterCache.get(componentKey);
 //        if (adapter==null){
@@ -144,6 +147,9 @@ public class DefaultPicoContainer implements AreaPicoContainer, Serializable {
     @Override
     public ComponentAdapter registerComponent( ComponentAdapter componentAdapter) {
         Object componentKey = componentAdapter.getComponentKey();
+//        if (componentKey.toString().contains("FeatureUsageTracker")){
+//            System.out.println("FeatureUsageTracker11");
+//        }
         if (componentKeyToAdapterCache.containsKey(componentKey)) {
             throw new DuplicateComponentKeyRegistrationException(componentKey);
         }
@@ -340,26 +346,41 @@ public class DefaultPicoContainer implements AreaPicoContainer, Serializable {
 
     @Override
     public ComponentAdapter registerComponentInstance( Object component) {
+        if (component.toString().contains("FeatureUsageTracker")){
+            System.out.println("FeatureUsageTracker11");
+        }
         return registerComponentInstance(component.getClass(), component);
     }
 
     @Override
     public ComponentAdapter registerComponentInstance( Object componentKey,  Object componentInstance) {
+        if (componentKey.toString().contains("FeatureUsageTracker")){
+            System.out.println("FeatureUsageTracker11");
+        }
         return registerComponent(new InstanceComponentAdapter(componentKey, componentInstance));
     }
 
     @Override
     public ComponentAdapter registerComponentImplementation( Class componentImplementation) {
+        if (componentImplementation.toString().contains("FeatureUsageTracker")){
+            System.out.println("FeatureUsageTracker11");
+        }
         return registerComponentImplementation(componentImplementation, componentImplementation);
     }
 
     @Override
     public ComponentAdapter registerComponentImplementation( Object componentKey,  Class componentImplementation) {
+        if (componentImplementation.toString().contains("FeatureUsageTracker")){
+            System.out.println("FeatureUsageTracker11");
+        }
         return registerComponentImplementation(componentKey, componentImplementation, null);
     }
 
     @Override
     public ComponentAdapter registerComponentImplementation( Object componentKey,  Class componentImplementation, Parameter[] parameters) {
+        if (componentImplementation.toString().contains("FeatureUsageTracker")){
+            System.out.println("FeatureUsageTracker11");
+        }
         ComponentAdapter componentAdapter = new ConstructorInjectionComponentAdapter(componentKey, componentImplementation, parameters, true);
         return registerComponent(componentAdapter);
     }

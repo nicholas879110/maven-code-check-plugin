@@ -34,7 +34,7 @@ import javax.swing.*;
 import java.io.IOException;
 
 public class MergeRequestImpl extends MergeRequest {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.mergeTool.MergeRequestImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.mergeTool.MergeRequestImpl");
 
     private final DiffContent[] myDiffContents = new DiffContent[3];
     private String myWindowTitle = null;

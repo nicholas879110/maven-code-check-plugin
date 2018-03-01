@@ -31,7 +31,7 @@ import com.gome.maven.psi.util.PsiTreeUtil;
 import com.gome.maven.psi.util.PsiUtil;
 
 public class AddAnnotationPsiFix extends LocalQuickFixOnPsiElement {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.AddAnnotationPsiFix");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.AddAnnotationPsiFix");
     protected final String myAnnotation;
     private final String[] myAnnotationsToRemove;
     private final PsiNameValuePair[] myPairs; // not used when registering local quick fix

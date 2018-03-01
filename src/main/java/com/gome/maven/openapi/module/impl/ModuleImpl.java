@@ -50,7 +50,7 @@ import java.util.*;
  * @author max
  */
 public class ModuleImpl extends PlatformComponentManagerImpl implements ModuleEx {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.module.impl.ModuleImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.module.impl.ModuleImpl");
 
      private final Project myProject;
     private boolean isModuleAdded;

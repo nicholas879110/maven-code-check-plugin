@@ -32,7 +32,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class TextCompareProcessor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.processing.Processor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.processing.Processor");
      private final ComparisonPolicy myComparisonPolicy;
      private final DiffPolicy myDiffPolicy;
      private final HighlightMode myHighlightMode;

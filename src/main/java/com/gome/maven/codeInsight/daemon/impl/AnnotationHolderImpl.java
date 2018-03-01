@@ -34,7 +34,7 @@ import com.gome.maven.xml.util.XmlStringUtil;
  * @author max
  */
 public class AnnotationHolderImpl extends SmartList<Annotation> implements AnnotationHolder {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.AnnotationHolderImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.AnnotationHolderImpl");
     private final AnnotationSession myAnnotationSession;
 
     private final boolean myBatchMode;

@@ -37,7 +37,7 @@ import java.util.*;
  *         Date: Dec 20, 2007
  */
 class ValueContainerImpl<Value> extends UpdatableValueContainer<Value> implements Cloneable{
-    private static final Logger LOG = Logger.getInstance("#com.intellij.util.indexing.ValueContainerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.util.indexing.ValueContainerImpl");
     private final static Object myNullValue = new Object();
 
     // there is no volatile as we modify under write lock and read under read lock

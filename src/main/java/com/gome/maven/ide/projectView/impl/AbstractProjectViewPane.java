@@ -76,7 +76,7 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class AbstractProjectViewPane implements DataProvider, Disposable, BusyObject {
-    public static ExtensionPointName<AbstractProjectViewPane> EP_NAME = ExtensionPointName.create("com.intellij.projectViewPane");
+    public static ExtensionPointName<AbstractProjectViewPane> EP_NAME = ExtensionPointName.create("com.gome.maven.projectViewPane");
 
     
     protected final Project myProject;

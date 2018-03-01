@@ -160,7 +160,7 @@ class ShowUsagesTableCellRenderer implements TableCellRenderer {
                 //return super.getPreferredSize();
                 return column == table.getColumnModel().getColumnCount()-1 ? super.getPreferredSize() : new Dimension(0,0);
                 // it should span the whole row, so we can't return any specific value here,
-                // because otherwise it would be used in the "max width" calculation in com.intellij.find.actions.ShowUsagesAction.calcMaxWidth
+                // because otherwise it would be used in the "max width" calculation in com.gome.maven.find.actions.ShowUsagesAction.calcMaxWidth
             }
         };
 

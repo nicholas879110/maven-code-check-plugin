@@ -40,7 +40,7 @@ public class FilePatternPackageSet extends PatternBasedPackageSet {
     private final String myPathPattern;
     private final Pattern myFilePattern;
     private final String myModulePatternText;
-    private static final Logger LOG = Logger.getInstance("com.intellij.psi.search.scope.packageSet.FilePatternPackageSet");
+    private static final Logger LOG = Logger.getInstance("com.gome.maven.psi.search.scope.packageSet.FilePatternPackageSet");
 
     public FilePatternPackageSet( String modulePattern,
                                   String filePattern) {

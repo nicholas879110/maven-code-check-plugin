@@ -52,9 +52,9 @@ import java.util.*;
 
 public abstract class ModuleBuilder extends AbstractModuleBuilder {
 
-    public static final ExtensionPointName<ModuleBuilderFactory> EP_NAME = ExtensionPointName.create("com.intellij.moduleBuilder");
+    public static final ExtensionPointName<ModuleBuilderFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.moduleBuilder");
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.projectWizard.ModuleBuilder");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.projectWizard.ModuleBuilder");
     private final Set<ModuleConfigurationUpdater> myUpdaters = new HashSet<ModuleConfigurationUpdater>();
     private final EventDispatcher<ModuleBuilderListener> myDispatcher = EventDispatcher.create(ModuleBuilderListener.class);
     protected Sdk myJdk;

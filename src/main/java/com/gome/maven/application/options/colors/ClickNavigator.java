@@ -34,7 +34,7 @@ import com.gome.maven.openapi.fileTypes.SyntaxHighlighter;
 import com.gome.maven.psi.tree.IElementType;
 import com.gome.maven.ui.ListScrollingUtil;
 import com.gome.maven.util.ui.UIUtil;
-//import org.intellij.lang.annotations.JdkConstants;
+//import org.gome.maven.lang.annotations.JdkConstants;
 
 import javax.swing.*;
 import java.awt.*;

@@ -102,7 +102,7 @@ public class SearchRequestCollector {
     }
 
     @Deprecated
-    /** use {@link #searchWord(java.lang.String, com.intellij.psi.search.SearchScope, short, boolean, com.intellij.psi.PsiElement)}
+    /** use {@link #searchWord(java.lang.String, com.gome.maven.psi.search.SearchScope, short, boolean, com.gome.maven.psi.PsiElement)}
      * instead
      */
     public void searchWord( String word,

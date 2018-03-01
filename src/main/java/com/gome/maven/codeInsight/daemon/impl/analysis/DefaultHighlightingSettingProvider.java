@@ -32,7 +32,7 @@ import com.gome.maven.openapi.vfs.VirtualFile;
  * Implement {@link com.gome.maven.openapi.project.DumbAware} interface to allow implementation to be called in dumb mode
  */
 public abstract class DefaultHighlightingSettingProvider {
-    public static final ExtensionPointName<DefaultHighlightingSettingProvider> EP_NAME = ExtensionPointName.create("com.intellij.defaultHighlightingSettingProvider");
+    public static final ExtensionPointName<DefaultHighlightingSettingProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.defaultHighlightingSettingProvider");
 
     
     public abstract FileHighlightingSetting getDefaultSetting( Project project,  VirtualFile file);

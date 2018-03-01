@@ -17,262 +17,262 @@
   <actions>
 
     <group id="SwitchViewActions">
-      <action id="SwitchUp" text="Switching Up" class="com.intellij.ui.switcher.SwitchAction$Up"/>
-      <action id="SwitchDown" text="Switching Down" class="com.intellij.ui.switcher.SwitchAction$Down"/>
-      <action id="SwitchLeft" text="Switching Left" class="com.intellij.ui.switcher.SwitchAction$Left"/>
-      <action id="SwitchRight" text="Switching Right" class="com.intellij.ui.switcher.SwitchAction$Right"/>
-      <action id="SwitchApply" text="Switching Apply" class="com.intellij.ui.switcher.ApplySwitchAction"/>
+      <action id="SwitchUp" text="Switching Up" class="com.gome.maven.ui.switcher.SwitchAction$Up"/>
+      <action id="SwitchDown" text="Switching Down" class="com.gome.maven.ui.switcher.SwitchAction$Down"/>
+      <action id="SwitchLeft" text="Switching Left" class="com.gome.maven.ui.switcher.SwitchAction$Left"/>
+      <action id="SwitchRight" text="Switching Right" class="com.gome.maven.ui.switcher.SwitchAction$Right"/>
+      <action id="SwitchApply" text="Switching Apply" class="com.gome.maven.ui.switcher.ApplySwitchAction"/>
     </group>
 
-    <action id="ContextHelp" class="com.intellij.ide.actions.ContextHelpAction"/>
-    <action id="RunGc" class="com.intellij.ide.actions.RunGcAction"/>
-    <action id="ShowPopupMenu" class="com.intellij.ide.actions.ShowPopupMenuAction"/>
-    <action id="ShowColorPicker" class="com.intellij.ui.ShowColorPickerAction" text="Show Color Picker" icon="AllIcons.Ide.Pipette"/>
+    <action id="ContextHelp" class="com.gome.maven.ide.actions.ContextHelpAction"/>
+    <action id="RunGc" class="com.gome.maven.ide.actions.RunGcAction"/>
+    <action id="ShowPopupMenu" class="com.gome.maven.ide.actions.ShowPopupMenuAction"/>
+    <action id="ShowColorPicker" class="com.gome.maven.ui.ShowColorPickerAction" text="Show Color Picker" icon="AllIcons.Ide.Pipette"/>
 
-    <action id="NextEditorTab" class="com.intellij.openapi.fileEditor.impl.SelectNextEditorTabAction"/>
-    <action id="PreviousEditorTab" class="com.intellij.openapi.fileEditor.impl.SelectPreviousEditorTabAction"/>
+    <action id="NextEditorTab" class="com.gome.maven.openapi.fileEditor.impl.SelectNextEditorTabAction"/>
+    <action id="PreviousEditorTab" class="com.gome.maven.openapi.fileEditor.impl.SelectPreviousEditorTabAction"/>
 
-    <action id="TextComponent.ClearAction" class="com.intellij.ui.ClearTextAction"/>
-    <action id="Switcher" class="com.intellij.ide.actions.Switcher" text="Switcher"/>
-    <action id="QuickDocCopy" text="Copy Quick Doc" class="com.intellij.codeInsight.documentation.actions.CopyQuickDocAction" use-shortcut-of="$Copy"/>
-    <action id="EditSourceInNewWindow" class="com.intellij.ide.actions.EditSourceInNewWindowAction" />
-    <action id="SearchEverywhere" class="com.intellij.ide.actions.SearchEverywhereAction" />
+    <action id="TextComponent.ClearAction" class="com.gome.maven.ui.ClearTextAction"/>
+    <action id="Switcher" class="com.gome.maven.ide.actions.Switcher" text="Switcher"/>
+    <action id="QuickDocCopy" text="Copy Quick Doc" class="com.gome.maven.codeInsight.documentation.actions.CopyQuickDocAction" use-shortcut-of="$Copy"/>
+    <action id="EditSourceInNewWindow" class="com.gome.maven.ide.actions.EditSourceInNewWindowAction" />
+    <action id="SearchEverywhere" class="com.gome.maven.ide.actions.SearchEverywhereAction" />
 
     <group id="TemplateParametersNavigation">
-      <action id="NextTemplateParameter" class="com.intellij.codeInsight.completion.NextPrevParameterAction$Next" text="Next Parameter">
+      <action id="NextTemplateParameter" class="com.gome.maven.codeInsight.completion.NextPrevParameterAction$Next" text="Next Parameter">
         <keyboard-shortcut first-keystroke="TAB" keymap="$default"/>
       </action>
-      <action id="PrevTemplateParameter" class="com.intellij.codeInsight.completion.NextPrevParameterAction$Prev" text="Previous Parameter">
+      <action id="PrevTemplateParameter" class="com.gome.maven.codeInsight.completion.NextPrevParameterAction$Prev" text="Previous Parameter">
         <keyboard-shortcut first-keystroke="shift TAB" keymap="$default"/>
       </action>
     </group>
 
     <group id="EditorActions">
-      <action id="EditorPageUp" class="com.intellij.openapi.editor.actions.PageUpAction"/>
-      <action id="EditorPageDown" class="com.intellij.openapi.editor.actions.PageDownAction"/>
-      <action id="EditorPageUpWithSelection" class="com.intellij.openapi.editor.actions.PageUpWithSelectionAction"/>
-      <action id="EditorPageDownWithSelection" class="com.intellij.openapi.editor.actions.PageDownWithSelectionAction"/>
-      <action id="EditorCopy" class="com.intellij.openapi.editor.actions.CopyAction" use-shortcut-of="$Copy"/>
-      <action id="EditorCut" class="com.intellij.openapi.editor.actions.CutAction" use-shortcut-of="$Cut"/>
-      <action id="EditorPaste" class="com.intellij.openapi.editor.actions.PasteAction" use-shortcut-of="$Paste"/>
-      <action id="EditorPasteSimple" class="com.intellij.openapi.editor.actions.SimplePasteAction"/>
-      <action id="EditorPasteFromX11" class="com.intellij.openapi.editor.actions.PasteFromX11Action"/>
-      <action id="EditorHungryBackSpace" class="com.intellij.openapi.editor.actions.HungryBackspaceAction"/>
-      <action id="EditorMoveToPageTop" class="com.intellij.openapi.editor.actions.PageTopAction"/>
-      <action id="EditorMoveToPageBottom" class="com.intellij.openapi.editor.actions.PageBottomAction"/>
-      <action id="EditorMoveToPageTopWithSelection" class="com.intellij.openapi.editor.actions.PageTopWithSelectionAction"/>
-      <action id="EditorMoveToPageBottomWithSelection" class="com.intellij.openapi.editor.actions.PageBottomWithSelectionAction"/>
-      <action id="EditorEnter" class="com.intellij.openapi.editor.actions.EnterAction"/>
-      <action id="EditorEscape" class="com.intellij.openapi.editor.actions.EscapeAction"/>
-      <action id="EditorUp" class="com.intellij.openapi.editor.actions.MoveCaretUpAction"/>
-      <action id="EditorDown" class="com.intellij.openapi.editor.actions.MoveCaretDownAction"/>
-      <action id="EditorLeft" class="com.intellij.openapi.editor.actions.MoveCaretLeftAction"/>
-      <action id="EditorRight" class="com.intellij.openapi.editor.actions.MoveCaretRightAction"/>
-      <action id="EditorUpWithSelection" class="com.intellij.openapi.editor.actions.MoveCaretUpWithSelectionAction"/>
-      <action id="EditorDownWithSelection" class="com.intellij.openapi.editor.actions.MoveCaretDownWithSelectionAction"/>
-      <action id="EditorLeftWithSelection" class="com.intellij.openapi.editor.actions.MoveCaretLeftWithSelectionAction"/>
-      <action id="EditorRightWithSelection" class="com.intellij.openapi.editor.actions.MoveCaretRightWithSelectionAction"/>
-      <action id="EditorUnindentSelection" class="com.intellij.openapi.editor.actions.UnindentSelectionAction"/>
-      <action id="EditorTab" class="com.intellij.openapi.editor.actions.TabAction"/>
-      <action id="EditorResetFontSize" class="com.intellij.openapi.editor.actions.ResetFontSizeAction"/>
-      <action id="EditorScrollUp" class="com.intellij.openapi.editor.actions.ScrollUpAction"/>
-      <action id="EditorScrollDown" class="com.intellij.openapi.editor.actions.ScrollDownAction"/>
-      <action id="EditorScrollUpAndMove" class="com.intellij.openapi.editor.actions.ScrollUpAndMoveAction"/>
-      <action id="EditorScrollDownAndMove" class="com.intellij.openapi.editor.actions.ScrollDownAndMoveAction"/>
-      <action id="EditorScrollRight" class="com.intellij.openapi.editor.actions.ScrollRightAction"/>
-      <action id="EditorScrollLeft" class="com.intellij.openapi.editor.actions.ScrollLeftAction"/>
-      <action id="EditorScrollTop" class="com.intellij.openapi.editor.actions.ScrollToTopAction"/>
-      <action id="EditorScrollBottom" class="com.intellij.openapi.editor.actions.ScrollToBottomAction"/>
-      <action id="EditorMoveUpAndScroll" class="com.intellij.openapi.editor.actions.MoveUpAndScrollAction"/>
-      <action id="EditorMoveDownAndScroll" class="com.intellij.openapi.editor.actions.MoveDownAndScrollAction"/>
-      <action id="EditorMoveUpAndScrollWithSelection" class="com.intellij.openapi.editor.actions.MoveUpWithSelectionAndScrollAction"/>
-      <action id="EditorMoveDownAndScrollWithSelection" class="com.intellij.openapi.editor.actions.MoveDownWithSelectionAndScrollAction"/>
-      <action id="EditorAddOrRemoveCaret" class="com.intellij.openapi.editor.actions.AddOrRemoveCaretDummyAction"/>
-      <action id="EditorCreateRectangularSelection" class="com.intellij.openapi.editor.actions.CreateRectangularSelectionAction"/>
-      <action id="EditorAddRectangularSelectionOnMouseDrag" class="com.intellij.openapi.editor.actions.AddRectangularSelectionOnMouseDragAction"/>
-      <action id="EditorCloneCaretBelow" class="com.intellij.openapi.editor.actions.CloneCaretBelow"/>
-      <action id="EditorCloneCaretAbove" class="com.intellij.openapi.editor.actions.CloneCaretAbove"/>
-      <action id="EditorToggleStickySelection" class="com.intellij.openapi.editor.actions.ToggleStickySelectionModeAction"/>
-      <action id="EditorSwapSelectionBoundaries" class="com.intellij.openapi.editor.actions.SwapSelectionBoundariesAction"/>
-      <action id="EditorLineStart" class="com.intellij.openapi.editor.actions.LineStartAction"/>
-      <action id="EditorLineEnd" class="com.intellij.openapi.editor.actions.LineEndAction"/>
-      <action id="EditorCutLineBackward" class="com.intellij.openapi.editor.actions.CutLineBackwardAction"/>
-      <action id="EditorCutLineEnd" class="com.intellij.openapi.editor.actions.CutLineEndAction"/>
-      <action id="EditorDeleteToLineStart" class="com.intellij.openapi.editor.actions.DeleteToLineStartAction"/>
-      <action id="EditorDeleteToLineEnd" class="com.intellij.openapi.editor.actions.DeleteToLineEndAction"/>
-      <action id="EditorTextStart" class="com.intellij.openapi.editor.actions.TextStartAction"/>
-      <action id="EditorTextEnd" class="com.intellij.openapi.editor.actions.TextEndAction"/>
-      <action id="EditorLineStartWithSelection" class="com.intellij.openapi.editor.actions.LineStartWithSelectionAction"/>
-      <action id="EditorLineEndWithSelection" class="com.intellij.openapi.editor.actions.LineEndWithSelectionAction"/>
-      <action id="EditorTextStartWithSelection" class="com.intellij.openapi.editor.actions.TextStartWithSelectionAction"/>
-      <action id="EditorTextEndWithSelection" class="com.intellij.openapi.editor.actions.TextEndWithSelectionAction"/>
-      <action id="EditorNextWord" class="com.intellij.openapi.editor.actions.NextWordAction"/>
-      <action id="EditorNextWordInDifferentHumpsMode" class="com.intellij.openapi.editor.actions.NextWordInDifferentHumpsModeAction"/>
-      <action id="EditorNextWordWithSelection" class="com.intellij.openapi.editor.actions.NextWordWithSelectionAction"/>
-      <action id="EditorNextWordInDifferentHumpsModeWithSelection" class="com.intellij.openapi.editor.actions.NextWordInDifferentHumpsModeWithSelectionAction"/>
-      <action id="EditorPreviousWord" class="com.intellij.openapi.editor.actions.PreviousWordAction"/>
-      <action id="EditorPreviousWordInDifferentHumpsMode" class="com.intellij.openapi.editor.actions.PreviousWordInDifferentHumpsModeAction"/>
-      <action id="EditorPreviousWordWithSelection" class="com.intellij.openapi.editor.actions.PreviousWordWithSelectionAction"/>
-      <action id="EditorPreviousWordInDifferentHumpsModeWithSelection" class="com.intellij.openapi.editor.actions.PreviousWordInDifferentHumpsModeWithSelectionAction"/>
-      <action id="EditorDeleteToWordStart" class="com.intellij.openapi.editor.actions.DeleteToWordStartAction"/>
-      <action id="EditorDeleteToWordStartInDifferentHumpsMode" class="com.intellij.openapi.editor.actions.DeleteToWordStartInDifferentHumpsModeAction"/>
-      <action id="EditorDeleteToWordEnd" class="com.intellij.openapi.editor.actions.DeleteToWordEndAction"/>
-      <action id="EditorDeleteToWordEndInDifferentHumpsMode" class="com.intellij.openapi.editor.actions.DeleteToWordEndInDifferentHumpsModeAction"/>
-      <action id="EditorDeleteLine" class="com.intellij.openapi.editor.actions.DeleteLineAction"/>
-      <action id="EditorKillToWordStart" class="com.intellij.openapi.editor.actions.KillToWordStartAction"/>
-      <action id="EditorKillToWordEnd" class="com.intellij.openapi.editor.actions.KillToWordEndAction"/>
-      <action id="EditorKillRegion" class="com.intellij.openapi.editor.actions.KillRegionAction"/>
-      <action id="EditorKillRingSave" class="com.intellij.openapi.editor.actions.KillRingSaveAction"/>
-      <action id="EditorDuplicate" class="com.intellij.openapi.editor.actions.DuplicateAction"/>
-      <action id="EditorDuplicateLines" class="com.intellij.openapi.editor.actions.DuplicateLinesAction"/>
-      <action id="EditorToggleInsertState" class="com.intellij.openapi.editor.actions.ToggleInsertStateAction"/>
-      <action id="EditorToggleColumnMode" class="com.intellij.openapi.editor.actions.ToggleColumnModeAction"/>
-      <action id="EditorIncreaseFontSize" class="com.intellij.openapi.editor.actions.ChangeEditorFontSizeAction$IncreaseEditorFontSize"/>
-      <action id="EditorDecreaseFontSize" class="com.intellij.openapi.editor.actions.ChangeEditorFontSizeAction$DecreaseEditorFontSize"/>
+      <action id="EditorPageUp" class="com.gome.maven.openapi.editor.actions.PageUpAction"/>
+      <action id="EditorPageDown" class="com.gome.maven.openapi.editor.actions.PageDownAction"/>
+      <action id="EditorPageUpWithSelection" class="com.gome.maven.openapi.editor.actions.PageUpWithSelectionAction"/>
+      <action id="EditorPageDownWithSelection" class="com.gome.maven.openapi.editor.actions.PageDownWithSelectionAction"/>
+      <action id="EditorCopy" class="com.gome.maven.openapi.editor.actions.CopyAction" use-shortcut-of="$Copy"/>
+      <action id="EditorCut" class="com.gome.maven.openapi.editor.actions.CutAction" use-shortcut-of="$Cut"/>
+      <action id="EditorPaste" class="com.gome.maven.openapi.editor.actions.PasteAction" use-shortcut-of="$Paste"/>
+      <action id="EditorPasteSimple" class="com.gome.maven.openapi.editor.actions.SimplePasteAction"/>
+      <action id="EditorPasteFromX11" class="com.gome.maven.openapi.editor.actions.PasteFromX11Action"/>
+      <action id="EditorHungryBackSpace" class="com.gome.maven.openapi.editor.actions.HungryBackspaceAction"/>
+      <action id="EditorMoveToPageTop" class="com.gome.maven.openapi.editor.actions.PageTopAction"/>
+      <action id="EditorMoveToPageBottom" class="com.gome.maven.openapi.editor.actions.PageBottomAction"/>
+      <action id="EditorMoveToPageTopWithSelection" class="com.gome.maven.openapi.editor.actions.PageTopWithSelectionAction"/>
+      <action id="EditorMoveToPageBottomWithSelection" class="com.gome.maven.openapi.editor.actions.PageBottomWithSelectionAction"/>
+      <action id="EditorEnter" class="com.gome.maven.openapi.editor.actions.EnterAction"/>
+      <action id="EditorEscape" class="com.gome.maven.openapi.editor.actions.EscapeAction"/>
+      <action id="EditorUp" class="com.gome.maven.openapi.editor.actions.MoveCaretUpAction"/>
+      <action id="EditorDown" class="com.gome.maven.openapi.editor.actions.MoveCaretDownAction"/>
+      <action id="EditorLeft" class="com.gome.maven.openapi.editor.actions.MoveCaretLeftAction"/>
+      <action id="EditorRight" class="com.gome.maven.openapi.editor.actions.MoveCaretRightAction"/>
+      <action id="EditorUpWithSelection" class="com.gome.maven.openapi.editor.actions.MoveCaretUpWithSelectionAction"/>
+      <action id="EditorDownWithSelection" class="com.gome.maven.openapi.editor.actions.MoveCaretDownWithSelectionAction"/>
+      <action id="EditorLeftWithSelection" class="com.gome.maven.openapi.editor.actions.MoveCaretLeftWithSelectionAction"/>
+      <action id="EditorRightWithSelection" class="com.gome.maven.openapi.editor.actions.MoveCaretRightWithSelectionAction"/>
+      <action id="EditorUnindentSelection" class="com.gome.maven.openapi.editor.actions.UnindentSelectionAction"/>
+      <action id="EditorTab" class="com.gome.maven.openapi.editor.actions.TabAction"/>
+      <action id="EditorResetFontSize" class="com.gome.maven.openapi.editor.actions.ResetFontSizeAction"/>
+      <action id="EditorScrollUp" class="com.gome.maven.openapi.editor.actions.ScrollUpAction"/>
+      <action id="EditorScrollDown" class="com.gome.maven.openapi.editor.actions.ScrollDownAction"/>
+      <action id="EditorScrollUpAndMove" class="com.gome.maven.openapi.editor.actions.ScrollUpAndMoveAction"/>
+      <action id="EditorScrollDownAndMove" class="com.gome.maven.openapi.editor.actions.ScrollDownAndMoveAction"/>
+      <action id="EditorScrollRight" class="com.gome.maven.openapi.editor.actions.ScrollRightAction"/>
+      <action id="EditorScrollLeft" class="com.gome.maven.openapi.editor.actions.ScrollLeftAction"/>
+      <action id="EditorScrollTop" class="com.gome.maven.openapi.editor.actions.ScrollToTopAction"/>
+      <action id="EditorScrollBottom" class="com.gome.maven.openapi.editor.actions.ScrollToBottomAction"/>
+      <action id="EditorMoveUpAndScroll" class="com.gome.maven.openapi.editor.actions.MoveUpAndScrollAction"/>
+      <action id="EditorMoveDownAndScroll" class="com.gome.maven.openapi.editor.actions.MoveDownAndScrollAction"/>
+      <action id="EditorMoveUpAndScrollWithSelection" class="com.gome.maven.openapi.editor.actions.MoveUpWithSelectionAndScrollAction"/>
+      <action id="EditorMoveDownAndScrollWithSelection" class="com.gome.maven.openapi.editor.actions.MoveDownWithSelectionAndScrollAction"/>
+      <action id="EditorAddOrRemoveCaret" class="com.gome.maven.openapi.editor.actions.AddOrRemoveCaretDummyAction"/>
+      <action id="EditorCreateRectangularSelection" class="com.gome.maven.openapi.editor.actions.CreateRectangularSelectionAction"/>
+      <action id="EditorAddRectangularSelectionOnMouseDrag" class="com.gome.maven.openapi.editor.actions.AddRectangularSelectionOnMouseDragAction"/>
+      <action id="EditorCloneCaretBelow" class="com.gome.maven.openapi.editor.actions.CloneCaretBelow"/>
+      <action id="EditorCloneCaretAbove" class="com.gome.maven.openapi.editor.actions.CloneCaretAbove"/>
+      <action id="EditorToggleStickySelection" class="com.gome.maven.openapi.editor.actions.ToggleStickySelectionModeAction"/>
+      <action id="EditorSwapSelectionBoundaries" class="com.gome.maven.openapi.editor.actions.SwapSelectionBoundariesAction"/>
+      <action id="EditorLineStart" class="com.gome.maven.openapi.editor.actions.LineStartAction"/>
+      <action id="EditorLineEnd" class="com.gome.maven.openapi.editor.actions.LineEndAction"/>
+      <action id="EditorCutLineBackward" class="com.gome.maven.openapi.editor.actions.CutLineBackwardAction"/>
+      <action id="EditorCutLineEnd" class="com.gome.maven.openapi.editor.actions.CutLineEndAction"/>
+      <action id="EditorDeleteToLineStart" class="com.gome.maven.openapi.editor.actions.DeleteToLineStartAction"/>
+      <action id="EditorDeleteToLineEnd" class="com.gome.maven.openapi.editor.actions.DeleteToLineEndAction"/>
+      <action id="EditorTextStart" class="com.gome.maven.openapi.editor.actions.TextStartAction"/>
+      <action id="EditorTextEnd" class="com.gome.maven.openapi.editor.actions.TextEndAction"/>
+      <action id="EditorLineStartWithSelection" class="com.gome.maven.openapi.editor.actions.LineStartWithSelectionAction"/>
+      <action id="EditorLineEndWithSelection" class="com.gome.maven.openapi.editor.actions.LineEndWithSelectionAction"/>
+      <action id="EditorTextStartWithSelection" class="com.gome.maven.openapi.editor.actions.TextStartWithSelectionAction"/>
+      <action id="EditorTextEndWithSelection" class="com.gome.maven.openapi.editor.actions.TextEndWithSelectionAction"/>
+      <action id="EditorNextWord" class="com.gome.maven.openapi.editor.actions.NextWordAction"/>
+      <action id="EditorNextWordInDifferentHumpsMode" class="com.gome.maven.openapi.editor.actions.NextWordInDifferentHumpsModeAction"/>
+      <action id="EditorNextWordWithSelection" class="com.gome.maven.openapi.editor.actions.NextWordWithSelectionAction"/>
+      <action id="EditorNextWordInDifferentHumpsModeWithSelection" class="com.gome.maven.openapi.editor.actions.NextWordInDifferentHumpsModeWithSelectionAction"/>
+      <action id="EditorPreviousWord" class="com.gome.maven.openapi.editor.actions.PreviousWordAction"/>
+      <action id="EditorPreviousWordInDifferentHumpsMode" class="com.gome.maven.openapi.editor.actions.PreviousWordInDifferentHumpsModeAction"/>
+      <action id="EditorPreviousWordWithSelection" class="com.gome.maven.openapi.editor.actions.PreviousWordWithSelectionAction"/>
+      <action id="EditorPreviousWordInDifferentHumpsModeWithSelection" class="com.gome.maven.openapi.editor.actions.PreviousWordInDifferentHumpsModeWithSelectionAction"/>
+      <action id="EditorDeleteToWordStart" class="com.gome.maven.openapi.editor.actions.DeleteToWordStartAction"/>
+      <action id="EditorDeleteToWordStartInDifferentHumpsMode" class="com.gome.maven.openapi.editor.actions.DeleteToWordStartInDifferentHumpsModeAction"/>
+      <action id="EditorDeleteToWordEnd" class="com.gome.maven.openapi.editor.actions.DeleteToWordEndAction"/>
+      <action id="EditorDeleteToWordEndInDifferentHumpsMode" class="com.gome.maven.openapi.editor.actions.DeleteToWordEndInDifferentHumpsModeAction"/>
+      <action id="EditorDeleteLine" class="com.gome.maven.openapi.editor.actions.DeleteLineAction"/>
+      <action id="EditorKillToWordStart" class="com.gome.maven.openapi.editor.actions.KillToWordStartAction"/>
+      <action id="EditorKillToWordEnd" class="com.gome.maven.openapi.editor.actions.KillToWordEndAction"/>
+      <action id="EditorKillRegion" class="com.gome.maven.openapi.editor.actions.KillRegionAction"/>
+      <action id="EditorKillRingSave" class="com.gome.maven.openapi.editor.actions.KillRingSaveAction"/>
+      <action id="EditorDuplicate" class="com.gome.maven.openapi.editor.actions.DuplicateAction"/>
+      <action id="EditorDuplicateLines" class="com.gome.maven.openapi.editor.actions.DuplicateLinesAction"/>
+      <action id="EditorToggleInsertState" class="com.gome.maven.openapi.editor.actions.ToggleInsertStateAction"/>
+      <action id="EditorToggleColumnMode" class="com.gome.maven.openapi.editor.actions.ToggleColumnModeAction"/>
+      <action id="EditorIncreaseFontSize" class="com.gome.maven.openapi.editor.actions.ChangeEditorFontSizeAction$IncreaseEditorFontSize"/>
+      <action id="EditorDecreaseFontSize" class="com.gome.maven.openapi.editor.actions.ChangeEditorFontSizeAction$DecreaseEditorFontSize"/>
 
-      <action id="EditorScrollToCenter" class="com.intellij.openapi.editor.actions.ScrollToCenterAction"/>
-      <action id="EditorToggleCase" class="com.intellij.openapi.editor.actions.ToggleCaseAction"/>
-      <action id="EditorJoinLines" class="com.intellij.openapi.editor.actions.JoinLinesAction"/>
-      <action id="FillParagraph" class="com.intellij.codeInsight.editorActions.fillParagraph.FillParagraphAction"/>
-      <action id="EditorSelectLine" class="com.intellij.openapi.editor.actions.SelectLineAction"/>
-      <action id="EditorSplitLine" class="com.intellij.openapi.editor.actions.SplitLineAction"/>
-      <action id="EditorStartNewLine" class="com.intellij.openapi.editor.actions.StartNewLineAction"/>
-      <action id="EditorStartNewLineBefore" class="com.intellij.openapi.editor.actions.StartNewLineBeforeAction"/>
+      <action id="EditorScrollToCenter" class="com.gome.maven.openapi.editor.actions.ScrollToCenterAction"/>
+      <action id="EditorToggleCase" class="com.gome.maven.openapi.editor.actions.ToggleCaseAction"/>
+      <action id="EditorJoinLines" class="com.gome.maven.openapi.editor.actions.JoinLinesAction"/>
+      <action id="FillParagraph" class="com.gome.maven.codeInsight.editorActions.fillParagraph.FillParagraphAction"/>
+      <action id="EditorSelectLine" class="com.gome.maven.openapi.editor.actions.SelectLineAction"/>
+      <action id="EditorSplitLine" class="com.gome.maven.openapi.editor.actions.SplitLineAction"/>
+      <action id="EditorStartNewLine" class="com.gome.maven.openapi.editor.actions.StartNewLineAction"/>
+      <action id="EditorStartNewLineBefore" class="com.gome.maven.openapi.editor.actions.StartNewLineBeforeAction"/>
 
       <!-- generic delete actions should go last to allow redefining shortcuts by more specific actions in the editor -->
       <!-- e.g. Cmd + Backspace on OS X should work as Delete in lists, and as 'Delete to Line Start' in the editor -->
-      <action id="EditorDelete" class="com.intellij.openapi.editor.actions.DeleteAction" use-shortcut-of="$Delete"/>
-      <action id="EditorBackSpace" class="com.intellij.openapi.editor.actions.BackspaceAction"/>
+      <action id="EditorDelete" class="com.gome.maven.openapi.editor.actions.DeleteAction" use-shortcut-of="$Delete"/>
+      <action id="EditorBackSpace" class="com.gome.maven.openapi.editor.actions.BackspaceAction"/>
     </group>
 
-    <action id="ExpandAll" class="com.intellij.ide.actions.ExpandAllAction" icon="AllIcons.Actions.Expandall"/>
-    <action id="CollapseAll" class="com.intellij.ide.actions.CollapseAllAction" icon="AllIcons.Actions.Collapseall"/>
-    <action id="ExportToTextFile" class="com.intellij.ide.actions.ExportToTextFileAction" icon="AllIcons.Actions.Export"/>
-    <action id="ExpandTreeNode" class="com.intellij.ide.actions.tree.ExpandTreeNodeAction"/>
-    <action id="CollapseTreeNode" class="com.intellij.ide.actions.tree.CollapseTreeNodeAction"/>
-    <action id="FullyExpandTreeNode" class="com.intellij.ide.actions.tree.FullyExpandTreeNodeAction"/>
+    <action id="ExpandAll" class="com.gome.maven.ide.actions.ExpandAllAction" icon="AllIcons.Actions.Expandall"/>
+    <action id="CollapseAll" class="com.gome.maven.ide.actions.CollapseAllAction" icon="AllIcons.Actions.Collapseall"/>
+    <action id="ExportToTextFile" class="com.gome.maven.ide.actions.ExportToTextFileAction" icon="AllIcons.Actions.Export"/>
+    <action id="ExpandTreeNode" class="com.gome.maven.ide.actions.tree.ExpandTreeNodeAction"/>
+    <action id="CollapseTreeNode" class="com.gome.maven.ide.actions.tree.CollapseTreeNodeAction"/>
+    <action id="FullyExpandTreeNode" class="com.gome.maven.ide.actions.tree.FullyExpandTreeNodeAction"/>
 
-    <action id="Refresh" class="com.intellij.ide.actions.RefreshAction"/>
+    <action id="Refresh" class="com.gome.maven.ide.actions.RefreshAction"/>
 
     <group id="Vcs.KeymapGroup" text="Version Control Systems"/> <!-- grouping for Settings -> Keymap -> Version Control Systems -->
     <group id="VcsGeneral.KeymapGroup"/> <!-- grouping for Settings -> Keymap -> Version Control Systems -->
 
     <group id="Diff.KeymapGroup" text="Diff">
-      <action id="Diff.ShowDiff" class="com.intellij.openapi.actionSystem.EmptyAction" icon="AllIcons.Actions.Diff"/> <!-- CommonShortcuts.getDiff() -->
-      <action id="CompareTwoFiles" class="com.intellij.diff.actions.CompareFilesAction" icon="AllIcons.Actions.Diff"/>
-      <action id="CompareFileWithEditor" class="com.intellij.diff.actions.CompareFileWithEditorAction"/>
-      <action id="CompareClipboardWithSelection" class="com.intellij.diff.actions.CompareClipboardWithSelectionAction"/>
+      <action id="Diff.ShowDiff" class="com.gome.maven.openapi.actionSystem.EmptyAction" icon="AllIcons.Actions.Diff"/> <!-- CommonShortcuts.getDiff() -->
+      <action id="CompareTwoFiles" class="com.gome.maven.diff.actions.CompareFilesAction" icon="AllIcons.Actions.Diff"/>
+      <action id="CompareFileWithEditor" class="com.gome.maven.diff.actions.CompareFileWithEditorAction"/>
+      <action id="CompareClipboardWithSelection" class="com.gome.maven.diff.actions.CompareClipboardWithSelectionAction"/>
 
-      <action id="Diff.FocusOppositePane" class="com.intellij.openapi.diff.actions.FocusOppositePaneAction" use-shortcut-of="NextSplitter"/>
-      <action id="Diff.ShowSettingsPopup" class="com.intellij.openapi.actionSystem.EmptyAction" text="Show Diff Settings Popup..."/>
-      <action id="Diff.ShowInExternalTool" class="com.intellij.openapi.actionSystem.EmptyAction" icon="AllIcons.General.ExternalToolsSmall"
+      <action id="Diff.FocusOppositePane" class="com.gome.maven.openapi.diff.actions.FocusOppositePaneAction" use-shortcut-of="NextSplitter"/>
+      <action id="Diff.ShowSettingsPopup" class="com.gome.maven.openapi.actionSystem.EmptyAction" text="Show Diff Settings Popup..."/>
+      <action id="Diff.ShowInExternalTool" class="com.gome.maven.openapi.actionSystem.EmptyAction" icon="AllIcons.General.ExternalToolsSmall"
               text="Show Diff in External Tool"/>
 
-      <action id="NextDiff" class="com.intellij.openapi.diff.actions.NextDiffAction" icon="AllIcons.Actions.MoveDown"/>
-      <action id="PreviousDiff" class="com.intellij.openapi.diff.actions.PreviousDiffAction" icon="AllIcons.Actions.MoveUp"/>
-      <action id="GotoChangedFile" class="com.intellij.openapi.actionSystem.EmptyAction" icon="AllIcons.Actions.ShowAsTree"/>
+      <action id="NextDiff" class="com.gome.maven.openapi.diff.actions.NextDiffAction" icon="AllIcons.Actions.MoveDown"/>
+      <action id="PreviousDiff" class="com.gome.maven.openapi.diff.actions.PreviousDiffAction" icon="AllIcons.Actions.MoveUp"/>
+      <action id="GotoChangedFile" class="com.gome.maven.openapi.actionSystem.EmptyAction" icon="AllIcons.Actions.ShowAsTree"/>
 
-      <action id="CompareDirs" class="com.intellij.openapi.diff.actions.CompareDirectoriesAction" text="Compare Directories" use-shortcut-of="CompareTwoFiles"/>
+      <action id="CompareDirs" class="com.gome.maven.openapi.diff.actions.CompareDirectoriesAction" text="Compare Directories" use-shortcut-of="CompareTwoFiles"/>
 
       <separator/>
       <add-to-group group-id="Vcs.KeymapGroup"/>
     </group>
 
-    <action id="ScrollTreeToCenter" text="Scroll to Center" class="com.intellij.ide.actions.ScrollTreeToCenterAction" use-shortcut-of="EditorScrollToCenter"/>
+    <action id="ScrollTreeToCenter" text="Scroll to Center" class="com.gome.maven.ide.actions.ScrollTreeToCenterAction" use-shortcut-of="EditorScrollToCenter"/>
 
-    <action id="PinToolwindowTab" class="com.intellij.ui.content.tabs.PinToolwindowTabAction"/>
+    <action id="PinToolwindowTab" class="com.gome.maven.ui.content.tabs.PinToolwindowTabAction"/>
 
-    <action id="CloseEditor" class="com.intellij.ide.actions.CloseEditorAction"/>
+    <action id="CloseEditor" class="com.gome.maven.ide.actions.CloseEditorAction"/>
 
     <group id="MainMenu">
       <group id="FileMenu" popup="true">
         <group id="FileOpenGroup">
-          <action id="NewDummyProject" class="com.intellij.ide.actions.NewDummyProjectAction" text="New Dummy Project" internal="true"/>
-          <action id="OpenFile" class="com.intellij.ide.actions.OpenFileAction" icon="AllIcons.Actions.Menu_open"/>
-          <group id="$LRU" class="com.intellij.ide.actions.RecentProjectsGroup" popup="true"/>
-          <action id="CloseProject" class="com.intellij.ide.actions.CloseProjectAction"/>
+          <action id="NewDummyProject" class="com.gome.maven.ide.actions.NewDummyProjectAction" text="New Dummy Project" internal="true"/>
+          <action id="OpenFile" class="com.gome.maven.ide.actions.OpenFileAction" icon="AllIcons.Actions.Menu_open"/>
+          <group id="$LRU" class="com.gome.maven.ide.actions.RecentProjectsGroup" popup="true"/>
+          <action id="CloseProject" class="com.gome.maven.ide.actions.CloseProjectAction"/>
         </group>
         <separator/>
         <group id="FileMainSettingsGroup">
-          <action id="ShowSettings" class="com.intellij.ide.actions.ShowSettingsAction"/>
-          <group id="FileOtherSettingsGroup" class="com.intellij.ide.actions.SmartPopupActionGroup">
-             <action id="TemplateProjectProperties" class="com.intellij.ide.actions.TemplateProjectPropertiesAction"/>
+          <action id="ShowSettings" class="com.gome.maven.ide.actions.ShowSettingsAction"/>
+          <group id="FileOtherSettingsGroup" class="com.gome.maven.ide.actions.SmartPopupActionGroup">
+             <action id="TemplateProjectProperties" class="com.gome.maven.ide.actions.TemplateProjectPropertiesAction"/>
              <group id="FileSettingsGroup"/>
           </group>
           <separator/>
           <group id="ExportImportGroup">
-            <action id="ImportSettings" class="com.intellij.ide.actions.ImportSettingsAction"/>
-            <action id="ExportSettings" class="com.intellij.ide.actions.ExportSettingsAction"/>
+            <action id="ImportSettings" class="com.gome.maven.ide.actions.ImportSettingsAction"/>
+            <action id="ExportSettings" class="com.gome.maven.ide.actions.ExportSettingsAction"/>
           </group>
         </group>
         <separator/>
-        <action id="SaveAll" class="com.intellij.ide.actions.SaveAllAction" icon="AllIcons.Actions.Menu_saveall"/>
-        <action id="Synchronize" class="com.intellij.ide.actions.SynchronizeAction" icon="AllIcons.Actions.Refresh"/>
-        <action id="InvalidateCaches" class="com.intellij.ide.actions.InvalidateCachesAction"/>
+        <action id="SaveAll" class="com.gome.maven.ide.actions.SaveAllAction" icon="AllIcons.Actions.Menu_saveall"/>
+        <action id="Synchronize" class="com.gome.maven.ide.actions.SynchronizeAction" icon="AllIcons.Actions.Refresh"/>
+        <action id="InvalidateCaches" class="com.gome.maven.ide.actions.InvalidateCachesAction"/>
 
-        <action id="ChangeFileEncodingAction" class="com.intellij.openapi.vfs.encoding.ChangeFileEncodingAction"/>
+        <action id="ChangeFileEncodingAction" class="com.gome.maven.openapi.vfs.encoding.ChangeFileEncodingAction"/>
 
-        <group id="ChangeLineSeparators" text="Line Separators" popup="true" class="com.intellij.ide.actions.NonTrivialActionGroup">
-          <action id="ConvertToWindowsLineSeparators" class="com.intellij.codeStyle.ConvertToWindowsLineSeparatorsAction"/>
-          <action id="ConvertToUnixLineSeparators" class="com.intellij.codeStyle.ConvertToUnixLineSeparatorsAction"/>
-          <action id="ConvertToMacLineSeparators" class="com.intellij.codeStyle.ConvertToMacLineSeparatorsAction"/>
+        <group id="ChangeLineSeparators" text="Line Separators" popup="true" class="com.gome.maven.ide.actions.NonTrivialActionGroup">
+          <action id="ConvertToWindowsLineSeparators" class="com.gome.maven.codeStyle.ConvertToWindowsLineSeparatorsAction"/>
+          <action id="ConvertToUnixLineSeparators" class="com.gome.maven.codeStyle.ConvertToUnixLineSeparatorsAction"/>
+          <action id="ConvertToMacLineSeparators" class="com.gome.maven.codeStyle.ConvertToMacLineSeparatorsAction"/>
         </group>
 
-        <action id="ToggleReadOnlyAttribute" class="com.intellij.ide.actions.ToggleReadOnlyAttributeAction"/>
+        <action id="ToggleReadOnlyAttribute" class="com.gome.maven.ide.actions.ToggleReadOnlyAttributeAction"/>
         <separator/>
-        <action id="Exit" class="com.intellij.ide.actions.ExitAction"/>
+        <action id="Exit" class="com.gome.maven.ide.actions.ExitAction"/>
       </group>
 
       <!-- Edit -->
       <group id="EditMenu" popup="true">
-        <action id="$Undo" class="com.intellij.ide.actions.UndoAction" icon="AllIcons.Actions.Undo" text="Undo"/>
-        <action id="$Redo" class="com.intellij.ide.actions.RedoAction" icon="AllIcons.Actions.Redo" text="Redo"/>
+        <action id="$Undo" class="com.gome.maven.ide.actions.UndoAction" icon="AllIcons.Actions.Undo" text="Undo"/>
+        <action id="$Redo" class="com.gome.maven.ide.actions.RedoAction" icon="AllIcons.Actions.Redo" text="Redo"/>
         <separator/>
         <group id="CutCopyPasteGroup">
-          <action id="$Cut" class="com.intellij.ide.actions.CutAction" icon="AllIcons.Actions.Menu_cut"/>
-          <action id="$Copy" class="com.intellij.ide.actions.CopyAction" icon="AllIcons.Actions.Copy"/>
-          <action id="CopyPaths" class="com.intellij.ide.actions.CopyPathsAction"/>
-          <action id="$Paste" class="com.intellij.ide.actions.PasteAction" icon="AllIcons.Actions.Menu_paste"/>
-          <action id="PasteMultiple" class="com.intellij.openapi.editor.actions.MultiplePasteAction"/>
+          <action id="$Cut" class="com.gome.maven.ide.actions.CutAction" icon="AllIcons.Actions.Menu_cut"/>
+          <action id="$Copy" class="com.gome.maven.ide.actions.CopyAction" icon="AllIcons.Actions.Copy"/>
+          <action id="CopyPaths" class="com.gome.maven.ide.actions.CopyPathsAction"/>
+          <action id="$Paste" class="com.gome.maven.ide.actions.PasteAction" icon="AllIcons.Actions.Menu_paste"/>
+          <action id="PasteMultiple" class="com.gome.maven.openapi.editor.actions.MultiplePasteAction"/>
           <reference ref="EditorPasteSimple"/>
         </group>
         <group id="EditCreateDeleteGroup">
-          <action id="$Delete" class="com.intellij.ide.actions.DeleteAction"/>
+          <action id="$Delete" class="com.gome.maven.ide.actions.DeleteAction"/>
         </group>
         <separator/>
         <group id="FindMenuGroup" popup="true">
-          <action id="Find" class="com.intellij.openapi.editor.actions.IncrementalFindAction" icon="AllIcons.Actions.Menu_find"/>
-          <action id="Replace" class="com.intellij.openapi.editor.actions.ReplaceAction" icon="AllIcons.Actions.Menu_replace"/>
-          <action id="FindNext" class="com.intellij.ide.actions.SearchAgainAction"/>
-          <action id="FindPrevious" class="com.intellij.ide.actions.SearchBackAction"/>
-          <action id="FindWordAtCaret" class="com.intellij.openapi.editor.actions.FindWordAtCaretAction"/>
-          <action id="SelectAllOccurrences" class="com.intellij.openapi.editor.actions.SelectAllOccurrencesAction"/>
-          <action id="SelectNextOccurrence" class="com.intellij.openapi.editor.actions.SelectNextOccurrenceAction"/>
-          <action id="UnselectPreviousOccurrence" class="com.intellij.openapi.editor.actions.UnselectPreviousOccurrenceAction"/>
+          <action id="Find" class="com.gome.maven.openapi.editor.actions.IncrementalFindAction" icon="AllIcons.Actions.Menu_find"/>
+          <action id="Replace" class="com.gome.maven.openapi.editor.actions.ReplaceAction" icon="AllIcons.Actions.Menu_replace"/>
+          <action id="FindNext" class="com.gome.maven.ide.actions.SearchAgainAction"/>
+          <action id="FindPrevious" class="com.gome.maven.ide.actions.SearchBackAction"/>
+          <action id="FindWordAtCaret" class="com.gome.maven.openapi.editor.actions.FindWordAtCaretAction"/>
+          <action id="SelectAllOccurrences" class="com.gome.maven.openapi.editor.actions.SelectAllOccurrencesAction"/>
+          <action id="SelectNextOccurrence" class="com.gome.maven.openapi.editor.actions.SelectNextOccurrenceAction"/>
+          <action id="UnselectPreviousOccurrence" class="com.gome.maven.openapi.editor.actions.UnselectPreviousOccurrenceAction"/>
           <separator/>
-          <action id="FindInPath" class="com.intellij.find.actions.FindInPathAction"/>
-          <action id="ReplaceInPath" class="com.intellij.find.actions.ReplaceInPathAction"/>
+          <action id="FindInPath" class="com.gome.maven.find.actions.FindInPathAction"/>
+          <action id="ReplaceInPath" class="com.gome.maven.find.actions.ReplaceInPathAction"/>
           <separator/>
-          <action id="FindUsages" class="com.intellij.find.actions.FindUsagesAction"/>
-          <action id="ShowSettingsAndFindUsages" class="com.intellij.find.actions.FindUsagesAction$ShowSettingsAndFindUsages"/>
-          <action id="ShowUsages" class="com.intellij.find.actions.ShowUsagesAction"/>
-          <action id="FindUsagesInFile" class="com.intellij.find.actions.FindUsagesInFileAction"/>
-          <action id="HighlightUsagesInFile" class="com.intellij.codeInsight.highlighting.actions.HighlightUsagesAction"/>
-          <group id="ShowRecentFindUsagesGroup" class="com.intellij.find.impl.ShowRecentFindUsagesGroup" popup="true"/>
+          <action id="FindUsages" class="com.gome.maven.find.actions.FindUsagesAction"/>
+          <action id="ShowSettingsAndFindUsages" class="com.gome.maven.find.actions.FindUsagesAction$ShowSettingsAndFindUsages"/>
+          <action id="ShowUsages" class="com.gome.maven.find.actions.ShowUsagesAction"/>
+          <action id="FindUsagesInFile" class="com.gome.maven.find.actions.FindUsagesInFileAction"/>
+          <action id="HighlightUsagesInFile" class="com.gome.maven.codeInsight.highlighting.actions.HighlightUsagesAction"/>
+          <group id="ShowRecentFindUsagesGroup" class="com.gome.maven.find.impl.ShowRecentFindUsagesGroup" popup="true"/>
         </group>
         <group id="Macros" popup="true">
           <group id="StandardMacroActions">
-            <action id="PlaybackLastMacro" class="com.intellij.ide.actionMacro.actions.PlaybackLastMacroAction"/>
-            <action id="StartStopMacroRecording" class="com.intellij.ide.actionMacro.actions.StartStopMacroRecordingAction"/>
-            <action id="EditMacros" class="com.intellij.ide.actionMacro.actions.EditMacrosAction"/>
-            <action id="PlaySavedMacrosAction" class="com.intellij.ide.actionMacro.actions.PlaySavedMacros"/>
+            <action id="PlaybackLastMacro" class="com.gome.maven.ide.actionMacro.actions.PlaybackLastMacroAction"/>
+            <action id="StartStopMacroRecording" class="com.gome.maven.ide.actionMacro.actions.StartStopMacroRecordingAction"/>
+            <action id="EditMacros" class="com.gome.maven.ide.actionMacro.actions.EditMacrosAction"/>
+            <action id="PlaySavedMacrosAction" class="com.gome.maven.ide.actionMacro.actions.PlaySavedMacros"/>
           </group>
           <separator/>
-          <group id="MacrosGroup" class="com.intellij.ide.actionMacro.actions.MacrosGroup"/>
+          <group id="MacrosGroup" class="com.gome.maven.ide.actionMacro.actions.MacrosGroup"/>
         </group>
         <reference ref="EditorToggleColumnMode"/>
         <group id="EditSelectGroup">
-          <action id="$SelectAll" class="com.intellij.ide.actions.SelectAllAction"/>
+          <action id="$SelectAll" class="com.gome.maven.ide.actions.SelectAllAction"/>
         </group>
         <separator/>
         <group id="EditSmartGroup">
@@ -283,8 +283,8 @@
           <reference ref="EditorUnindentSelection"/>
           <reference ref="EditorToggleCase"/>
           <group id="ConvertIndentsGroup" popup="true">
-            <action id="ConvertIndentsToSpaces" class="com.intellij.openapi.editor.actions.ConvertIndentsToSpacesAction"/>
-            <action id="ConvertIndentsToTabs" class="com.intellij.openapi.editor.actions.ConvertIndentsToTabsAction"/>
+            <action id="ConvertIndentsToSpaces" class="com.gome.maven.openapi.editor.actions.ConvertIndentsToSpacesAction"/>
+            <action id="ConvertIndentsToTabs" class="com.gome.maven.openapi.editor.actions.ConvertIndentsToTabsAction"/>
           </group>
         </group>
         <reference ref="TemplateParametersNavigation"/>
@@ -292,14 +292,14 @@
 
       <!-- View -->
       <group id="ViewMenu" popup="true" compact="true">
-        <group id="ToolWindowsGroup" class="com.intellij.ide.actions.ToolWindowsGroup" popup="true"/>
+        <group id="ToolWindowsGroup" class="com.gome.maven.ide.actions.ToolWindowsGroup" popup="true"/>
 
-        <action id="EditSource" class="com.intellij.ide.actions.EditSourceAction" icon="AllIcons.Actions.EditSource"/>
-        <action id="ViewSource" class="com.intellij.ide.actions.ViewSourceAction"/>
+        <action id="EditSource" class="com.gome.maven.ide.actions.EditSourceAction" icon="AllIcons.Actions.EditSource"/>
+        <action id="ViewSource" class="com.gome.maven.ide.actions.ViewSourceAction"/>
         <separator/>
         <group id="ViewRecentActions">
-          <action id="RecentFiles" class="com.intellij.ide.actions.ShowRecentFilesAction"/>
-          <action id="RecentChangedFiles" class="com.intellij.ide.actions.ShowRecentlyEditedFilesAction"/>
+          <action id="RecentFiles" class="com.gome.maven.ide.actions.ShowRecentFilesAction"/>
+          <action id="RecentChangedFiles" class="com.gome.maven.ide.actions.ShowRecentlyEditedFilesAction"/>
         </group>
         <separator/>
         <group id="CompareActions">
@@ -310,153 +310,153 @@
           <reference ref="CompareClipboardWithSelection"/>
         </group>
         <separator/>
-        <action id="QuickChangeScheme" class="com.intellij.ide.actions.QuickChangeSchemesAction"/>
+        <action id="QuickChangeScheme" class="com.gome.maven.ide.actions.QuickChangeSchemesAction"/>
         <group id="UIToggleActions">
           <separator/>
-          <action id="ViewToolBar" class="com.intellij.ide.actions.ViewToolbarAction"/>
-          <action id="ViewToolButtons" class="com.intellij.ide.actions.ViewToolWindowButtonsAction"/>
-          <action id="ViewStatusBar" class="com.intellij.ide.actions.ViewStatusBarAction"/>
+          <action id="ViewToolBar" class="com.gome.maven.ide.actions.ViewToolbarAction"/>
+          <action id="ViewToolButtons" class="com.gome.maven.ide.actions.ViewToolWindowButtonsAction"/>
+          <action id="ViewStatusBar" class="com.gome.maven.ide.actions.ViewStatusBarAction"/>
         </group>
 
         <group id="EditorToggleActions" popup="true">
-          <action id="EditorToggleShowWhitespaces" class="com.intellij.openapi.editor.actions.ToggleShowWhitespacesAction"/>
-          <action id="EditorToggleShowLineNumbers" class="com.intellij.openapi.editor.actions.ToggleShowLineNumbersAction"/>
-          <action id="EditorToggleShowIndentLines" class="com.intellij.openapi.editor.actions.ToggleShowIndentLinesAction"/>
-          <action id="EditorToggleUseSoftWraps" class="com.intellij.openapi.editor.actions.ToggleUseSoftWrapsMenuAction" icon="AllIcons.Actions.ToggleSoftWrap"/>
+          <action id="EditorToggleShowWhitespaces" class="com.gome.maven.openapi.editor.actions.ToggleShowWhitespacesAction"/>
+          <action id="EditorToggleShowLineNumbers" class="com.gome.maven.openapi.editor.actions.ToggleShowLineNumbersAction"/>
+          <action id="EditorToggleShowIndentLines" class="com.gome.maven.openapi.editor.actions.ToggleShowIndentLinesAction"/>
+          <action id="EditorToggleUseSoftWraps" class="com.gome.maven.openapi.editor.actions.ToggleUseSoftWrapsMenuAction" icon="AllIcons.Actions.ToggleSoftWrap"/>
         </group>
 
         <!-- Mac OS Lion: In native apps toggle full screen mode is the last action in "View" menu -->
         <group id="ToggleFullScreenGroup">
           <separator/>
-          <action id="TogglePresentationMode" class="com.intellij.ide.actions.TogglePresentationModeAction"/>
-          <action id="ToggleDistractionFreeMode" class="com.intellij.ide.actions.ToggleDistractionFreeModeAction"/>
-          <action id="ToggleFullScreen" class="com.intellij.ide.actions.ToggleFullScreenAction"/>
+          <action id="TogglePresentationMode" class="com.gome.maven.ide.actions.TogglePresentationModeAction"/>
+          <action id="ToggleDistractionFreeMode" class="com.gome.maven.ide.actions.ToggleDistractionFreeModeAction"/>
+          <action id="ToggleFullScreen" class="com.gome.maven.ide.actions.ToggleFullScreenAction"/>
         </group>
       </group>
 
       <!-- Go to -->
       <group id="GoToMenu" popup="true">
-        <action id="GotoLine" class="com.intellij.ide.actions.GotoLineAction"/>
+        <action id="GotoLine" class="com.gome.maven.ide.actions.GotoLineAction"/>
         <separator/>
-        <action id="Back" class="com.intellij.ide.actions.BackAction" icon="AllIcons.Actions.Back"/>
-        <action id="Forward" class="com.intellij.ide.actions.ForwardAction" icon="AllIcons.Actions.Forward"/>
-        <action id="JumpToLastChange" class="com.intellij.ide.actions.JumpToLastEditAction"/>
-        <action id="JumpToNextChange" class="com.intellij.ide.actions.JumpToNextEditAction"/>
+        <action id="Back" class="com.gome.maven.ide.actions.BackAction" icon="AllIcons.Actions.Back"/>
+        <action id="Forward" class="com.gome.maven.ide.actions.ForwardAction" icon="AllIcons.Actions.Forward"/>
+        <action id="JumpToLastChange" class="com.gome.maven.ide.actions.JumpToLastEditAction"/>
+        <action id="JumpToNextChange" class="com.gome.maven.ide.actions.JumpToNextEditAction"/>
         <separator/>
-        <action id="PreviousOccurence" class="com.intellij.ide.actions.PreviousOccurenceAction" icon="AllIcons.Actions.PreviousOccurence"/>
-        <action id="NextOccurence" class="com.intellij.ide.actions.NextOccurenceAction" icon="AllIcons.Actions.NextOccurence"/>
+        <action id="PreviousOccurence" class="com.gome.maven.ide.actions.PreviousOccurenceAction" icon="AllIcons.Actions.PreviousOccurence"/>
+        <action id="NextOccurence" class="com.gome.maven.ide.actions.NextOccurenceAction" icon="AllIcons.Actions.NextOccurence"/>
         <separator/>
       </group>
 
       <!-- Tools -->
       <group id="ToolsMenu" configurable="true" popup="true" compact="true">
-        <action id="PsiViewer" class="com.intellij.internal.psiView.PsiViewerAction"/>
-        <action id="PsiViewerForContext" class="com.intellij.internal.psiView.PsiViewerForContextAction"/>
+        <action id="PsiViewer" class="com.gome.maven.internal.psiView.PsiViewerAction"/>
+        <action id="PsiViewerForContext" class="com.gome.maven.internal.psiView.PsiViewerForContextAction"/>
         <separator/>
-        <action id="CreateLauncherScript" class="com.intellij.ide.actions.CreateLauncherScriptAction"/>
-        <action id="CreateDesktopEntry" class="com.intellij.ide.actions.CreateDesktopEntryAction"/>
+        <action id="CreateLauncherScript" class="com.gome.maven.ide.actions.CreateLauncherScriptAction"/>
+        <action id="CreateDesktopEntry" class="com.gome.maven.ide.actions.CreateDesktopEntryAction"/>
         <separator/>
       </group>
 
       <group id="WindowMenu" popup="true">
-        <action id="MinimizeCurrentWindow" class="com.intellij.ide.actions.MinimizeCurrentWindowAction"/>
-        <action id="ZoomCurrentWindow" class="com.intellij.ide.actions.ZoomCurrentWindowAction"/>
-        <action id="StoreDefaultLayout" class="com.intellij.ide.actions.StoreDefaultLayoutAction"/>
-        <action id="RestoreDefaultLayout" class="com.intellij.ide.actions.RestoreDefaultLayoutAction"/>
+        <action id="MinimizeCurrentWindow" class="com.gome.maven.ide.actions.MinimizeCurrentWindowAction"/>
+        <action id="ZoomCurrentWindow" class="com.gome.maven.ide.actions.ZoomCurrentWindowAction"/>
+        <action id="StoreDefaultLayout" class="com.gome.maven.ide.actions.StoreDefaultLayoutAction"/>
+        <action id="RestoreDefaultLayout" class="com.gome.maven.ide.actions.RestoreDefaultLayoutAction"/>
         <separator/>
         <group id="ActiveToolwindowGroup" popup="true">
-          <action id="HideActiveWindow" class="com.intellij.ide.actions.HideToolWindowAction"/>
-          <action id="HideSideWindows" class="com.intellij.ide.actions.HideSideWindowsAction"/>
-          <action id="HideAllWindows" class="com.intellij.ide.actions.HideAllToolWindowsAction"/>
-          <action id="CloseActiveTab" class="com.intellij.ide.actions.CloseActiveTabAction"/>
-          <action id="JumpToLastWindow" class="com.intellij.ide.actions.JumpToLastWindowAction"/>
-          <action id="MaximizeToolWindow" class="com.intellij.openapi.wm.impl.MaximizeToolWindowAction"/>
+          <action id="HideActiveWindow" class="com.gome.maven.ide.actions.HideToolWindowAction"/>
+          <action id="HideSideWindows" class="com.gome.maven.ide.actions.HideSideWindowsAction"/>
+          <action id="HideAllWindows" class="com.gome.maven.ide.actions.HideAllToolWindowsAction"/>
+          <action id="CloseActiveTab" class="com.gome.maven.ide.actions.CloseActiveTabAction"/>
+          <action id="JumpToLastWindow" class="com.gome.maven.ide.actions.JumpToLastWindowAction"/>
+          <action id="MaximizeToolWindow" class="com.gome.maven.openapi.wm.impl.MaximizeToolWindowAction"/>
           <separator/>
-          <action id="TogglePinnedMode" class="com.intellij.ide.actions.TogglePinnedModeAction"/>
-          <action id="ToggleDockMode" class="com.intellij.ide.actions.ToggleDockModeAction"/>
-          <action id="ToggleFloatingMode" class="com.intellij.ide.actions.ToggleFloatingModeAction"/>
-          <action id="ToggleSideMode" class="com.intellij.ide.actions.ToggleSideModeAction"/>
-          <action id="ToggleContentUiTypeMode" class="com.intellij.ide.actions.ToggleContentUiTypeAction"/>
-          <action id="ShowContent" class="com.intellij.ide.actions.ShowContentAction"/>
+          <action id="TogglePinnedMode" class="com.gome.maven.ide.actions.TogglePinnedModeAction"/>
+          <action id="ToggleDockMode" class="com.gome.maven.ide.actions.ToggleDockModeAction"/>
+          <action id="ToggleFloatingMode" class="com.gome.maven.ide.actions.ToggleFloatingModeAction"/>
+          <action id="ToggleSideMode" class="com.gome.maven.ide.actions.ToggleSideModeAction"/>
+          <action id="ToggleContentUiTypeMode" class="com.gome.maven.ide.actions.ToggleContentUiTypeAction"/>
+          <action id="ShowContent" class="com.gome.maven.ide.actions.ShowContentAction"/>
           <group id="ResizeToolWindowGroup" popup="true">
-            <action id="ResizeToolWindowLeft" class="com.intellij.ide.actions.ResizeToolWindowAction$Left"/>
-            <action id="ResizeToolWindowRight" class="com.intellij.ide.actions.ResizeToolWindowAction$Right"/>
-            <action id="ResizeToolWindowUp" class="com.intellij.ide.actions.ResizeToolWindowAction$Up"/>
-            <action id="ResizeToolWindowDown" class="com.intellij.ide.actions.ResizeToolWindowAction$Down"/>
+            <action id="ResizeToolWindowLeft" class="com.gome.maven.ide.actions.ResizeToolWindowAction$Left"/>
+            <action id="ResizeToolWindowRight" class="com.gome.maven.ide.actions.ResizeToolWindowAction$Right"/>
+            <action id="ResizeToolWindowUp" class="com.gome.maven.ide.actions.ResizeToolWindowAction$Up"/>
+            <action id="ResizeToolWindowDown" class="com.gome.maven.ide.actions.ResizeToolWindowAction$Down"/>
           </group>
         </group>
 
         <group id="EditorTabsGroup" popup="true">
-          <action id="NextTab" class="com.intellij.ide.actions.NextTabAction"/>
-          <action id="PreviousTab" class="com.intellij.ide.actions.PreviousTabAction"/>
-          <action id="PinActiveTab" class="com.intellij.ide.actions.PinActiveTabAction"/>
-          <action id="TabList" class="com.intellij.ide.actions.TabListAction"/>
+          <action id="NextTab" class="com.gome.maven.ide.actions.NextTabAction"/>
+          <action id="PreviousTab" class="com.gome.maven.ide.actions.PreviousTabAction"/>
+          <action id="PinActiveTab" class="com.gome.maven.ide.actions.PinActiveTabAction"/>
+          <action id="TabList" class="com.gome.maven.ide.actions.TabListAction"/>
           <separator/>
           <group id="CloseEditorsGroup">
-            <action id="CloseContent" class="com.intellij.ide.actions.CloseAction"/>
-            <action id="CloseAllEditorsButActive" class="com.intellij.ide.actions.CloseAllEditorsButActiveAction"/>
-            <action id="CloseAllEditors" class="com.intellij.ide.actions.CloseAllEditorsAction"/>
-            <action id="CloseAllUnpinnedEditors" class="com.intellij.ide.actions.CloseAllUnpinnedEditorsAction"/>
+            <action id="CloseContent" class="com.gome.maven.ide.actions.CloseAction"/>
+            <action id="CloseAllEditorsButActive" class="com.gome.maven.ide.actions.CloseAllEditorsButActiveAction"/>
+            <action id="CloseAllEditors" class="com.gome.maven.ide.actions.CloseAllEditorsAction"/>
+            <action id="CloseAllUnpinnedEditors" class="com.gome.maven.ide.actions.CloseAllUnpinnedEditorsAction"/>
           </group>
           <separator/>
-          <action id="ReopenClosedTab" class="com.intellij.openapi.fileEditor.impl.ReopenClosedTabAction" />
-          <action id="SplitVertically" class="com.intellij.ide.actions.SplitVerticallyAction" icon="AllIcons.Actions.SplitVertically"/>
-          <action id="SplitHorizontally" class="com.intellij.ide.actions.SplitHorizontallyAction" icon="AllIcons.Actions.SplitHorizontally"/>
-          <action id="MoveTabRight" class="com.intellij.ide.actions.MoveTabRightAction"/>
-          <action id="MoveTabDown" class="com.intellij.ide.actions.MoveTabDownAction"/>
-          <action id="ChangeSplitOrientation" class="com.intellij.ide.actions.ChangeSplitterOrientationAction"/>
-          <action id="Unsplit" class="com.intellij.ide.actions.UnsplitAction"/>
-          <action id="UnsplitAll" class="com.intellij.ide.actions.UnsplitAllAction"/>
-          <action id="NextSplitter" class="com.intellij.ide.actions.NextSplitAction"/>
-          <action id="PrevSplitter" class="com.intellij.ide.actions.PrevSplitAction"/>
+          <action id="ReopenClosedTab" class="com.gome.maven.openapi.fileEditor.impl.ReopenClosedTabAction" />
+          <action id="SplitVertically" class="com.gome.maven.ide.actions.SplitVerticallyAction" icon="AllIcons.Actions.SplitVertically"/>
+          <action id="SplitHorizontally" class="com.gome.maven.ide.actions.SplitHorizontallyAction" icon="AllIcons.Actions.SplitHorizontally"/>
+          <action id="MoveTabRight" class="com.gome.maven.ide.actions.MoveTabRightAction"/>
+          <action id="MoveTabDown" class="com.gome.maven.ide.actions.MoveTabDownAction"/>
+          <action id="ChangeSplitOrientation" class="com.gome.maven.ide.actions.ChangeSplitterOrientationAction"/>
+          <action id="Unsplit" class="com.gome.maven.ide.actions.UnsplitAction"/>
+          <action id="UnsplitAll" class="com.gome.maven.ide.actions.UnsplitAllAction"/>
+          <action id="NextSplitter" class="com.gome.maven.ide.actions.NextSplitAction"/>
+          <action id="PrevSplitter" class="com.gome.maven.ide.actions.PrevSplitAction"/>
           <group id="TabsPlacementGroup" popup="true" text="Tabs Placement">
-            <action id="TabsPlacementTop"    text="Top"    class="com.intellij.ide.actions.TabsPlacementAction$Top" />
-            <action id="TabsPlacementBottom" text="Bottom" class="com.intellij.ide.actions.TabsPlacementAction$Bottom" />
-            <action id="TabsPlacementLeft"   text="Left"   class="com.intellij.ide.actions.TabsPlacementAction$Left" />
-            <action id="TabsPlacementRight"  text="Right"  class="com.intellij.ide.actions.TabsPlacementAction$Right" />
-            <action id="TabsPlacementNone"   text="None"   class="com.intellij.ide.actions.TabsPlacementAction$None" />
+            <action id="TabsPlacementTop"    text="Top"    class="com.gome.maven.ide.actions.TabsPlacementAction$Top" />
+            <action id="TabsPlacementBottom" text="Bottom" class="com.gome.maven.ide.actions.TabsPlacementAction$Bottom" />
+            <action id="TabsPlacementLeft"   text="Left"   class="com.gome.maven.ide.actions.TabsPlacementAction$Left" />
+            <action id="TabsPlacementRight"  text="Right"  class="com.gome.maven.ide.actions.TabsPlacementAction$Right" />
+            <action id="TabsPlacementNone"   text="None"   class="com.gome.maven.ide.actions.TabsPlacementAction$None" />
             <separator/>
-            <action id="ShowTabsInSingleRow" text="Show Tabs In Single Row" class="com.intellij.ide.actions.ShowTabsInSingleRowAction"/>
+            <action id="ShowTabsInSingleRow" text="Show Tabs In Single Row" class="com.gome.maven.ide.actions.ShowTabsInSingleRowAction"/>
           </group>
-          <action id="TabsAlphabeticalMode" class="com.intellij.ide.actions.TabsAlphabeticalModeSwitcher" text="Sort Tabs By Filename"/>
-          <action id="AddNewTabToTheEndMode" class="com.intellij.ide.actions.TabsAddedToTheEndSwitcher"/>
+          <action id="TabsAlphabeticalMode" class="com.gome.maven.ide.actions.TabsAlphabeticalModeSwitcher" text="Sort Tabs By Filename"/>
+          <action id="AddNewTabToTheEndMode" class="com.gome.maven.ide.actions.TabsAddedToTheEndSwitcher"/>
         </group>
 
         <group id="BackgroundTasks" popup="true">
-          <action id="ShowProcessWindow" class="com.intellij.openapi.wm.impl.status.ShowProcessWindowAction"/>
-          <action id="AutoShowProcessWindow" class="com.intellij.openapi.wm.impl.status.AutoShowProcessPopupAction"/>
+          <action id="ShowProcessWindow" class="com.gome.maven.openapi.wm.impl.status.ShowProcessWindowAction"/>
+          <action id="AutoShowProcessWindow" class="com.gome.maven.openapi.wm.impl.status.AutoShowProcessPopupAction"/>
         </group>
 
         <separator/>
-        <group id="OpenProjectWindows" class="com.intellij.openapi.wm.impl.ProjectWindowActionGroup">
-          <action id="NextProjectWindow" class="com.intellij.openapi.wm.impl.NextProjectWindow"/>
-          <action id="PreviousProjectWindow" class="com.intellij.openapi.wm.impl.PreviousProjectWindow"/>
+        <group id="OpenProjectWindows" class="com.gome.maven.openapi.wm.impl.ProjectWindowActionGroup">
+          <action id="NextProjectWindow" class="com.gome.maven.openapi.wm.impl.NextProjectWindow"/>
+          <action id="PreviousProjectWindow" class="com.gome.maven.openapi.wm.impl.PreviousProjectWindow"/>
           <separator/>
         </group>
       </group>
 
       <!-- Help -->
       <group id="HelpMenu" popup="true">
-        <action id="GotoAction" class="com.intellij.ide.actions.GotoActionAction"/>
+        <action id="GotoAction" class="com.gome.maven.ide.actions.GotoActionAction"/>
         <separator/>
-        <action id="HelpTopics" class="com.intellij.ide.actions.HelpTopicsAction" icon="AllIcons.Actions.Help"/>
-        <action id="ShowTips" class="com.intellij.ide.actions.ShowTipsAction"/>
-        <action id="ProductivityGude" class="com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsAction"/>
+        <action id="HelpTopics" class="com.gome.maven.ide.actions.HelpTopicsAction" icon="AllIcons.Actions.Help"/>
+        <action id="ShowTips" class="com.gome.maven.ide.actions.ShowTipsAction"/>
+        <action id="ProductivityGude" class="com.gome.maven.featureStatistics.actions.ShowFeatureUsageStatisticsAction"/>
         <separator/>
-        <action id="TechnicalSupport" class="com.intellij.ide.actions.TechnicalSupportAction"/>
-        <action id="SendFeedback" class="com.intellij.ide.actions.SendFeedbackAction"/>
-        <action id="LogDebugConfigure" class="com.intellij.ide.actions.DebugLogConfigureAction"/>
-        <action id="ShowLog" class="com.intellij.ide.actions.ShowLogAction"/>
+        <action id="TechnicalSupport" class="com.gome.maven.ide.actions.TechnicalSupportAction"/>
+        <action id="SendFeedback" class="com.gome.maven.ide.actions.SendFeedbackAction"/>
+        <action id="LogDebugConfigure" class="com.gome.maven.ide.actions.DebugLogConfigureAction"/>
+        <action id="ShowLog" class="com.gome.maven.ide.actions.ShowLogAction"/>
         <separator/>
-        <action id="OnlineDocAction" class="com.intellij.ide.actions.OnlineDocAction"/>
-        <action id="Help.KeymapReference" class="com.intellij.ide.actions.RefCardAction" icon="AllIcons.General.DefaultKeymap"/>
-        <action id="Help.JetBrainsTV" class="com.intellij.ide.actions.JetBrainsTvAction"/>
+        <action id="OnlineDocAction" class="com.gome.maven.ide.actions.OnlineDocAction"/>
+        <action id="Help.KeymapReference" class="com.gome.maven.ide.actions.RefCardAction" icon="AllIcons.General.DefaultKeymap"/>
+        <action id="Help.JetBrainsTV" class="com.gome.maven.ide.actions.JetBrainsTvAction"/>
         <separator/>
-        <action id="CheckForUpdate" class="com.intellij.openapi.updateSettings.impl.CheckForUpdateAction"/>
-        <action id="About" class="com.intellij.ide.actions.AboutAction"/>
+        <action id="CheckForUpdate" class="com.gome.maven.openapi.updateSettings.impl.CheckForUpdateAction"/>
+        <action id="About" class="com.gome.maven.ide.actions.AboutAction"/>
       </group>
 
-      <group id="OtherMenu" class="com.intellij.ide.actions.NonEmptyActionGroup"/>
+      <group id="OtherMenu" class="com.gome.maven.ide.actions.NonEmptyActionGroup"/>
     </group>
 
     <group id="MainToolBar" configurable="true">
@@ -491,7 +491,7 @@
       <reference ref="PasteMultiple"/>
       <reference ref="EditorPasteSimple"/>
       <reference ref="EditorToggleColumnMode"/>
-      <action id="$SearchWeb" class="com.intellij.ide.actions.SearchWebAction"/>
+      <action id="$SearchWeb" class="com.gome.maven.ide.actions.SearchWebAction"/>
       <separator/>
       <reference ref="CompareClipboardWithSelection"/>
       <reference ref="ChangeFileEncodingAction"/>
@@ -502,7 +502,7 @@
       <separator/>
       <reference ref="CompareClipboardWithSelection"/>
       <reference ref="$SearchWeb"/>
-      <action id="CopyUrl" class="com.intellij.ide.actions.CopyUrlAction"/>
+      <action id="CopyUrl" class="com.gome.maven.ide.actions.CopyUrlAction"/>
     </group>
 
     <group id="EditorTabPopupMenu">
@@ -514,8 +514,8 @@
       <reference ref="SplitHorizontally"/>
       <reference ref="MoveTabRight"/>
       <reference ref="MoveTabDown"/>
-      <action id="MoveEditorToOppositeTabGroup" class="com.intellij.openapi.fileEditor.impl.MoveEditorToOppositeTabGroupAction"/>
-      <action id="OpenEditorInOppositeTabGroup" class="com.intellij.openapi.fileEditor.impl.OpenEditorInOppositeTabGroupAction"/>
+      <action id="MoveEditorToOppositeTabGroup" class="com.gome.maven.openapi.fileEditor.impl.MoveEditorToOppositeTabGroupAction"/>
+      <action id="OpenEditorInOppositeTabGroup" class="com.gome.maven.openapi.fileEditor.impl.OpenEditorInOppositeTabGroupAction"/>
       <reference ref="ChangeSplitOrientation"/>
       <reference ref="PinActiveTab"/>
       <reference ref="TabsPlacementGroup"/>
@@ -534,26 +534,26 @@
     </group>
 
     <group id="WelcomeScreen.Documentation">
-      <action id="WelcomeScreen.ReadHelp" class="com.intellij.ide.actions.HelpTopicsAction"/>
-      <action id="WelcomeScreen.ShowTips" class="com.intellij.ide.actions.ShowTipsAction"/>
-      <action id="WelcomeScreen.JetBrainsTV" class="com.intellij.ide.actions.JetBrainsTvAction"/>
+      <action id="WelcomeScreen.ReadHelp" class="com.gome.maven.ide.actions.HelpTopicsAction"/>
+      <action id="WelcomeScreen.ShowTips" class="com.gome.maven.ide.actions.ShowTipsAction"/>
+      <action id="WelcomeScreen.JetBrainsTV" class="com.gome.maven.ide.actions.JetBrainsTvAction"/>
       <reference ref="Help.KeymapReference"/>
     </group>
 
     <group id="WelcomeScreen.Configure">
-      <action id="WelcomeScreen.Settings" class="com.intellij.ide.actions.ShowSettingsAction" icon="AllIcons.General.Configure"/>
-      <action id="WelcomeScreen.Plugins" class="com.intellij.ide.actions.ShowPluginManagerAction" icon="AllIcons.General.PluginManager"/>
+      <action id="WelcomeScreen.Settings" class="com.gome.maven.ide.actions.ShowSettingsAction" icon="AllIcons.General.Configure"/>
+      <action id="WelcomeScreen.Plugins" class="com.gome.maven.ide.actions.ShowPluginManagerAction" icon="AllIcons.General.PluginManager"/>
 
-      <action id="WelcomeScreen.Configure.Import" class="com.intellij.ide.actions.ImportSettingsAction" icon="AllIcons.General.ImportSettings"/>
-      <action id="WelcomeScreen.Configure.Export" class="com.intellij.ide.actions.ExportSettingsAction" icon="AllIcons.General.ExportSettings"/>
+      <action id="WelcomeScreen.Configure.Import" class="com.gome.maven.ide.actions.ImportSettingsAction" icon="AllIcons.General.ImportSettings"/>
+      <action id="WelcomeScreen.Configure.Export" class="com.gome.maven.ide.actions.ExportSettingsAction" icon="AllIcons.General.ExportSettings"/>
 
-      <action id="WelcomeScreen.Configure.DesktopEntry" class="com.intellij.ide.actions.CreateDesktopEntryAction"
+      <action id="WelcomeScreen.Configure.DesktopEntry" class="com.gome.maven.ide.actions.CreateDesktopEntryAction"
               icon="AllIcons.Welcome.CreateDesktopEntry"/>
-      <action id="WelcomeScreen.Update" class="com.intellij.openapi.updateSettings.impl.CheckForUpdateAction" text="Check for Update"/>
+      <action id="WelcomeScreen.Update" class="com.gome.maven.openapi.updateSettings.impl.CheckForUpdateAction" text="Check for Update"/>
     </group>
 
     <group id="FileChooser">
-      <action id="FileChooser.TogglePathShowing" class="com.intellij.openapi.fileChooser.actions.TogglePathShowingAction"/>
+      <action id="FileChooser.TogglePathShowing" class="com.gome.maven.openapi.fileChooser.actions.TogglePathShowingAction"/>
     </group>
 
     <group id="EditorGutterPopupMenu">
@@ -563,24 +563,24 @@
     </group>
 
     <group id="FileChooserToolbar">
-      <action id="FileChooser.GotoHome" class="com.intellij.openapi.fileChooser.actions.GotoHomeAction"
+      <action id="FileChooser.GotoHome" class="com.gome.maven.openapi.fileChooser.actions.GotoHomeAction"
         icon="AllIcons.Nodes.HomeFolder"/>
-      <action id="FileChooser.GotoDesktop" class="com.intellij.openapi.fileChooser.actions.GotoDesktopDirAction"
+      <action id="FileChooser.GotoDesktop" class="com.gome.maven.openapi.fileChooser.actions.GotoDesktopDirAction"
         icon="AllIcons.Nodes.Desktop"/>
-      <action id="FileChooser.GotoProject" class="com.intellij.openapi.fileChooser.actions.GotoProjectDirectory"
+      <action id="FileChooser.GotoProject" class="com.gome.maven.openapi.fileChooser.actions.GotoProjectDirectory"
         icon="AllIcons.Nodes.IdeaProject"/>
       <separator/>
-      <action id="FileChooser.NewFile" class="com.intellij.openapi.fileChooser.actions.NewFileAction"
+      <action id="FileChooser.NewFile" class="com.gome.maven.openapi.fileChooser.actions.NewFileAction"
         icon="AllIcons.Actions.New"/>
-      <action id="FileChooser.NewFolder" class="com.intellij.openapi.fileChooser.actions.NewFolderAction"
+      <action id="FileChooser.NewFolder" class="com.gome.maven.openapi.fileChooser.actions.NewFolderAction"
         icon="AllIcons.Actions.NewFolder"/>
-      <action id="FileChooser.Delete" class="com.intellij.openapi.fileChooser.actions.FileDeleteAction"
+      <action id="FileChooser.Delete" class="com.gome.maven.openapi.fileChooser.actions.FileDeleteAction"
         icon="AllIcons.Actions.Delete"/>
       <separator/>
-      <action id="FileChooser.Refresh" class="com.intellij.openapi.fileChooser.actions.RefreshFileChooserAction"
+      <action id="FileChooser.Refresh" class="com.gome.maven.openapi.fileChooser.actions.RefreshFileChooserAction"
         icon="AllIcons.Actions.Refresh"/>
       <separator/>
-      <action id="FileChooser.ShowHiddens" class="com.intellij.openapi.fileChooser.actions.ShowHiddensAction"
+      <action id="FileChooser.ShowHiddens" class="com.gome.maven.openapi.fileChooser.actions.ShowHiddensAction"
         icon="AllIcons.Actions.ShowHiddens"/>
     </group>
 
@@ -588,89 +588,89 @@
       <reference ref="PreviousDiff"/>
       <reference ref="NextDiff"/>
       <separator/>
-      <action id="Diff.IgnoreWhitespace" class="com.intellij.openapi.diff.actions.IgnoreWhiteSpacesAction" text=""/>
+      <action id="Diff.IgnoreWhitespace" class="com.gome.maven.openapi.diff.actions.IgnoreWhiteSpacesAction" text=""/>
       <separator/>
-      <action id="Diff.HighlightMode" class="com.intellij.openapi.diff.actions.HighlightModeAction" text=""/>
+      <action id="Diff.HighlightMode" class="com.gome.maven.openapi.diff.actions.HighlightModeAction" text=""/>
     </group>
 
     <group id="ChangeScheme">
-      <action id="ChangeColorScheme" class="com.intellij.ide.actions.QuickChangeColorSchemeAction"/>
-      <action id="ChangeKeymap" class="com.intellij.ide.actions.QuickChangeKeymapAction"/>
-      <action id="ChangeView" class="com.intellij.ide.actions.QuickChangeViewModeAction"/>
-      <action id="ChangeLaf" class="com.intellij.ide.actions.QuickChangeLookAndFeel"/>
+      <action id="ChangeColorScheme" class="com.gome.maven.ide.actions.QuickChangeColorSchemeAction"/>
+      <action id="ChangeKeymap" class="com.gome.maven.ide.actions.QuickChangeKeymapAction"/>
+      <action id="ChangeView" class="com.gome.maven.ide.actions.QuickChangeViewModeAction"/>
+      <action id="ChangeLaf" class="com.gome.maven.ide.actions.QuickChangeLookAndFeel"/>
     </group>
 
-    <action id="MaintenanceAction" class="com.intellij.ide.actions.MaintenanceAction"/>
+    <action id="MaintenanceAction" class="com.gome.maven.ide.actions.MaintenanceAction"/>
 
     <group id="MaintenanceGroup">
-      <action id="ShowRegistry" class="com.intellij.openapi.util.registry.ShowRegistryAction"/>
-      <action id="SwitchBootJdk" class="com.intellij.openapi.util.SwitchBootJdkAction"/>
-      <action id="UiDebugger" class="com.intellij.ui.debugger.ShowUiDebuggerAction"/>
+      <action id="ShowRegistry" class="com.gome.maven.openapi.util.registry.ShowRegistryAction"/>
+      <action id="SwitchBootJdk" class="com.gome.maven.openapi.util.SwitchBootJdkAction"/>
+      <action id="UiDebugger" class="com.gome.maven.ui.debugger.ShowUiDebuggerAction"/>
     </group>
 
-    <action id="Console.Open" class="com.intellij.openapi.actionSystem.EmptyAction"/>
-    <action id="Console.Execute" class="com.intellij.openapi.actionSystem.EmptyAction"/>
-    <action id="Console.Execute.Multiline" class="com.intellij.openapi.actionSystem.EmptyAction"/>
-    <action id="Console.SplitLine" class="com.intellij.openapi.actionSystem.EmptyAction" use-shortcut-of="SplitLine"/>
+    <action id="Console.Open" class="com.gome.maven.openapi.actionSystem.EmptyAction"/>
+    <action id="Console.Execute" class="com.gome.maven.openapi.actionSystem.EmptyAction"/>
+    <action id="Console.Execute.Multiline" class="com.gome.maven.openapi.actionSystem.EmptyAction"/>
+    <action id="Console.SplitLine" class="com.gome.maven.openapi.actionSystem.EmptyAction" use-shortcut-of="SplitLine"/>
     <group id="Console.HistoryActions">
-      <action id="Console.History.Previous" class="com.intellij.openapi.actionSystem.EmptyAction"/>
-      <action id="Console.History.Next" class="com.intellij.openapi.actionSystem.EmptyAction"/>
-      <action id="Console.History.Browse" class="com.intellij.openapi.actionSystem.EmptyAction" icon="AllIcons.General.MessageHistory"/>
+      <action id="Console.History.Previous" class="com.gome.maven.openapi.actionSystem.EmptyAction"/>
+      <action id="Console.History.Next" class="com.gome.maven.openapi.actionSystem.EmptyAction"/>
+      <action id="Console.History.Browse" class="com.gome.maven.openapi.actionSystem.EmptyAction" icon="AllIcons.General.MessageHistory"/>
     </group>
 
     <group id="Internal" text="&amp;Internal Actions" internal="true" popup="true">
       <group id="Internal.Errors" popup="true" text="Exceptions">
-        <action id="DropAnError" internal="true" class="com.intellij.diagnostic.DropAnErrorAction"/>
-        <action id="DropAnErrorWithAttachments" internal="true" class="com.intellij.diagnostic.DropAnErrorWithAttachmentsAction"/>
-        <action id="DropAnOutOfMemoryError" internal="true" class="com.intellij.diagnostic.DropAnOutOfMemoryErrorAction"/>
-        <action id="DropAnOutOfPermGenMemoryError" internal="true" class="com.intellij.diagnostic.DropAnOutOfPermGenMemoryErrorAction"/>
+        <action id="DropAnError" internal="true" class="com.gome.maven.diagnostic.DropAnErrorAction"/>
+        <action id="DropAnErrorWithAttachments" internal="true" class="com.gome.maven.diagnostic.DropAnErrorWithAttachmentsAction"/>
+        <action id="DropAnOutOfMemoryError" internal="true" class="com.gome.maven.diagnostic.DropAnOutOfMemoryErrorAction"/>
+        <action id="DropAnOutOfPermGenMemoryError" internal="true" class="com.gome.maven.diagnostic.DropAnOutOfPermGenMemoryErrorAction"/>
       </group>
       <separator/>
-      <action internal="true" id="ReloadProjectAction" class="com.intellij.internal.ReloadProjectAction"/>
-      <action id="DumbMode" internal="true" class="com.intellij.internal.ToggleDumbModeAction" text="Dumb Mode"/>
-      <action id="LaggingMode" internal="true" class="com.intellij.internal.ToggleLaggingModeAction" text="Lagging mode"/>
+      <action internal="true" id="ReloadProjectAction" class="com.gome.maven.internal.ReloadProjectAction"/>
+      <action id="DumbMode" internal="true" class="com.gome.maven.internal.ToggleDumbModeAction" text="Dumb Mode"/>
+      <action id="LaggingMode" internal="true" class="com.gome.maven.internal.ToggleLaggingModeAction" text="Lagging mode"/>
       <separator/>
       <group id="Internal.UI" popup="true" text="&amp;UI">
-        <action id="NotificationTestAction" internal="true" class="com.intellij.notification.impl.actions.NotificationTestAction"
+        <action id="NotificationTestAction" internal="true" class="com.gome.maven.notification.impl.actions.NotificationTestAction"
                 text="Add Test Notification"/>
-        <action id="TestMessageBoxAction" internal="true" class="com.intellij.diagnostic.TestMessageBoxAction" text="Show Test Dialog"/>
+        <action id="TestMessageBoxAction" internal="true" class="com.gome.maven.diagnostic.TestMessageBoxAction" text="Show Test Dialog"/>
         <separator/>
         <group id="Internal.focusAndModality" popup="true" text="Focus and modality testing">
-          <action id="CheckMessagesButtonsOrderAction" internal="true" class="com.intellij.internal.validation.CheckMessagesButtonsOrderAction"
+          <action id="CheckMessagesButtonsOrderAction" internal="true" class="com.gome.maven.internal.validation.CheckMessagesButtonsOrderAction"
                   text="Check Messages Buttons Order"/>
-          <action id="ShowDelayedMessageInternalAction" internal="true" class="com.intellij.notification.impl.actions.ShowDelayedMessageInternalAction"
+          <action id="ShowDelayedMessageInternalAction" internal="true" class="com.gome.maven.notification.impl.actions.ShowDelayedMessageInternalAction"
                   text="Show Delayed Message"/>
-          <action id="ManualMacMessagesTest" internal="true" class="com.intellij.internal.validation.MacMessagesTest"
+          <action id="ManualMacMessagesTest" internal="true" class="com.gome.maven.internal.validation.MacMessagesTest"
                   text="Manual test for testing MacMessages"/>
-          <action id="MacMessagesSequencesTest" internal="true" class="com.intellij.internal.validation.TestMacMessagesSequencesAction"
+          <action id="MacMessagesSequencesTest" internal="true" class="com.gome.maven.internal.validation.TestMacMessagesSequencesAction"
                   text="Test Mac Messages Sequences" />
         </group>
-        <action id="FocusDebugger" internal="true" class="com.intellij.internal.focus.FocusDebuggerAction" text="Start Focus Debugger"/>
-        <action id="FocusTracer" internal="true" class="com.intellij.internal.focus.FocusTracesAction" text="Start Focus Trace">
+        <action id="FocusDebugger" internal="true" class="com.gome.maven.internal.focus.FocusDebuggerAction" text="Start Focus Debugger"/>
+        <action id="FocusTracer" internal="true" class="com.gome.maven.internal.focus.FocusTracesAction" text="Start Focus Trace">
           <keyboard-shortcut first-keystroke="control shift F11" keymap="$default"/>
         </action>
 
-        <action id="UiInspector" internal="true" class="com.intellij.internal.inspector.UiInspectorAction" text="UI &amp;Inspector"/>
-        <action id="ShowSplash" internal="true" class="com.intellij.ui.ShowSplashAction" text="Show Splash" />
-        <action id="ValidationTest" internal="true" class="com.intellij.internal.validation.TestDialogWithValidationAction" text="Validation Dialog Test" />
-        <action id="MacMessagesTest" internal="true" class="com.intellij.internal.validation.TestMacMessagesAction" text="Test Mac Messages" />
-        <action id="TreeExpandAll" internal="true" class="com.intellij.internal.tree.ExpandAll" text="Expand Tree" />
-        <action id="UIDefaults" internal="true" class="com.intellij.ui.ShowUIDefaultsAction" text="LaF Defaults"/>
+        <action id="UiInspector" internal="true" class="com.gome.maven.internal.inspector.UiInspectorAction" text="UI &amp;Inspector"/>
+        <action id="ShowSplash" internal="true" class="com.gome.maven.ui.ShowSplashAction" text="Show Splash" />
+        <action id="ValidationTest" internal="true" class="com.gome.maven.internal.validation.TestDialogWithValidationAction" text="Validation Dialog Test" />
+        <action id="MacMessagesTest" internal="true" class="com.gome.maven.internal.validation.TestMacMessagesAction" text="Test Mac Messages" />
+        <action id="TreeExpandAll" internal="true" class="com.gome.maven.internal.tree.ExpandAll" text="Expand Tree" />
+        <action id="UIDefaults" internal="true" class="com.gome.maven.ui.ShowUIDefaultsAction" text="LaF Defaults"/>
         <separator/>
-        <action id="AddTestProcessAction" internal="true" class="com.intellij.openapi.wm.impl.status.AddTestProcessAction" text="Add Test Process"/>
-        <action id="AddTestProcessActionIndefinte" internal="true" class="com.intellij.openapi.wm.impl.status.AddTestProcessActionIndefinite" text="Add Test Process Indefinite"/>
+        <action id="AddTestProcessAction" internal="true" class="com.gome.maven.openapi.wm.impl.status.AddTestProcessAction" text="Add Test Process"/>
+        <action id="AddTestProcessActionIndefinte" internal="true" class="com.gome.maven.openapi.wm.impl.status.AddTestProcessActionIndefinite" text="Add Test Process Indefinite"/>
         <separator/>
-        <action id="TestGestureAction" class="com.intellij.openapi.keymap.impl.ui.TestGestureAction" text="Test Gesture Action"/>
-        <action id="TestDndAction" class="com.intellij.internal.validation.TestDnd" text="Test Dnd"/>
-        <action id="AnimatorTestAction" class="com.intellij.ui.AnimatorTestAction" text="Test Animator"/>
+        <action id="TestGestureAction" class="com.gome.maven.openapi.keymap.impl.ui.TestGestureAction" text="Test Gesture Action"/>
+        <action id="TestDndAction" class="com.gome.maven.internal.validation.TestDnd" text="Test Dnd"/>
+        <action id="AnimatorTestAction" class="com.gome.maven.ui.AnimatorTestAction" text="Test Animator"/>
       </group>
-      <group id="TopAnomalies" internal="true" class="com.intellij.internal.anomalies.TopAnomaliesAction" text="Top Anomalies" popup="true"/>
-      <action id="ImageDuplicates" internal="true" class="com.intellij.internal.ShowImageDuplicatesAction" text="Find Image Duplicates"/>
-      <action id="ShowNonRetinaImages" internal="true" class="com.intellij.internal.ShowNonRetinaImagesActions" text="Show Non Retina Images"/>
+      <group id="TopAnomalies" internal="true" class="com.gome.maven.internal.anomalies.TopAnomaliesAction" text="Top Anomalies" popup="true"/>
+      <action id="ImageDuplicates" internal="true" class="com.gome.maven.internal.ShowImageDuplicatesAction" text="Find Image Duplicates"/>
+      <action id="ShowNonRetinaImages" internal="true" class="com.gome.maven.internal.ShowNonRetinaImagesActions" text="Show Non Retina Images"/>
       <separator/>
       <reference ref="MaintenanceGroup"/>
 
-      <action internal="true" id="SendStatistics" class="com.intellij.internal.statistic.tmp.SendStatisticsAction" text="Send Statistics"/>
+      <action internal="true" id="SendStatistics" class="com.gome.maven.internal.statistic.tmp.SendStatisticsAction" text="Send Statistics"/>
       <add-to-group group-id="ToolsMenu" anchor="last"/>
     </group>
 
@@ -678,35 +678,35 @@
     </group>
 
     <group id="DirDiffMenu">
-      <action id="DirDiffMenu.SetCopyToRight" class="com.intellij.openapi.diff.impl.dir.actions.popup.SetCopyToRight" text="Set Copy to Right" icon="AllIcons.Vcs.Arrow_right"/>
-      <action id="DirDiffMenu.SetCopyToLeft" class="com.intellij.openapi.diff.impl.dir.actions.popup.SetCopyToLeft" text="Set Copy to Left" icon="AllIcons.Vcs.Arrow_left"/>
-      <action id="DirDiffMenu.SetDelete" class="com.intellij.openapi.diff.impl.dir.actions.popup.SetDelete" text="Set Delete" icon="AllIcons.Vcs.Remove"/>
-      <action id="DirDiffMenu.SetNoOperation" class="com.intellij.openapi.diff.impl.dir.actions.popup.SetNoOperation" text="Set Do Nothing"/>
+      <action id="DirDiffMenu.SetCopyToRight" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.SetCopyToRight" text="Set Copy to Right" icon="AllIcons.Vcs.Arrow_right"/>
+      <action id="DirDiffMenu.SetCopyToLeft" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.SetCopyToLeft" text="Set Copy to Left" icon="AllIcons.Vcs.Arrow_left"/>
+      <action id="DirDiffMenu.SetDelete" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.SetDelete" text="Set Delete" icon="AllIcons.Vcs.Remove"/>
+      <action id="DirDiffMenu.SetNoOperation" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.SetNoOperation" text="Set Do Nothing"/>
       <separator/>
-      <action id="DirDiffMenu.SetDefault" class="com.intellij.openapi.diff.impl.dir.actions.popup.SetDefault" text="Set Default"/>
-      <action id="DirDiffMenu.WarnOnDeletion" class="com.intellij.openapi.diff.impl.dir.actions.popup.WarnOnDeletion" text="Warn When Delete" />
+      <action id="DirDiffMenu.SetDefault" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.SetDefault" text="Set Default"/>
+      <action id="DirDiffMenu.WarnOnDeletion" class="com.gome.maven.openapi.diff.impl.dir.actions.popup.WarnOnDeletion" text="Warn When Delete" />
       <separator/>
-      <action id="DirDiffMenu.EnableLeft" class="com.intellij.openapi.actionSystem.EmptyAction" text="Show new files on left side" icon="AllIcons.Vcs.Arrow_right"/>
-      <action id="DirDiffMenu.EnableRight" class="com.intellij.openapi.actionSystem.EmptyAction" text="Show new files on right side" icon="AllIcons.Vcs.Arrow_left"/>
-      <action id="DirDiffMenu.EnableEqual" class="com.intellij.openapi.actionSystem.EmptyAction" text="Show equal files" icon="AllIcons.Vcs.Equal"/>
-      <action id="DirDiffMenu.EnableNotEqual" class="com.intellij.openapi.actionSystem.EmptyAction" text="Show difference" icon="AllIcons.Vcs.Not_equal"/>
+      <action id="DirDiffMenu.EnableLeft" class="com.gome.maven.openapi.actionSystem.EmptyAction" text="Show new files on left side" icon="AllIcons.Vcs.Arrow_right"/>
+      <action id="DirDiffMenu.EnableRight" class="com.gome.maven.openapi.actionSystem.EmptyAction" text="Show new files on right side" icon="AllIcons.Vcs.Arrow_left"/>
+      <action id="DirDiffMenu.EnableEqual" class="com.gome.maven.openapi.actionSystem.EmptyAction" text="Show equal files" icon="AllIcons.Vcs.Equal"/>
+      <action id="DirDiffMenu.EnableNotEqual" class="com.gome.maven.openapi.actionSystem.EmptyAction" text="Show difference" icon="AllIcons.Vcs.Not_equal"/>
       <separator/>
 
       <add-to-group group-id="Diff.KeymapGroup" anchor="last"/>
     </group>
 
-    <action id="Rerun" class="com.intellij.execution.runners.FakeRerunAction" text="Rerun"/>
-    <action id="RerunTests" class="com.intellij.execution.runners.RerunTestsAction" text="Rerun Tests"/>
+    <action id="Rerun" class="com.gome.maven.execution.runners.FakeRerunAction" text="Rerun"/>
+    <action id="RerunTests" class="com.gome.maven.execution.runners.RerunTestsAction" text="Rerun Tests"/>
 
-    <action id="IncrementWindowWidth" class="com.intellij.ide.actions.WindowAction$IncrementWidth" use-shortcut-of="ResizeToolWindowRight"/>
-    <action id="DecrementWindowWidth" class="com.intellij.ide.actions.WindowAction$DecrementWidth" use-shortcut-of="ResizeToolWindowLeft"/>
-    <action id="IncrementWindowHeight" class="com.intellij.ide.actions.WindowAction$IncrementHeight" use-shortcut-of="ResizeToolWindowDown"/>
-    <action id="DecrementWindowHeight" class="com.intellij.ide.actions.WindowAction$DecrementHeight" use-shortcut-of="ResizeToolWindowUp"/>
+    <action id="IncrementWindowWidth" class="com.gome.maven.ide.actions.WindowAction$IncrementWidth" use-shortcut-of="ResizeToolWindowRight"/>
+    <action id="DecrementWindowWidth" class="com.gome.maven.ide.actions.WindowAction$DecrementWidth" use-shortcut-of="ResizeToolWindowLeft"/>
+    <action id="IncrementWindowHeight" class="com.gome.maven.ide.actions.WindowAction$IncrementHeight" use-shortcut-of="ResizeToolWindowDown"/>
+    <action id="DecrementWindowHeight" class="com.gome.maven.ide.actions.WindowAction$DecrementHeight" use-shortcut-of="ResizeToolWindowUp"/>
 
-    <action id="ExportTestResults" class="com.intellij.execution.testframework.export.ExportTestResultsAction" icon="AllIcons.Actions.Export"/>
+    <action id="ExportTestResults" class="com.gome.maven.execution.testframework.export.ExportTestResultsAction" icon="AllIcons.Actions.Export"/>
 
-    <action id="SaveDocument" class="com.intellij.ide.actions.SaveDocumentAction"/>
+    <action id="SaveDocument" class="com.gome.maven.ide.actions.SaveDocumentAction"/>
 
-    <action id="MarkNotificationsAsRead" class="com.intellij.notification.impl.actions.MarkAllNotificationsAsReadAction"/>
+    <action id="MarkNotificationsAsRead" class="com.gome.maven.notification.impl.actions.MarkAllNotificationsAsReadAction"/>
   </actions>
 </component>

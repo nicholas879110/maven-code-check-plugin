@@ -25,8 +25,8 @@ import com.gome.maven.execution.runners.ProgramRunner;
  * variables, working directory etc.
  *
  * @see CommandLineState
- * @see RunConfiguration#getState(com.intellij.execution.Executor, com.intellij.execution.runners.ExecutionEnvironment)
- * @see com.intellij.execution.configuration.EmptyRunProfileState
+ * @see RunConfiguration#getState(com.gome.maven.execution.Executor, com.gome.maven.execution.runners.ExecutionEnvironment)
+ * @see com.gome.maven.execution.configuration.EmptyRunProfileState
  */
 @SuppressWarnings("JavadocReference")
 public interface RunProfileState {
@@ -35,7 +35,7 @@ public interface RunProfileState {
      *
      * @param executor the executor used to start up the process.
      * @param runner   the program runner used to start up the process.
-     * @return the result (normally an instance of {@link com.intellij.execution.DefaultExecutionResult}), containing a process handler
+     * @return the result (normally an instance of {@link com.gome.maven.execution.DefaultExecutionResult}), containing a process handler
      * and a console attached to it.
      *
      * @throws ExecutionException if the execution has failed.

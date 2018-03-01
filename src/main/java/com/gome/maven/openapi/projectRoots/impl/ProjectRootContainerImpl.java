@@ -36,7 +36,7 @@ import java.util.Map;
  * @author mike
  */
 public class ProjectRootContainerImpl implements JDOMExternalizable, ProjectRootContainer {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.ProjectRootContainerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.ProjectRootContainerImpl");
     private final Map<OrderRootType, CompositeProjectRoot> myRoots = new HashMap<OrderRootType, CompositeProjectRoot>();
 
     private Map<OrderRootType, VirtualFile[]> myFiles = new HashMap<OrderRootType, VirtualFile[]>();

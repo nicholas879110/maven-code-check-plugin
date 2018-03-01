@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 public class FileReferenceContextUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.move.FileReferenceContextUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.move.FileReferenceContextUtil");
     private static final Key<PsiFileSystemItem> REF_FILE_SYSTEM_ITEM_KEY = Key.create("REF_FILE_SYSTEM_ITEM_KEY");
 
     private FileReferenceContextUtil() {

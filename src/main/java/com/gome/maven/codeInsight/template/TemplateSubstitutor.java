@@ -21,7 +21,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import com.gome.maven.psi.PsiFile;
 
 public interface TemplateSubstitutor {
-    ExtensionPointName<TemplateSubstitutor> EP_NAME = ExtensionPointName.create("com.intellij.liveTemplateSubstitutor");
+    ExtensionPointName<TemplateSubstitutor> EP_NAME = ExtensionPointName.create("com.gome.maven.liveTemplateSubstitutor");
 
     
     TemplateImpl substituteTemplate( PsiFile file, int caretOffset,  TemplateImpl template);

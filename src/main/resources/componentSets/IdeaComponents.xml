@@ -40,12 +40,12 @@
 
   <project-components>
     <component>
-      <implementation-class>com.intellij.openapi.vcs.impl.ModuleVcsDetector</implementation-class>
+      <implementation-class>com.gome.maven.openapi.vcs.impl.ModuleVcsDetector</implementation-class>
     </component>
 
     <component>
-      <interface-class>com.intellij.profile.codeInspection.InspectionProjectProfileManager</interface-class>
-      <implementation-class>com.intellij.profile.codeInspection.InspectionProjectProfileManagerImpl</implementation-class>
+      <interface-class>com.gome.maven.profile.codeInspection.InspectionProjectProfileManager</interface-class>
+      <implementation-class>com.gome.maven.profile.codeInspection.InspectionProjectProfileManagerImpl</implementation-class>
       <loadForDefaultProject/>
     </component>
   </project-components>

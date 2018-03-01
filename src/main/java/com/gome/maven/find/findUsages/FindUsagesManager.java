@@ -76,7 +76,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * see {@link com.gome.maven.find.impl.FindManagerImpl#getFindUsagesManager()}
  */
 public class FindUsagesManager {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.find.findParameterUsages.FindUsagesManager");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.find.findParameterUsages.FindUsagesManager");
 
     private enum FileSearchScope {
         FROM_START,

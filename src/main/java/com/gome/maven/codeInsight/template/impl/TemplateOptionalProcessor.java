@@ -27,7 +27,7 @@ import com.gome.maven.openapi.project.Project;
  * @author yole
  */
 public interface TemplateOptionalProcessor {
-    ExtensionPointName<TemplateOptionalProcessor> EP_NAME = ExtensionPointName.create("com.intellij.liveTemplateOptionalProcessor");
+    ExtensionPointName<TemplateOptionalProcessor> EP_NAME = ExtensionPointName.create("com.gome.maven.liveTemplateOptionalProcessor");
 
     void processText(final Project project, final Template template, final Document document, final RangeMarker templateRange, final Editor editor);
 

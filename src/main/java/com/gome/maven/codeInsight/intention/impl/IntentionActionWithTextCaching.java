@@ -31,7 +31,7 @@ import java.util.ArrayList;
  * @author cdr
  */
 class IntentionActionWithTextCaching implements Comparable<IntentionActionWithTextCaching>, PossiblyDumbAware {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.IntentionActionWithTextCaching");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.IntentionActionWithTextCaching");
     private final List<IntentionAction> myOptionIntentions = new ArrayList<IntentionAction>();
     private final List<IntentionAction> myOptionErrorFixes = new ArrayList<IntentionAction>();
     private final List<IntentionAction> myOptionInspectionFixes = new ArrayList<IntentionAction>();

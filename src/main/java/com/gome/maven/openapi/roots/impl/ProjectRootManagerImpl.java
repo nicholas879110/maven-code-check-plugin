@@ -52,7 +52,7 @@ import java.util.*;
  * @author max
  */
 public class ProjectRootManagerImpl extends ProjectRootManagerEx implements ProjectComponent, JDOMExternalizable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.impl.ProjectRootManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.impl.ProjectRootManagerImpl");
 
      public static final String PROJECT_JDK_NAME_ATTR = "project-jdk-name";
      public static final String PROJECT_JDK_TYPE_ATTR = "project-jdk-type";

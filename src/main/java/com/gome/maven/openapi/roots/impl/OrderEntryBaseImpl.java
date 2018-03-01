@@ -20,7 +20,7 @@ import com.gome.maven.openapi.diagnostic.Logger;
 import com.gome.maven.openapi.roots.OrderEntry;
 
 public abstract class OrderEntryBaseImpl extends RootModelComponentBase implements OrderEntry {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.OrderEntryVeryBaseImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.OrderEntryVeryBaseImpl");
 
     private int myIndex;
     private static int _hc = 0;

@@ -42,7 +42,7 @@ public abstract class FormatterEx{
     private static FormatterEx getTestInstance() {
         if (myTestInstance == null) {
             try {
-                myTestInstance = (FormatterEx)Class.forName("com.intellij.formatting.FormatterImpl").newInstance();
+                myTestInstance = (FormatterEx)Class.forName("com.gome.maven.formatting.FormatterImpl").newInstance();
             }
             catch (Exception e) {
                 throw new RuntimeException(e);

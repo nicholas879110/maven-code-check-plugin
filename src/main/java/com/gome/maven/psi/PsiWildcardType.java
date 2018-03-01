@@ -26,7 +26,7 @@ import com.gome.maven.psi.search.GlobalSearchScope;
  * @author dsl
  */
 public class PsiWildcardType extends PsiType.Stub {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.PsiWildcardType");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.PsiWildcardType");
 
     private static final Key<PsiWildcardType> UNBOUNDED_WILDCARD = new Key<PsiWildcardType>("UNBOUNDED_WILDCARD");
      private static final String EXTENDS_PREFIX = "? extends ";

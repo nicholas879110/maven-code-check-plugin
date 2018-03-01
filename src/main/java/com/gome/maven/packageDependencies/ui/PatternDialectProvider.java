@@ -32,7 +32,7 @@ import javax.swing.*;
 import java.util.Set;
 
 public abstract class PatternDialectProvider {
-    public static final ExtensionPointName<PatternDialectProvider> EP_NAME = ExtensionPointName.create("com.intellij.patternDialectProvider");
+    public static final ExtensionPointName<PatternDialectProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.patternDialectProvider");
 
     public static PatternDialectProvider getInstance(String shortName) {
         for (PatternDialectProvider provider : Extensions.getExtensions(EP_NAME)) {

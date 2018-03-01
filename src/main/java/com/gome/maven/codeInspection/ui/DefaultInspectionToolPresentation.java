@@ -72,7 +72,7 @@ public class DefaultInspectionToolPresentation implements ProblemDescriptionsPro
     private final Map<RefEntity, CommonProblemDescriptor[]> myIgnoredElements = Collections.synchronizedMap(new com.gome.maven.util.containers.HashMap<RefEntity, CommonProblemDescriptor[]>());
 
     private Map<RefEntity, CommonProblemDescriptor[]> myOldProblemElements = null;
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.DescriptorProviderInspection");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.DescriptorProviderInspection");
     private boolean isDisposed;
 
     private final Object myToolLock = new Object();

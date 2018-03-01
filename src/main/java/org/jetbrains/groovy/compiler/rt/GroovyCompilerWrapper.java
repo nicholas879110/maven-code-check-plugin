@@ -26,7 +26,6 @@ import org.codehaus.groovy.control.*;
 import org.codehaus.groovy.control.messages.*;
 import org.codehaus.groovy.syntax.SyntaxException;
 import org.codehaus.groovy.tools.GroovyClass;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.IOException;
@@ -131,7 +130,7 @@ public class GroovyCompilerWrapper {
     return compiledFiles;
   }
 
-  @NotNull
+
   static List<OutputItem> getStubOutputItems(CompilationUnit compilationUnit, final File stubDirectory) {
     final List<OutputItem> compiledFiles = new ArrayList<OutputItem>();
     compilationUnit.applyToPrimaryClassNodes(new CompilationUnit.PrimaryClassNodeOperation() {

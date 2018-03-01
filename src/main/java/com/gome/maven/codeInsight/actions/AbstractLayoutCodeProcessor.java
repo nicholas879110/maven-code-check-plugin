@@ -62,7 +62,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public abstract class AbstractLayoutCodeProcessor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.actions.AbstractLayoutCodeProcessor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.actions.AbstractLayoutCodeProcessor");
 
     protected final Project myProject;
     private final Module myModule;

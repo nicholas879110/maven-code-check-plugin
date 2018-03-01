@@ -27,7 +27,7 @@ import com.gome.maven.psi.PsiElement;
  * @since 6.0
  */
 public interface ImplicitUsageProvider {
-    ExtensionPointName<ImplicitUsageProvider> EP_NAME = new ExtensionPointName<ImplicitUsageProvider>("com.intellij.implicitUsageProvider");
+    ExtensionPointName<ImplicitUsageProvider> EP_NAME = new ExtensionPointName<ImplicitUsageProvider>("com.gome.maven.implicitUsageProvider");
 
     boolean isImplicitUsage(PsiElement element);
     boolean isImplicitRead(PsiElement element);

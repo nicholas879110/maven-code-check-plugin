@@ -34,7 +34,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
 
 public class ResolveCache {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.resolve.ResolveCache");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.source.resolve.ResolveCache");
     @SuppressWarnings("unchecked")
     private final ConcurrentMap[] myMaps = new ConcurrentWeakKeySoftValueHashMap[2*2*2]; //boolean physical, boolean incompleteCode, boolean isPoly
     private final RecursionGuard myGuard = RecursionManager.createGuard("resolveCache");

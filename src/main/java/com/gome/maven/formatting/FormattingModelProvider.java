@@ -26,7 +26,7 @@ import com.gome.maven.psi.codeStyle.CodeStyleSettings;
  */
 
 public class FormattingModelProvider {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.formatting.FormattingModelProvider");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.formatting.FormattingModelProvider");
     private static FormattingModelFactory myFactory;
 
     static void setFactory(FormattingModelFactory factory) {

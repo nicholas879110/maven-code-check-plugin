@@ -25,7 +25,7 @@ import com.gome.maven.psi.PsiReference;
  * @author yole
  */
 public abstract class ReadWriteAccessDetector {
-    public static final ExtensionPointName<ReadWriteAccessDetector> EP_NAME = ExtensionPointName.create("com.intellij.readWriteAccessDetector");
+    public static final ExtensionPointName<ReadWriteAccessDetector> EP_NAME = ExtensionPointName.create("com.gome.maven.readWriteAccessDetector");
 
     
     public static ReadWriteAccessDetector findDetector(final PsiElement element) {

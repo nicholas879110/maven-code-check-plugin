@@ -16,7 +16,7 @@
 package com.gome.maven.ui.components;
 
 import com.gome.maven.util.ui.UIUtil;
-//import org.intellij.lang.annotations.JdkConstants;
+//import org.gome.maven.lang.annotations.JdkConstants;
 
 import javax.swing.*;
 import java.awt.*;

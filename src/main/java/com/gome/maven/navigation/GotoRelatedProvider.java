@@ -32,7 +32,7 @@ import java.util.List;
  */
 public abstract class GotoRelatedProvider {
 
-    public static final ExtensionPointName<GotoRelatedProvider> EP_NAME = ExtensionPointName.create("com.intellij.gotoRelatedProvider");
+    public static final ExtensionPointName<GotoRelatedProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.gotoRelatedProvider");
 
     
     public List<? extends GotoRelatedItem> getItems( PsiElement psiElement) {

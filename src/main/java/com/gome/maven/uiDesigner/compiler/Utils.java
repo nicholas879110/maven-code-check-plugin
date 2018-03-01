@@ -45,7 +45,7 @@ import java.util.Set;
  *         NOTE: the class must be compilable with JDK 1.3, so any methods and filds introduced in 1.4 or later must not be used
  */
 public final class Utils {
-    public static final String FORM_NAMESPACE = "http://www.intellij.com/uidesigner/form/";
+    public static final String FORM_NAMESPACE = "http://www.gome.maven.com/uidesigner/form/";
     private static final SAXParser SAX_PARSER = createParser();
 
     private Utils() {
@@ -146,7 +146,7 @@ public final class Utils {
         }
 
         // These classes are not visible for passed class loader!
-        if ("com.intellij.uiDesigner.HSpacer".equals(className) || "com.intellij.uiDesigner.VSpacer".equals(className)) {
+        if ("com.gome.maven.uiDesigner.HSpacer".equals(className) || "com.gome.maven.uiDesigner.VSpacer".equals(className)) {
             return null;
         }
 

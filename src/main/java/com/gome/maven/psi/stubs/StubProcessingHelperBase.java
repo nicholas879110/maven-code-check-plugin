@@ -35,7 +35,7 @@ import java.util.List;
  * Author: dmitrylomov
  */
 public abstract class StubProcessingHelperBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.StubProcessingHelperBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.StubProcessingHelperBase");
 
     private static IElementType stubType( final StubElement<?> stub) {
         if (stub instanceof PsiFileStub) {

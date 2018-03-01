@@ -60,7 +60,7 @@ import java.util.*;
  * @author cdr
  */
 public class InjectedLanguageManagerImpl extends InjectedLanguageManager implements Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.tree.injected.InjectedLanguageManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.source.tree.injected.InjectedLanguageManagerImpl");
     private final Project myProject;
     private final DumbService myDumbService;
     private volatile DaemonProgressIndicator myProgress;

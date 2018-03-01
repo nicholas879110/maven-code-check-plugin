@@ -43,8 +43,8 @@ import java.util.jar.Manifest;
  * @author max
  */
 public class JdkUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.projectRoots.JdkUtil");
-    private static final String WRAPPER_CLASS = "com.intellij.rt.execution.CommandLineWrapper";
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.projectRoots.JdkUtil");
+    private static final String WRAPPER_CLASS = "com.gome.maven.rt.execution.CommandLineWrapper";
 
     private JdkUtil() { }
 

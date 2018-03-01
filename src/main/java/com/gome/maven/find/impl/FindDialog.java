@@ -84,7 +84,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 public class FindDialog extends DialogWrapper {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.find.impl.FindDialog");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.find.impl.FindDialog");
 
     private ComboBox myInputComboBox;
     private ComboBox myReplaceComboBox;

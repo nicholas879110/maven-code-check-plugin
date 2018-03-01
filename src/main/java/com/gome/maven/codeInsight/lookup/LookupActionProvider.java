@@ -22,7 +22,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author peter
  */
 public interface LookupActionProvider {
-    ExtensionPointName<LookupActionProvider> EP_NAME = ExtensionPointName.create("com.intellij.lookup.actionProvider");
+    ExtensionPointName<LookupActionProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.lookup.actionProvider");
 
     void fillActions(LookupElement element, Lookup lookup, Consumer<LookupElementAction> consumer);
 

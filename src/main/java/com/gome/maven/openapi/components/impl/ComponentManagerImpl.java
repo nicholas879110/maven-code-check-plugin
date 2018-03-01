@@ -426,7 +426,9 @@ public abstract class ComponentManagerImpl extends UserDataHolderBase implements
                 if (myInterfaceToClassMap.get(interfaceClass) != null) {
                     throw new RuntimeException("Component already registered: " + interfaceClass.getName());
                 }
-
+                if (config.getInterfaceClass().contains("FeatureUsageTracker")){
+                    System.out.println("bbbb");
+                }
                 getPicoContainer().registerComponent(new ComponentConfigComponentAdapter(config, implementationClass));
                 myInterfaceToClassMap.put(interfaceClass, implementationClass);
                 myComponentClassToConfig.put(implementationClass, config);

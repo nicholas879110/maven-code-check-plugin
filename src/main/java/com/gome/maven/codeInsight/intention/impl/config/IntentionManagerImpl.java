@@ -48,7 +48,7 @@ import java.util.List;
  * @author dsl
  */
 public class IntentionManagerImpl extends IntentionManager {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.config.IntentionManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.config.IntentionManagerImpl");
 
     private final List<IntentionAction> myActions = ContainerUtil.createLockFreeCopyOnWriteList();
     private final IntentionManagerSettings mySettings;

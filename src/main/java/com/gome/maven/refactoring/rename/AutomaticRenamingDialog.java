@@ -59,7 +59,7 @@ import java.util.List;
  * @author dsl
  */
 public class AutomaticRenamingDialog extends DialogWrapper {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.AutomaticRenamingDialog");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.AutomaticRenamingDialog");
     private static final int CHECK_COLUMN = 0;
     private static final int OLD_NAME_COLUMN = 1;
     private static final int NEW_NAME_COLUMN = 2;
@@ -123,7 +123,7 @@ public class AutomaticRenamingDialog extends DialogWrapper {
 
     @Override
     protected String getDimensionServiceKey() {
-        return "#com.intellij.refactoring.rename.AutomaticRenamingDialog";
+        return "#com.gome.maven.refactoring.rename.AutomaticRenamingDialog";
     }
 
     @Override

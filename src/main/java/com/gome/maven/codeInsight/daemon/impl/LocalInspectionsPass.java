@@ -70,7 +70,7 @@ import java.util.concurrent.ConcurrentMap;
  * @author max
  */
 public class LocalInspectionsPass extends ProgressableTextEditorHighlightingPass implements DumbAware {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.LocalInspectionsPass");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.LocalInspectionsPass");
     public static final TextRange EMPTY_PRIORITY_RANGE = TextRange.EMPTY_RANGE;
     private static final Condition<PsiFile> FILE_FILTER = new Condition<PsiFile>() {
         @Override

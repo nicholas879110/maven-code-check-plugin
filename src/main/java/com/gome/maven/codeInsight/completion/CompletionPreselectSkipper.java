@@ -23,7 +23,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author peter
  */
 public abstract class CompletionPreselectSkipper {
-    public static final ExtensionPointName<CompletionPreselectSkipper> EP_NAME = ExtensionPointName.create("com.intellij.completion.skip");
+    public static final ExtensionPointName<CompletionPreselectSkipper> EP_NAME = ExtensionPointName.create("com.gome.maven.completion.skip");
 
     public abstract boolean skipElement(LookupElement element, CompletionLocation location);
 

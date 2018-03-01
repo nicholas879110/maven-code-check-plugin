@@ -34,7 +34,7 @@ import java.util.List;
  * @author yole
  */
 public abstract class ExtendWordSelectionHandlerBase implements ExtendWordSelectionHandler {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.editorActions.ExtendWordSelectionHandlerBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.editorActions.ExtendWordSelectionHandlerBase");
     @Override
     public abstract boolean canSelect(PsiElement e);
 

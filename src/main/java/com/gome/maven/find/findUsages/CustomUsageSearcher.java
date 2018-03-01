@@ -25,7 +25,7 @@ import com.gome.maven.util.Processor;
  * @author gregsh
  */
 public abstract class CustomUsageSearcher {
-    public static final ExtensionPointName<CustomUsageSearcher> EP_NAME = ExtensionPointName.create("com.intellij.customUsageSearcher");
+    public static final ExtensionPointName<CustomUsageSearcher> EP_NAME = ExtensionPointName.create("com.gome.maven.customUsageSearcher");
 
     public abstract void processElementUsages( PsiElement element,  Processor<Usage> processor,  FindUsagesOptions options);
 }

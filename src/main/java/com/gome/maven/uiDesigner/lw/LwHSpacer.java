@@ -23,7 +23,7 @@ import org.jdom.Element;
  */
 public final class LwHSpacer extends LwAtomicComponent {
     public LwHSpacer() throws Exception{
-        super("com.intellij.uiDesigner.core.Spacer");
+        super("com.gome.maven.uiDesigner.core.Spacer");
     }
 
     public void read(final Element element, final PropertiesProvider provider) throws Exception{

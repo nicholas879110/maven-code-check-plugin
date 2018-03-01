@@ -44,7 +44,7 @@ import java.util.Date;
 import java.util.List;
 
 public class DocumentCommitThread extends DocumentCommitProcessor implements Runnable, Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.DocumentCommitThread");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.DocumentCommitThread");
     private static final String NAME = "Document commit thread";
 
     private final Queue<CommitTask> documentsToCommit = new Queue<CommitTask>(10);

@@ -24,7 +24,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author yole
  */
 public interface ElementDescriptionProvider {
-    ExtensionPointName<ElementDescriptionProvider> EP_NAME = ExtensionPointName.create("com.intellij.elementDescriptionProvider");
+    ExtensionPointName<ElementDescriptionProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.elementDescriptionProvider");
 
     
     String getElementDescription( PsiElement element,  ElementDescriptionLocation location);

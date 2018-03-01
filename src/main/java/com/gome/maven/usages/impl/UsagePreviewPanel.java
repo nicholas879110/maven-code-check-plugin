@@ -41,7 +41,7 @@ import java.util.List;
  * @author cdr
  */
 public class UsagePreviewPanel extends UsageContextPanelBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.usages.impl.UsagePreviewPanel");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.usages.impl.UsagePreviewPanel");
     private Editor myEditor;
 
     public UsagePreviewPanel( Project project,  UsageViewPresentation presentation) {

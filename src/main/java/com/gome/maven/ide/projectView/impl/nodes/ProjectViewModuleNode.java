@@ -34,7 +34,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ProjectViewModuleNode extends AbstractModuleNode {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.projectView.impl.nodes.ProjectViewModuleNode");
 
     public ProjectViewModuleNode(Project project, Module value, ViewSettings viewSettings) {
         super(project, value, viewSettings);

@@ -24,11 +24,11 @@ import com.gome.maven.openapi.util.TextRange;
  */
 public class ElementManipulators extends ClassExtension<ElementManipulator> {
 
-     public static final String EP_NAME = "com.intellij.lang.elementManipulator";
+     public static final String EP_NAME = "com.gome.maven.lang.elementManipulator";
     public static final ElementManipulators INSTANCE = new ElementManipulators();
 
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.ElementManipulators");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.ElementManipulators");
 
     private ElementManipulators() {
         super(EP_NAME);

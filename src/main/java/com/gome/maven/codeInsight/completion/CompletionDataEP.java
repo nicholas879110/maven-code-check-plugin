@@ -25,7 +25,7 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author yole
  */
 public class CompletionDataEP extends AbstractExtensionPointBean {
-    public static final ExtensionPointName<CompletionDataEP> EP_NAME = new ExtensionPointName<CompletionDataEP>("com.intellij.completionData");
+    public static final ExtensionPointName<CompletionDataEP> EP_NAME = new ExtensionPointName<CompletionDataEP>("com.gome.maven.completionData");
 
     // these must be public for scrambling compatibility
     @Attribute("fileType")

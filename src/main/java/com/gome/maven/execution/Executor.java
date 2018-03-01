@@ -10,7 +10,7 @@ import com.gome.maven.openapi.util.text.StringUtil;
 import javax.swing.Icon;
 
 public abstract class Executor {
-    public static final ExtensionPointName<Executor> EXECUTOR_EXTENSION_NAME = ExtensionPointName.create("com.intellij.executor");
+    public static final ExtensionPointName<Executor> EXECUTOR_EXTENSION_NAME = ExtensionPointName.create("com.gome.maven.executor");
 
     public Executor() {
     }

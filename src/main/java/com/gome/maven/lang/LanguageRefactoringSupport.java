@@ -25,6 +25,6 @@ public class LanguageRefactoringSupport extends LanguageExtension<RefactoringSup
     public static final LanguageRefactoringSupport INSTANCE = new LanguageRefactoringSupport();
 
     private LanguageRefactoringSupport() {
-        super("com.intellij.lang.refactoringSupport", new RefactoringSupportProvider() {});
+        super("com.gome.maven.lang.refactoringSupport", new RefactoringSupportProvider() {});
     }
 }

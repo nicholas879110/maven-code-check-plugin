@@ -40,7 +40,7 @@ public abstract class InspectionProfileManager extends ApplicationProfileManager
 
     private final List<ProfileChangeAdapter> myProfileChangeAdapters = ContainerUtil.createLockFreeCopyOnWriteList();
 
-    protected static final Logger LOG = Logger.getInstance("#com.intellij.profile.DefaultProfileManager");
+    protected static final Logger LOG = Logger.getInstance("#com.gome.maven.profile.DefaultProfileManager");
 
     public static InspectionProfileManager getInstance() {
         return ServiceManager.getService(InspectionProfileManager.class);

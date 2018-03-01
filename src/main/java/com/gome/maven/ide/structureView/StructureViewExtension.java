@@ -21,7 +21,7 @@ import com.gome.maven.psi.PsiElement;
 
 public interface StructureViewExtension {
 
-    ExtensionPointName<StructureViewExtension> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.lang.structureViewExtension");
+    ExtensionPointName<StructureViewExtension> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.lang.structureViewExtension");
 
     Class<? extends PsiElement> getType();
 

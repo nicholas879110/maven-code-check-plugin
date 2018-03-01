@@ -23,7 +23,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * A macro which can be used in live templates.
  */
 public abstract class Macro {
-    public static final ExtensionPointName<Macro> EP_NAME = ExtensionPointName.create("com.intellij.liveTemplateMacro");
+    public static final ExtensionPointName<Macro> EP_NAME = ExtensionPointName.create("com.gome.maven.liveTemplateMacro");
 
     
     public abstract String getName();

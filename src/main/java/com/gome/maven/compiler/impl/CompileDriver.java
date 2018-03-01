@@ -83,7 +83,7 @@ import static org.jetbrains.jps.api.CmdlineRemoteProto.Message.ControllerMessage
 
 public class CompileDriver {
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.compiler.impl.CompileDriver");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.compiler.impl.CompileDriver");
 
     private final Project myProject;
 

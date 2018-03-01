@@ -28,7 +28,7 @@ import java.awt.*;
  * @author nik
  */
 public abstract class ModuleSourceRootEditHandler<P extends JpsElement> {
-    public static final ExtensionPointName<ModuleSourceRootEditHandler> EP_NAME = ExtensionPointName.create("com.intellij.projectStructure.sourceRootEditHandler");
+    public static final ExtensionPointName<ModuleSourceRootEditHandler> EP_NAME = ExtensionPointName.create("com.gome.maven.projectStructure.sourceRootEditHandler");
     private final JpsModuleSourceRootType<P> myRootType;
 
     protected ModuleSourceRootEditHandler(JpsModuleSourceRootType<P> rootType) {

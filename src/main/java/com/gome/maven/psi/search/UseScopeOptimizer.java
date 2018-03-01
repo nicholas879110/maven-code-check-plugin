@@ -10,7 +10,7 @@ import com.gome.maven.psi.PsiElement;
  * @author Konstantin.Ulitin
  */
 public abstract class UseScopeOptimizer {
-    public static final ExtensionPointName<UseScopeOptimizer> EP_NAME = ExtensionPointName.create("com.intellij.useScopeOptimizer");
+    public static final ExtensionPointName<UseScopeOptimizer> EP_NAME = ExtensionPointName.create("com.gome.maven.useScopeOptimizer");
 
     
     public abstract GlobalSearchScope getScopeToExclude( PsiElement element);

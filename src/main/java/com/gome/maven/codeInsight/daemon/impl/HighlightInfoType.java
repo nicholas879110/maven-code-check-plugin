@@ -164,7 +164,7 @@ public interface HighlightInfoType {
     }
 
     class HighlightInfoTypeSeverityByKey implements HighlightInfoType {
-        static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.HighlightInfoType.HighlightInfoTypeSeverityByKey");
+        static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.HighlightInfoType.HighlightInfoTypeSeverityByKey");
 
         private final TextAttributesKey myAttributesKey;
         private final HighlightDisplayKey myToolKey;

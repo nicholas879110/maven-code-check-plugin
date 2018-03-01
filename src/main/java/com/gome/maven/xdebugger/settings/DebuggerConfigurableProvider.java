@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 public abstract class DebuggerConfigurableProvider {
-    public static final ExtensionPointName<DebuggerConfigurableProvider> EXTENSION_POINT = ExtensionPointName.create("com.intellij.xdebugger.configurableProvider");
+    public static final ExtensionPointName<DebuggerConfigurableProvider> EXTENSION_POINT = ExtensionPointName.create("com.gome.maven.xdebugger.configurableProvider");
 
     
     public Collection<? extends Configurable> getConfigurables( DebuggerSettingsCategory category) {

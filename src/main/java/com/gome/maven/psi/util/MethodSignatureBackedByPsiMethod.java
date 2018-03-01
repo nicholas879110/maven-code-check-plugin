@@ -19,7 +19,7 @@ import com.gome.maven.openapi.diagnostic.Logger;
 import com.gome.maven.psi.*;
 
 public class MethodSignatureBackedByPsiMethod extends MethodSignatureBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.util.MethodSignatureBackedByPsiMethod");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.util.MethodSignatureBackedByPsiMethod");
 
     private final PsiMethod myMethod;
     private final boolean myIsRaw;

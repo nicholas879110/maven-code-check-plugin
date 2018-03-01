@@ -35,7 +35,7 @@ import java.util.LinkedHashSet;
  * @author nik
  */
 public class OrderRootsEnumeratorImpl implements OrderRootsEnumerator {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.OrderRootsEnumeratorImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.OrderRootsEnumeratorImpl");
     private final OrderEnumeratorBase myOrderEnumerator;
     private final OrderRootType myRootType;
     private final NotNullFunction<OrderEntry, OrderRootType> myRootTypeProvider;

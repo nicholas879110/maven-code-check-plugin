@@ -25,9 +25,9 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author yole
  */
 public class StubElementTypeHolderEP extends AbstractExtensionPointBean {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.StubElementTypeHolderEP");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.StubElementTypeHolderEP");
 
-    public static final ExtensionPointName<StubElementTypeHolderEP> EP_NAME = ExtensionPointName.create("com.intellij.stubElementTypeHolder");
+    public static final ExtensionPointName<StubElementTypeHolderEP> EP_NAME = ExtensionPointName.create("com.gome.maven.stubElementTypeHolder");
 
     @Attribute("class")
     public String holderClass;

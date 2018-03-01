@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Map;
 
 class PsiChangeHandler extends PsiTreeChangeAdapter implements Disposable {
-    private static final ExtensionPointName<ChangeLocalityDetector> EP_NAME = ExtensionPointName.create("com.intellij.daemon.changeLocalityDetector");
+    private static final ExtensionPointName<ChangeLocalityDetector> EP_NAME = ExtensionPointName.create("com.gome.maven.daemon.changeLocalityDetector");
     private /*NOT STATIC!!!*/ final Key<Boolean> UPDATE_ON_COMMIT_ENGAGED = Key.create("UPDATE_ON_COMMIT_ENGAGED");
 
     private final Project myProject;
@@ -258,7 +258,7 @@ class PsiChangeHandler extends PsiTreeChangeAdapter implements Disposable {
             final PsiElement scope = detector.getChangeHighlightingDirtyScopeFor(element);
             if (scope != null) return scope;
         }
-        assert defaultDetector != null : "com.intellij.codeInsight.daemon.impl.DefaultChangeLocalityDetector is unregistered";
+        assert defaultDetector != null : "com.gome.maven.codeInsight.daemon.impl.DefaultChangeLocalityDetector is unregistered";
         return defaultDetector.getChangeHighlightingDirtyScopeFor(element);
     }
 }

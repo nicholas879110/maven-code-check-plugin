@@ -56,7 +56,7 @@ import com.gome.maven.util.lang.CompoundRuntimeException;
 import java.util.*;
 
 public class PomModelImpl extends UserDataHolderBase implements PomModel {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.pom.core.impl.PomModelImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.pom.core.impl.PomModelImpl");
     private final Project myProject;
     private final Map<Class<? extends PomModelAspect>, PomModelAspect> myAspects = new HashMap<Class<? extends PomModelAspect>, PomModelAspect>();
     private final Map<PomModelAspect, List<PomModelAspect>> myIncidence = new HashMap<PomModelAspect, List<PomModelAspect>>();

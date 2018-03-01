@@ -45,7 +45,7 @@ import java.util.Set;
 
 public class CopyFilesOrDirectoriesHandler extends CopyHandlerDelegateBase {
 
-    private static Logger LOG = Logger.getInstance("com.intellij.refactoring.copy.CopyFilesOrDirectoriesHandler");
+    private static Logger LOG = Logger.getInstance("com.gome.maven.refactoring.copy.CopyFilesOrDirectoriesHandler");
 
     @Override
     public boolean canCopy(PsiElement[] elements, boolean fromUpdate) {

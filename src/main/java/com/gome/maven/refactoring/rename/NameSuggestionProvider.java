@@ -26,7 +26,7 @@ import java.util.Set;
  * @author yole
  */
 public interface NameSuggestionProvider {
-    ExtensionPointName<NameSuggestionProvider> EP_NAME = ExtensionPointName.create("com.intellij.nameSuggestionProvider");
+    ExtensionPointName<NameSuggestionProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.nameSuggestionProvider");
 
 
     SuggestedNameInfo getSuggestedNames(PsiElement element,  PsiElement nameSuggestionContext, Set<String> result);

@@ -31,7 +31,7 @@ import static org.jetbrains.jps.api.CmdlineRemoteProto.Message.ControllerMessage
  * @author nik
  */
 public abstract class BuildTargetScopeProvider {
-    public static final ExtensionPointName<BuildTargetScopeProvider> EP_NAME = ExtensionPointName.create("com.intellij.compiler.buildTargetScopeProvider");
+    public static final ExtensionPointName<BuildTargetScopeProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.compiler.buildTargetScopeProvider");
 
     /**
      * @deprecated override {@link #getBuildTargetScopes(com.gome.maven.openapi.compiler.CompileScope, com.gome.maven.openapi.compiler.CompilerFilter, com.gome.maven.openapi.project.Project, boolean)} instead

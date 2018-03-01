@@ -70,7 +70,8 @@ public class GradleResourceRootDescriptor extends BuildRootDescriptor {
 
   @Override
   public FileFilter createFileFilter() {
-    return new GradleResourceFileFilter(myFile, myConfig);
+    //自己修改的
+    return null;//new GradleResourceFileFilter(myFile, myConfig);
   }
 
   @Override

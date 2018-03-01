@@ -19,7 +19,7 @@ import com.gome.maven.execution.runners.ExecutionEnvironment;
 import com.gome.maven.openapi.extensions.ExtensionPointName;
 
 public interface RunConfigurationBeforeRunProviderDelegate {
-    ExtensionPointName<RunConfigurationBeforeRunProviderDelegate> EP_NAME = ExtensionPointName.create("com.intellij.runConfigurationBeforeRunProviderDelegate");
+    ExtensionPointName<RunConfigurationBeforeRunProviderDelegate> EP_NAME = ExtensionPointName.create("com.gome.maven.runConfigurationBeforeRunProviderDelegate");
 
     void beforeRun( ExecutionEnvironment environment);
 }

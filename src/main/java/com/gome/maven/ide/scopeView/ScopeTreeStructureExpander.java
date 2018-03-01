@@ -25,5 +25,5 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import javax.swing.event.TreeWillExpandListener;
 
 public interface ScopeTreeStructureExpander extends TreeWillExpandListener {
-    ExtensionPointName<ScopeTreeStructureExpander> EP_NAME = ExtensionPointName.create("com.intellij.scopeTreeExpander");
+    ExtensionPointName<ScopeTreeStructureExpander> EP_NAME = ExtensionPointName.create("com.gome.maven.scopeTreeExpander");
 }

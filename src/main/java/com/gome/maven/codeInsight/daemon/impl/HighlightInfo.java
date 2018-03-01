@@ -45,7 +45,7 @@ import com.gome.maven.util.BitUtil;
 import com.gome.maven.util.Function;
 import com.gome.maven.util.containers.ContainerUtil;
 import com.gome.maven.xml.util.XmlStringUtil;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import javax.swing.*;
 import java.awt.*;
@@ -53,7 +53,7 @@ import java.util.*;
 import java.util.List;
 
 public class HighlightInfo implements Segment {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.HighlightInfo");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.HighlightInfo");
 
     public static final HighlightInfo[] EMPTY_ARRAY = new HighlightInfo[0];
     // optimisation: if tooltip contains this marker object, then it replaced with description field in getTooltip()

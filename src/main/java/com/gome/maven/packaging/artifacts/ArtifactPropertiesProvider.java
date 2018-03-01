@@ -22,7 +22,7 @@ import com.gome.maven.openapi.extensions.Extensions;
  * @author nik
  */
 public abstract class ArtifactPropertiesProvider {
-    public static final ExtensionPointName<ArtifactPropertiesProvider> EP_NAME = ExtensionPointName.create("com.intellij.packaging.artifactPropertiesProvider");
+    public static final ExtensionPointName<ArtifactPropertiesProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.packaging.artifactPropertiesProvider");
     private final String myId;
 
     protected ArtifactPropertiesProvider(  String id) {

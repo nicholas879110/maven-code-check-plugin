@@ -93,7 +93,7 @@ import java.util.List;
  * @author and me too (Chinee?)
  */
 public class IntentionHintComponent extends JPanel implements Disposable, ScrollAwareHint {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.IntentionHintComponent.ListPopupRunnable");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.IntentionHintComponent.ListPopupRunnable");
 
     static final Icon ourInactiveArrowIcon = new EmptyIcon(AllIcons.General.ArrowDown.getIconWidth(), AllIcons.General.ArrowDown.getIconHeight());
 

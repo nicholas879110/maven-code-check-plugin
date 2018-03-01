@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiFile;
  * @author yole
  */
 public interface TemplatePreprocessor {
-    ExtensionPointName<TemplatePreprocessor> EP_NAME = ExtensionPointName.create("com.intellij.liveTemplatePreprocessor");
+    ExtensionPointName<TemplatePreprocessor> EP_NAME = ExtensionPointName.create("com.gome.maven.liveTemplatePreprocessor");
 
     void preprocessTemplate(final Editor editor, final PsiFile file, int caretOffset, final String textToInsert, final String templateText);
 }

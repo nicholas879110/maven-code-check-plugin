@@ -40,7 +40,7 @@ import java.util.Comparator;
  * A set of utility methods for working with paths
  */
 public class CompilerPaths {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.compiler.CompilerPaths");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.compiler.CompilerPaths");
     private static volatile String ourSystemPath;
     private static final Comparator<String> URLS_COMPARATOR = new Comparator<String>() {
         @Override

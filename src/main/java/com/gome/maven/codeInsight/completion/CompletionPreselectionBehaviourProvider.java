@@ -18,7 +18,7 @@ package com.gome.maven.codeInsight.completion;
 import com.gome.maven.openapi.extensions.ExtensionPointName;
 
 public abstract class CompletionPreselectionBehaviourProvider {
-    public static ExtensionPointName<CompletionPreselectionBehaviourProvider> EP_NAME = ExtensionPointName.create("com.intellij.completion.preselectionBehaviourProvider");
+    public static ExtensionPointName<CompletionPreselectionBehaviourProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.completion.preselectionBehaviourProvider");
 
     public boolean shouldPreselectFirstSuggestion( CompletionParameters parameters) {
         return true;

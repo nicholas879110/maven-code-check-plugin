@@ -28,7 +28,7 @@ import com.gome.maven.psi.PsiElement;
 
 public abstract class InspectionExtensionsFactory {
 
-    public static final ExtensionPointName<InspectionExtensionsFactory> EP_NAME = ExtensionPointName.create("com.intellij.codeInspection.InspectionExtension");
+    public static final ExtensionPointName<InspectionExtensionsFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.codeInspection.InspectionExtension");
 
     public abstract GlobalInspectionContextExtension createGlobalInspectionContextExtension();
     

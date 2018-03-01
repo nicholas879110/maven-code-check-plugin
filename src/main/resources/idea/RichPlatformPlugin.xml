@@ -1,22 +1,22 @@
 <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- former Flex IDE foundation, todo: integrate into IdeaPlugin.xml -->
 
-  <module value="com.intellij.modules.platform"/>
-  <module value="com.intellij.modules.lang"/>
-  <module value="com.intellij.modules.vcs"/>
-  <module value="com.intellij.modules.xdebugger"/>
-  <module value="com.intellij.modules.xml"/>
+  <module value="com.gome.maven.modules.platform"/>
+  <module value="com.gome.maven.modules.lang"/>
+  <module value="com.gome.maven.modules.vcs"/>
+  <module value="com.gome.maven.modules.xdebugger"/>
+  <module value="com.gome.maven.modules.xml"/>
 
   <xi:include href="../componentSets/IdeaComponents.xml" xpointer="xpointer(/components/*)"/>
   <xi:include href="RichPlatformActions.xml" xpointer="xpointer(/component/*)"/>
 
   <project-components>
     <component>
-      <implementation-class>com.intellij.framework.detection.impl.FrameworkDetectionManager</implementation-class>
+      <implementation-class>com.gome.maven.framework.detection.impl.FrameworkDetectionManager</implementation-class>
     </component>
     <component>
-      <interface-class>com.intellij.ide.impl.convert.ProjectFileVersion</interface-class>
-      <implementation-class>com.intellij.ide.impl.convert.ProjectFileVersionImpl</implementation-class>
+      <interface-class>com.gome.maven.ide.impl.convert.ProjectFileVersion</interface-class>
+      <implementation-class>com.gome.maven.ide.impl.convert.ProjectFileVersionImpl</implementation-class>
     </component>
   </project-components>
 
@@ -27,349 +27,349 @@
     <xi:include href="../META-INF/ExternalSystemExtensionPoints.xml" xpointer="xpointer(/idea-plugin/extensionPoints/*)"/>
 
     <extensionPoint name="antBuildGen"
-                    interface="com.intellij.compiler.ant.ChunkBuildExtension"/>
+                    interface="com.gome.maven.compiler.ant.ChunkBuildExtension"/>
 
     <extensionPoint name="antCustomCompiler"
-                    interface="com.intellij.compiler.ant.ChunkCustomCompilerExtension"/>
+                    interface="com.gome.maven.compiler.ant.ChunkCustomCompilerExtension"/>
 
     <extensionPoint name="compiler.buildTargetScopeProvider"
-                    interface="com.intellij.compiler.impl.BuildTargetScopeProvider"/>
+                    interface="com.gome.maven.compiler.impl.BuildTargetScopeProvider"/>
 
     <extensionPoint name="compiler.optionsManager"
-                    interface="com.intellij.compiler.options.CompilerOptionsFilter"/>
+                    interface="com.gome.maven.compiler.options.CompilerOptionsFilter"/>
 
     <extensionPoint name="java.programPatcher"
-                    interface="com.intellij.execution.runners.JavaProgramPatcher"/>
+                    interface="com.gome.maven.execution.runners.JavaProgramPatcher"/>
 
     <extensionPoint name="OrderRootTypeUI"
-                    beanClass="com.intellij.openapi.extensions.KeyedFactoryEPBean">
-      <with attribute="implementationClass" implements="com.intellij.openapi.roots.ui.OrderRootTypeUIFactory"/>
+                    beanClass="com.gome.maven.openapi.extensions.KeyedFactoryEPBean">
+      <with attribute="implementationClass" implements="com.gome.maven.openapi.roots.ui.OrderRootTypeUIFactory"/>
     </extensionPoint>
 
-    <extensionPoint name="packaging.elementType" interface="com.intellij.packaging.elements.PackagingElementType"/>
-    <extensionPoint name="packaging.artifactPropertiesProvider" interface="com.intellij.packaging.artifacts.ArtifactPropertiesProvider"/>
-    <extensionPoint name="packaging.sourceItemProvider" interface="com.intellij.packaging.ui.PackagingSourceItemsProvider"/>
-    <extensionPoint name="packaging.sourceItemFilter" interface="com.intellij.packaging.ui.PackagingSourceItemFilter"/>
-    <extensionPoint name="packaging.artifactType" interface="com.intellij.packaging.artifacts.ArtifactType"/>
+    <extensionPoint name="packaging.elementType" interface="com.gome.maven.packaging.elements.PackagingElementType"/>
+    <extensionPoint name="packaging.artifactPropertiesProvider" interface="com.gome.maven.packaging.artifacts.ArtifactPropertiesProvider"/>
+    <extensionPoint name="packaging.sourceItemProvider" interface="com.gome.maven.packaging.ui.PackagingSourceItemsProvider"/>
+    <extensionPoint name="packaging.sourceItemFilter" interface="com.gome.maven.packaging.ui.PackagingSourceItemFilter"/>
+    <extensionPoint name="packaging.artifactType" interface="com.gome.maven.packaging.artifacts.ArtifactType"/>
 
-    <extensionPoint name="frameworkSupport" interface="com.intellij.ide.util.frameworkSupport.FrameworkSupportProvider"/>
-    <extensionPoint name="frameworkSupportCommunicator" interface="com.intellij.ide.util.newProjectWizard.impl.FrameworkSupportCommunicator"/>
+    <extensionPoint name="frameworkSupport" interface="com.gome.maven.ide.util.frameworkSupport.FrameworkSupportProvider"/>
+    <extensionPoint name="frameworkSupportCommunicator" interface="com.gome.maven.ide.util.newProjectWizard.impl.FrameworkSupportCommunicator"/>
 
     <!--new project wizard-->
-    <extensionPoint name="wizardMode" interface="com.intellij.ide.util.newProjectWizard.modes.WizardMode"/>
-    <extensionPoint name="projectWizard.projectCategory" interface="com.intellij.ide.projectWizard.ProjectCategory"/>
-    <extensionPoint name="projectImportProvider" interface="com.intellij.projectImport.ProjectImportProvider"/>
-    <extensionPoint name="projectImportBuilder" interface="com.intellij.projectImport.ProjectImportBuilder"/>
-    <extensionPoint name="projectStructureDetector" interface="com.intellij.ide.util.projectWizard.importSources.ProjectStructureDetector"/>
+    <extensionPoint name="wizardMode" interface="com.gome.maven.ide.util.newProjectWizard.modes.WizardMode"/>
+    <extensionPoint name="projectWizard.projectCategory" interface="com.gome.maven.ide.projectWizard.ProjectCategory"/>
+    <extensionPoint name="projectImportProvider" interface="com.gome.maven.projectImport.ProjectImportProvider"/>
+    <extensionPoint name="projectImportBuilder" interface="com.gome.maven.projectImport.ProjectImportBuilder"/>
+    <extensionPoint name="projectStructureDetector" interface="com.gome.maven.ide.util.projectWizard.importSources.ProjectStructureDetector"/>
 
-    <extensionPoint name="codeInsight.wordCompletionFilter" beanClass="com.intellij.lang.LanguageExtensionPoint">
-      <with attribute="implementationClass" implements="com.intellij.lang.WordCompletionElementFilter"/>
+    <extensionPoint name="codeInsight.wordCompletionFilter" beanClass="com.gome.maven.lang.LanguageExtensionPoint">
+      <with attribute="implementationClass" implements="com.gome.maven.lang.WordCompletionElementFilter"/>
     </extensionPoint>
 
-    <extensionPoint name="projectStructureConfigurableFilter" interface="com.intellij.openapi.roots.ui.configuration.ProjectStructureConfigurableFilter"/>
-    <extensionPoint name="projectStructureConfigurableAdder" interface="com.intellij.openapi.roots.ui.configuration.ProjectStructureConfigurableContributor"/>
+    <extensionPoint name="projectStructureConfigurableFilter" interface="com.gome.maven.openapi.roots.ui.configuration.ProjectStructureConfigurableFilter"/>
+    <extensionPoint name="projectStructureConfigurableAdder" interface="com.gome.maven.openapi.roots.ui.configuration.ProjectStructureConfigurableContributor"/>
 
-    <extensionPoint name="compiler" area="IDEA_PROJECT" interface="com.intellij.openapi.compiler.Compiler"/>
-    <extensionPoint name="compilerFactory" area="IDEA_PROJECT" interface="com.intellij.openapi.compiler.CompilerFactory"/>
-    <extensionPoint name="compiler.task" area="IDEA_PROJECT" beanClass="com.intellij.compiler.CompileTaskBean"/>
-    <extensionPoint name="compilerSettingsFactory" area="IDEA_PROJECT" interface="com.intellij.compiler.CompilerSettingsFactory"/>
-    <extensionPoint name="compileServer.plugin" beanClass="com.intellij.compiler.server.CompileServerPlugin"/>
-    <extensionPoint name="buildProcess.parametersProvider" area="IDEA_PROJECT" interface="com.intellij.compiler.server.BuildProcessParametersProvider"/>
+    <extensionPoint name="compiler" area="IDEA_PROJECT" interface="com.gome.maven.openapi.compiler.Compiler"/>
+    <extensionPoint name="compilerFactory" area="IDEA_PROJECT" interface="com.gome.maven.openapi.compiler.CompilerFactory"/>
+    <extensionPoint name="compiler.task" area="IDEA_PROJECT" beanClass="com.gome.maven.compiler.CompileTaskBean"/>
+    <extensionPoint name="compilerSettingsFactory" area="IDEA_PROJECT" interface="com.gome.maven.compiler.CompilerSettingsFactory"/>
+    <extensionPoint name="compileServer.plugin" beanClass="com.gome.maven.compiler.server.CompileServerPlugin"/>
+    <extensionPoint name="buildProcess.parametersProvider" area="IDEA_PROJECT" interface="com.gome.maven.compiler.server.BuildProcessParametersProvider"/>
 
-    <extensionPoint name="attachSourcesProvider" interface="com.intellij.codeInsight.AttachSourcesProvider"/>
+    <extensionPoint name="attachSourcesProvider" interface="com.gome.maven.codeInsight.AttachSourcesProvider"/>
 
     <extensionPoint name="java.compiler" area="IDEA_PROJECT"
-                    interface="com.intellij.compiler.impl.javaCompiler.BackendCompiler"/>
+                    interface="com.gome.maven.compiler.impl.javaCompiler.BackendCompiler"/>
 
     <extensionPoint name="configuration.ModuleStructureExtension"
-                    interface="com.intellij.openapi.roots.ui.configuration.projectRoot.ModuleStructureExtension"/>
+                    interface="com.gome.maven.openapi.roots.ui.configuration.projectRoot.ModuleStructureExtension"/>
 
     <extensionPoint name="projectStructureValidator"
-                    interface="com.intellij.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureValidator"/>
+                    interface="com.gome.maven.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureValidator"/>
   </extensionPoints>
 
-  <extensions defaultExtensionNs="com.intellij">
+  <extensions defaultExtensionNs="com.gome.maven">
     <xi:include href="../META-INF/PlatformExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
     <xi:include href="../META-INF/VcsExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
     <xi:include href="../META-INF/LangExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
     <xi:include href="../META-INF/ExternalSystemExtensions.xml" xpointer="xpointer(/idea-plugin/extensions/*)"/>
 
-    <projectViewPane implementation="com.intellij.ide.projectView.impl.ProjectViewPane"/>
+    <projectViewPane implementation="com.gome.maven.ide.projectView.impl.ProjectViewPane"/>
 
-    <appStarter implementation="com.intellij.compiler.ant.GenerateAntMain"/>
+    <appStarter implementation="com.gome.maven.compiler.ant.GenerateAntMain"/>
 
-    <renameHandler implementation="com.intellij.ide.projectView.impl.RenameModuleHandler"/>
-    <renameHandler implementation="com.intellij.openapi.roots.impl.libraries.RenameLibraryHandler"/>
+    <renameHandler implementation="com.gome.maven.ide.projectView.impl.RenameModuleHandler"/>
+    <renameHandler implementation="com.gome.maven.openapi.roots.impl.libraries.RenameLibraryHandler"/>
 
-    <fileTypeFactory implementation="com.intellij.openapi.fileTypes.impl.InternalFileTypeFactory"/>
+    <fileTypeFactory implementation="com.gome.maven.openapi.fileTypes.impl.InternalFileTypeFactory"/>
 
-    <packaging.sourceItemProvider implementation="com.intellij.openapi.roots.ui.configuration.artifacts.sourceItems.ModulesAndLibrariesSourceItemsProvider"/>
-    <packaging.sourceItemProvider implementation="com.intellij.openapi.roots.ui.configuration.artifacts.sourceItems.ArtifactsSourceItemsProvider"/>
-    <packaging.artifactType implementation="com.intellij.packaging.impl.artifacts.JarArtifactType" order="first"/>
-    <packaging.artifactType implementation="com.intellij.packaging.impl.artifacts.PlainArtifactType" order="last"/>
-    <compiler.buildTargetScopeProvider implementation="com.intellij.packaging.impl.compiler.ArtifactBuildTargetScopeProvider"/>
-    <compiler implementation="com.intellij.packaging.impl.compiler.ArtifactsCompiler" id="artifactsCompiler"/>
-    <gotoRelatedProvider implementation="com.intellij.testIntegration.GotoTestRelatedProvider"/>
+    <packaging.sourceItemProvider implementation="com.gome.maven.openapi.roots.ui.configuration.artifacts.sourceItems.ModulesAndLibrariesSourceItemsProvider"/>
+    <packaging.sourceItemProvider implementation="com.gome.maven.openapi.roots.ui.configuration.artifacts.sourceItems.ArtifactsSourceItemsProvider"/>
+    <packaging.artifactType implementation="com.gome.maven.packaging.impl.artifacts.JarArtifactType" order="first"/>
+    <packaging.artifactType implementation="com.gome.maven.packaging.impl.artifacts.PlainArtifactType" order="last"/>
+    <compiler.buildTargetScopeProvider implementation="com.gome.maven.packaging.impl.compiler.ArtifactBuildTargetScopeProvider"/>
+    <compiler implementation="com.gome.maven.packaging.impl.compiler.ArtifactsCompiler" id="artifactsCompiler"/>
+    <gotoRelatedProvider implementation="com.gome.maven.testIntegration.GotoTestRelatedProvider"/>
 
     <applicationService serviceInterface="com.gome.maven.ide.RecentProjectsManager"
                         serviceImplementation="com.gome.maven.ide.RecentProjectsManagerImpl"/>
 
-    <applicationService serviceInterface="com.intellij.util.descriptors.ConfigFileFactory"
-                        serviceImplementation="com.intellij.util.descriptors.impl.ConfigFileFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.util.descriptors.ConfigFileFactory"
+                        serviceImplementation="com.gome.maven.util.descriptors.impl.ConfigFileFactoryImpl"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.roots.ui.configuration.DefaultModuleConfigurationEditorFactory"
-                        serviceImplementation="com.intellij.openapi.roots.ui.configuration.DefaultModuleConfigurationEditorFactoryImpl"/>
-    <applicationService serviceInterface="com.intellij.ide.util.projectWizard.ProjectWizardStepFactory"
-                        serviceImplementation="com.intellij.ide.util.projectWizard.ProjectWizardStepFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.ui.configuration.DefaultModuleConfigurationEditorFactory"
+                        serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.DefaultModuleConfigurationEditorFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.ide.util.projectWizard.ProjectWizardStepFactory"
+                        serviceImplementation="com.gome.maven.ide.util.projectWizard.ProjectWizardStepFactoryImpl"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.deployment.DeploymentUtil"
-                        serviceImplementation="com.intellij.openapi.deployment.DeploymentUtilImpl"/>
-    <applicationService serviceInterface="com.intellij.compiler.ant.BuildTargetsFactory"
-                        serviceImplementation="com.intellij.compiler.ant.BuildTargetsFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.deployment.DeploymentUtil"
+                        serviceImplementation="com.gome.maven.openapi.deployment.DeploymentUtilImpl"/>
+    <applicationService serviceInterface="com.gome.maven.compiler.ant.BuildTargetsFactory"
+                        serviceImplementation="com.gome.maven.compiler.ant.BuildTargetsFactoryImpl"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.roots.libraries.LibrariesHelper" serviceImplementation="com.intellij.openapi.roots.libraries.LibrariesHelperImpl"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.libraries.LibrariesHelper" serviceImplementation="com.gome.maven.openapi.roots.libraries.LibrariesHelperImpl"/>
 
-    <projectService serviceInterface="com.intellij.facet.impl.ui.FacetEditorsStateManager"
-                    serviceImplementation="com.intellij.facet.impl.ui.FacetEditorsStateManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.facet.impl.ui.FacetEditorsStateManager"
+                    serviceImplementation="com.gome.maven.facet.impl.ui.FacetEditorsStateManagerImpl"/>
 
-    <applicationService serviceInterface="com.intellij.facet.ui.FacetEditorsFactory"
-                        serviceImplementation="com.intellij.facet.impl.ui.FacetEditorsFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.facet.ui.FacetEditorsFactory"
+                        serviceImplementation="com.gome.maven.facet.impl.ui.FacetEditorsFactoryImpl"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.projectRoots.ProjectJdkTable"
-                        serviceImplementation="com.intellij.openapi.projectRoots.impl.JavaAwareProjectJdkTableImpl"/>
-    <exportable serviceInterface="com.intellij.openapi.projectRoots.ProjectJdkTable"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.projectRoots.ProjectJdkTable"
+                        serviceImplementation="com.gome.maven.openapi.projectRoots.impl.JavaAwareProjectJdkTableImpl"/>
+    <exportable serviceInterface="com.gome.maven.openapi.projectRoots.ProjectJdkTable"/>
 
 
-    <applicationService serviceInterface="com.intellij.execution.runners.ProcessProxyFactory"
-                        serviceImplementation="com.intellij.execution.runners.ProcessProxyFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.execution.runners.ProcessProxyFactory"
+                        serviceImplementation="com.gome.maven.execution.runners.ProcessProxyFactoryImpl"/>
 
-    <applicationService serviceImplementation="com.intellij.debugger.settings.NodeRendererSettings"/>
-    <applicationService serviceImplementation="com.intellij.debugger.settings.ViewsGeneralSettings"/>
-    <applicationService serviceImplementation="com.intellij.debugger.settings.DebuggerSettings"/>
-    <applicationService serviceImplementation="com.intellij.debugger.settings.ThreadsViewSettings"/>
+    <applicationService serviceImplementation="com.gome.maven.debugger.settings.NodeRendererSettings"/>
+    <applicationService serviceImplementation="com.gome.maven.debugger.settings.ViewsGeneralSettings"/>
+    <applicationService serviceImplementation="com.gome.maven.debugger.settings.DebuggerSettings"/>
+    <applicationService serviceImplementation="com.gome.maven.debugger.settings.ThreadsViewSettings"/>
 
-    <applicationService serviceInterface="com.intellij.packaging.elements.PackagingElementFactory"
-                        serviceImplementation="com.intellij.packaging.impl.elements.PackagingElementFactoryImpl"/>
+    <applicationService serviceInterface="com.gome.maven.packaging.elements.PackagingElementFactory"
+                        serviceImplementation="com.gome.maven.packaging.impl.elements.PackagingElementFactoryImpl"/>
 
-    <applicationService serviceInterface="com.intellij.psi.impl.file.PsiPackageImplementationHelper"
-                        serviceImplementation="com.intellij.psi.impl.file.PsiPackageImplementationHelperImpl"/>
+    <applicationService serviceInterface="com.gome.maven.psi.impl.file.PsiPackageImplementationHelper"
+                        serviceImplementation="com.gome.maven.psi.impl.file.PsiPackageImplementationHelperImpl"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.roots.ui.OrderEntryAppearanceService"
-                        serviceImplementation="com.intellij.openapi.roots.ui.OrderEntryAppearanceServiceImpl"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.ui.OrderEntryAppearanceService"
+                        serviceImplementation="com.gome.maven.openapi.roots.ui.OrderEntryAppearanceServiceImpl"/>
 
-    <projectService serviceInterface="com.intellij.packaging.artifacts.ArtifactPointerManager"
-                    serviceImplementation="com.intellij.packaging.impl.artifacts.ArtifactPointerManagerImpl"/>
-    <projectService serviceInterface="com.intellij.packaging.impl.artifacts.ArtifactBySourceFileFinder"
-                    serviceImplementation="com.intellij.packaging.impl.artifacts.ArtifactBySourceFileFinderImpl"/>
-    <applicationService serviceImplementation="com.intellij.packaging.impl.artifacts.InvalidArtifactType"/>
+    <projectService serviceInterface="com.gome.maven.packaging.artifacts.ArtifactPointerManager"
+                    serviceImplementation="com.gome.maven.packaging.impl.artifacts.ArtifactPointerManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.packaging.impl.artifacts.ArtifactBySourceFileFinder"
+                    serviceImplementation="com.gome.maven.packaging.impl.artifacts.ArtifactBySourceFileFinderImpl"/>
+    <applicationService serviceImplementation="com.gome.maven.packaging.impl.artifacts.InvalidArtifactType"/>
 
-    <projectService serviceInterface="com.intellij.lang.injection.InjectedLanguageManager"
-                    serviceImplementation="com.intellij.psi.impl.source.tree.injected.InjectedLanguageManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.lang.injection.InjectedLanguageManager"
+                    serviceImplementation="com.gome.maven.psi.impl.source.tree.injected.InjectedLanguageManagerImpl"/>
 
-    <projectService serviceInterface="com.intellij.codeInsight.ExternalAnnotationsManager"
-                    serviceImplementation="com.intellij.codeInsight.ExternalAnnotationsManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.codeInsight.ExternalAnnotationsManager"
+                    serviceImplementation="com.gome.maven.codeInsight.ExternalAnnotationsManagerImpl"/>
 
-    <projectService serviceInterface="com.intellij.codeInsight.InferredAnnotationsManager"
-                    serviceImplementation="com.intellij.codeInsight.InferredAnnotationsManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.codeInsight.InferredAnnotationsManager"
+                    serviceImplementation="com.gome.maven.codeInsight.InferredAnnotationsManagerImpl"/>
 
-    <projectService serviceInterface="com.intellij.openapi.compiler.CompilerManager"
-                    serviceImplementation="com.intellij.compiler.CompilerManagerImpl"/>
-    <projectService serviceInterface="com.intellij.compiler.options.ValidationConfiguration"
-                    serviceImplementation="com.intellij.compiler.options.ValidationConfiguration"/>
-    <projectService serviceInterface="com.intellij.compiler.options.ValidationConfiguration$ExcludedFromValidationConfiguration"
-                    serviceImplementation="com.intellij.compiler.options.ValidationConfiguration$ExcludedFromValidationConfiguration"/>
-    <projectService serviceInterface="com.intellij.openapi.roots.CompilerProjectExtension"
-                    serviceImplementation="com.intellij.openapi.roots.impl.CompilerProjectExtensionImpl"/>
-    <projectService serviceInterface="com.intellij.openapi.roots.LanguageLevelProjectExtension"
-                    serviceImplementation="com.intellij.openapi.roots.impl.LanguageLevelProjectExtensionImpl"/>
-    <projectService serviceInterface="com.intellij.compiler.CompilerEncodingService"
-                    serviceImplementation="com.intellij.compiler.impl.CompilerEncodingServiceImpl"/>
+    <projectService serviceInterface="com.gome.maven.openapi.compiler.CompilerManager"
+                    serviceImplementation="com.gome.maven.compiler.CompilerManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.compiler.options.ValidationConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.options.ValidationConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.compiler.options.ValidationConfiguration$ExcludedFromValidationConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.options.ValidationConfiguration$ExcludedFromValidationConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.CompilerProjectExtension"
+                    serviceImplementation="com.gome.maven.openapi.roots.impl.CompilerProjectExtensionImpl"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.LanguageLevelProjectExtension"
+                    serviceImplementation="com.gome.maven.openapi.roots.impl.LanguageLevelProjectExtensionImpl"/>
+    <projectService serviceInterface="com.gome.maven.compiler.CompilerEncodingService"
+                    serviceImplementation="com.gome.maven.compiler.impl.CompilerEncodingServiceImpl"/>
 
-    <projectService serviceInterface="com.intellij.packaging.impl.compiler.ArtifactsWorkspaceSettings"
-                    serviceImplementation="com.intellij.packaging.impl.compiler.ArtifactsWorkspaceSettings"/>
+    <projectService serviceInterface="com.gome.maven.packaging.impl.compiler.ArtifactsWorkspaceSettings"
+                    serviceImplementation="com.gome.maven.packaging.impl.compiler.ArtifactsWorkspaceSettings"/>
 
-    <projectService serviceInterface="com.intellij.compiler.CompilerWorkspaceConfiguration"
-                    serviceImplementation="com.intellij.compiler.CompilerWorkspaceConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.compiler.CompilerWorkspaceConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.CompilerWorkspaceConfiguration"/>
 
-    <projectService serviceInterface="com.intellij.openapi.vcs.changes.ui.ChangesGroupingPolicyFactory"
-                    serviceImplementation="com.intellij.openapi.vcs.changes.ui.ChangesModuleGroupingPolicyFactory"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.impl.DefaultVcsRootPolicy"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.ModuleDefaultVcsRootPolicy"/>
-    <projectService serviceInterface="com.intellij.openapi.roots.FileIndexFacade"
-                    serviceImplementation="com.intellij.openapi.roots.impl.ProjectFileIndexFacade"/>
-    <projectService serviceInterface="com.intellij.openapi.vcs.impl.VcsPathPresenter"
-                    serviceImplementation="com.intellij.openapi.vcs.impl.ModuleVcsPathPresenter"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.changes.ui.ChangesGroupingPolicyFactory"
+                    serviceImplementation="com.gome.maven.openapi.vcs.changes.ui.ChangesModuleGroupingPolicyFactory"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.impl.DefaultVcsRootPolicy"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.ModuleDefaultVcsRootPolicy"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.FileIndexFacade"
+                    serviceImplementation="com.gome.maven.openapi.roots.impl.ProjectFileIndexFacade"/>
+    <projectService serviceInterface="com.gome.maven.openapi.vcs.impl.VcsPathPresenter"
+                    serviceImplementation="com.gome.maven.openapi.vcs.impl.ModuleVcsPathPresenter"/>
 
-    <projectService serviceInterface="com.intellij.compiler.impl.javaCompiler.javac.JavacConfiguration"
-                    serviceImplementation="com.intellij.compiler.impl.javaCompiler.javac.JavacConfiguration"/>
-    <projectService serviceInterface="com.intellij.compiler.impl.javaCompiler.eclipse.EclipseCompilerConfiguration"
-                    serviceImplementation="com.intellij.compiler.impl.javaCompiler.eclipse.EclipseCompilerConfiguration"/>
-    <projectService serviceInterface="com.intellij.compiler.impl.rmiCompiler.RmicConfiguration"
-                    serviceImplementation="com.intellij.compiler.impl.rmiCompiler.RmicConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.compiler.impl.javaCompiler.javac.JavacConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.impl.javaCompiler.javac.JavacConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.compiler.impl.javaCompiler.eclipse.EclipseCompilerConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.impl.javaCompiler.eclipse.EclipseCompilerConfiguration"/>
+    <projectService serviceInterface="com.gome.maven.compiler.impl.rmiCompiler.RmicConfiguration"
+                    serviceImplementation="com.gome.maven.compiler.impl.rmiCompiler.RmicConfiguration"/>
     <pathMacroFilter implementation="com.gome.maven.compiler.impl.javaCompiler.javac.JavacConfigurationMacroFilter"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.wm.impl.FrameTitleBuilder"
-                        serviceImplementation="com.intellij.openapi.wm.IdeaFrameTitleBuilder"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.wm.impl.FrameTitleBuilder"
+                        serviceImplementation="com.gome.maven.openapi.wm.IdeaFrameTitleBuilder"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.roots.ui.configuration.libraries.LibraryPresentationManager"
-                        serviceImplementation="com.intellij.openapi.roots.ui.configuration.libraries.impl.LibraryPresentationManagerImpl"/>
-    <projectService serviceInterface="com.intellij.openapi.roots.ui.configuration.dependencyAnalysis.AnalyzeDependenciesSettings"
-                    serviceImplementation="com.intellij.openapi.roots.ui.configuration.dependencyAnalysis.AnalyzeDependenciesSettings"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.ui.configuration.libraries.LibraryPresentationManager"
+                        serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.libraries.impl.LibraryPresentationManagerImpl"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.ui.configuration.dependencyAnalysis.AnalyzeDependenciesSettings"
+                    serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.dependencyAnalysis.AnalyzeDependenciesSettings"/>
 
-    <daemon.highlightInfoFilter implementation="com.intellij.debugger.engine.evaluation.DebuggerHighlightFilter"/>
-    <daemon.highlightInfoFilter implementation="com.intellij.codeInsight.daemon.impl.HighlightInfoFilterImpl"/>
+    <daemon.highlightInfoFilter implementation="com.gome.maven.debugger.engine.evaluation.DebuggerHighlightFilter"/>
+    <daemon.highlightInfoFilter implementation="com.gome.maven.codeInsight.daemon.impl.HighlightInfoFilterImpl"/>
 
 
-    <projectService serviceInterface="com.intellij.debugger.ui.DebuggerRecents"
-                    serviceImplementation="com.intellij.debugger.ui.DebuggerRecents"/>
+    <projectService serviceInterface="com.gome.maven.debugger.ui.DebuggerRecents"
+                    serviceImplementation="com.gome.maven.debugger.ui.DebuggerRecents"/>
 
 
     <!-- Project Configurables -->
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.ModuleStructureConfigurable"/>
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.FacetStructureConfigurable"/>
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.artifacts.ArtifactsStructureConfigurable"/>
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.ProjectLibrariesConfigurable"/>
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.GlobalLibrariesConfigurable"/>
-    <projectService serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.JdkListConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.ModuleStructureConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.FacetStructureConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.artifacts.ArtifactsStructureConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.ProjectLibrariesConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.GlobalLibrariesConfigurable"/>
+    <projectService serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.JdkListConfigurable"/>
 
     <!-- Errors -->
     <!-- Show full error options configurable only in full IDEA - platform supports only default IDE profile for now -->
-    <projectConfigurable groupId="editor" groupWeight="160" displayName="Inspections" id="Errors" provider="com.intellij.profile.codeInspection.ui.ProjectInspectionToolsConfigurableProvider"/>
+    <projectConfigurable groupId="editor" groupWeight="160" displayName="Inspections" id="Errors" provider="com.gome.maven.profile.codeInspection.ui.ProjectInspectionToolsConfigurableProvider"/>
 
     <!-- Compiler -->
-    <projectConfigurable groupId="build" groupWeight="130" instance="com.intellij.compiler.options.CompilerConfigurable" id="project.propCompiler" order="after project"
-                         key="compiler.configurable.display.name" bundle="messages.CompilerBundle" childrenEPName="com.intellij.compilerSettingsFactory">
-      <configurable instance="com.intellij.openapi.compiler.options.ExcludedEntriesConfigurable" id="reference.projectsettings.compiler.excludes"
+    <projectConfigurable groupId="build" groupWeight="130" instance="com.gome.maven.compiler.options.CompilerConfigurable" id="project.propCompiler" order="after project"
+                         key="compiler.configurable.display.name" bundle="messages.CompilerBundle" childrenEPName="com.gome.maven.compilerSettingsFactory">
+      <configurable instance="com.gome.maven.openapi.compiler.options.ExcludedEntriesConfigurable" id="reference.projectsettings.compiler.excludes"
                     displayName="Excludes"/>
-      <configurable instance="com.intellij.compiler.options.JavaCompilersTab" id="reference.projectsettings.compiler.javacompiler"
+      <configurable instance="com.gome.maven.compiler.options.JavaCompilersTab" id="reference.projectsettings.compiler.javacompiler"
                     key="java.compiler.description" bundle="messages.CompilerBundle"/>
-      <configurable instance="com.intellij.compiler.options.AnnotationProcessorsConfigurable"
+      <configurable instance="com.gome.maven.compiler.options.AnnotationProcessorsConfigurable"
                     id="reference.projectsettings.compiler.annotationProcessors" displayName="Annotation Processors"/>
-      <configurable instance="com.intellij.compiler.options.ValidationConfigurable" id="project.validation" key="validation.display.name"
+      <configurable instance="com.gome.maven.compiler.options.ValidationConfigurable" id="project.validation" key="validation.display.name"
                     bundle="messages.CompilerBundle" />
-      <configurable instance="com.intellij.compiler.options.RmicConfigurable" id="reference.projectsettings.compiler.rmicompiler"
+      <configurable instance="com.gome.maven.compiler.options.RmicConfigurable" id="reference.projectsettings.compiler.rmicompiler"
                     key="rmi.compiler.description" bundle="messages.CompilerBundle"/>
     </projectConfigurable>
 
-    <projectConfigurable groupId="language" instance="com.intellij.psi.templateLanguages.TemplateDataLanguageConfigurable" id="Template Data Languages" key="template.data.language.configurable" bundle="messages.LangBundle" />
+    <projectConfigurable groupId="language" instance="com.gome.maven.psi.templateLanguages.TemplateDataLanguageConfigurable" id="Template Data Languages" key="template.data.language.configurable" bundle="messages.LangBundle" />
 
     <!-- Scopes -->
-    <projectConfigurable groupId="appearance" groupWeight="111" instance="com.intellij.ide.util.scopeChooser.ScopeChooserConfigurable" id="project.scopes" key="scopes.display.name" bundle="messages.IdeBundle" />
+    <projectConfigurable groupId="appearance" groupWeight="111" instance="com.gome.maven.ide.util.scopeChooser.ScopeChooserConfigurable" id="project.scopes" key="scopes.display.name" bundle="messages.IdeBundle" />
 
     <!-- Application Configurables -->
 
     <!-- Path Variables -->
     <!-- the implementation of this configurable is in platform-impl but it's not registered in platform because
          it's only required in full IDEA -->
-    <applicationConfigurable groupId="build" instance="com.intellij.application.options.pathMacros.PathMacroConfigurable" id="preferences.pathVariables"
+    <applicationConfigurable groupId="build" instance="com.gome.maven.application.options.pathMacros.PathMacroConfigurable" id="preferences.pathVariables"
                              key="title.path.variables" bundle="messages.ApplicationBundle"/>
-    <postStartupActivity implementation="com.intellij.externalDependencies.impl.CheckRequiredPluginsActivity"/>
-    <projectConfigurable groupId="build" provider="com.intellij.externalDependencies.impl.ExternalDependenciesConfigurableProvider"
+    <postStartupActivity implementation="com.gome.maven.externalDependencies.impl.CheckRequiredPluginsActivity"/>
+    <projectConfigurable groupId="build" provider="com.gome.maven.externalDependencies.impl.ExternalDependenciesConfigurableProvider"
                          id="preferences.externalDependencies" displayName="Required Plugins"/>
 
-    <applicationConfigurable parentId="preferences.editor" instance="com.intellij.execution.console.ConsoleFoldingConfigurable" id="Console Folding"
+    <applicationConfigurable parentId="preferences.editor" instance="com.gome.maven.execution.console.ConsoleFoldingConfigurable" id="Console Folding"
                              displayName="Console Folding"/>
 
-    <editorNotificationProvider implementation="com.intellij.codeInsight.daemon.impl.AttachSourcesNotificationProvider"/>
-    <editorNotificationProvider implementation="com.intellij.codeInsight.daemon.impl.SetupSDKNotificationProvider"/>
+    <editorNotificationProvider implementation="com.gome.maven.codeInsight.daemon.impl.AttachSourcesNotificationProvider"/>
+    <editorNotificationProvider implementation="com.gome.maven.codeInsight.daemon.impl.SetupSDKNotificationProvider"/>
 
-    <attachSourcesProvider implementation="com.intellij.jarFinder.InternetAttachSourceProvider"/>
+    <attachSourcesProvider implementation="com.gome.maven.jarFinder.InternetAttachSourceProvider"/>
 
-    <checkoutListener implementation="com.intellij.openapi.vcs.checkout.ProjectCheckoutListener"/>
-    <checkoutListener implementation="com.intellij.openapi.vcs.checkout.ProjectDirCheckoutListener"/>
-    <checkoutListener implementation="com.intellij.openapi.vcs.checkout.ProjectImporterCheckoutListener"/>
-    <vcsAwareCheckoutListener implementation="com.intellij.openapi.vcs.checkout.NewProjectCheckoutListener"/>
+    <checkoutListener implementation="com.gome.maven.openapi.vcs.checkout.ProjectCheckoutListener"/>
+    <checkoutListener implementation="com.gome.maven.openapi.vcs.checkout.ProjectDirCheckoutListener"/>
+    <checkoutListener implementation="com.gome.maven.openapi.vcs.checkout.ProjectImporterCheckoutListener"/>
+    <vcsAwareCheckoutListener implementation="com.gome.maven.openapi.vcs.checkout.NewProjectCheckoutListener"/>
 
     <!-- new project wizard -->
-    <wizardMode implementation="com.intellij.ide.util.newProjectWizard.modes.CreateFromTemplateMode" id="CreateFromTemplateMode"
+    <wizardMode implementation="com.gome.maven.ide.util.newProjectWizard.modes.CreateFromTemplateMode" id="CreateFromTemplateMode"
                 order="after CreateFromScratchMode"/>
-    <wizardMode implementation="com.intellij.ide.util.newProjectWizard.modes.ImportMode" order="before ImportImlMode"/>
-    <wizardMode implementation="com.intellij.ide.util.newProjectWizard.modes.ImportImlMode" id="ImportImlMode"/>
+    <wizardMode implementation="com.gome.maven.ide.util.newProjectWizard.modes.ImportMode" order="before ImportImlMode"/>
+    <wizardMode implementation="com.gome.maven.ide.util.newProjectWizard.modes.ImportImlMode" id="ImportImlMode"/>
 
-    <projectImportProvider implementation="com.intellij.ide.util.projectWizard.ModuleImportProvider"/>
-    <projectImportProvider implementation="com.intellij.ide.util.projectWizard.ImportFromSourcesProvider"/>
+    <projectImportProvider implementation="com.gome.maven.ide.util.projectWizard.ModuleImportProvider"/>
+    <projectImportProvider implementation="com.gome.maven.ide.util.projectWizard.ImportFromSourcesProvider"/>
 
-    <projectStructureDetector implementation="com.intellij.ide.util.projectWizard.importSources.DefaultProjectStructureDetector" order="last"/>
+    <projectStructureDetector implementation="com.gome.maven.ide.util.projectWizard.importSources.DefaultProjectStructureDetector" order="last"/>
 
-    <projectTemplatesFactory implementation="com.intellij.platform.templates.ArchivedTemplatesFactory"/>
+    <projectTemplatesFactory implementation="com.gome.maven.platform.templates.ArchivedTemplatesFactory"/>
     <!--
-    <projectTemplatesFactory implementation="com.intellij.platform.templates.RemoteTemplatesFactory"/>
+    <projectTemplatesFactory implementation="com.gome.maven.platform.templates.RemoteTemplatesFactory"/>
     -->
-    <projectTemplateFileProcessor implementation="com.intellij.platform.templates.SystemFileProcessor"/>
+    <projectTemplateFileProcessor implementation="com.gome.maven.platform.templates.SystemFileProcessor"/>
 
-    <applicationService serviceImplementation="com.intellij.ide.util.newProjectWizard.SelectTemplateSettings"/>
+    <applicationService serviceImplementation="com.gome.maven.ide.util.newProjectWizard.SelectTemplateSettings"/>
 
-    <gotoFileContributor implementation="com.intellij.ide.util.gotoByName.ProjectBaseDirNavigationContributor"/>
+    <gotoFileContributor implementation="com.gome.maven.ide.util.gotoByName.ProjectBaseDirNavigationContributor"/>
 
-    <consoleFilterProvider implementation="com.intellij.execution.filters.DefaultConsoleFiltersProvider"/>
-    <consoleFilterProvider implementation="com.intellij.execution.filters.UrlFilter$UrlFilterProvider"/>
+    <consoleFilterProvider implementation="com.gome.maven.execution.filters.DefaultConsoleFiltersProvider"/>
+    <consoleFilterProvider implementation="com.gome.maven.execution.filters.UrlFilter$UrlFilterProvider"/>
 
-    <selectInTarget implementation="com.intellij.ide.impl.ProjectStructureSelectInTarget"/>
+    <selectInTarget implementation="com.gome.maven.ide.impl.ProjectStructureSelectInTarget"/>
 
     <OrderRootTypeUI key="JAVADOC"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.JavadocOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.JavadocOrderRootTypeUIFactory"/>
     <OrderRootTypeUI key="ANNOTATIONS"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.AnnotationsOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.AnnotationsOrderRootTypeUIFactory"/>
     <OrderRootTypeUI key="NATIVE"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.NativeLibraryOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.NativeLibraryOrderRootTypeUIFactory"/>
     <OrderRootTypeUI key="CLASSES"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.ClassesOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.ClassesOrderRootTypeUIFactory"/>
     <OrderRootTypeUI key="SOURCES"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.SourcesOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.SourcesOrderRootTypeUIFactory"/>
     <OrderRootTypeUI key="DOCUMENTATION"
-                     implementationClass="com.intellij.openapi.roots.ui.configuration.libraryEditor.DocumentationOrderRootTypeUIFactory"/>
+                     implementationClass="com.gome.maven.openapi.roots.ui.configuration.libraryEditor.DocumentationOrderRootTypeUIFactory"/>
 
-    <moduleConfigurationEditorProvider implementation="com.intellij.openapi.roots.ui.configuration.DefaultModuleEditorsProvider" order="first"/>
+    <moduleConfigurationEditorProvider implementation="com.gome.maven.openapi.roots.ui.configuration.DefaultModuleEditorsProvider" order="first"/>
 
-    <statistics.usagesCollector implementation="com.intellij.openapi.roots.ui.configuration.libraries.impl.LibraryUsageCollector"/>
-    <statistics.usagesCollector implementation="com.intellij.compiler.CompilerSettingsUsageCollector"/>
+    <statistics.usagesCollector implementation="com.gome.maven.openapi.roots.ui.configuration.libraries.impl.LibraryUsageCollector"/>
+    <statistics.usagesCollector implementation="com.gome.maven.compiler.CompilerSettingsUsageCollector"/>
 
-    <keymapExtension implementation="com.intellij.debugger.actions.DebuggerKeymapExtension"/>
+    <keymapExtension implementation="com.gome.maven.debugger.actions.DebuggerKeymapExtension"/>
 
-    <moduleExtension implementation="com.intellij.openapi.roots.LanguageLevelModuleExtensionImpl"/>
-    <moduleExtension implementation="com.intellij.openapi.roots.impl.JavaModuleExternalPathsImpl"/>
+    <moduleExtension implementation="com.gome.maven.openapi.roots.LanguageLevelModuleExtensionImpl"/>
+    <moduleExtension implementation="com.gome.maven.openapi.roots.impl.JavaModuleExternalPathsImpl"/>
 
-    <orderRootType implementation="com.intellij.openapi.roots.AnnotationOrderRootType"/>
-    <orderRootType implementation="com.intellij.openapi.roots.NativeLibraryOrderRootType"/>
-    <orderRootType implementation="com.intellij.openapi.roots.JavadocOrderRootType"/>
-
-
-    <stepsBeforeRunProvider implementation="com.intellij.compiler.options.CompileStepBeforeRun" id="compileBeforeRun"/>
-    <stepsBeforeRunProvider implementation="com.intellij.compiler.options.MakeProjectStepBeforeRun" id="makeProjectBeforeRun"/>
-    <stepsBeforeRunProvider implementation="com.intellij.compiler.options.CompileStepBeforeRunNoErrorCheck" id="compileBeforeRunNoErrorCheck" order="after compileBeforeRun"/>
-    <stepsBeforeRunProvider implementation="com.intellij.packaging.impl.run.BuildArtifactsBeforeRunTaskProvider" order="after compileBeforeRunNoErrorCheck"/>
-    <programRunner id="defaultRunRunner" implementation="com.intellij.execution.impl.DefaultJavaProgramRunner"/>
-    <programRunner implementation="com.intellij.execution.runners.BasicProgramRunner" order="last"/>
-
-    <hectorComponentProvider implementation="com.intellij.codeInsight.daemon.impl.ImportPopupHectorComponentProvider"/>
+    <orderRootType implementation="com.gome.maven.openapi.roots.AnnotationOrderRootType"/>
+    <orderRootType implementation="com.gome.maven.openapi.roots.NativeLibraryOrderRootType"/>
+    <orderRootType implementation="com.gome.maven.openapi.roots.JavadocOrderRootType"/>
 
 
-    <usageFilteringRuleProvider implementation="com.intellij.usages.impl.ImportUsageFilteringRuleProvider"/>
-    <applicationService serviceInterface="com.intellij.usages.impl.ImportFilteringUsageViewSetting"
-                        serviceImplementation="com.intellij.usages.impl.ImportFilteringUsageViewSetting"/>
+    <stepsBeforeRunProvider implementation="com.gome.maven.compiler.options.CompileStepBeforeRun" id="compileBeforeRun"/>
+    <stepsBeforeRunProvider implementation="com.gome.maven.compiler.options.MakeProjectStepBeforeRun" id="makeProjectBeforeRun"/>
+    <stepsBeforeRunProvider implementation="com.gome.maven.compiler.options.CompileStepBeforeRunNoErrorCheck" id="compileBeforeRunNoErrorCheck" order="after compileBeforeRun"/>
+    <stepsBeforeRunProvider implementation="com.gome.maven.packaging.impl.run.BuildArtifactsBeforeRunTaskProvider" order="after compileBeforeRunNoErrorCheck"/>
+    <programRunner id="defaultRunRunner" implementation="com.gome.maven.execution.impl.DefaultJavaProgramRunner"/>
+    <programRunner implementation="com.gome.maven.execution.runners.BasicProgramRunner" order="last"/>
+
+    <hectorComponentProvider implementation="com.gome.maven.codeInsight.daemon.impl.ImportPopupHectorComponentProvider"/>
+
+
+    <usageFilteringRuleProvider implementation="com.gome.maven.usages.impl.ImportUsageFilteringRuleProvider"/>
+    <applicationService serviceInterface="com.gome.maven.usages.impl.ImportFilteringUsageViewSetting"
+                        serviceImplementation="com.gome.maven.usages.impl.ImportFilteringUsageViewSetting"/>
 
     <!-- this depends on TemplateLanguageConfigurable which isn't registered in LangExtensions, so it should go here as well -->
-    <errorQuickFixProvider implementation="com.intellij.psi.templateLanguages.TemplateLanguageErrorQuickFixProvider"/>
+    <errorQuickFixProvider implementation="com.gome.maven.psi.templateLanguages.TemplateLanguageErrorQuickFixProvider"/>
 
-    <fileTypeFactory implementation="com.intellij.openapi.file.exclude.EnforcedPlainTextFileTypeFactory"/>
-    <applicationService serviceInterface="com.intellij.openapi.file.exclude.EnforcedPlainTextFileTypeManager"
-                    serviceImplementation="com.intellij.openapi.file.exclude.EnforcedPlainTextFileTypeManager"/>
-    <projectService serviceInterface="com.intellij.openapi.file.exclude.ProjectPlainTextFileTypeManager"
-                    serviceImplementation="com.intellij.openapi.file.exclude.ProjectPlainTextFileTypeManager"/>
+    <fileTypeFactory implementation="com.gome.maven.openapi.file.exclude.EnforcedPlainTextFileTypeFactory"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.file.exclude.EnforcedPlainTextFileTypeManager"
+                    serviceImplementation="com.gome.maven.openapi.file.exclude.EnforcedPlainTextFileTypeManager"/>
+    <projectService serviceInterface="com.gome.maven.openapi.file.exclude.ProjectPlainTextFileTypeManager"
+                    serviceImplementation="com.gome.maven.openapi.file.exclude.ProjectPlainTextFileTypeManager"/>
 
-    <applicationService serviceInterface="com.intellij.openapi.roots.ModifiableModelsProvider"
-                        serviceImplementation="com.intellij.openapi.roots.IdeaModifiableModelsProvider"/>
-    <projectExtension implementation="com.intellij.openapi.roots.impl.CompilerProjectExtensionImpl$MyProjectExtension"/>
-    <roots.watchedRootsProvider implementation="com.intellij.openapi.roots.impl.CompilerProjectExtensionImpl$MyWatchedRootsProvider"/>
-    <projectService serviceInterface="com.intellij.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettings"
-                    serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettingsImpl"/>
-    <applicationService serviceInterface="com.intellij.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettings"
-                        serviceImplementation="com.intellij.openapi.roots.ui.configuration.projectRoot.daemon.GlobalProjectStructureProblemsSettings"/>
-    <moduleRendererFactory implementation="com.intellij.ide.util.DefaultModuleRendererFactory" order="last"/>
-    <projectStructure.sourceRootEditHandler implementation="com.intellij.openapi.roots.ui.configuration.JavaResourceRootEditHandler"/>
-    <projectStructure.sourceRootEditHandler implementation="com.intellij.openapi.roots.ui.configuration.JavaTestResourceRootEditHandler"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.ModifiableModelsProvider"
+                        serviceImplementation="com.gome.maven.openapi.roots.IdeaModifiableModelsProvider"/>
+    <projectExtension implementation="com.gome.maven.openapi.roots.impl.CompilerProjectExtensionImpl$MyProjectExtension"/>
+    <roots.watchedRootsProvider implementation="com.gome.maven.openapi.roots.impl.CompilerProjectExtensionImpl$MyWatchedRootsProvider"/>
+    <projectService serviceInterface="com.gome.maven.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettings"
+                    serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettingsImpl"/>
+    <applicationService serviceInterface="com.gome.maven.openapi.roots.ui.configuration.projectRoot.daemon.ProjectStructureProblemsSettings"
+                        serviceImplementation="com.gome.maven.openapi.roots.ui.configuration.projectRoot.daemon.GlobalProjectStructureProblemsSettings"/>
+    <moduleRendererFactory implementation="com.gome.maven.ide.util.DefaultModuleRendererFactory" order="last"/>
+    <projectStructure.sourceRootEditHandler implementation="com.gome.maven.openapi.roots.ui.configuration.JavaResourceRootEditHandler"/>
+    <projectStructure.sourceRootEditHandler implementation="com.gome.maven.openapi.roots.ui.configuration.JavaTestResourceRootEditHandler"/>
 
-    <buildProcess.parametersProvider implementation="com.intellij.compiler.classFilesIndex.api.index.ClassFilesIndexerBuilderParametersProvider"/>
+    <buildProcess.parametersProvider implementation="com.gome.maven.compiler.classFilesIndex.api.index.ClassFilesIndexerBuilderParametersProvider"/>
 
   </extensions>
   <extensions defaultExtensionNs="org.jetbrains">

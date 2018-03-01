@@ -19,7 +19,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import com.gome.maven.openapi.options.UnnamedConfigurable;
 
 public interface RunConfigurationsSettings {
-    ExtensionPointName<RunConfigurationsSettings> EXTENSION_POINT = ExtensionPointName.create("com.intellij.runConfigurationsSettings");
+    ExtensionPointName<RunConfigurationsSettings> EXTENSION_POINT = ExtensionPointName.create("com.gome.maven.runConfigurationsSettings");
 
 
     UnnamedConfigurable createConfigurable();

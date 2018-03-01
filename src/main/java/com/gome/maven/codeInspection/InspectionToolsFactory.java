@@ -28,7 +28,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  */
 @Deprecated
 public interface InspectionToolsFactory {
-    ExtensionPointName<InspectionToolsFactory> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.inspectionToolsFactory");
+    ExtensionPointName<InspectionToolsFactory> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.inspectionToolsFactory");
 
     InspectionProfileEntry[] createTools();
 }

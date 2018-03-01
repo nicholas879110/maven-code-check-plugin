@@ -63,7 +63,7 @@ import com.gome.maven.util.containers.IntArrayList;
 import java.util.*;
 
 public class TemplateState implements Disposable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.template.impl.TemplateState");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.template.impl.TemplateState");
     private Project myProject;
     private Editor myEditor;
 

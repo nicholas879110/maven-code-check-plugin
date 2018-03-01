@@ -22,7 +22,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
  * @author yole
  */
 public interface DefaultLiveTemplatesProvider {
-    ExtensionPointName<DefaultLiveTemplatesProvider> EP_NAME = ExtensionPointName.create("com.intellij.defaultLiveTemplatesProvider");
+    ExtensionPointName<DefaultLiveTemplatesProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.defaultLiveTemplatesProvider");
 
     String[] getDefaultLiveTemplateFiles();
 

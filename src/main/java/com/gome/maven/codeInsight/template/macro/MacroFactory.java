@@ -54,7 +54,7 @@ public class MacroFactory {
     }
 
     /**
-     * @deprecated use com.intellij.liveTemplateMacro extension point instead
+     * @deprecated use com.gome.maven.liveTemplateMacro extension point instead
      */
     public static void register(Macro macro) {
         if (myMacroTable == null) init();

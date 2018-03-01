@@ -31,7 +31,7 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class AbstractTreeStructureBase extends AbstractTreeStructure {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.treeView.AbstractTreeStructureBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.treeView.AbstractTreeStructureBase");
     protected final Project myProject;
 
     protected AbstractTreeStructureBase(Project project) {

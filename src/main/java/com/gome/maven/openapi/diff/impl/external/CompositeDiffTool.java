@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 
 class CompositeDiffTool implements DiffTool {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.external.CompositeDiffTool");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.external.CompositeDiffTool");
     private final List<DiffTool> myTools;
 
     public CompositeDiffTool( List<DiffTool> tools) {

@@ -24,7 +24,7 @@ import com.gome.maven.util.containers.ContainerUtil;
 import java.util.Collection;
 
 public abstract class WebBrowserUrlProvider {
-    public static final ExtensionPointName<WebBrowserUrlProvider> EP_NAME = ExtensionPointName.create("com.intellij.webBrowserUrlProvider");
+    public static final ExtensionPointName<WebBrowserUrlProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.webBrowserUrlProvider");
 
     /**
      * Browser exceptions are printed in Error Dialog when user presses any browser button

@@ -52,7 +52,7 @@ import com.gome.maven.util.ThreeState;
  * @author mike
  */
 public class ShowIntentionActionsHandler implements CodeInsightActionHandler {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.ShowIntentionActionsHandler");
 
     @Override
     public void invoke( final Project project,  Editor editor,  PsiFile file) {

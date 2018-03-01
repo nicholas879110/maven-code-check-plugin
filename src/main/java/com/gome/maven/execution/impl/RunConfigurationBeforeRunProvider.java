@@ -62,7 +62,7 @@ public class RunConfigurationBeforeRunProvider
 
     public static final Key<RunConfigurableBeforeRunTask> ID = Key.create("RunConfigurationTask");
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.execution.impl.RunConfigurationBeforeRunProvider");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.execution.impl.RunConfigurationBeforeRunProvider");
 
     private final Project myProject;
 
@@ -381,7 +381,7 @@ public class RunConfigurationBeforeRunProvider
         
         @Override
         protected String getDimensionServiceKey() {
-            return "com.intellij.execution.impl.RunConfigurationBeforeRunProvider.dimensionServiceKey;";
+            return "com.gome.maven.execution.impl.RunConfigurationBeforeRunProvider.dimensionServiceKey;";
         }
 
         @Override

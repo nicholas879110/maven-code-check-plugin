@@ -26,7 +26,7 @@ public class LanguageNamesValidation extends LanguageExtension<NamesValidator> {
     public static final LanguageNamesValidation INSTANCE = new LanguageNamesValidation();
 
     private LanguageNamesValidation() {
-        super("com.intellij.lang.namesValidator", new DefaultNamesValidator());
+        super("com.gome.maven.lang.namesValidator", new DefaultNamesValidator());
     }
 
     protected static class DefaultNamesValidator implements NamesValidator {

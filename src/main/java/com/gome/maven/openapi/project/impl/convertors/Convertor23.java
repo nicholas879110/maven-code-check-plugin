@@ -27,7 +27,7 @@ import java.util.Iterator;
  */
 @SuppressWarnings({"HardCodedStringLiteral"})
 public class Convertor23 {
-    private static final String PROJECT_ROOT_CONTAINER_CLASS = "com.intellij.projectRoots.ProjectRootContainer";
+    private static final String PROJECT_ROOT_CONTAINER_CLASS = "com.gome.maven.projectRoots.ProjectRootContainer";
 
     public static void execute(Element root) {
         Element rootContComponent = Util.findComponent(root, PROJECT_ROOT_CONTAINER_CLASS);
@@ -37,7 +37,7 @@ public class Convertor23 {
         convertCompilerConfiguration(root);
     }
 
-    private static final String COMPILER_CONFIGURATION_CLASS = "com.intellij.openapi.compiler.Compiler";
+    private static final String COMPILER_CONFIGURATION_CLASS = "com.gome.maven.openapi.compiler.Compiler";
     private static final String COMPILER_CONFIGURATION_COMPONENT = "CompilerConfiguration";
     private static final String COMPILER_WORKSPACE_CONFIGURATION_COMPONENT = "CompilerWorkspaceConfiguration";
 

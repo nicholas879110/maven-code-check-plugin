@@ -50,7 +50,7 @@ public class FormatterImpl extends FormatterEx
         AlignmentFactory,
         SpacingFactory,
         FormattingModelFactory {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.formatting.FormatterImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.formatting.FormatterImpl");
 
     private final AtomicReference<FormattingProgressTask> myProgressTask = new AtomicReference<FormattingProgressTask>();
 

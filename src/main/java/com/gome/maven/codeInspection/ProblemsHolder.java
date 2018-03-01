@@ -39,7 +39,7 @@ import java.util.List;
  * @author max
  */
 public class ProblemsHolder {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ProblemsHolder");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ProblemsHolder");
     private final InspectionManager myManager;
     private final PsiFile myFile;
     private final boolean myOnTheFly;

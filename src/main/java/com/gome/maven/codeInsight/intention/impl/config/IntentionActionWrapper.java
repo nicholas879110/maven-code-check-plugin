@@ -26,7 +26,7 @@ import com.gome.maven.psi.PsiFile;
 import com.gome.maven.util.IncorrectOperationException;
 
 public class IntentionActionWrapper implements IntentionAction {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.intention.impl.config.IntentionActionWrapper");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.intention.impl.config.IntentionActionWrapper");
 
     private IntentionAction myDelegate;
     private final String[] myCategories;

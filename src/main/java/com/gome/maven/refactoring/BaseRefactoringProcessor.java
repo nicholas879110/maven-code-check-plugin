@@ -71,7 +71,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public abstract class BaseRefactoringProcessor implements Runnable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.BaseRefactoringProcessor");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.BaseRefactoringProcessor");
 
     
     protected final Project myProject;

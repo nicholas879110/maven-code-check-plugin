@@ -44,6 +44,7 @@ import gnu.trove.THashSet;
 import gnu.trove.TIntProcedure;
 import gnu.trove.TObjectIntHashMap;
 import org.jdom.Document;
+import org.jdom.Element;
 
 
 import java.io.*;
@@ -1225,8 +1226,8 @@ public class PluginManagerCore {
                 progress.showProgress("", PLUGINS_PROGRESS_MAX_VALUE + (i++ / (float)result.size()) * 0.35f);
             }
         }
-
         registerExtensionPointsAndExtensions(Extensions.getRootArea(), result);
+
         Extensions.getRootArea().getExtensionPoint(Extensions.AREA_LISTENER_EXTENSION_POINT).registerExtension(new AreaListener() {
             @Override
             public void areaCreated( String areaClass,  AreaInstance areaInstance) {
@@ -1254,6 +1255,7 @@ public class PluginManagerCore {
 
         for (IdeaPluginDescriptorImpl descriptor : loadedPlugins) {
             for (String epName : epNames) {
+//                System.out.println("Key="+epName);
                 descriptor.registerExtensions(area, epName);
             }
         }

@@ -32,7 +32,7 @@ import java.util.List;
  * @author Dmitry Avdeev
  */
 public abstract class CachedValueBase<T> {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.CachedValueImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.CachedValueImpl");
     private volatile SoftReference<Data<T>> myData = null;
 
     protected Data<T> computeData(T value, Object[] dependencies) {

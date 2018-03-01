@@ -57,7 +57,7 @@ import com.gome.maven.util.text.TextRangeUtil;
 import java.util.*;
 
 public class PostprocessReformattingAspect implements PomModelAspect {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.PostprocessReformattingAspect");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.source.PostprocessReformattingAspect");
     private final Project myProject;
     private final PsiManager myPsiManager;
     private final TreeAspect myTreeAspect;

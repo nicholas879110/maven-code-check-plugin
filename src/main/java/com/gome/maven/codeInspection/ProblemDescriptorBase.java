@@ -27,7 +27,7 @@ import com.gome.maven.psi.*;
 import com.gome.maven.psi.util.PsiTreeUtil;
 
 public class ProblemDescriptorBase extends CommonProblemDescriptorImpl implements ProblemDescriptor {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInspection.ex.ProblemDescriptorImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInspection.ex.ProblemDescriptorImpl");
 
      private final SmartPsiElementPointer myStartSmartPointer;
      private final SmartPsiElementPointer myEndSmartPointer;

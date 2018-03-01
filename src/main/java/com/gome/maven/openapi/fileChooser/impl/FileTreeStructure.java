@@ -38,7 +38,7 @@ import java.util.Set;
  * @author Yura Cangea
  */
 public class FileTreeStructure extends AbstractTreeStructure {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.chooser.FileTreeStructure");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.chooser.FileTreeStructure");
 
     private final RootFileElement myRootElement;
     private final FileChooserDescriptor myChooserDescriptor;

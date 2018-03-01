@@ -15,7 +15,7 @@
  */
 package com.gome.maven.psi;
 
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 /**
  * Provides a list of possible modifier keywords for Java classes, methods and fields.

@@ -18,7 +18,7 @@ package org.jetbrains.jps.gradle.compiler;
 import com.gome.maven.openapi.util.Ref;
 import com.gome.maven.openapi.util.io.FileUtil;
 import com.gome.maven.openapi.util.io.StreamUtil;
-import org.apache.tools.ant.util.ReaderInputStream;
+//import org.apache.tools.ant.util.ReaderInputStream;
 import org.jetbrains.jps.gradle.model.impl.GradleModuleResourceConfiguration;
 import org.jetbrains.jps.gradle.model.impl.GradleProjectConfiguration;
 import org.jetbrains.jps.gradle.model.impl.ResourceRootConfiguration;
@@ -90,7 +90,9 @@ public class GradleResourceFileProcessor {
 
   private static InputStream transform(List<ResourceRootFilter> filters, FileInputStream original, Ref<File> outputFileRef, CompileContext context) {
     final InputStreamReader streamReader = new InputStreamReader(original);
-    final Reader newReader = new ChainingFilterTransformer(context, filters, outputFileRef).transform(streamReader);
-    return streamReader == newReader ? original : new ReaderInputStream(newReader);
+    //自己修改的
+//    final Reader newReader = new ChainingFilterTransformer(context, filters, outputFileRef).transform(streamReader);
+//    return streamReader == newReader ? original : new ReaderInputStream(newReader);
+    return null;
   }
 }

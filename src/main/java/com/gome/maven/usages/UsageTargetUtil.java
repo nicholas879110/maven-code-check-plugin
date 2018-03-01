@@ -30,7 +30,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class UsageTargetUtil {
-    private static final ExtensionPointName<UsageTargetProvider> EP_NAME = ExtensionPointName.create("com.intellij.usageTargetProvider");
+    private static final ExtensionPointName<UsageTargetProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.usageTargetProvider");
 
     public static UsageTarget[] findUsageTargets(DataProvider dataProvider) {
         Editor editor = CommonDataKeys.EDITOR.getData(dataProvider);

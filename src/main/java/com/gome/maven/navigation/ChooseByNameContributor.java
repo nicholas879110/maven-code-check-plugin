@@ -25,9 +25,9 @@ import com.gome.maven.openapi.project.Project;
  */
 
 public interface ChooseByNameContributor {
-    ExtensionPointName<ChooseByNameContributor> CLASS_EP_NAME = ExtensionPointName.create("com.intellij.gotoClassContributor");
-    ExtensionPointName<ChooseByNameContributor> SYMBOL_EP_NAME = ExtensionPointName.create("com.intellij.gotoSymbolContributor");
-    ExtensionPointName<ChooseByNameContributor> FILE_EP_NAME = ExtensionPointName.create("com.intellij.gotoFileContributor");
+    ExtensionPointName<ChooseByNameContributor> CLASS_EP_NAME = ExtensionPointName.create("com.gome.maven.gotoClassContributor");
+    ExtensionPointName<ChooseByNameContributor> SYMBOL_EP_NAME = ExtensionPointName.create("com.gome.maven.gotoSymbolContributor");
+    ExtensionPointName<ChooseByNameContributor> FILE_EP_NAME = ExtensionPointName.create("com.gome.maven.gotoFileContributor");
 
 
     /**

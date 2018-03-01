@@ -25,6 +25,6 @@ public class LanguageParameterInfo extends LanguageExtension<ParameterInfoHandle
     public static final LanguageParameterInfo INSTANCE = new LanguageParameterInfo();
 
     private LanguageParameterInfo() {
-        super("com.intellij.codeInsight.parameterInfo");
+        super("com.gome.maven.codeInsight.parameterInfo");
     }
 }

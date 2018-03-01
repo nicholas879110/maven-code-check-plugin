@@ -52,7 +52,7 @@ import java.io.IOException;
 import java.util.TooManyListenersException;
 
 public class ExportToFileUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.ExportToFileUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.ExportToFileUtil");
 
     public static void exportTextToFile(Project project, String fileName, String textToExport) {
         String prepend = "";
@@ -222,7 +222,7 @@ public class ExportToFileUtil {
         }
 
         protected String getDimensionServiceKey() {
-            return "#com.intellij.ide.util.ExportDialog";
+            return "#com.gome.maven.ide.util.ExportDialog";
         }
 
         protected class CopyToClipboardAction extends AbstractAction {

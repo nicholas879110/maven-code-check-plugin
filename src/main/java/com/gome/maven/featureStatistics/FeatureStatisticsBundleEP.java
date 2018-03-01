@@ -23,7 +23,7 @@ import com.gome.maven.util.xmlb.annotations.Attribute;
  * @author yole
  */
 public class FeatureStatisticsBundleEP extends AbstractExtensionPointBean {
-    public static final ExtensionPointName<FeatureStatisticsBundleEP> EP_NAME = ExtensionPointName.create("com.intellij.featureStatisticsBundle");
+    public static final ExtensionPointName<FeatureStatisticsBundleEP> EP_NAME = ExtensionPointName.create("com.gome.maven.featureStatisticsBundle");
 
     @Attribute("qualifiedName")
     public String qualifiedName;

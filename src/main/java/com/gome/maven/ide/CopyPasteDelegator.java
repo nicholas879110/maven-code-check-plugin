@@ -37,7 +37,7 @@ import com.gome.maven.refactoring.move.MoveHandler;
 import javax.swing.*;
 
 public abstract class CopyPasteDelegator implements CopyPasteSupport {
-    private static final ExtensionPointName<PasteProvider> EP_NAME = ExtensionPointName.create("com.intellij.filePasteProvider");
+    private static final ExtensionPointName<PasteProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.filePasteProvider");
     public static final Key<Boolean> SHOW_CHOOSER_KEY = Key.create("show.dirs.chooser");
 
     private final Project myProject;

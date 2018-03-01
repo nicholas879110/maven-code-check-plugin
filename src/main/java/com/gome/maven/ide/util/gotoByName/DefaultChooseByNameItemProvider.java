@@ -39,7 +39,7 @@ import java.lang.ref.WeakReference;
 import java.util.*;
 
 public class DefaultChooseByNameItemProvider implements ChooseByNameItemProvider {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.ide.util.gotoByName.ChooseByNameIdea");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.ide.util.gotoByName.ChooseByNameIdea");
     private final Reference<PsiElement> myContext;
 
     public DefaultChooseByNameItemProvider(PsiElement context) {

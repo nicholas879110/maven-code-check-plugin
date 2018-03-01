@@ -71,7 +71,7 @@ class EditVariableDialog extends DialogWrapper {
 
     @Override
     protected String getDimensionServiceKey(){
-        return "#com.intellij.codeInsight.template.impl.EditVariableDialog";
+        return "#com.gome.maven.codeInsight.template.impl.EditVariableDialog";
     }
 
     @Override

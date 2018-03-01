@@ -26,7 +26,7 @@ import java.util.Set;
  */
 public interface IndexedRootsProvider {
 
-    ExtensionPointName<IndexedRootsProvider> EP_NAME = new ExtensionPointName<IndexedRootsProvider>("com.intellij.indexedRootsProvider");
+    ExtensionPointName<IndexedRootsProvider> EP_NAME = new ExtensionPointName<IndexedRootsProvider>("com.gome.maven.indexedRootsProvider");
 
     /**
      * @deprecated

@@ -32,9 +32,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CollectHighlightsUtil {
-    public static final ExtensionPointName<Condition<PsiElement>> EP_NAME = ExtensionPointName.create("com.intellij.elementsToHighlightFilter");
+    public static final ExtensionPointName<Condition<PsiElement>> EP_NAME = ExtensionPointName.create("com.gome.maven.elementsToHighlightFilter");
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.daemon.impl.CollectHighlightsUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.daemon.impl.CollectHighlightsUtil");
 
     private CollectHighlightsUtil() { }
 

@@ -65,7 +65,7 @@ import java.util.concurrent.locks.Lock;
 )
 public class StubIndexImpl extends StubIndex implements ApplicationComponent, PersistentStateComponent<StubIndexState> {
     private static final AtomicReference<Boolean> ourForcedClean = new AtomicReference<Boolean>(null);
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.stubs.StubIndexImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.stubs.StubIndexImpl");
     private final Map<StubIndexKey<?,?>, MyIndex<?>> myIndices = new THashMap<StubIndexKey<?,?>, MyIndex<?>>();
     private final TObjectIntHashMap<ID<?, ?>> myIndexIdToVersionMap = new TObjectIntHashMap<ID<?, ?>>();
 

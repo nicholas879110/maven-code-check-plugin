@@ -40,7 +40,7 @@ public abstract class DetectedFacetPresentation {
 
 
     /**
-     * @deprecated override {@link DetectedFacetPresentation#getAutodetectionPopupText(com.gome.maven.openapi.module.Module, com.intellij.facet.FacetType, String, com.intellij.openapi.vfs.VirtualFile[])}
+     * @deprecated override {@link DetectedFacetPresentation#getAutodetectionPopupText(com.gome.maven.openapi.module.Module, com.gome.maven.facet.FacetType, String, com.gome.maven.openapi.vfs.VirtualFile[])}
      * instead
      */
     

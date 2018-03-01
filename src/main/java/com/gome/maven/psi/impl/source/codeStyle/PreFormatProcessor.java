@@ -24,7 +24,7 @@ import com.gome.maven.openapi.util.TextRange;
  * @author yole
  */
 public interface PreFormatProcessor {
-    ExtensionPointName<PreFormatProcessor> EP_NAME = ExtensionPointName.create("com.intellij.preFormatProcessor");
+    ExtensionPointName<PreFormatProcessor> EP_NAME = ExtensionPointName.create("com.gome.maven.preFormatProcessor");
 
     /**
      * Callback to be invoked before formatting. Implementation is allowed to do the following:

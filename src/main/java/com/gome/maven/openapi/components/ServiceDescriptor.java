@@ -29,10 +29,16 @@ public class ServiceDescriptor {
     public boolean overrides = false;
 
     public String getInterface() {
+//        if (serviceInterface.contains("FeatureUsageTracker")){
+//            System.out.println(true);
+//        }
         return serviceInterface != null ? serviceInterface : getImplementation();
     }
 
     public String getImplementation() {
+//        if (serviceImplementation.contains("FeatureUsageTracker")){
+//            System.out.println(true);
+//        }
         return serviceImplementation;
     }
 }

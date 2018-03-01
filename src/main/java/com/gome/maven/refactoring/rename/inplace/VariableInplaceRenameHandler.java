@@ -34,7 +34,7 @@ import com.gome.maven.refactoring.rename.RenameHandlerRegistry;
 
 public class VariableInplaceRenameHandler implements RenameHandler {
     private static final ThreadLocal<String> ourPreventInlineRenameFlag = new ThreadLocal<String>();
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.rename.inplace.VariableInplaceRenameHandler");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.rename.inplace.VariableInplaceRenameHandler");
 
     @Override
     public final boolean isAvailableOnDataContext(final DataContext dataContext) {

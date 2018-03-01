@@ -54,7 +54,7 @@ import java.util.List;
 public class LineStatusTracker {
     public enum Mode {DEFAULT, SMART}
 
-    public static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vcs.ex.LineStatusTracker");
+    public static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vcs.ex.LineStatusTracker");
     private static final Key<CanNotCalculateDiffPanel> PANEL_KEY =
             new Key<CanNotCalculateDiffPanel>("LineStatusTracker.CanNotCalculateDiffPanel");
 

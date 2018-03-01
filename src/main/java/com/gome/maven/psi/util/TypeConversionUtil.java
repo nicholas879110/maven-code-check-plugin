@@ -38,7 +38,7 @@ import java.util.Set;
 import static com.gome.maven.psi.CommonClassNames.JAVA_LANG_STRING;
 
 public class TypeConversionUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.util.TypeConversionUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.util.TypeConversionUtil");
 
     private static final boolean[][] IS_ASSIGNABLE_BIT_SET = {
             {true, true, false, true, true, true, true}, // byte

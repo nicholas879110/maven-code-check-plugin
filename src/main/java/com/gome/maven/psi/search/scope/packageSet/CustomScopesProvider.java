@@ -25,7 +25,7 @@ import com.gome.maven.openapi.extensions.ExtensionPointName;
 import java.util.List;
 
 public interface CustomScopesProvider {
-    ExtensionPointName<CustomScopesProvider> CUSTOM_SCOPES_PROVIDER = ExtensionPointName.create("com.intellij.customScopesProvider");
+    ExtensionPointName<CustomScopesProvider> CUSTOM_SCOPES_PROVIDER = ExtensionPointName.create("com.gome.maven.customScopesProvider");
 
     List<NamedScope> getCustomScopes();
 }

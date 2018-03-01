@@ -47,7 +47,7 @@ import javax.swing.*;
 import java.util.*;
 
 public class CompletionLookupArranger extends LookupArranger {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.completion.CompletionLookupArranger");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.completion.CompletionLookupArranger");
      private static StatisticsUpdate ourPendingUpdate;
     private static final Alarm ourStatsAlarm = new Alarm(ApplicationManager.getApplication());
     private static final Key<String> PRESENTATION_INVARIANT = Key.create("PRESENTATION_INVARIANT");

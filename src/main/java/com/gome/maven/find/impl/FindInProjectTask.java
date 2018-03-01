@@ -68,7 +68,7 @@ import java.util.regex.Pattern;
  * @author peter
  */
 class FindInProjectTask {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.find.impl.FindInProjectTask");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.find.impl.FindInProjectTask");
     private static final int FILES_SIZE_LIMIT = 70 * 1024 * 1024; // megabytes.
     private static final int SINGLE_FILE_SIZE_LIMIT = 5 * 1024 * 1024; // megabytes.
     private final FindModel myFindModel;

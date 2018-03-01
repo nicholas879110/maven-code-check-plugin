@@ -30,7 +30,7 @@ public class AnnotationTargetUtil {
             PsiAnnotation.TargetType.PACKAGE, PsiAnnotation.TargetType.TYPE, PsiAnnotation.TargetType.ANNOTATION_TYPE,
             PsiAnnotation.TargetType.FIELD, PsiAnnotation.TargetType.METHOD, PsiAnnotation.TargetType.CONSTRUCTOR,
             PsiAnnotation.TargetType.PARAMETER, PsiAnnotation.TargetType.LOCAL_VARIABLE));
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.AnnotationUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.AnnotationUtil");
     private static final PsiAnnotation.TargetType[] PACKAGE_TARGETS = {PsiAnnotation.TargetType.PACKAGE};
     private static final PsiAnnotation.TargetType[] TYPE_USE_TARGETS = {PsiAnnotation.TargetType.TYPE_USE};
     private static final PsiAnnotation.TargetType[] ANNOTATION_TARGETS = {PsiAnnotation.TargetType.ANNOTATION_TYPE, PsiAnnotation.TargetType.TYPE, PsiAnnotation.TargetType.TYPE_USE};

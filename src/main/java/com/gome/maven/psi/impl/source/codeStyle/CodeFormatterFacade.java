@@ -61,7 +61,7 @@ import java.util.List;
 
 public class CodeFormatterFacade {
 
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.codeStyle.CodeFormatterFacade");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.psi.impl.source.codeStyle.CodeFormatterFacade");
 
     private static final String WRAP_LINE_COMMAND_NAME = "AutoWrapLongLine";
 

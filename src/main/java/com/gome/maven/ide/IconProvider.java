@@ -27,7 +27,7 @@ import javax.swing.*;
  * @author peter
  */
 public abstract class IconProvider {
-    public static final ExtensionPointName<IconProvider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.intellij.iconProvider");
+    public static final ExtensionPointName<IconProvider> EXTENSION_POINT_NAME = ExtensionPointName.create("com.gome.maven.iconProvider");
 
     /**
      * @param element for which icon is shown

@@ -41,7 +41,7 @@ import java.util.Set;
 public abstract class BaseAnalysisAction extends AnAction {
     private final String myTitle;
     private final String myAnalysisNoon;
-    private static final Logger LOG = Logger.getInstance("#com.intellij.analysis.BaseAnalysisAction");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.analysis.BaseAnalysisAction");
 
     protected BaseAnalysisAction(String title, String analysisNoon) {
         myTitle = title;

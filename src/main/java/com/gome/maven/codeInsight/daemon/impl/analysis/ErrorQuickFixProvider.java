@@ -24,7 +24,7 @@ import com.gome.maven.psi.PsiErrorElement;
  * @author yole
  */
 public interface ErrorQuickFixProvider {
-    ExtensionPointName<ErrorQuickFixProvider> EP_NAME = ExtensionPointName.create("com.intellij.errorQuickFixProvider");
+    ExtensionPointName<ErrorQuickFixProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.errorQuickFixProvider");
 
     void registerErrorQuickFix( PsiErrorElement errorElement,  HighlightInfo highlightInfo);
 }

@@ -35,7 +35,7 @@ import com.gome.maven.openapi.project.Project;
 import com.gome.maven.openapi.vfs.VirtualFile;
 
 class EditorPlaceHolder extends DiffMarkup implements DiffVersionComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.highlighting.EditorWrapper");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.highlighting.EditorWrapper");
     private EditorEx myEditor;
     private DiffContent myContent;
     private final FragmentSide mySide;

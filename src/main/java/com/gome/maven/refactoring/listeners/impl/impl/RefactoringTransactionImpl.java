@@ -32,7 +32,7 @@ import java.util.Map;
  * @author dsl
  */
 public class RefactoringTransactionImpl implements RefactoringTransaction {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.listeners.impl.impl.RefactoringTransactionImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.listeners.impl.impl.RefactoringTransactionImpl");
 
     /**
      * Actions to be performed at commit.

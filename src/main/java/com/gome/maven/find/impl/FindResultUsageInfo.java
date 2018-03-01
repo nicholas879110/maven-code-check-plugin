@@ -37,7 +37,7 @@ public class FindResultUsageInfo extends UsageInfo {
     private Boolean myCachedResult;
     private long myTimestamp = 0;
 
-    private static final Key<Long> ourDocumentTimestampKey = Key.create("com.intellij.find.impl.FindResultUsageInfo.documentTimestamp");
+    private static final Key<Long> ourDocumentTimestampKey = Key.create("com.gome.maven.find.impl.FindResultUsageInfo.documentTimestamp");
 
     @Override
     public boolean isValid() {

@@ -40,7 +40,7 @@ import java.util.Set;
 
 
 public class ModuleRootManagerImpl extends ModuleRootManager implements ModuleComponent {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.roots.impl.ModuleRootManagerImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.roots.impl.ModuleRootManagerImpl");
 
     private final Module myModule;
     private final ProjectRootManagerImpl myProjectRootManager;

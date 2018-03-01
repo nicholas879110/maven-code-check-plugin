@@ -26,7 +26,7 @@ import com.gome.maven.util.xmlb.annotations.AbstractCollection;
 import com.gome.maven.util.xmlb.annotations.OptionTag;
 import com.gome.maven.util.xmlb.annotations.Property;
 import com.gome.maven.util.xmlb.annotations.Transient;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 import org.jdom.Element;
 
 @State(
@@ -34,7 +34,7 @@ import org.jdom.Element;
         storages = @Storage(file = StoragePathMacros.APP_CONFIG + "/editor.codeinsight.xml")
 )
 public class CodeInsightSettings implements PersistentStateComponent<Element>, Cloneable {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.codeInsight.CodeInsightSettings");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.codeInsight.CodeInsightSettings");
 
     public static CodeInsightSettings getInstance() {
         return ServiceManager.getService(CodeInsightSettings.class);

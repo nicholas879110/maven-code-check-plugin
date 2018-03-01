@@ -40,7 +40,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class MoveFilesOrDirectoriesUtil {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.refactoring.move.moveFilesOrDirectories.MoveFilesOrDirectoriesUtil");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.refactoring.move.moveFilesOrDirectories.MoveFilesOrDirectoriesUtil");
 
     private MoveFilesOrDirectoriesUtil() {
     }

@@ -22,7 +22,7 @@ import com.gome.maven.psi.PsiElement;
  * @author Max Medvedev
  */
 public interface ContainerProvider {
-    ExtensionPointName<ContainerProvider> EP_NAME = ExtensionPointName.create("com.intellij.codeInsight.containerProvider");
+    ExtensionPointName<ContainerProvider> EP_NAME = ExtensionPointName.create("com.gome.maven.codeInsight.containerProvider");
 
     
     PsiElement getContainer( PsiElement item);

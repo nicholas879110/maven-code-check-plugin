@@ -27,7 +27,7 @@ import com.gome.maven.psi.impl.source.resolve.DefaultParameterTypeInferencePolic
 import com.gome.maven.psi.impl.source.resolve.ParameterTypeInferencePolicy;
 import com.gome.maven.psi.util.PsiUtil;
 import com.gome.maven.util.containers.ContainerUtil;
-//import org.intellij.lang.annotations.MagicConstant;
+//import org.gome.maven.lang.annotations.MagicConstant;
 
 import java.util.Map;
 

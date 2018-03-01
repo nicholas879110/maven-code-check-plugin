@@ -26,7 +26,7 @@ import com.gome.maven.psi.PsiFile;
  * @see com.gome.maven.codeInsight.highlighting.HighlightUsagesHandlerFactoryBase
  */
 public interface HighlightUsagesHandlerFactory {
-    ExtensionPointName<HighlightUsagesHandlerFactory> EP_NAME = ExtensionPointName.create("com.intellij.highlightUsagesHandlerFactory");
+    ExtensionPointName<HighlightUsagesHandlerFactory> EP_NAME = ExtensionPointName.create("com.gome.maven.highlightUsagesHandlerFactory");
 
     HighlightUsagesHandlerBase createHighlightUsagesHandler(Editor editor, PsiFile file);
 }

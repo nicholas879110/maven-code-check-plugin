@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Util {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.diff.impl.highlighting.Util");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.diff.impl.highlighting.Util");
     private static final String DELIMITERS = " \n\r\t(){}[],./?`~!@#$%^&*-=+|\\;:'\"<>";
     public static final TIntHashSet DELIMITERS_SET = new TIntHashSet();
 

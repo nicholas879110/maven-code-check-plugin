@@ -25,7 +25,7 @@ import com.gome.maven.lang.LanguageExtension;
  */
 public class LanguageWhiteSpaceFormattingStrategy extends LanguageExtension<WhiteSpaceFormattingStrategy> {
 
-    public static final String EP_NAME = "com.intellij.lang.whiteSpaceFormattingStrategy";
+    public static final String EP_NAME = "com.gome.maven.lang.whiteSpaceFormattingStrategy";
     public static final LanguageWhiteSpaceFormattingStrategy INSTANCE = new LanguageWhiteSpaceFormattingStrategy();
 
     private LanguageWhiteSpaceFormattingStrategy() {

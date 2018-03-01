@@ -37,7 +37,7 @@ import java.util.zip.ZipFile;
 /** @deprecated to be removed in IDEA 15 */
 @SuppressWarnings({"deprecation", "UnnecessaryFullyQualifiedName"})
 public class JarHandlerBase {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.openapi.vfs.impl.jar.JarHandlerBase");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.openapi.vfs.impl.jar.JarHandlerBase");
 
     protected static final long DEFAULT_LENGTH = 0L;
     protected static final long DEFAULT_TIMESTAMP = -1L;

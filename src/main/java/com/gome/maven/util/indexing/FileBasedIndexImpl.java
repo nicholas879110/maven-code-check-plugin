@@ -96,7 +96,7 @@ import java.util.concurrent.locks.Lock;
  * @since Dec 20, 2007
  */
 public class FileBasedIndexImpl extends FileBasedIndex {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.util.indexing.FileBasedIndexImpl");
+    private static final Logger LOG = Logger.getInstance("#com.gome.maven.util.indexing.FileBasedIndexImpl");
     private static final String CORRUPTION_MARKER_NAME = "corruption.marker";
     private static final NotificationGroup NOTIFICATIONS = new NotificationGroup("Indexing", NotificationDisplayType.BALLOON, false);
 
